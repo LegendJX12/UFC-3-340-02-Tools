@@ -1,0 +1,10 @@
+Edge conditions,Loading,Ultimate shear stress v_u
+Simply supported both ends,"Uniform load, span L",\frac{r_{u}\left(\frac{L}{2}-d_{e}\right)}{d_{e}}
+Simply supported both ends,"Concentrated load P at midspan (L/2, L/2)",\frac{R_{u}}{2d_{e}}
+"Fixed one end, simply supported other","Uniform load, span L",\text{left support } r_{u}\left(\frac{5L}{8}-d_{e}\right)/d_{e};\ \text{right support } r_{u}\left(\frac{3L}{8}-d_{e}\right)/d_{e}
+"Fixed one end, simply supported other","Concentrated load P at midspan (L/2, L/2)",\text{left support } \frac{11R_{u}}{16d_{e}};\ \text{right support } \frac{5R_{u}}{16d_{e}}
+Fixed both ends,"Uniform load, span L",\frac{r_{u}\left(\frac{L}{2}-d_{e}\right)}{d_{e}}
+Fixed both ends,"Concentrated load P at midspan (L/2, L/2)",\frac{R_{u}}{2d_{e}}
+"Cantilever (fixed one end, free other)","Uniform load, span L",\frac{r_{u}(L-d_{e})}{d_{e}}
+"Cantilever (fixed one end, free other)",Concentrated load P at free end,\frac{R_{u}}{d_{e}}
+Simply supported both ends,"Two loads P/2 at third points (L/3, L/3, L/3)",\frac{R_{u}}{2d_{e}}

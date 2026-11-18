@@ -1,0 +1,209 @@
+equation,batch,page,checked_in,finding,ocr_text,correct_text_from_pdf,note
+2-21,2,59,16 differ,pairing (OCR correct),For W/H=3/4 (paired by mistake),E = 0.4221 + [1.241 (Ao/Aw)^0.367],Real OCR block for 2-17..2-21 matches the PDF.
+2-23,2,60,16 differ,OCR ERROR,A=[0.5422(L_w/L)^{7.2944}]-0.001829,A = [0.5422 (Lw/L)^1.2944] - 0.001829,Exponent 1.2944 misread as 7.2944.
+2-24,2,60,same block as a 16-differ equation,CHECK: operator,B=[...]/[2.209(L/H)^{-0.3451}-0.739],B = [0.654 + 2.616 (Ao/Aw) - 4.928 (Ao/Aw)^2] · [2.209 (L/H)^-0.3451 - 0.739],PDF prints a small dot (multiply) between brackets; OCR has divide. Use PDF; confirm with another source.
+2-25,2,60,same block as a 16-differ equation,CHECK: operator,C=...+[0.00124+0.00414(L_w/L)^{3.334}]/[L/H]^D,C = 0.829 + 0.104 (Lw/L)^1.6 + [0.00124 + 0.00414 (Lw/L)^3.334] [L/H]^D,PDF prints brackets side by side (multiply); OCR has divide. Use PDF; confirm with another source.
+2-28,2,60,same block as a 16-differ equation,OCR ERROR + CHECK: operator,F=...+[1.8692-1.1735(A_o/A_w)^{-0.2226}]/[L_w/L]^O,F = 1.468 - 1.6627 (Ao/Aw)^0.7801 + [1.8692 - 1.1735 (Ao/Aw)^-0.2226] [Lw/L]^G,Exponent G misread as O. PDF prints multiply; OCR has divide.
+2-30,2,60,same block as a 16-differ equation,OCR ERROR,H=(5.425\times10^4)+(1.001\times10^9)(L/H)^{9.965},H = (5.425 x 10^-4) + (1.001 x 10^-9) (L/H)^9.965,Minus signs of both powers of ten lost.
+2-60,7,55,16 differ,OCR ERROR,...=47.690[R_e/R]^{1.4},"i/(β Reff) [Re/Rt]^0.158 = 47,690 [Re/R]^1.4","Thousands comma read as decimal point (47,690 not 47.690)."
+2-62,7,55,16 differ,OCR ERROR,...=58.400[R_e/R],"i/(β Reff) [Re/Rt]^0.158 = 58,400 [Re/R]",Thousands comma read as decimal point.
+2-67,7,57,16 differ,PDF text split (OCR correct),... [2Lf/bf]^{0.3} >= 0.602,(i bf / (A (ρf T)^1/2)) (2Lf/bf)^0.3 >= 0.602,"PDF text layer splits 0.602 into ""0 602""."
+4-5,19,44,16 differ,pairing (OCR correct),n=E\sqrt{E_0} (paired by mistake),Es = 29 x 10^6 psi,"Real OCR block ""E_s=29\times10^{6} psi"" matches."
+4-71,20,44,name/prime check,minor (OCR usable),,m_{18}^{+}=0.60\left(0.35\right)M_{OL}/\left(H/2\right),stray accent
+4-140a,22,20,same block as a 16-differ equation,OCR ERROR,v_c=2f_{dc}^{\prime\prime}\eta^{1/2},vc = 2 f'dc^1/2,Spurious η in OCR.
+4-140b,22,20,16 differ,OCR ERROR,v_c=|1.9f'_{dc}|^{1/2}+2.500p\leq3.5f'_{dc}'',"vc = [1.9 f'dc^1/2 + 2,500 p] <= 3.5 f'dc^1/2","Exponent 1/2 applies to f'dc, not the bracket; 2,500 read as 2.500."
+4-173,22,42,16 differ,PDF text split (OCR correct),EI=E_cI_a/1.5,EI = Ec Ia / 1.5,"PDF text layer splits 1.5 into ""1 .5""."
+4-181b,23,6,same block as a 16-differ equation,OCR ERROR,C_t=1+2(...)(1-R/(2W^{0.333})); L>D and RW^{0.333}<2.0,Cf = 1 + 2 (LD/(π(3LD^2/16)^0.667) - 1)(1 - R/(2W^0.333)); L > D and R/W^0.333 < 2.0,"Cf read as C_t; ""/"" lost in R/W^0.333."
+4-181c,23,6,16 differ,pairing (OCR correct),(4-181b formula paired by mistake),Cf = 1.0; all other cases,Real OCR block matches.
+4-196,23,30,16 differ,OCR MISSED,(no OCR formula; 4-195 paired),Xf = 4.0 x 10^-6 K N D d^1.2 vs^1.8 + d    for Xf > 2d,Equation not captured by OCR. (4-195 OCR is correct.)
+4-199,23,31,16 differ,OCR MISSED,(no OCR formula; 4-198 paired),Xf = 2.04 x 10^-6 d^1.2 vs^1.8 + d    for Xf > 2d,Equation not captured by OCR. (4-198 OCR is correct.)
+5-17,27,40,16 differ,PDF text split (OCR correct),d/t_w=412/f_y[1-1.4P/P_y] when P/P_y<=0.27,d/tw = (412/fy) [1 - 1.4 P/Py]  when P/Py <= 0.27,Checked on the rendered page: printed as 412/fy (no root sign).
+6-7,31,23,16 differ,PDF text split (OCR correct),(Vuo/(Vmo+Vso))^2+(Vui/(Vmi+Vsi))^2<=1.0,(Vuo/(Vmo+Vso))^2 + (Vui/(Vmi+Vsi))^2 <= 1.0,"PDF text layer splits 1.0 into ""1. 0""."
+6-22b,32,5,16 differ,OCR ERROR,f_os<=f_se+60.000,"fps <= fse + 60,000","f_ps read as f_os; 60,000 read as 60.000."
+6-23b,32,5,16 differ,OCR ERROR,f_os<=f_se+30.000,"fps <= fse + 30,000","f_ps read as f_os; 30,000 read as 30.000."
+3-49a,13,6,image equation (40),OCR ERROR,K_E=\sqrt[2]{M_E(...)^2}=\sqrt[2]{\sum ...},K_E = ½ M_E (ω δmax)^2 = ½ Σ_{r=1}^{i} M_r (ω δ_r)^2,"""½"" read as a root sign."
+4-28,20,7,image equation (40),OCR ERROR,...-4[(1-B)^2+A^2]B^2-A^2)^{1/2}...,cos α = [-2B(1-B) ± ([2B(1-B)]^2 - 4[(1-B)^2 + A^2][B^2 - A^2])^1/2] / (2[(1-B)^2 + A^2]),Brackets around (B^2 - A^2) lost.
+4-84,20,49,image equation (40),OCR ERROR,r_u=6m[13I-1/2+...]/...,r_u = 6m[13I/x - 1/2 + (18I - 3.5x)/(4I - x - c)] / [32I^2 - 4Ix + cx - 4cI - c^2],"""/x"" lost after 13I."
+4-95,21,12,image equation (40),OCR ERROR,...r_up(X_m-X_1)-r,i_b^2/(2m_u) = r_u X_1 + (m_u/m_up) r_up (X_m - X_1),"Spurious ""- r"" at the end."
+4-98c,21,15,same block as an image equation,OCR ERROR,...[γ/H-L/H+(1-γ/H tanγ)]...,i_b^2 H/(p_H d_c^3 f_ds) = 450 (p_V/p_H) tan12° [10(K_LM)_u (L/H)/(y/H)^2 + 3(K_LM)_u^2 [Y/H - L/H + (1 - Y/H) tanγ/tan12°]],"Y read as γ (γ is also the angle), p_H as ρ_H, ""/tan12°"" lost."
+4-99,21,15,image equation (40),OCR ERROR,...287(p_V/ρ_H)3.33...[γ/H-L/H+4.70(1-γ/H)tanγ],i_b^2 H/(p_H d_c^3 f_ds) = 287 (p_V/p_H) [3.33 (K_LM)_u (L/H)/(y/H)^2 + 4.70 (K_LM)_u [Y/H - L/H + 4.70 (1 - Y/H) tanγ]],"Y read as γ, p_H as ρ_H, outer bracket lost."
+4-111,21,21,image equation (40),OCR ERROR,C_1=(X_m/X_1)C_1,C'_1 = (X_m/X_1) C_1,Prime lost (equation becomes an identity).
+4-132,22,17,image equation (40),OCR ERROR,p_b=[0.85K_1f_dc/f_ds][87.000/(87.000+f_ds)],"p_b = [0.85 K_1 f'dc / f_ds][87,000/(87,000 + f_ds)]","87,000 read as 87.000; prime lost."
+4-136,22,18,image equation (40),OCR ERROR,...[f'_dc/(f_ds d)][...],"p - p' <= 0.85 K_1 [f'dc d'/(f_ds d)][87,000/(87,000 - f_ds)]",d' lost from the numerator.
+4-166,22,39,image equation (40),OCR ERROR,...]^{1/2}-(0.85e/D-0.38)^2,P_u = 0.85 f'dc D^2 [[(0.85e/D - 0.38)^2 + P_T m D_s/(2.5D)]^1/2 - (0.85e/D - 0.38)],Last term wrongly squared; outer bracket wrong.
+4-190,23,13,image equation (40),OCR ERROR,...+m_u v_t^2/2,i_b^2/(2m_u) = r_u X_1 + [m_u/m_up] r_up (X_u - X_1) + m_u v_f^2/2,v_f read as v_t.
+4-192,23,14,image equation (40),OCR ERROR,t_u=i_b/m_u+[m_up/(m_u r_up)-1/r_u[...]^{1/2}-m_u/r_up v_f],t_u = i_b/m_u + [m_up/(m_u r_up) - 1/r_u][i_b^2 - 2 m_u r_u X_1]^1/2 - (m_u/r_up) v_f,Bracket closes in the wrong place.
+4-202,23,31,image equation (40),OCR ERROR,"X_f=X_f[4,000/f_c]^{1/2}","X'_f = X_f [4,000/f'_c]^1/2",Primes lost (identity).
+6-24,32,6,image equation (40),OCR ERROR,...(p-p)<=0.36β_1,p_p f_ps/f'dc + d f_dy/(d_p f'dc) (p - p') <= 0.36 β_1,Prime lost: (p - p) is always zero.
+6-25,32,6,image equation (40),OCR ERROR,...(p_w-p_w)<=0.36β_1,p_pw f_ps/f'dc + d f_dy/(d_p f'dc) (p_w - p'_w) <= 0.36 β_1,Prime lost; primes on f'dc lost.
+6-53,33,11,image equation (40),OCR ERROR,s=[Σ[r_i-r̄]^2/(r-1)]^{1/2},s = [Σ_{i=1}^{n} [r_i - r̄]^2/(n - 1)]^1/2,(n - 1) read as (r - 1).
+2-43,7,46,image equation (40),minor (OCR usable),W_f=M_A^2 ln^2|1-C_L(...)|,W_f = M_A^2 ln^2 [1 - C_L (1 - e^{-[4(W_c)^1/2/M_A]})],Bracket shown as |...|.
+4-40,20,27,image equation (40),minor (OCR usable),r_τ=X[8T_y/L_y^2],r_T = X [8T_y/L_y^2],r_T read as r_τ.
+4-41,20,27,image equation (40),minor (OCR usable),"Σ_{n-1,3,5}","Σ_{n=1,3,5}","""="" read as ""-"" in the sum limit."
+4-145,22,24,image equation (40),minor (OCR usable),2(f_dc)^{1/2},v_c = 2(f'dc)^1/2 / [1 + [v_tu/(1.2 v_u)]^2]^1/2,Prime on f'dc lost.
+4-146,22,24,image equation (40),minor (OCR usable),2.4(f_dc)^{1/2},v_tc = 2.4(f'dc)^1/2 / [1 + [1.2 v_u/v_tu]^2]^1/2,Prime on f'dc lost.
+3-17a,11,36,"close, flagged (59)",OCR ERROR,5(M_DN+M_VP)/y^2=...,5(M_VN + M_VP)/y^2 = [4(M_HN + M_HP)(6H - y)]/L^2(3H - 2y),M_VN read as M_DN.
+3-17b,11,36,"close, flagged (59)",OCR ERROR,L^2(M_DN+M_VP)/...,L^2(M_VN + M_VP)/H^2(M_HN + M_HP) = [4y^2(6 - y/H)]/[5H^2(3 - 2y/H)],M_VN read as M_DN.
+3-17c,11,36,"close, flagged (59)",OCR ERROR,(L/H)[(M_DN+M_NN)/(M_HN+M_HP)]^{1/2}=...,(L/H)[(M_VN + M_VN)/(M_HN + M_HP)]^1/2 = (y/H)[(4(6 - y/H)/(5(3 - 2y/H))]^1/2,"Subscripts misread. The PDF itself prints M_VN + M_VN, likely a typo for M_VN + M_VP (compare 3-17a/b)."
+3-33,11,41,"close, flagged (59)",OCR ERROR,D=E/(1-ν^2),D = EI/(1 - ν^2),I lost.
+3-48a,13,5,"close, flagged (59)",OCR ERROR,K_E=\mathcal{V}M_E(...)^2=\mathcal{V}\int...,K_E = ½ M_E (ω δmax)^2 = ½ ∫_0^L m(x)[ω δ(x)]^2 dx,"""½"" read as a symbol."
+3-58,13,8,"close, flagged (59)",OCR ERROR,K_LM=Σ(I_m/cL_2)/M,K_LM = Σ(I_m/cL_1)/M,L_1 read as L_2.
+3-59,13,8,"close, flagged (59)",OCR ERROR,K_LM=Σ(1/cL_1)/A,K_LM = Σ(I/cL_1)/A,I read as 1.
+3-65,13,15,"close, flagged (59)",OCR ERROR,F-k J x_{t-1}+... J-c J v_{t-1}+... J=Ma,F - k[x_{t-1} + 1/2(v_t + v_{t-1})Δt] - c[v_{t-1} + 1/2(a_t + a_{t-1})Δt] = Ma,"Square brackets read as ""J""."
+3-66,13,15,"close, flagged (59)",OCR ERROR,a=1/(m+γ_2cΔt+γ_4kΔt^2)[...γ_4...γ_2...],a = 1/(m + ½cΔt + ¼kΔt^2) [F - k(x_{t-1} + v_{t-1}Δt + ¼ a_{t-1}Δt^2) - c(v_{t-1} + ½ a_{t-1}Δt)],½ and ¼ read as γ_2 and γ_4.
+3-68,13,16,"close, flagged (59)",OCR ERROR,a_t=1/(m_+(cΔt))[...],a_t = 1/(m + (cΔt)/2) [F - R - c[v_{t-1} + Δt a_{t-1}/2]],"""/2"" lost in the denominator."
+3-75,13,18,"close, flagged (59)",OCR ERROR,a_3=(1/2)[a_3+a_3+(a_3-a_3)(Δt/Δt)^2],"a_3 = (1/2)[a_3 + a_3"" + (a_3' - a_3"")(Δt'/Δt)^2]",Primes lost (equation meaningless).
+4-6,19,44,"close, flagged (59)",OCR ERROR,n=E\sqrt{E_0},n = E_s/E_c,
+4-14,20,3,"close, flagged (59)",OCR ERROR,"p_b=(0.85K_1f'_dc)_{187}'(87,000/(87,000+f_ds))","p_b = (0.85 K_1 f'dc/f_ds)[87,000/(87,000 + f_ds)]","""/f_ds"" read as ""187""."
+4-45b,20,31,"close, flagged (59)",OCR MISSED,(no OCR formula),V_dv = 3 r_u y (1 - d_e/y)^2 / (5 - 4 d_e/y),
+4-46,20,31,"close, flagged (59)",OCR ERROR,v_uv=3r_u(1-(d_e/\sqrt{y}))^2/[(d_e/y)(5-4(d_e/\sqrt{y}))],v_uv = 3 r_u (1 - d_e/y)^2 / [(d_e/y)(5 - 4 d_e/y)],d_e/y read as d_e/√y.
+4-177a,22,47,"close, flagged (59)",OCR ERROR,...f_{|ξ|}/f_dy,A_sp = 0.1125 s D_sp [D^2/D_sp^2 - 1] f'dc/f_dy,f'dc garbled.
+5-13,27,37,"close, flagged (59)",OCR ERROR,R_u=r_ubL=16.0M_p/L^3,R_u = r_u b L = 16.0 M_p/L,Spurious exponent 3.
+5-24,28,4,line check,OCR ERROR,tan α=(I_x Λ_y) tan φ (in a text block),tan α = (I_x/I_y) tan φ,"""/I_y"" read as ""Λ_y""."
+5-47,28,35,"close, flagged (59)",OCR ERROR,M_mx=[1.07-(1/r_y)...]M_px<M_px,M_mx = [1.07 - (l/r_y)(f_ds)^1/2/3160] M_px <= M_px,l (unbraced length) read as 1.
+5-48,28,35,"close, flagged (59)",OCR ERROR,M_mv=[1.07-(1/r_x)...]M_py<M_py,M_my = [1.07 - (l/r_x)(f_ds)^1/2/3160] M_py <= M_py,l read as 1; M_my read as M_mv.
+6-5,31,22,"close, flagged (59)",OCR ERROR,A_v=V_s s_v/(0.5f_dv d),A_v = V_s s_v/(0.5 f_dy d),f_dy read as f_dv.
+6-31,32,9,"close, flagged (59)",OCR ERROR,"A_s≤(0.47f'dcβ_1)[(87,000-0.37nf'dc)bd]/f_dy","A_s <= (0.47 f'dc β_1/f_dy) [(87,000 - 0.37 n f'dc) b d] / [87,000 - 0.37 n f'dc + f_dy]",Denominator of the bracket lost.
+3-56a,13,8,"close, flagged (59)",minor (OCR usable),ΣM_o,Fc - (ΣM_N + ΣM_p) = (I_m/L_1)a,M_p read as M_o.
+3-56b,13,8,"close, flagged (59)",minor (OCR usable),ΣM_n,F - (ΣM_N + ΣM_p)/c = (I_m/cL_1)a,M_p read as M_n.
+4-108,21,20,"close, flagged (59)",minor (OCR usable),C_u^1,p_H d_c^3 = i_b^2 H/(C'_u f_ds),Prime read as superscript 1.
+4-110,21,20,"close, flagged (59)",minor (OCR usable),C_1^1,p_H d_c^3 = i_b^2 H/(C'_1 f_ds),Prime read as superscript 1.
+2-71,7,59,"close, flagged (59)",minor (OCR usable),a_v=...,a_y = -1.2 x 10^-5 g - A_D C_D ρ_o [v_x^2 + v_y^2] sin α/2M,a_y read as a_v.
+2-49,7,50,letter check,OCR ERROR,d_j'=[1.25(d_j+2t_c)^2+d_j^2]^{1/2},d_i' = [1.25 (d_i + 2t_c)^2 + d_i^2]^1/2,d_i read as d_j.
+2-51,7,51,letter check,OCR ERROR,...<= L_cyt,L_f = 4W_f/(π ρ_c (t_c')^2) <= L_cyl,L_cyl read as L_cyt.
+2-64,7,56,letter check,OCR ERROR,R_eff=0.909[I_e/R_e]^{0.333}R_e,R_eff = 0.909 [l_e/R_e]^0.333 R_e,l_e (length) read as I_e.
+2-92,8,29,letter check,OCR ERROR,"t_AG=12,000R_G/C_D","t_AG = 12,000 R_G / C_p",C_p read as C_D.
+3-22,11,39,letter check,OCR ERROR,Θ_H=λ+βF,Θ_H = λ + β,Stray F.
+3-26,11,40,letter check,OCR ERROR,r_eo=r_e+Δr-r,r_ep = r_e + Δr,"Subscript and stray ""- r""."
+3-86b,13,28,letter check,OCR ERROR,γ=10^{logY},Y = 10^(log Y),Y read as γ.
+4-2,19,34,letter check,OCR ERROR,ε_s'=f_dv/(E_s t_E),ε_s' = f_dy/(E_s t_E),f_dy read as f_dv.
+4-24,20,6,letter check,OCR ERROR,...N_u/500A_q...,v_c = 2(1 + N_u/500A_g)(f'dc)^1/2 >= 0,A_g read as A_q.
+4-25,20,6,letter check,OCR ERROR,...N_u/2000A_q)(\bar{r}_dc)^{1/2},v_c = 2(1 + N_u/2000A_g)(f'dc)^1/2,A_g read as A_q; f'dc garbled.
+4-29a,20,7,letter check,OCR ERROR,A=s/d_L,A = s_l/d_l,Subscripts lost/misread.
+4-29b,20,8,letter check,OCR ERROR,B=(2R_i+d_b)/d_i,B = (2R_l + d_b)/d_l,l read as i.
+4-42,20,27,letter check,OCR ERROR,T_v=(A_s)_v f_ds,T_y = (A_s)_y f_ds,y read as v.
+4-76,20,48,letter check,OCR ERROR,E=Σm_xΘ_xI_v+Σm_vΘ_vI_x,E = Σ m_x θ_x l_y + Σ m_y θ_y l_x,y read as v; l (length) read as I.
+4-77,20,48,letter check,OCR ERROR,Σr_uA_Δ=Σm_xΘ_xI_v+Σm_vΘ_vI_x,Σ r_u A δ = Σ m_x θ_x l_y + Σ m_y θ_y l_x,y read as v; l read as I.
+4-81,20,49,letter check,OCR ERROR,...3mI...,"E_I = E_III = [(2/3) m x/2 + m(L - x/2)] θ_A + ... (l = length, not I)",l read as I throughout.
+4-82,20,49,letter check,OCR ERROR,E_II=E_IV=[3mI+2m(L-x-I)]Θ_B+[4.5mI+1.5mI(L-x-I)]Θ_B,E_II = E_IV = [3ml + 2m(L - x - l)] θ_B + [4.5ml + 1.5ml(L - x - l)] θ_B,l read as I.
+4-151b,22,26,letter check,OCR ERROR,A_I=...,A_l = [400 b s/f_dy · v_tu/(v_tu + v_u) - 2A_t] [(b_t + h_t)/s],A_l read as A_I.
+4-157,22,36,letter check,OCR ERROR,m=(f_dv)/(0.85f'_dc),m = f_dy/(0.85 f'dc),f_dy read as f_dv.
+4-177b,22,47,letter check,OCR ERROR,p_s>=0.12f_do/f_dv,p_s >= 0.12 f'dc/f_dy,Both symbols misread.
+5-1,27,18,letter check,OCR ERROR,ε̇=ṫ_ds/E_s ṫ_F,ε = f_ds/(E_s t_E),Garbled.
+5-2,27,20,letter check,OCR ERROR,f_ds=f_dv=DIF_X SIF_X f_v,f_ds = f_dy = DIF x SIF x f_y,"y read as v; ""x"" read as subscript X."
+5-3,27,20,letter check,OCR ERROR,f_ds=f_dv+(f_du-f_dv)/4,f_ds = f_dy + (f_du - f_dy)/4,f_dy read as f_dv.
+5-5,27,34,letter check,OCR ERROR,M_ou=f_ds Z,M_pu = f_ds Z,M_pu read as M_ou.
+5-7,27,36,letter check,OCR ERROR,M_D=f_ds(S+Z)/2,M_p = f_ds (S + Z)/2,M_p read as M_D.
+5-21,27,42,letter check,OCR ERROR,β I_cr/r_v=1375/f_ds ...,β l_cr/r_y = 1375/f_ds  when -0.5 >= M/M_p >= -1.0,r_y read as r_v; l_cr read as I_cr.
+5-26,28,8,letter check,OCR ERROR,...f_v...=1.33f_v,f_ds = SIF x DIF x f_y = 1.21 x 1.1 x f_y = 1.33 f_y,f_y read as f_v.
+5-30,28,9,letter check,OCR ERROR,...(M_un+2M_uo)...,r_u = 0.9 x 4 (M_un + 2M_up)/L^2 = 3.6 (M_un + 2M_up)/L^2,M_up read as M_uo.
+5-31,28,9,letter check,OCR ERROR,X_F=(βr_uL^4)/EI_20,X_E = (β r_u L^4)/(E I_20),X_E read as X_F.
+5-33,28,10,letter check,OCR ERROR,X_o=1.75X_F,X_o = 1.75 X_E,X_E read as X_F.
+5-34,28,10,letter check,OCR ERROR,X_m=6.0X_F,X_m = 6.0 X_E,X_E read as X_F.
+5-37,28,11,letter check,OCR ERROR,...<=f_v,"f_cr = 640,000/(h/t)^2 <= f_y",f_y read as f_v.
+5-53,28,42,letter check,OCR ERROR,X_F=R_u/K_F,X_E = R_u/K_E,E read as F.
+5-60,28,45,letter check,OCR ERROR,X_F=R_u/(KK_L+K_b),X_E = R_u/(K K_L + K_b),X_E read as X_F.
+6-4a,31,21,letter check,OCR ERROR,A_no=(A_rs+(1-A_rs)V/100)d,A_no = (A_fs + (1 - A_fs) V/100) d,A_fs read as A_rs.
+6-6,31,23,letter check,OCR ERROR,V_m+V_s<=4√f'_m A_m,V_m + V_s <= 4 √f'_m A_n,A_n read as A_m.
+6-8,31,24,letter check,OCR ERROR,"V_dm=0.6A_{v,d}f_dv",V_dm = 0.6 A_v d f_dy,f_dy read as f_dv; stray comma.
+6-14,32,3,letter check,OCR ERROR,...A_s f_dv(d-a/2),M_u = A_ps f_ps (d_p - a/2) + A_s f_dy (d - a/2),f_dy read as f_dv.
+6-20,32,5,letter check,OCR ERROR,...(p-p)>=0.17,p_p f_pu/f'dc + d f_dy/(d_p f'dc) (p - p') >= 0.17,Prime lost: (p - p) is zero.
+6-22a,32,5,letter check,OCR ERROR,...<=f_pv,"f_ps = f_se + 10,000 + f'dc/(100 p_p) <= f_py",f_py read as f_pv.
+6-23a,32,5,letter check,OCR ERROR,...<=f_pv,"f_ps = f_se + 10,000 + f'dc/(300 p_p) <= f_py",f_py read as f_pv.
+2-41,7,46,letter check,minor (OCR usable),N_τ,C_L = 1 - N_f/N_T = 1 - e^-[W_f^1/2/M_A],N_T read as N_τ.
+2-46,7,48,letter check,minor (OCR usable),V_s=V_o e^...,v_s = v_o e^-[12 k_v R_f],Lower-case v read as V.
+3-16,11,36,letter check,minor (OCR usable),Settor,r_u(Sector I) = r_u(Sector II),Typo in a word.
+3-53,13,7,letter check,minor (OCR usable),K_LM=10ad-mass factor=K_M/K_L,K_LM = load-mass factor = K_M/K_L,"""load"" read as ""10ad""."
+4-91,20,53,letter check,minor (OCR usable),\mathcal{O}_m=tan^{-1}(...),θ_m = tan^-1((X_m - X_DL)/L_s),θ read as a script O.
+4-181a,23,5,letter check,minor (OCR usable),W_adi,W_adj = B_f C_f W,j read as i.
+2-40,7,46,name/prime check,OCR ERROR,,W_{f}^{\prime}=16W_{c}/N_{T}=2M_{A}^{2},prime lost on W'_f
+3-41,13,3,name/prime check,OCR ERROR,,K_{L}=F_{E}/F,F_E read as F_F
+3-90,13,30,name/prime check,OCR ERROR,,X_{1}=\frac{i_{b}t_{1}}{m_{u}}-\frac{r_{u}t_{1}^{2}}{2m_{u}},i_b read as I_b
+3-95,13,32,name/prime check,OCR ERROR,,t_{m}=\frac{i_{b}}{r_{u}}+\left[\frac{m_{up}}{m_{u}r_{up}}-\frac{1}{r_{u}}\right]\left[i_{b}^{2}-2m_{u}r_{u}X_{1}\right]^{1/2},bracket closes in the wrong place; stray accent
+4-26,20,7,name/prime check,OCR ERROR,,A_{v}=\left[\left(v_{u}-v_{c}\right)b_{s}s_{s}\right]/\phi f_{ds},bracket read as J; stray rho
+4-27,20,7,name/prime check,OCR ERROR,,A_{v}=\frac{\left(v_{u}-v_{c}\right)b_{l}s_{l}}{\phi f_{ds}\left(\sin\alpha+\cos\alpha\right)},b_l s_l read as b_I s_I
+4-49,20,42,name/prime check,OCR ERROR,,\alpha_{ec}=\frac{\left(4E_{c}I_{w}\right)/H_{w}}{\left(4E_{c}I_{s}\right)/l_{s}},l_s (length) read as I_s
+4-63,20,44,name/prime check,OCR ERROR,,m_{10}^{-}=0.65\alpha_{ecL}^{\prime}M_{OL}/H,minus sign read as an accent
+4-64,20,44,name/prime check,minor (OCR usable),,m_{11}^{+}=0.40\left(0.63-0.28\alpha_{ecL}^{\prime}\right)M_{OL}/\left(H/2\right),stray accent
+4-65,20,44,name/prime check,minor (OCR usable),,m_{12}^{-}=0.25\left(0.75-0.10\alpha_{ecL}^{\prime}\right)M_{OL}/\left(H/2\right),stray accent
+4-66,20,44,name/prime check,minor (OCR usable),,m_{13}^{-}=0.25\left(0.65\right)M_{OL}/\left(H/2\right),stray accent
+4-67,20,44,name/prime check,minor (OCR usable),,m_{14}^{+}=0.40\left(0.35\right)M_{OL}/\left(H/2\right),stray accent
+4-68,20,44,name/prime check,minor (OCR usable),,m_{15}^{+}=0.60\left(0.63-0.28\alpha_{ecL}^{\prime}\right)M_{OL}/\left(H/2\right),stray accent
+4-69,20,44,name/prime check,minor (OCR usable),,m_{16}^{-}=0.75\left(0.75-0.10\alpha_{ecL}^{\prime}\right)M_{OL}/\left(H/2\right),stray accent
+4-70,20,44,name/prime check,minor (OCR usable),,m_{17}^{-}=0.75\left(0.65\right)M_{OL}/\left(H/2\right),stray accent
+4-90,20,53,name/prime check,minor (OCR usable),,r_{avail}=r_{u}-r_{DL}\frac{f_{ds}}{f_{y}},stray accent
+4-98a,21,15,name/prime check,OCR ERROR,,i_{b}^{2}=2\left(225d_{c}\right)\left(K_{LM}\right)_{u}\left[\frac{10p_{V}d_{c}^{2}f_{ds}}{y^{2}}\right]L\tan12^{\circ}+\frac{\left(K_{LM}\right)_{u}}{0.66}\left[\frac{2p_{V}d_{c}^{2}f_{ds}}{H^{2}}\right]\left[Y\tan12^{\circ}+\left(H-y\right)\tan\gamma-L\tan12^{\circ}\right],p_V read as p_v; table held only the second line
+4-98b,21,15,name/prime check,OCR ERROR,,i_{b}^{2}=2\left(225d_{c}\right)p_{V}d_{c}^{2}f_{ds}\tan12^{\circ}\left[\frac{10\left(K_{LM}\right)_{u}L}{y^{2}}+\frac{3\left(K_{LM}\right)_{u}^{2}}{H^{2}}\left(y-L+\frac{\left(H-y\right)\tan\gamma}{\tan12^{\circ}}\right)\right],p_V read as p_v
+4-105,21,17,name/prime check,OCR ERROR,,p_{H}d_{c}^{3}=\frac{i_{b}^{2}H}{C_{u}f_{ds}},i_b read as I_b; stray accents
+4-109,21,20,name/prime check,OCR ERROR,,C_{u}^{\prime}=C_{1}+\frac{X_{m}-X_{1}}{X_{u}-X_{1}}\left(C_{u}-C_{1}\right),prime lost on C'_u
+4-113,21,21,name/prime check,OCR ERROR,,p_{H}T_{c}d_{c}^{2}=\frac{i_{b}^{2}H}{C_{u}f_{ds}},i_b read as r_b
+4-134,22,18,name/prime check,OCR ERROR,,a=\frac{\left(A_{s}-A_{s}^{\prime}\right)f_{ds}}{0.85bf_{dc}^{\prime}},"primes lost (A'_s, f'dc)"
+4-135,22,18,name/prime check,OCR ERROR,,p^{\prime}=\frac{A_{s}^{\prime}}{bd},primes lost
+4-149,22,25,name/prime check,OCR ERROR,,A_{(t)H}=\frac{\left(v_{(tu)H}-v_{tc}\right)bh^{2}s}{3\phi\alpha_{t}b_{t}h_{t}f_{dy}},f_dy read as f_dv
+5-9,27,37,name/prime check,OCR ERROR,,R_{u}=r_{u}bL=12M_{p}/L,spurious exponent 3
+5-38,28,13,name/prime check,OCR ERROR,,Q_{u}=1.5f_{ds}t^{2}\left[4.44+0.558\left(N/t\right)^{1/2}\right],brackets read as / and J
+5-39,28,13,name/prime check,OCR ERROR,,Q_{u}=1.5f_{ds}t^{2}\left[6.66+1.446\left(N/t\right)^{1/2}\right],brackets read as / and J
+6-16,32,4,name/prime check,OCR ERROR,,f_{ps}=f_{pu}\left\{1-\frac{\gamma_{p}}{\beta_{1}}\left[p_{p}\frac{f_{pu}}{f_{dc}^{\prime}}+\frac{df_{dy}}{d_{p}f_{dc}^{\prime}}\left(p-p^{\prime}\right)\right]\right\},p read as rho
+6-19,32,4,name/prime check,OCR ERROR,,p^{\prime}=A_{s}^{\prime}/bd,primes lost
+6-21,32,5,name/prime check,OCR ERROR,,f_{ps}=f_{pu}\left[1-\frac{\gamma_{p}}{\beta_{1}}p_{p}\frac{f_{pu}}{f_{dc}^{\prime}}\right],p_p read as rho_p; prime lost
+6-28,32,8,name/prime check,OCR ERROR,,M_{u}^{-}=A_{s}^{-}f_{dy}\left(d^{-}-a^{-}/2\right),minus superscripts lost; f_dy read as f_dv
+6-29,32,8,name/prime check,OCR ERROR,,0.85f_{dc}^{\prime}-0.45f_{c}^{\prime}=0.85f_{dc}^{\prime}-0.45f_{dc}^{\prime}/DIF=0.47f_{dc}^{\prime},primes lost
+6-30,32,9,name/prime check,minor (OCR usable),,A_{s}^{-}\leq\left[\frac{\left(0.85f_{dc}^{\prime}-d_{1}\right)\beta}{f_{dy}}\right]\left[\frac{\left(87000-nf\right)bd^{-}}{87000-nf+f_{dy}}\right],prime shown as *
+2-2,2,37,missing-equation check,OCR MISSED,,t_{o}=2i_{r}/p_{r},equation number not captured by OCR; read from rendered page
+2-4,2,43,missing-equation check,OCR MISSED,,t_{g}=2i_{g}/P_{g},equation number not captured by OCR; read from rendered page
+2-7,2,50,missing-equation check,OCR MISSED,,t_{of}^{-}=2i^{-}/P^{-},equation number not captured by OCR; read from rendered page
+2-45,7,47,missing-equation check,OCR MISSED,,M_{A}=At_{c}\frac{\left[d_{i}+t_{c}\right]^{3/2}}{d_{i}}\left[1+\frac{W}{2W_{c}}\right]^{1/2},equation number not captured by OCR; read from rendered page
+2-48,7,49,missing-equation check,OCR MISSED,,v_{s}=v_{o}e^{-\left[.004R_{f}/W_{f}^{1/3}\right]},equation number not captured by OCR; read from rendered page
+2-56,7,53,missing-equation check,OCR MISSED,,Ap(t)=Ma,equation number not captured by OCR; read from rendered page
+2-65,7,56,missing-equation check,OCR MISSED,,I-I_{st}=mV_{o},equation number not captured by OCR; read from rendered page
+2-75,8,23,missing-equation check,OCR MISSED,,D_{V}=i_{s}/(1000\rho C_{p}),equation number not captured by OCR; read from rendered page
+2-77,8,24,missing-equation check,OCR MISSED,,"D_{H}=D_{V}\tan\left[\sin^{-1}\left(C_{p}/(12,000U)\right)\right]",equation number not captured by OCR; read from rendered page
+2-79,8,24,missing-equation check,OCR MISSED,,"A_{H}=A_{V}\tan\left[\sin^{-1}\left(C_{p}/(12,000U)\right)\right]",equation number not captured by OCR; read from rendered page
+2-91,8,27,missing-equation check,OCR MISSED,,F_{f}=\mu F_{N},equation number not captured by OCR; read from rendered page
+3-37,11,43,missing-equation check,OCR MISSED,,(2/3)V_{sV}(L/4+L/4)+V_{sV}(L/2)=r_{u}(Ly/2),equation number not captured by OCR; read from rendered page
+3-55,13,7,missing-equation check,OCR MISSED,,\Sigma M=I_{m}\Theta'',equation number not captured by OCR; read from rendered page
+3-87,13,29,missing-equation check,OCR MISSED,,v_{a}=\int_{0}^{t_{a}}\frac{(f-r)dt}{m_{e}},equation number not captured by OCR; read from rendered page
+4-7,19,44,missing-equation check,OCR MISSED,,I_{a}=\frac{I_{g}+I_{c}}{2},equation number not captured by OCR; read from rendered page
+4-10,19,46,missing-equation check,OCR MISSED,,I_{c}=\frac{I_{cV}L+I_{cH}H}{L+H},equation number not captured by OCR; read from rendered page
+4-11,20,2,missing-equation check,OCR MISSED,,M_{u}=(A_{s}f_{ds}/b)\left[d-(a/2)\right],equation number not captured by OCR; read from rendered page
+4-18,20,4,missing-equation check,OCR MISSED,,"p-p'\geq 0.85K_{1}(f'_{dc}d'/f_{ds}d)\left[87,000/(87,000-f_{ds})\right]",equation number not captured by OCR; read from rendered page
+4-19,20,4,missing-equation check,OCR MISSED,,M_{u}=A_{s}f_{ds}d_{c}/b,equation number not captured by OCR; read from rendered page
+4-31,20,10,missing-equation check,OCR MISSED,,A_{d}=(V_{s}b-V_{d})/(f_{ds}\sin(\alpha)),equation number not captured by OCR; read from rendered page
+4-32,20,10,missing-equation check,OCR MISSED,,v_{u}=N_{u}/(b_{o}d_{e}),equation number not captured by OCR; read from rendered page
+4-33,20,10,missing-equation check,OCR MISSED,,v_{c}=4(f'_{dc})^{1/2},equation number not captured by OCR; read from rendered page
+4-74,20,47,missing-equation check,OCR MISSED,,W=\Sigma r_{u}A\Delta,equation number not captured by OCR; read from rendered page
+4-86,20,51,missing-equation check,OCR MISSED,,X_{e}=\frac{Cr_{u}L^{4}(1-\nu^{2})}{E_{c}I_{a}},equation number not captured by OCR; read from rendered page
+4-92,20,55,missing-equation check,OCR MISSED,,P=r_{u}\Sigma A+r_{u}c^{2},equation number not captured by OCR; read from rendered page
+4-93,20,56,missing-equation check,OCR MISSED,,M_{x}=(V_{4}-V_{2})(c/2),equation number not captured by OCR; read from rendered page
+4-94,20,56,missing-equation check,OCR MISSED,,M_{y}=(V_{1}-V_{3})(c/2),equation number not captured by OCR; read from rendered page
+4-96,21,12,missing-equation check,OCR MISSED,,\frac{i_{b}^{2}}{2m_{u}}=r_{u}X_{m},equation number not captured by OCR; read from rendered page
+4-104,21,16,missing-equation check,OCR MISSED,,p_{H}d_{c}^{3}=\frac{i_{b}^{2}H}{C_{1}f_{ds}},equation number not captured by OCR; read from rendered page
+4-114,21,22,missing-equation check,OCR MISSED,,\frac{i_{b}^{2}H}{2m_{a}}=\frac{r_{u}X_{E}}{2}+\frac{m_{a}}{m_{u}}r_{u}(X_{m}-X_{E}),equation number not captured by OCR; read from rendered page
+4-119,21,24,missing-equation check,OCR MISSED,,v_{uV}=C_{V}p_{V}f_{ds},equation number not captured by OCR; read from rendered page
+4-120,21,24,missing-equation check,OCR MISSED,,V_{s}=C_{s}\frac{pd_{c}^{2}f_{ds}}{L},equation number not captured by OCR; read from rendered page
+4-137,22,19,missing-equation check,OCR MISSED,,M_{u}=A_{s}f_{ds}d_{c},equation number not captured by OCR; read from rendered page
+4-138a,22,19,missing-equation check,OCR MISSED,,p=200/f_{y},equation number not captured by OCR; read from rendered page
+4-138b,22,19,missing-equation check,OCR MISSED,,p=\frac{3\sqrt{f'_{c}}}{f_{y}},equation number not captured by OCR; read from rendered page
+4-141,22,21,missing-equation check,OCR MISSED,,A_{v}=\frac{\left[(v_{u}-v_{c})bs_{s}\right]}{\phi f_{dy}},equation number not captured by OCR; read from rendered page
+4-142,22,22,missing-equation check,OCR MISSED,,A_{d}=(V_{s}b-V_{d})/(f_{ds}\sin(\alpha)),equation number not captured by OCR; read from rendered page
+4-143,22,23,missing-equation check,OCR MISSED,,v_{(tu)V}=\frac{3T_{u}}{b^{2}h},equation number not captured by OCR; read from rendered page
+4-154,22,35,missing-equation check,OCR MISSED,,P_{o}=0.85f'_{dc}(A_{g}-A_{st})+A_{st}f_{dy},equation number not captured by OCR; read from rendered page
+4-155,22,36,missing-equation check,OCR MISSED,,e_{b}=M_{b}/P_{b},equation number not captured by OCR; read from rendered page
+4-163,22,39,missing-equation check,OCR MISSED,,p_{s}=A/(bd),printed as A / (bd) with a gap where a subscript should be (probably A_s); kept as printed
+4-176,22,44,missing-equation check,OCR MISSED,,\frac{1}{P_{u}}=\frac{1}{P_{x}}+\frac{1}{P_{y}}-\frac{1}{P_{o}},equation number not captured by OCR; read from rendered page
+4-176a,22,45,missing-equation check,OCR MISSED,,A_{sh}\geq 0.3\left[sh_{c}\frac{f'_{dc}}{f_{dy}}\right]\left[\frac{A_{g}}{A_{ch}}-1\right],equation number not captured by OCR; read from rendered page
+4-176b,22,45,missing-equation check,OCR MISSED,,A_{sh}\geq 0.09sh_{c}\frac{f'_{dc}}{f_{dy}},equation number not captured by OCR; read from rendered page
+4-178,23,4,missing-equation check,OCR MISSED,,\frac{h}{R}=\frac{1}{a+b\Psi^{2.5}+c\Psi^{0.5}},equation number not captured by OCR; read from rendered page
+4-179,23,4,missing-equation check,OCR MISSED,,\frac{h}{R}=\frac{1}{a+b\Psi+c\Psi^{2}},equation number not captured by OCR; read from rendered page
+4-182,23,8,missing-equation check,OCR MISSED,,a=r_{u}/m_{u},equation number not captured by OCR; read from rendered page
+4-183,23,9,missing-equation check,OCR MISSED,,r_{fs}=m_{sp}a,equation number not captured by OCR; read from rendered page
+4-184,23,9,missing-equation check,OCR MISSED,,d_{sp}=(T_{c}-d_{c})/2,equation number not captured by OCR; read from rendered page
+4-185,23,10,missing-equation check,OCR MISSED,,v=i_{b}/m_{u},equation number not captured by OCR; read from rendered page
+4-186,23,10,missing-equation check,OCR MISSED,,i_{fs}=m_{sp}v,"the PDF page has an editorial note box next to this equation (""Find velocity using impulse and slab plastic mass; use detached mass to find impulse"")"
+4-203,23,32,missing-equation check,OCR MISSED,,X'_{f}=kX_{f},equation number not captured by OCR; read from rendered page
+4-204,23,32,missing-equation check,OCR MISSED,,T_{pf}=1.13X_{f}d^{0.1}+1.311d,equation number not captured by OCR; read from rendered page
+4-207,23,33,missing-equation check,OCR MISSED,,T_{sp}=1.215X_{f}d^{0.1}+2.12d,equation number not captured by OCR; read from rendered page
+5-59,28,44,missing-equation check,OCR MISSED,,T_{N}=2\pi\left[m_{e}/(KK_{L}+K_{b})\right]^{1/2},equation number not captured by OCR; read from rendered page
+5-63,29,3,missing-equation check,OCR MISSED,,f_{d}=1.7(DIF)f_{s},equation number not captured by OCR; read from rendered page
+6-10,31,34,missing-equation check,OCR MISSED,,I_{a}=\frac{I_{n}+I_{c}}{2},equation number not captured by OCR; read from rendered page
+6-50,33,10,missing-equation check,OCR MISSED,,r_{s}=0.876r_{u},equation number not captured by OCR; read from rendered page

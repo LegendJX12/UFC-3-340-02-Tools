@@ -1,0 +1,13 @@
+page,Edge conditions,Yield line location,Limits,Post-ultimate unit resistance
+12/42,Two adjacent edges supported and two edges free,"Diagonal yield line, distance x along free edge",x < H,2M_{VN}/H^{2}
+12/42,Two adjacent edges supported and two edges free,"Diagonal yield line, distance x along free edge",x > H,2M_{HN}/L^{2}
+12/42,Two adjacent edges supported and two edges free,"Diagonal yield line, distance y along free edge",y < L,2M_{HN}/L^{2}
+12/42,Two adjacent edges supported and two edges free,"Diagonal yield line, distance y along free edge",y > L,2M_{VN}/H^{2}
+12/42,Three edges supported and one edge free,Yield lines at distance x from each side edge,x < H,2M_{VN}/H^{2}
+12/42,Three edges supported and one edge free,Yield lines at distance x from each side edge,x > H,8(M_{HN}+M_{HP})/L^{2}
+12/42,Three edges supported and one edge free,Yield lines meeting at distance y from supported edge,y < L/2,8(M_{HN}+M_{HP})/L^{2}
+12/42,Three edges supported and one edge free,Yield lines meeting at distance y from supported edge,y > L/2,2M_{VN}/H^{2}
+12/42,Four edges supported,Yield lines at distance x from the short edges,x < H/2,8(M_{VN}+M_{VP})/H^{2}
+12/42,Four edges supported,Yield lines at distance x from the short edges,x > H/2,8(M_{HN}+M_{HP})/L^{2}
+12/42,Four edges supported,Yield lines at distance y from the long edges,y < L/2,8(M_{VN}+M_{VP})/L^{2}
+12/42,Four edges supported,Yield lines at distance y from the long edges,y > L/2,8(M_{HN}+M_{HP})/H^{2}

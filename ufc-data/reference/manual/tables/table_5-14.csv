@@ -1,0 +1,11 @@
+Item,Value,,
+Stiffness factor,K=\frac{EI_{ca}}{H^{3}}\times C_{2}\times\left[1+(0.7-0.1\beta)(n-1)\right],,
+n,number of bays,,
+beta,base fixity factor (**),,
+D,D=\frac{I_{g}/L}{I_{ca}(0.75+0.25\beta)/H},,
+I_ca,average column moment of inertia = \sum I_{c}/(n+1),,
+D,C_2 for beta = 1.0,C_2 for beta = 0.5 (*),C_2 for beta = 0
+0.25,26.7,14.9,3.06
+0.50,32.0,17.8,4.65
+1.00,37.3,20.6,6.04
+"Notes: (*) Values of C_2 are approximate for this beta. (**) beta = 1.0 for fixed base; beta = 0.0 for hinged base. E = modulus of elasticity (psi); I_ca, I_g, I_c = moment of inertia (in.^4); H = height (feet); L = bay length (feet). Frame sketch: girders I_g, columns I_c, height H, bay length L, uniform horizontal load.",,,

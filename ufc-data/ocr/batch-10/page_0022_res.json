@@ -1,0 +1,448 @@
+{
+    "input_path": "C:\\Users\\10029078\\OneDrive - Surbana Jurong Private Limited\\Attachments\\Desktop\\Technical Improvment\\DCMS basis report\\References\\UFC 3-340-02 batches\\ocr_output\\pages\\batch 10\\page_0022.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_seal_recognition": false,
+        "use_table_recognition": true,
+        "use_formula_recognition": true,
+        "use_chart_recognition": false,
+        "use_region_detection": true,
+        "format_block_content": false,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ]
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "UFC 3-340-025 December 2008Change 2, 1 September 2014",
+            "block_bbox": [
+                731,
+                147,
+                1050,
+                233
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "or from Equation 2-66",
+            "block_bbox": [
+                275,
+                267,
+                505,
+                289
+            ],
+            "block_id": 1,
+            "block_order": 1
+        },
+        {
+            "block_label": "formula",
+            "block_content": "\\begin{aligned}V=&\\frac{1000}{12}\\left[\\frac{T}{\\rho_{r}}\\right]^{1/2}\\left[-.2369+0.393\\left[\\frac{ib}{\\left(\\rho_{r}T\\right)^{1/2}A}\\right]\\frac{2L}{b}\\right]^{0.3}\\\\ =&\\frac{1000}{12}\\left[\\frac{12,000}{734}\\right]^{1/2}\\left(-.2369+0.3931\\times0.668\\right)\\\\ =&8.6\\mathrm{fps}\\end{aligned}",
+            "block_bbox": [
+                346,
+                311,
+                905,
+                496
+            ],
+            "block_id": 2,
+            "block_order": 2
+        },
+        {
+            "block_label": "footer",
+            "block_content": "2A-95",
+            "block_bbox": [
+                567,
+                1517,
+                630,
+                1537
+            ],
+            "block_id": 3,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false
+        },
+        "angle": -1
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.9656189680099487,
+                "coordinate": [
+                    346.56890869140625,
+                    311.161865234375,
+                    905.1725463867188,
+                    496.898681640625
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.8957972526550293,
+                "coordinate": [
+                    275.98046875,
+                    267.1169738769531,
+                    505.904541015625,
+                    289.4261169433594
+                ]
+            },
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.6762696504592896,
+                "coordinate": [
+                    731.0550537109375,
+                    147.49053955078125,
+                    1050.5821533203125,
+                    233.3863525390625
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "footer",
+                "score": 0.631908118724823,
+                "coordinate": [
+                    567.7415771484375,
+                    1517.4007568359375,
+                    630.2296142578125,
+                    1537.3477783203125
+                ]
+            }
+        ]
+    },
+    "overall_ocr_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+        },
+        "dt_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1051,
+                    210
+                ],
+                [
+                    1051,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    278,
+                    266
+                ],
+                [
+                    507,
+                    266
+                ],
+                [
+                    507,
+                    293
+                ],
+                [
+                    278,
+                    293
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    636,
+                    1514
+                ],
+                [
+                    636,
+                    1544
+                ],
+                [
+                    565,
+                    1544
+                ]
+            ],
+            [
+                [
+                    346,
+                    311
+                ],
+                [
+                    905,
+                    311
+                ],
+                [
+                    905,
+                    496
+                ],
+                [
+                    346,
+                    496
+                ]
+            ]
+        ],
+        "text_det_params": {
+            "limit_side_len": 736,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+            "UFC 3-340-02",
+            "5 December 2008",
+            "Change 2, 1 September 2014",
+            "or from Equation 2-66",
+            "2A-95",
+            "\\begin{aligned}V=&\\frac{1000}{12}\\left[\\frac{T}{\\rho_{r}}\\right]^{1/2}\\left[-.2369+0.393\\left[\\frac{ib}{\\left(\\rho_{r}T\\right)^{1/2}A}\\right]\\frac{2L}{b}\\right]^{0.3}\\\\ =&\\frac{1000}{12}\\left[\\frac{12,000}{734}\\right]^{1/2}\\left(-.2369+0.3931\\times0.668\\right)\\\\ =&8.6\\mathrm{fps}\\end{aligned}"
+        ],
+        "rec_scores": [
+            0.9949517846107483,
+            0.9689707159996033,
+            0.9716249108314514,
+            0.9802247881889343,
+            0.9998003244400024,
+            1
+        ],
+        "rec_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1051,
+                    210
+                ],
+                [
+                    1051,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    278,
+                    266
+                ],
+                [
+                    507,
+                    266
+                ],
+                [
+                    507,
+                    293
+                ],
+                [
+                    278,
+                    293
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    636,
+                    1514
+                ],
+                [
+                    636,
+                    1544
+                ],
+                [
+                    565,
+                    1544
+                ]
+            ],
+            [
+                [
+                    346,
+                    311
+                ],
+                [
+                    905,
+                    311
+                ],
+                [
+                    905,
+                    496
+                ],
+                [
+                    346,
+                    496
+                ]
+            ]
+        ],
+        "rec_boxes": [
+            [
+                900.0,
+                145.0,
+                1053.0,
+                172.0
+            ],
+            [
+                858.0,
+                178.0,
+                1052.0,
+                202.0
+            ],
+            [
+                733.0,
+                210.0,
+                1051.0,
+                233.0
+            ],
+            [
+                278.0,
+                266.0,
+                507.0,
+                293.0
+            ],
+            [
+                565.0,
+                1514.0,
+                636.0,
+                1544.0
+            ],
+            [
+                346.56890869140625,
+                311.161865234375,
+                905.1725463867188,
+                496.898681640625
+            ]
+        ]
+    },
+    "formula_res_list": [
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "\\begin{aligned}V=&\\frac{1000}{12}\\left[\\frac{T}{\\rho_{r}}\\right]^{1/2}\\left[-.2369+0.393\\left[\\frac{ib}{\\left(\\rho_{r}T\\right)^{1/2}A}\\right]\\frac{2L}{b}\\right]^{0.3}\\\\ =&\\frac{1000}{12}\\left[\\frac{12,000}{734}\\right]^{1/2}\\left(-.2369+0.3931\\times0.668\\right)\\\\ =&8.6\\mathrm{fps}\\end{aligned}",
+            "formula_region_id": 1,
+            "dt_polys": [
+                346.56890869140625,
+                311.161865234375,
+                905.1725463867188,
+                496.898681640625
+            ]
+        }
+    ]
+}

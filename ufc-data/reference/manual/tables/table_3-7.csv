@@ -1,0 +1,10 @@
+Edge conditions,Loading,"Elastic resistance, r_e","Elasto-plastic resistance, r_ep"
+Simply supported both ends,"Uniform load, span L",r_{u},-
+Simply supported both ends,"Concentrated load P at midspan (L/2, L/2)",R_{u},-
+"Fixed one end, simply supported other","Uniform load, span L",\frac{8M_{N}}{L^{2}},r_{u}
+"Fixed one end, simply supported other","Concentrated load P at midspan (L/2, L/2)",\frac{16M_{N}}{3L},R_{u}
+Fixed both ends,"Uniform load, span L",\frac{12M_{N}}{L^{2}},r_{u}
+Fixed both ends,"Concentrated load P at midspan (L/2, L/2)",\frac{8M_{N}}{L},R_{u}
+"Cantilever (fixed one end, free other)","Uniform load, span L",r_{u},-
+"Cantilever (fixed one end, free other)",Concentrated load P at free end,R_{u},-
+Simply supported both ends,"Two loads P/2 at third points (L/3, L/3, L/3)",R_{u},-

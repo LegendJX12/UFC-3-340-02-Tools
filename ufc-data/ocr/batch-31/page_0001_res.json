@@ -1,0 +1,389 @@
+{
+    "input_path": "C:\\Users\\10029078\\OneDrive - Surbana Jurong Private Limited\\Attachments\\Desktop\\Technical Improvment\\DCMS basis report\\References\\UFC 3-340-02 batches\\ocr_output\\pages\\batch 31\\page_0001.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_seal_recognition": false,
+        "use_table_recognition": true,
+        "use_formula_recognition": true,
+        "use_chart_recognition": false,
+        "use_region_detection": true,
+        "format_block_content": false,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ]
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "text",
+            "block_content": "UFC 3-340-025 December 2008Change 2,1 September 2014",
+            "block_bbox": [
+                731,
+                147,
+                1051,
+                233
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "doc_title",
+            "block_content": "CHAPTER 6: SPECIAL  CONSIDERATIONS IN EXPLOSIVE  FACILITY DESIGN ",
+            "block_bbox": [
+                186,
+                700,
+                1010,
+                860
+            ],
+            "block_id": 1,
+            "block_order": 2
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false
+        },
+        "angle": -1
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.733587920665741,
+                "coordinate": [
+                    731.34814453125,
+                    147.77978515625,
+                    1051.3837890625,
+                    233.41729736328125
+                ]
+            },
+            {
+                "cls_id": 10,
+                "label": "doc_title",
+                "score": 0.7013638019561768,
+                "coordinate": [
+                    186.60711669921875,
+                    700.634033203125,
+                    1010.5403442382812,
+                    860.7900390625
+                ]
+            }
+        ]
+    },
+    "overall_ocr_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+        },
+        "dt_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1052,
+                    210
+                ],
+                [
+                    1052,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    328,
+                    697
+                ],
+                [
+                    872,
+                    699
+                ],
+                [
+                    872,
+                    750
+                ],
+                [
+                    328,
+                    748
+                ]
+            ],
+            [
+                [
+                    187,
+                    760
+                ],
+                [
+                    1012,
+                    760
+                ],
+                [
+                    1012,
+                    806
+                ],
+                [
+                    187,
+                    806
+                ]
+            ],
+            [
+                [
+                    381,
+                    818
+                ],
+                [
+                    821,
+                    818
+                ],
+                [
+                    821,
+                    865
+                ],
+                [
+                    381,
+                    865
+                ]
+            ]
+        ],
+        "text_det_params": {
+            "limit_side_len": 736,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+            "UFC 3-340-02",
+            "5 December 2008",
+            "Change 2,1 September 2014",
+            "CHAPTER 6: SPECIAL",
+            "CONSIDERATIONS IN EXPLOSIVE",
+            "FACILITY DESIGN"
+        ],
+        "rec_scores": [
+            0.99418044090271,
+            0.9697170257568359,
+            0.9774636626243591,
+            0.9684264659881592,
+            0.9783760905265808,
+            0.986845076084137
+        ],
+        "rec_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1052,
+                    210
+                ],
+                [
+                    1052,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    328,
+                    697
+                ],
+                [
+                    872,
+                    699
+                ],
+                [
+                    872,
+                    750
+                ],
+                [
+                    328,
+                    748
+                ]
+            ],
+            [
+                [
+                    187,
+                    760
+                ],
+                [
+                    1012,
+                    760
+                ],
+                [
+                    1012,
+                    806
+                ],
+                [
+                    187,
+                    806
+                ]
+            ],
+            [
+                [
+                    381,
+                    818
+                ],
+                [
+                    821,
+                    818
+                ],
+                [
+                    821,
+                    865
+                ],
+                [
+                    381,
+                    865
+                ]
+            ]
+        ],
+        "rec_boxes": [
+            [
+                900,
+                145,
+                1053,
+                172
+            ],
+            [
+                858,
+                178,
+                1052,
+                202
+            ],
+            [
+                733,
+                210,
+                1052,
+                233
+            ],
+            [
+                328,
+                697,
+                872,
+                750
+            ],
+            [
+                187,
+                760,
+                1012,
+                806
+            ],
+            [
+                381,
+                818,
+                821,
+                865
+            ]
+        ]
+    }
+}

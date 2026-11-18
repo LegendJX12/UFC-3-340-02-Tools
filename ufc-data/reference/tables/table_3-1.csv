@@ -1,0 +1,10 @@
+page,Edge conditions,Loading,Ultimate resistance
+12/39,Simply supported both ends,"Uniform load, span L",r_{u}=\frac{8M_{p}}{L^{2}}
+12/39,Simply supported both ends,"Concentrated load P at midspan (L/2, L/2)",R_{u}=\frac{4M_{p}}{L}
+12/39,"Fixed one end, simply supported other","Uniform load, span L",r_{u}=\frac{4(M_{N}+2M_{p})}{L^{2}}
+12/39,"Fixed one end, simply supported other","Concentrated load P at midspan (L/2, L/2)",R_{u}=\frac{2(M_{N}+2M_{p})}{L}
+12/39,Fixed both ends,"Uniform load, span L",r_{u}=\frac{8(M_{N}+M_{p})}{L^{2}}
+12/39,Fixed both ends,"Concentrated load P at midspan (L/2, L/2)",R_{u}=\frac{4(M_{N}+M_{p})}{L}
+12/39,"Cantilever (fixed one end, free other)","Uniform load, span L",r_{u}=\frac{2M_{N}}{L^{2}}
+12/39,"Cantilever (fixed one end, free other)",Concentrated load P at free end,R_{u}=\frac{M_{N}}{L}
+12/39,Simply supported both ends,"Two loads P/2 at third points (L/3, L/3, L/3)",R_{u}=\frac{6M_{p}}{L}

@@ -1,0 +1,752 @@
+{
+    "input_path": "C:\\Users\\10029078\\OneDrive - Surbana Jurong Private Limited\\Attachments\\Desktop\\Technical Improvment\\DCMS basis report\\References\\UFC 3-340-02 batches\\ocr_output\\pages\\batch 30\\page_0043.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_seal_recognition": false,
+        "use_table_recognition": true,
+        "use_formula_recognition": true,
+        "use_chart_recognition": false,
+        "use_region_detection": true,
+        "format_block_content": false,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ]
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "UFC 3-340-025 December 2008Change 2,1 September 2014",
+            "block_bbox": [
+                730,
+                147,
+                1050,
+                233
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "Find end rotation, Θ.",
+            "block_bbox": [
+                275,
+                268,
+                492,
+                289
+            ],
+            "block_id": 1,
+            "block_order": 1
+        },
+        {
+            "block_label": "formula",
+            "block_content": "\\begin{aligned}&\\tan\\Theta=X_{m}/(L/2)=2.0/[(19\\times12)/2]=0.0175\\\\ &\\quad\\Theta=1.0^{\\circ}\\quad\\text{O.K.}\\\\ \\end{aligned}",
+            "block_bbox": [
+                274,
+                312,
+                741,
+                383
+            ],
+            "block_id": 2,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "Step 14.Calculate the dynamic ultimate shear capacity,$V_{p},$ and check for adequacy.\n",
+            "block_bbox": [
+                134,
+                403,
+                945,
+                455
+            ],
+            "block_id": 3,
+            "block_order": 3
+        },
+        {
+            "block_label": "formula",
+            "block_content": "\\begin{aligned}&V_{p}=f_{dv}A_{w}=28.1(14.10-2\\times0.515)(0.310)=113.9kips(Equation5-16)\\\\&V=DLF\\times P\\times b\\times L/2\\\\&\\quad=0.97\\times4.5\\times4.5\\times19\\times144/(2\\times1,000)\\\\&\\quad=26.9kips<89.2kips<V_{p}\\quad O.K.\\quad(Table3-9(+))\\\\ \\end{aligned}",
+            "block_bbox": [
+                274,
+                476,
+                1050,
+                639
+            ],
+            "block_id": 4,
+            "block_order": 4
+        },
+        {
+            "block_label": "number",
+            "block_content": "5A-69",
+            "block_bbox": [
+                568,
+                1517,
+                630,
+                1537
+            ],
+            "block_id": 5,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false
+        },
+        "angle": -1
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.8930033445358276,
+                "coordinate": [
+                    275.34320068359375,
+                    268.19708251953125,
+                    492.63275146484375,
+                    289.60113525390625
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.8647381067276001,
+                "coordinate": [
+                    134.88473510742188,
+                    403.21221923828125,
+                    945.1983642578125,
+                    455.36773681640625
+                ]
+            },
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8413773775100708,
+                "coordinate": [
+                    730.8905029296875,
+                    147.476806640625,
+                    1050.6429443359375,
+                    233.27294921875
+                ]
+            },
+            {
+                "cls_id": 3,
+                "label": "number",
+                "score": 0.6912096738815308,
+                "coordinate": [
+                    568.4080200195312,
+                    1517.4766845703125,
+                    630.3137817382812,
+                    1537.3997802734375
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.6106669306755066,
+                "coordinate": [
+                    767.3848266601562,
+                    405.90081787109375,
+                    796.6245727539062,
+                    430.85015869140625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.3579084575176239,
+                "coordinate": [
+                    274.25762939453125,
+                    312.37152099609375,
+                    741.107177734375,
+                    383.99261474609375
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.32082733511924744,
+                "coordinate": [
+                    274.4068908691406,
+                    476.2684326171875,
+                    1050.4500732421875,
+                    639.23486328125
+                ]
+            }
+        ]
+    },
+    "overall_ocr_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+        },
+        "dt_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1051,
+                    210
+                ],
+                [
+                    1051,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    276,
+                    265
+                ],
+                [
+                    493,
+                    267
+                ],
+                [
+                    493,
+                    295
+                ],
+                [
+                    276,
+                    293
+                ]
+            ],
+            [
+                [
+                    136,
+                    401
+                ],
+                [
+                    231,
+                    401
+                ],
+                [
+                    231,
+                    433
+                ],
+                [
+                    136,
+                    433
+                ]
+            ],
+            [
+                [
+                    276,
+                    401
+                ],
+                [
+                    948,
+                    402
+                ],
+                [
+                    948,
+                    432
+                ],
+                [
+                    276,
+                    431
+                ]
+            ],
+            [
+                [
+                    276,
+                    430
+                ],
+                [
+                    389,
+                    432
+                ],
+                [
+                    389,
+                    461
+                ],
+                [
+                    275,
+                    459
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    636,
+                    1514
+                ],
+                [
+                    636,
+                    1544
+                ],
+                [
+                    565,
+                    1544
+                ]
+            ],
+            [
+                [
+                    767,
+                    405
+                ],
+                [
+                    796,
+                    405
+                ],
+                [
+                    796,
+                    430
+                ],
+                [
+                    767,
+                    430
+                ]
+            ],
+            [
+                [
+                    274,
+                    312
+                ],
+                [
+                    741,
+                    312
+                ],
+                [
+                    741,
+                    383
+                ],
+                [
+                    274,
+                    383
+                ]
+            ],
+            [
+                [
+                    274,
+                    476
+                ],
+                [
+                    1050,
+                    476
+                ],
+                [
+                    1050,
+                    639
+                ],
+                [
+                    274,
+                    639
+                ]
+            ]
+        ],
+        "text_det_params": {
+            "limit_side_len": 736,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+            "UFC 3-340-02",
+            "5 December 2008",
+            "Change 2,1 September 2014",
+            "Find end rotation, Θ.",
+            "Step 14.",
+            "Calculate the dynamic ultimate shear capacity, .. and check for",
+            "adequacy.",
+            "5A-69",
+            "V_{p},",
+            "\\begin{aligned}&\\tan\\Theta=X_{m}/(L/2)=2.0/[(19\\times12)/2]=0.0175\\\\ &\\quad\\Theta=1.0^{\\circ}\\quad\\text{O.K.}\\\\ \\end{aligned}",
+            "\\begin{aligned}&V_{p}=f_{dv}A_{w}=28.1(14.10-2\\times0.515)(0.310)=113.9kips(Equation5-16)\\\\&V=DLF\\times P\\times b\\times L/2\\\\&\\quad=0.97\\times4.5\\times4.5\\times19\\times144/(2\\times1,000)\\\\&\\quad=26.9kips<89.2kips<V_{p}\\quad O.K.\\quad(Table3-9(+))\\\\ \\end{aligned}"
+        ],
+        "rec_scores": [
+            0.9922795295715332,
+            0.9651968479156494,
+            0.9735713005065918,
+            0.9261389374732971,
+            0.987339198589325,
+            0.9376898407936096,
+            0.9990687966346741,
+            0.9994099736213684,
+            1,
+            1,
+            1
+        ],
+        "rec_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1051,
+                    210
+                ],
+                [
+                    1051,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    276,
+                    265
+                ],
+                [
+                    493,
+                    267
+                ],
+                [
+                    493,
+                    295
+                ],
+                [
+                    276,
+                    293
+                ]
+            ],
+            [
+                [
+                    136,
+                    401
+                ],
+                [
+                    231,
+                    401
+                ],
+                [
+                    231,
+                    433
+                ],
+                [
+                    136,
+                    433
+                ]
+            ],
+            [
+                [
+                    276,
+                    401
+                ],
+                [
+                    948,
+                    402
+                ],
+                [
+                    948,
+                    432
+                ],
+                [
+                    276,
+                    431
+                ]
+            ],
+            [
+                [
+                    276,
+                    430
+                ],
+                [
+                    389,
+                    432
+                ],
+                [
+                    389,
+                    461
+                ],
+                [
+                    275,
+                    459
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    636,
+                    1514
+                ],
+                [
+                    636,
+                    1544
+                ],
+                [
+                    565,
+                    1544
+                ]
+            ],
+            [
+                [
+                    767,
+                    405
+                ],
+                [
+                    796,
+                    405
+                ],
+                [
+                    796,
+                    430
+                ],
+                [
+                    767,
+                    430
+                ]
+            ],
+            [
+                [
+                    274,
+                    312
+                ],
+                [
+                    741,
+                    312
+                ],
+                [
+                    741,
+                    383
+                ],
+                [
+                    274,
+                    383
+                ]
+            ],
+            [
+                [
+                    274,
+                    476
+                ],
+                [
+                    1050,
+                    476
+                ],
+                [
+                    1050,
+                    639
+                ],
+                [
+                    274,
+                    639
+                ]
+            ]
+        ],
+        "rec_boxes": [
+            [
+                900.0,
+                145.0,
+                1053.0,
+                172.0
+            ],
+            [
+                858.0,
+                178.0,
+                1052.0,
+                202.0
+            ],
+            [
+                733.0,
+                210.0,
+                1051.0,
+                233.0
+            ],
+            [
+                276.0,
+                265.0,
+                493.0,
+                295.0
+            ],
+            [
+                136.0,
+                401.0,
+                231.0,
+                433.0
+            ],
+            [
+                796.6245727539062,
+                401.0,
+                948.0,
+                432.0
+            ],
+            [
+                275.0,
+                430.0,
+                389.0,
+                461.0
+            ],
+            [
+                565.0,
+                1514.0,
+                636.0,
+                1544.0
+            ],
+            [
+                767.3848266601562,
+                405.90081787109375,
+                796.6245727539062,
+                430.85015869140625
+            ],
+            [
+                274.25762939453125,
+                312.37152099609375,
+                741.107177734375,
+                383.99261474609375
+            ],
+            [
+                274.4068908691406,
+                476.2684326171875,
+                1050.4500732421875,
+                639.23486328125
+            ]
+        ]
+    },
+    "formula_res_list": [
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "V_{p},",
+            "formula_region_id": 1,
+            "dt_polys": [
+                767.3848266601562,
+                405.90081787109375,
+                796.6245727539062,
+                430.85015869140625
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "\\begin{aligned}&\\tan\\Theta=X_{m}/(L/2)=2.0/[(19\\times12)/2]=0.0175\\\\ &\\quad\\Theta=1.0^{\\circ}\\quad\\text{O.K.}\\\\ \\end{aligned}",
+            "formula_region_id": 2,
+            "dt_polys": [
+                274.25762939453125,
+                312.37152099609375,
+                741.107177734375,
+                383.99261474609375
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "\\begin{aligned}&V_{p}=f_{dv}A_{w}=28.1(14.10-2\\times0.515)(0.310)=113.9kips(Equation5-16)\\\\&V=DLF\\times P\\times b\\times L/2\\\\&\\quad=0.97\\times4.5\\times4.5\\times19\\times144/(2\\times1,000)\\\\&\\quad=26.9kips<89.2kips<V_{p}\\quad O.K.\\quad(Table3-9(+))\\\\ \\end{aligned}",
+            "formula_region_id": 3,
+            "dt_polys": [
+                274.4068908691406,
+                476.2684326171875,
+                1050.4500732421875,
+                639.23486328125
+            ]
+        }
+    ]
+}

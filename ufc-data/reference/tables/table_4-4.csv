@@ -1,0 +1,7 @@
+page,Design range,Type of cross-section,Type of structural action,Type of shear reinforcement,Excess shear stress v_u - v_c: v_u <= v_c,v_c < v_u <= 1.85 v_c,v_u > 1.85 v_c
+20/20,Z >= 3.0,Type I,Flexure,Stirrups,0,v_{u}-v_{c},v_{u}-v_{c}
+20/20,Z >= 3.0,Type II,Flexure,Stirrups,0.85v_{c},0.85v_{c},v_{u}-v_{c}
+20/20,Z >= 3.0,Type II & Type III,Tension membrane,Stirrups,0.85v_{c},0.85v_{c},v_{u}-v_{c}
+20/20,Z < 3.0,Type I (*),Flexure,Stirrups or lacing,0.85v_{c},0.85v_{c},v_{u}-v_{c}
+20/20,Z < 3.0,Type II & Type III,Flexure or tension membrane,Stirrups or lacing,0.85v_{c},0.85v_{c},v_{u}-v_{c}
+20/20,Notes: (*) Verify that spall is prevented.,,,,,,

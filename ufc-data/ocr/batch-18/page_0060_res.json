@@ -1,0 +1,412 @@
+{
+    "input_path": "C:\\Users\\10029078\\OneDrive - Surbana Jurong Private Limited\\Attachments\\Desktop\\Technical Improvment\\DCMS basis report\\References\\UFC 3-340-02 batches\\ocr_output\\pages\\batch 18\\page_0060.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_seal_recognition": false,
+        "use_table_recognition": true,
+        "use_formula_recognition": true,
+        "use_chart_recognition": false,
+        "use_region_detection": true,
+        "format_block_content": false,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ]
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "text",
+            "block_content": "UFC 3-340-025 December 2008Change 2,1 September 2014",
+            "block_bbox": [
+                731,
+                147,
+                1050,
+                233
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "of Munitions, Fuels and Other Hazardous Mixtures, Volume 152, Art. 1, October 1968.\n",
+            "block_bbox": [
+                170,
+                266,
+                996,
+                313
+            ],
+            "block_id": 1,
+            "block_order": 2
+        },
+        {
+            "block_label": "footer",
+            "block_content": "3A-54",
+            "block_bbox": [
+                567,
+                1517,
+                629,
+                1537
+            ],
+            "block_id": 2,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false
+        },
+        "angle": -1
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.8776347637176514,
+                "coordinate": [
+                    170.12588500976562,
+                    266.7592468261719,
+                    996.4705810546875,
+                    313.1167297363281
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.6581401228904724,
+                "coordinate": [
+                    731.2852783203125,
+                    147.56076049804688,
+                    1050.6768798828125,
+                    233.3062744140625
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "footer",
+                "score": 0.6246331930160522,
+                "coordinate": [
+                    567.9854736328125,
+                    1517.7264404296875,
+                    629.8551025390625,
+                    1537.5018310546875
+                ]
+            }
+        ]
+    },
+    "overall_ocr_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+        },
+        "dt_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1051,
+                    210
+                ],
+                [
+                    1051,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    174,
+                    267
+                ],
+                [
+                    999,
+                    267
+                ],
+                [
+                    999,
+                    291
+                ],
+                [
+                    174,
+                    291
+                ]
+            ],
+            [
+                [
+                    170,
+                    289
+                ],
+                [
+                    237,
+                    291
+                ],
+                [
+                    236,
+                    320
+                ],
+                [
+                    169,
+                    317
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    635,
+                    1514
+                ],
+                [
+                    635,
+                    1544
+                ],
+                [
+                    565,
+                    1544
+                ]
+            ]
+        ],
+        "text_det_params": {
+            "limit_side_len": 736,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+            "UFC 3-340-02",
+            "5 December 2008",
+            "Change 2,1 September 2014",
+            "of Munitions, Fuels and Other Hazardous Mixtures, Volume 152, Art. 1, October",
+            "1968.",
+            "3A-54"
+        ],
+        "rec_scores": [
+            0.9865515828132629,
+            0.9600425362586975,
+            0.9871261715888977,
+            0.969491720199585,
+            0.9994075894355774,
+            0.9988686442375183
+        ],
+        "rec_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1051,
+                    210
+                ],
+                [
+                    1051,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    174,
+                    267
+                ],
+                [
+                    999,
+                    267
+                ],
+                [
+                    999,
+                    291
+                ],
+                [
+                    174,
+                    291
+                ]
+            ],
+            [
+                [
+                    170,
+                    289
+                ],
+                [
+                    237,
+                    291
+                ],
+                [
+                    236,
+                    320
+                ],
+                [
+                    169,
+                    317
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    635,
+                    1514
+                ],
+                [
+                    635,
+                    1544
+                ],
+                [
+                    565,
+                    1544
+                ]
+            ]
+        ],
+        "rec_boxes": [
+            [
+                900,
+                145,
+                1053,
+                172
+            ],
+            [
+                858,
+                178,
+                1052,
+                202
+            ],
+            [
+                733,
+                210,
+                1051,
+                233
+            ],
+            [
+                174,
+                267,
+                999,
+                291
+            ],
+            [
+                169,
+                289,
+                237,
+                320
+            ],
+            [
+                565,
+                1514,
+                635,
+                1544
+            ]
+        ]
+    }
+}

@@ -1,0 +1,344 @@
+{
+    "input_path": "C:\\Users\\10029078\\OneDrive - Surbana Jurong Private Limited\\Attachments\\Desktop\\Technical Improvment\\DCMS basis report\\References\\UFC 3-340-02 batches\\ocr_output\\pages\\batch 27\\page_0001.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_seal_recognition": false,
+        "use_table_recognition": true,
+        "use_formula_recognition": true,
+        "use_chart_recognition": false,
+        "use_region_detection": true,
+        "format_block_content": false,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ]
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "text",
+            "block_content": "UFC 3-340-025 December 2008Change 2,1 September 2014",
+            "block_bbox": [
+                731,
+                147,
+                1051,
+                233
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "doc_title",
+            "block_content": "CHAPTER 5: STRUCTURAL STEEL  DESIGN ",
+            "block_bbox": [
+                178,
+                699,
+                1017,
+                802
+            ],
+            "block_id": 1,
+            "block_order": 2
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false
+        },
+        "angle": -1
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 10,
+                "label": "doc_title",
+                "score": 0.7269495129585266,
+                "coordinate": [
+                    178.63668823242188,
+                    699.4776611328125,
+                    1017.99951171875,
+                    802.4417724609375
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.7212123870849609,
+                "coordinate": [
+                    731.414794921875,
+                    147.83541870117188,
+                    1051.4815673828125,
+                    233.48544311523438
+                ]
+            }
+        ]
+    },
+    "overall_ocr_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+        },
+        "dt_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1052,
+                    210
+                ],
+                [
+                    1052,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    178,
+                    700
+                ],
+                [
+                    1022,
+                    700
+                ],
+                [
+                    1022,
+                    750
+                ],
+                [
+                    178,
+                    750
+                ]
+            ],
+            [
+                [
+                    500,
+                    760
+                ],
+                [
+                    700,
+                    760
+                ],
+                [
+                    700,
+                    808
+                ],
+                [
+                    500,
+                    808
+                ]
+            ]
+        ],
+        "text_det_params": {
+            "limit_side_len": 736,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+            "UFC 3-340-02",
+            "5 December 2008",
+            "Change 2,1 September 2014",
+            "CHAPTER 5: STRUCTURAL STEEL",
+            "DESIGN"
+        ],
+        "rec_scores": [
+            0.994318425655365,
+            0.9700791239738464,
+            0.9751218557357788,
+            0.935625433921814,
+            0.9970387816429138
+        ],
+        "rec_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1052,
+                    210
+                ],
+                [
+                    1052,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    178,
+                    700
+                ],
+                [
+                    1022,
+                    700
+                ],
+                [
+                    1022,
+                    750
+                ],
+                [
+                    178,
+                    750
+                ]
+            ],
+            [
+                [
+                    500,
+                    760
+                ],
+                [
+                    700,
+                    760
+                ],
+                [
+                    700,
+                    808
+                ],
+                [
+                    500,
+                    808
+                ]
+            ]
+        ],
+        "rec_boxes": [
+            [
+                900,
+                145,
+                1053,
+                172
+            ],
+            [
+                858,
+                178,
+                1052,
+                202
+            ],
+            [
+                733,
+                210,
+                1052,
+                233
+            ],
+            [
+                178,
+                700,
+                1022,
+                750
+            ],
+            [
+                500,
+                760,
+                700,
+                808
+            ]
+        ]
+    }
+}

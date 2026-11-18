@@ -1,0 +1,9 @@
+page,Edge conditions,Yield line location,Limits,"Horizontal shear, V_sH","Vertical shear, V_sV"
+12/49,Two adjacent edges supported and two edges free,Diagonal yield line (x or y),x <= L; y <= H,Same as in Table 3-10,Same as in Table 3-10
+12/49,Three edges supported and one edge free,"Regions 1-2-3, yield lines at x1 and x2 from the side edges",x_1 <= L/2,\frac{3x_{1}r_{u}}{5},\frac{3r_{u}H(2L-x_{1}-x_{2})}{6L-x_{1}-x_{2}}
+12/49,Three edges supported and one edge free,"Regions 1-2-3, yield lines at x1 and x2 from the side edges",x_2 <= L/2,\frac{3x_{2}r_{u}}{5},\frac{3r_{u}H(2L-x_{1}-x_{2})}{6L-x_{1}-x_{2}}
+12/49,Three edges supported and one edge free,"Regions 1-2-3, yield lines meeting at x from left edge, y from supported edge",y <= H,\frac{3r_{u}x(2H-y)}{6H-y}\ \text{(left edge)};\ \frac{3r_{u}(L-x)(2H-y)}{6H-y}\ \text{(right edge)},\frac{3r_{u}y}{5}
+12/49,Four edges supported,"Regions 1-4, yield lines at x1 and x2 from the short edges, y from a long edge",x_1 <= L/2,\frac{3r_{u}x_{1}}{5},\frac{3r_{u}y(2L-x_{1}-x_{2})}{6L-x_{1}-x_{2}}
+12/49,Four edges supported,"Regions 1-4, yield lines at x1 and x2 from the short edges, y from a long edge",x_2 <= L/2,\frac{3r_{u}x_{2}}{5},\frac{3r_{u}(H-y)(2L-x_{1}-x_{2})}{6L-x_{1}-x_{2}}
+12/49,Four edges supported,"Regions 1-4, yield lines at y1 and y2 from the long edges, x from a short edge",y_1 <= H/2,\frac{3r_{u}x(2H-y_{1}-y_{2})}{6H-y_{1}-y_{2}},\frac{3r_{u}y_{1}}{5}
+12/49,Four edges supported,"Regions 1-4, yield lines at y1 and y2 from the long edges, x from a short edge",y_2 <= H/2,\frac{3r_{u}x(L-x)(2H-y_{1}-y_{2})}{6H-y_{1}-y_{2}},\frac{3r_{u}y_{2}}{5}
