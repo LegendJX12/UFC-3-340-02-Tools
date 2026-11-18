@@ -1,0 +1,2240 @@
+
+
+===== batch 18 | page 1 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Figure 3-267 Graphical Interpolation
+3-424
+
+===== batch 18 | page 2 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Figure 3-268 Elastic Rebound of Simple Spring-Mass System
+E
+X
+/
+m
+X
+3-425
+
+===== batch 18 | page 3 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Figure 3-269 Pressure-Time and Resistance Time Curves for Elements Which 
+Respond To Impulse
+Table 3-14 Details of Computation By Acceleration Impulse Extrapolation 
+Method
+n t Pn Rn Pn-Rn an= (Pn-Rn)/m an( t)
+2
+2Xn Xn-1 Xn+1
+0 0 P0 R0 P0- R0 a0 a0( t1)
+2
+0 0 X1
+1 t1 P1 R1 P1- R1 a1 a1( t1)
+2
+2X1 0 X2
+2 2( t1) P2 R2 P2- R2 a2 a2( t1)
+2
+2X2 X1 X3
+.
+.
+j-1 (j-1) t1 Pj -1 Rj -1 Pj -1-Rj -1 aj -1 aj -1( t1)
+2
+2Xj -1 Xj -2 Xj
+j j t1 Pj Rj Pj - Rj aj aj( t1)
+2
+2Xj Xj -1 Xj +1
+j+1 j( t1)+ t2 Pj +1 Rj +1 Pj +1-Rj +1 aj +1 aj +1( t1)
+2
+2Xj +1 Xj -1 Xj +2
+3-426
+
+===== batch 18 | page 4 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Table 3-15 Figure Numbers Corresponding To Various Combinations 
+of C1 and C2
+C2
+C1 
+1.00 1.70 3.00 5.50 10.0 30.0 100 300 1000
+1.000 3-64 3-64 3-64 3-64 3-64 3-64 3-64 3-64 3-64
+0.909 3-114 3-141 3-173 3-220
+0.866 3-115 3-142 3-174 3-221
+0.825 3-116 3-143 3-175 3-222
+0.787 3-144 3-176 3-223
+0.750 3-85 3-99 3-117 3-145 3-177 3-224
+0.715 3-118 3-146 3-178 3-225
+0.681 3-64 3-65 3-75 3-119 3-147 3-179 3-226
+0.648 3-100 3-120 3-148 3-180 3-227
+0.619 3-121 3-149 3-181 3-228
+0.590 3-150 3-182 3-229
+0.562 3-86 3-101 3-122 3-151 3-183 3-230
+0.536 3-184 3-231
+0.511 3-123 3-152 3-185 3-232
+0.487 3-186 3-233
+0.464 3-64 3-66 3-76 3-124 3-153 3-187 3-234
+0.422 3-87 3-102 3-154 3-188 3-235
+0.383 3-125 3-189 3-236
+0.365 3-155 3-190 3-237
+0.348 3-191 3-238
+0.316 3-64 3-67 3-77 3-88 3-103 3-126 3-156 3-192 3-239
+0.287 3-193 3-240
+0.274 3-157 3-194 3-241
+0.261 3-127 3-158 3-195 3-242
+0.237 3-89 3-104 3-159 3-196 3-243
+0.215 3-64 3-68 3-78 3-128 3-160 3-197 3-244
+0.198 3-198 3-245
+0.178 3-90 3-105 3-129 3-161 3-199 3-246
+0.162 3-200 3-247
+0.147 3-64 3-69 3-79 3-130 3-162 3-201 3-248
+0.133 3-91 3-106 3-202 3-249
+0.121 3-131 3-163 3-203 3-250
+0.110 3-204 3-251
+0.100 3-64 3-70 3-80 3-92 3-107 3-132 3-164 3-205 3-252
+0.091 3-206 3-253
+0.083 3-207 3-254
+0.075 3-133 3-165 3-208 3-255
+0.068 3-93 3-108 3-209 3-256
+0.056 3-64 3-71 3-81 3-134 3-166 3-210 3-257
+0.046 3-94 3-109 3-211 3-258
+0.042 3-135 3-167 3-212 3-259
+0.032 3-64 3-72 3-82 3-95 3-110 3-136 3-168 3-213 3-260
+0.026 3-137 3-169 3-214 3-261
+0.022 3-96 3-111 3-215 3-262
+0.018 3-64 3-73 3-83 3-138 3-170 3-216 3-263
+0.015 3-97 3-112 3-217 3-264
+0.013 3-139 3-171 3-218 3-265
+0.010 3-64 3-74 3-84 3-98 3-113 3-140 3-172 3-219 3-266
+3-427
+
+===== batch 18 | page 5 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Table 3-16 Response Chart Interpolation
+Number C1 C2 Desired Parameter
+1
+C11 C21
+Y1
+Ya
+Y
+C1 C21
+2
+C12 C22=C21
+Y2
+C1 C2
+3
+C13 C23
+Y3
+C1 C23 Yb
+4 C14 C24=C23 Y4
+3-428
+
+===== batch 18 | page 6 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+APPENDIX 3: PRINCIPLES OF 
+DYNAMIC ANALYSIS
+
+===== batch 18 | page 7 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+APPENDIX 3A ILLUSTRATIVE EXAMPLES
+PROBLEM 3A-1 ULTIMATE UNIT RESISTANCE
+Problem: Determine the ultimate unit resistance of a two-way structural 
+element using (1) general solution and (2) charts.
+Procedure: Part (a) - General Solution
+Step 1. Establish design parameters.
+Step 2. Assume yield line locations in terms of x and/or y considering support 
+conditions, presence of openings, etc.
+Step 3. Determine negative and positive moment capacities of sections crossed 
+by assumed yield lines.
+Step 4. Establish distribution of moments across negative and assumed yield 
+lines, considering corner effects and those of openings.
+Step 5. Determine the ultimate unit resistance for each sector in terms of x and/or 
+y considering free body diagram of the sectors (Figure 3-3 (+)). 
+Summation of the moments about the axis of rotation (support) of the 
+sector yields Equation 3-3.
+Step 6. Equate the ultimate unit resistance of the sectors and solve for the yield 
+line location x and/or y.
+Step 7. With known yield line location, solve for ultimate unit resistance of the 
+element, using equations obtained in Step 6.
+Note: For complex problems (three or more different sectors) the solution for the 
+ultimate unit resistance is most easily accomplished through a trial-and￾error procedure by determining ru for each sector for a given (assumed) 
+yield line location and adjusting the yield lines until the several values of
+ru agree to within a few percent.
+Procedure: Part (b) - Chart Solution
+Step 1. Same as in Step 1 of Part (a).
+Step 2. Same as in Step 2 of Part (a).
+Step 3. Determine the negative and positive ultimate moment capacities in vertical 
+and horizontal directions.
+Step 4. For given support conditions (and value of x2/x1 in the case of an element 
+with three edges supported and fourth free), use the appropriate chart 
+(Figures 3-4 (+) through 3-20 (+)) to obtain yield line location ratios x/L or 
+y/H for value of quantity obtained in Step 4. Then calculate x or y.
+Step 5. Using the appropriate equation from Table 3-2 (+) determine the ultimate 
+unit resistance of the element.
+3A-1
+
+===== batch 18 | page 8 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+EXAMPLE 3A-1 (A) ULTIMATE RESISTANCE
+Required: Ultimate unit resistance of two-way structural steel element shown 
+below using (1) general solution and (2) charts.
+Figure 3A-1
+Solution: Part (a) - General Solution
+Step 1. Given:
+(a) L = 240 in H = 168 in
+(b) Fixed on three sides and free at the fourth
+Step 2. Assume yield line location (Figure 3A-2 (+))
+Step 3. The negative and positive moment capacities in both the horizontal and 
+vertical directions are determined from the properties of the material. For 
+this Example, it will be assumed that the moment capacities are equal to 
+M = 20,000 in lbs/in.
+MHN = MHP = MVN = MVP = 20,000 in lbs/in
+3A-2
+
+===== batch 18 | page 9 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Figure 3A-2
+3A-3
+
+===== batch 18 | page 10 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Step 4. For distribution of moments across negative and assumed positive lines, 
+see Figure 3A-2(a) (+).
+Step 5. The ultimate unit resistance of each sector is obtained by taking the 
+summation of the moments about its axis of rotation (supports) so that
+MN + MP = Rc = ruAc
+a. Sector I (Figure 3A-2 (+))
+M + MVP = 120(20,000) + 2(2/3)(20,000)(60) +
+120(20,000) + 2(2/3)(20,000)(60)
+= 8.0x106
+in-lbs.
+2
+40
+2 3
+240
+r y
+y y
+r Ac r
+u u u
+therefore,
+ru = 400(20,000)/40y
+2
+= 0.2x106
+/ y
+2
+b. Sector II (Figure 3A-2 (+))
+MHN + MHP = (168-y/2)(20,000) + (2/3)(20,000)(y/2) +
+(20,000)(168-y/2) + (2/3)(20,000)(y/2)
+= 336(20,000) – (y/3)(20,000)
+r y
+y
+y y
+r Ac r
+u
+u u
+4,800 252
+/ 168 168
+3
+120 168 2 168
+2
+120 168 168
+therefore,
+y
+y
+r
+u
+4800 252
+20,000
+3
+336 20,000
+Step 6. Equate the ultimate unit resistance of the sectors.
+y
+y
+y 4800 252
+20,000
+3
+336 20,000 10 20,000
+2
+3A-4
+
+===== batch 18 | page 11 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Simplifying:
+y
+3
+- 1008y
+2
+- 144000y + 36288000 = 0
+and the desired root is: y = 137.6 in.
+Step 7. The ultimate unit resistance is obtained by substituting the value of y into 
+either equation obtained in Step 5, both of which yield:
+ru = (20,000)/(137.6)2
+= 10.6 psi
+Solution: Part (b) - Chart Solution
+Note: Element conforms to the requirements of Section 3-8 since it is fixed on 
+three sides and free on the remaining side and has uniform thickness in 
+the horizontal and vertical directions.
+Step 1. Same as Step 1 in Part (a).
+Step 2. For illustrative purposes, a different yield pattern (Figure 3A-3 (+)) will be 
+assumed.
+Figure 3A-3
+Step 3. For ultimate moment capacities, see Step 3 of Part (a).
+Step 4. For three sides fixed and the fourth free, calculate the parameter.
+X /X =[(M + M )/(M +M )]1/2 = [(20,000)(2)/(20,000)(2)]1/2 = 1.0
+From Figure 3-11 (+), (X /X = 1.0) calculate the parameters:
+L/H[M /(M + M )] = (240/168)[20,000/(2)(20,000)]1/2 = 1.01
+and
+3A-5
+
+===== batch 18 | page 12 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+1.0
+20,000
+20,000
+VN 2
+VP
+M
+M
+Read yield line location:
+X /L exceeds the maximum possible value of 0.5 therefore, assumed yield 
+line pattern is wrong. Assume alternate yield line pattern as shown in 
+Figure 3A-2 (+).
+From Figure 3-16 (+) calculate the following parameters:
+0.71
+20,000 20,000 20,000 20,000
+20,000 20,000
+168
+240
+1/ 2 1/ 2
+1/ 2
+1/ 2
+1
+1/ 2
+2
+1/2
+3
+HN HP HN HP
+VN VP
+M M M M
+M M
+H
+L
+and
+1/ 2
+1 40,000 / 40,000
+40,000 / 40,000
+1 /
+/
+1/2
+1/2
+1/2
+1 2
+1/ 2
+1 2
+HN HP HN HP
+HN HP HN HP
+M M M M
+M M M M
+L
+X
+From Figure 3-16 (+) read of yield line location:
+y/H = 0.82; y = 0.8(168) = 137.6 in
+X/L = 0.50; X = 0.5(240) = 120.0 in 
+Step 5. From Table 3-2 (+):
+NOTE: Both equations given in the table for each edge condition and yield line 
+location will provide identical values of r .
+0.00055 20,000 10.5 psi
+137.6
+5 5 20,000 20,000
+2 2
+y
+M M
+r
+VN VP
+u
+3A-6
+
+===== batch 18 | page 13 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+EXAMPLE 3A-1 (B) ULTIMATE UNIT RESISTANCE
+Required: Ultimate unit resistance of the element considered in Example 3A￾1(A) except there is an opening as shown in Figure 3A-4 (+).
+Figure 3A-4
+Solution:
+Step 1. Given: (a) L = 240" H = 168" Two additional free edges are formed 
+due to the presence of the opening.
+Step 2. Assumed yield line location is shown in Figure 3A-5 (+) (three different 
+sectors are formed).
+Step 3. Same as Step 3 of Example 3A-1(A), Part (a).
+3A-7
+
+===== batch 18 | page 14 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Figure 3A-5
+Step 4. For distribution of moments across negative and assumed positive yield 
+lines see Figure 3A-5 (+). (Since opening is located at lower right corner, 
+there is no reduced moment capacity in this area.)
+Step 5. The ultimate unit resistance is obtained from:
+MN + Mp = Rc = ruAc
+a. Sector 1 (Figure 3A-5 (+))
+MHN+ MHP = (20,000)(168-y/2) + (2/3)(20,000)(y/2) +
+(20,000)(168-y/2) + (2/3)(20,000)(y/2)
+= 336(20,000) – (y/3)(20,000)
+= (336-y/3)(20,000)
+ruAc = ru[x(168+168-y)/2] [x(168+2(168-y))/3(168+168-y)]
+= rux
+2
+(252-y)/3
+therefore,
+x y
+y
+r
+u
+252
+1008 20,000
+2
+3A-8
+
+===== batch 18 | page 15 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+b. Sector II (Figure 3A-5 (+))
+MHN + MHP = (20,000)(80) + (20,000)(80)
+= 160(20,000)
+Note: The sector is divided into Parts a, b, and c so that the centroid may be 
+obtained (see table below).
+Portion 
+of 
+Sector
+Area (A')
+Distance from Centroid 
+to axis of rotation (c')
+A'c'
+a
+2
+(y - 88)(180 - x)
+3
+360 60
+2
+180 x x
+6
+y 88 180 x 360 x
+b (y-88)(60)
+2
+60
+2
+88 60 2
+y
+c (168-y)(240-x)
+2
+240 x
+2
+168 240 2
+y x
+2
+2
+2 2
+180 360 10,800 168 240
+3
+88
+6,400,000
+180 360 10800 168 240
+3
+88
+2
+1
+2
+168 240
+2
+88 60
+6
+88 180 360 ' '
+x x y x
+y
+Ac
+M M
+r
+x x y x
+y
+y x x y y x
+Ac A c
+HN HP
+u
+c. Sector III (Figure 3A-5 (+))
+Mvn + Mvp = (20,000)(180-x/2) + (2/3)(20,000)(x/2) +
+(20,000)(180-x/2) + (2/3)(20,000)(x/2)
+= 360(20,000) - (20,000)(x/3)
+3A-9
+
+===== batch 18 | page 16 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Portion of 
+Sector Area (A')
+Distance from Centroid to 
+axis of rotation (c')
+A'c'
+a
+2
+108 x y 88
+3
+176 88
+3
+y 88 y
+6
+180 x y 88 y 176
+b 180 x 88
+2
+88
+2
+180 88 2
+x
+c
+2
+xy
+3
+y
+6
+2
+xy
+Ac = A'c' = (y-88)(180-x)(y+176)/6 + (180-x)(88)2
+/2 + xy2
+/6
+= 1/6 (180-x)[(y-88)(y+176)+23,232] + xy2
+2
+180 88 176 23,232
+2160 2 20,000
+x y y xy
+x
+Ac
+M M
+r
+HN HP
+u
+Step 6. Due to the complexity of obtaining a direct solution for ultimate unit 
+resistance, a trial-and-error solution will be used (see table below):
+x y rI rII rIII
+125 130 9.21 7.67 9.33
+125 135 9.55 7.92 8.77
+125 140 9.92 8.19 8.25
+125 145 10.32 8.48 7.78
+125 150 10.77 8.79 7.35
+130 130 8.52 8.29 9.50
+130 135 8.83 8.55 8.92
+131 135 8.70 8.68 8.85
+3A-10
+
+===== batch 18 | page 17 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Therefore:
+x = 131 in
+y = 135 in
+ru = 8.68 psi
+3A-11
+
+===== batch 18 | page 18 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+PROBLEM 3A-2 RESISTANCE-DEFLECTION FUNCTION
+Problem: Determine the actual and equivalent resistance deflection function in 
+the elasto-plastic region for a two-way structural element.
+Procedure:
+Step 1. Establish design parameters.
+a. Geometry of element
+b. Support conditions
+Step 2. Determine ultimate positive and negative moment capacities.
+Step 3. Determine static properties:
+a. Modules of elasticity for the element
+b. Moment of inertia of the element
+Step 4. Establish points of interest and their ultimate moment capacities 
+(Figure 3-23 (+))
+Step 5. Compute properties at first yield.
+a. Location of first yield
+b. Resistance at first yield r
+c. Moments at remaining points consistent with r
+d. Maximum deflection at first yield
+Step 6. Compute properties at second yield.
+a. Remaining moment capacity at other points
+b. Location of second yield
+c. Change in unit resistance r between first and second yield.
+d. Unit resistance at second yield r
+e. Moment at remaining point consistent with r
+f. Change in maximum deflection
+g. Total maximum deflection
+Note: An element with unsymmetrical support conditions may exhibit 
+three or four support yields. Therefore, repeat Step 6 as many 
+times as necessary to obtain properties at the various yield points.
+3A-12
+
+===== batch 18 | page 19 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Step 7. Compute properties at final yield (ultimate unit resistance):
+a. Ultimate unit resistance
+b. Change in resistance between ultimate unit resistance and 
+resistance at prior yield
+c. Change in maximum deflection (for elements supported on two, 
+three, or four sides, use stiffness obtained from Figure 3-26 (+), 3-30 (+)
+and 3-36 (+), respectively)
+d. Total maximum deflection
+Step 8. Draw the actual resistance-deflection curve. (Figure 3-39 (+))
+Step 9. Calculate equivalent maximum elastic deflection of the element.
+3A-13
+
+===== batch 18 | page 20 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+EXAMPLE 3A-2 RESISTANCE-DEFLECTION FUNCTION
+Required: The actual and equivalent resistance-deflection function (curve) in 
+the elasto-plastic region for the two-way structural steel element.
+Solution:
+Step 1. Given:
+a. L = 240 in H = 168 in
+b. Fixed on three sides and free at the fourth
+Step 2. Same as Step 3 of Example 3A-1(A), Part a. 
+Step 3. Static properties:
+a. Modulus of elasticity, E for steel
+Es = 29 x 106
+psi
+b. Considering a 1-inch strip (b = 1 inch)
+Assume I = 144 in4
+Step 4. For points of interest, see Figure 3A-6 (+).
+Step 5. Properties at first yield.
+Figure 3A-6
+From Figure 3-27 (+) for H/L = 0.7
+ß1 = 0.077 ß2 = 0.160 ß3 = 0.115
+1 = 0.012 = 0.3
+a. MHP = MHN = MVP = MVN = 20,000 in-lbs/in
+MP = ßrH2
+r = M/ßH2
+3A-14
+
+===== batch 18 | page 21 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+r1 = 20,000/[(0.077)(168)2
+] = 9.20 psi 
+r2 = 20,000/[(0.160)(168)2
+] = 4.43 psi 
+r3 = 20,000/[(0.115)(168)2
+] = 6.16 psi
+First yield at Point 2 (smallest r)
+b. re = 4.43 psi
+c. MP (Point 1) = (0.077)(4.43)(168)2
+= 9,627 in-lbs/in 
+MN (Point 3) = (0.115)(4.43)(168)2
+= 14,379 in-lbs/in 
+d. D = EI/(b(1- 2
+))
+= 29 x 106
+x 144/(1(1-(0.3)2
+)) = 45.9 x 108
+in-lbs 
+Xe = 1reH
+4
+/D = (0.0120)(4.43)(168)4
+/(45.9*108
+) = 0.0092 in
+Step 6. Properties at second yield.
+After first yield element assumes a simple-simple-fixed-free stiffness, 
+therefore from Figure 3-29 (+) for H/L = 0.7:
+ß1 = 0.120 ß2 = 0.220
+1 = 0.045 = 0.3
+a. MP (Point 1) = MHP - MP (at re) = 20,000 - 9627 = 10373 in-lbs/in
+MN (Point 3) = MVN - MP (at re) = 20,000 - 14,379 = 5621 in-lbs/in
+b. MP (Point 1) = 10373 in-lbs/in = ß1 rH2
+r = 10373/(0.120)(168)2
+= 3.06 psi 
+Mn (Point 3) = 5,621 in-lbs/in = ß2 rH2
+r = 5,621/[(0.220)(168)2
+] = 0.90 psi 
+Second yield at Point 3 (smaller r)
+c. r = 0.90 psi
+d. rep = re + r = 4.43 + 0.90 = 5.33 psi
+e. MP (Point 1) = 0.120(0.90)(168)2
+= 3.048 in-lbs/in
+f. D = EI/b(1-n
+2
+) = (29)(106
+)(144)/1[1-(0.3)2
+] = 45.9 x 108
+in-lbs/in
+x = 1 rH4
+/D = 0.030(0.90)(168)4
+/45.9(10)8
+= 0.0047 in
+g. Xep = Xe + X = 0.0092 + 0.0047 = 0.014 in
+3A-15
+
+===== batch 18 | page 22 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Step 7. Properties at final yield (ultimate unit resistance). After second yield 
+element assumes a simple-simple-simple-free stiffness, therefore from 
+Figure 3-30 (+) for H/L = 0.7:
+1 = 0.041 = 0.3
+a. ru = 10.6 psi (Part (a), Example 3A-1(A))
+b. r = ru - rep = 10.6 - 5.33 = 5.23 psi
+c. D = EI/(b(1- 2
+)) = 29(106
+)(144)/(1(1-(0.3)2
+)) = 45.9 x 108
+in-lbs
+x = 1rH4
+/D = (0.045)(5.27)(168)4
+/45.9 x 108
+= 0.037 in
+d. Xp = Xep + X = 0.014 + 0.041 = 0.051 in
+Step 8. For actual resistance-deflection curve, see Figure 3A-7 (+).
+Step 9. XE = Xe(rep/ru) + Xep[1-(re/ru)] + Xp[1-(rep/ru)] Equation 3-35
+XE = 0.0092(5.37/10.6) + 0.014 [1-(4.43/10.6)] + 0.051[1-(5.37/10.6)]
+= 0.00466 + 0.0082 + 0.0252
+= 0.038 in
+The equivalent resistance-deflection curve is shown in Figure 3A-7 (+).
+Figure 3A-7
+DEFLECTION X (INCHES)
+0 0.008 0.016 0.024 0.032 0.04 0.048 0.056 0.064 0.072 0.08 0
+2
+4
+6
+8
+10
+12
+Xe,Re
+Xep,Rep
+Xp
+Actual XE,Ru
+Equivalent
+3A-16
+
+===== batch 18 | page 23 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+PROBLEM 3A-3 DYNAMIC DESIGN FACTORS FOR A ONE-WAY ELEMENT
+Problem: Determine the plastic load, mass and load-mass factors for a one￾way element.
+Procedure:
+Step 1. Establish design parameters.
+Step 2. Determine deflected shape:
+a. geometry of element
+b. support conditions
+c. type of load and mass
+Step 3. Determine maximum deflection.
+Step 4. Determine deflection function.
+a. For distributed load and/or continuous mass determine the 
+deflection at any point
+b. For concentrated loads and concentrated mass determine the 
+deflection at the load
+Step 5. Calculate the shape function.
+a. For distributed load and/or continuous mass calculate (x), 
+Equation 3-43
+b. For concentrated load and concentrated mass calculate r,
+Equation 3-46
+Step 6. Calculate the load factor, KL.
+a. Use Equations 3-41 and 3-42 for a distributed load
+b. Use Equations 3-41 and 3-45 for a concentrated load
+Step 7. Calculate the mass factor, KM.
+a. Use Equations 3-47 and 3-48 for a continuous mass
+b. Use Equations 3-44 and 3-49 for concentrated mass
+Step 8. Calculate the load-mass factor KLM, from Equation 3-53.
+3A-17
+
+===== batch 18 | page 24 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+EXAMPLE 3A-3 (A)DYNAMIC DESIGN FACTORS FOR A ONE-WAY ELEMENT
+Required: The load, mass and load-mass factors for a structural steel beam in 
+the elastic range, with a distributed load.
+Solution:
+Step 1: Given structural steel beam shown in Figure 3A-8 (+)
+Figure 3A-8
+a. L = 120 in
+b. Simply supported on both edges
+c. p(x) = 2,000 lb/in
+m(x) = 0.0055(lb-s2
+/in)/in
+Figure 3A-9
+Step 2: Assumed deflected shape for elastic range is shown in Figure 3A-9 (+)
+Step 3: The maximum deflection at the center is;
+EI
+p L
+384
+5 (max)
+(max)
+4
+Step 4: Determine deflection function
+3 2 3
+2
+24
+( )
+( ) L Lx x
+EI
+p x
+x
+Step 5: Calculate the shape function using Equation 3-43
+3A-18
+
+===== batch 18 | page 25 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+3 3 4
+4
+4
+3 2 3
+max
+2
+5
+16
+5 ( )
+384 2
+24
+( ) ( )
+L x Lx x
+L
+p x L
+EI L Lx x
+EI
+x p x x
+Step 6: a. Using Equation 3-42, determine equivalent force
+153,600 lb
+1,280
+4 5
+2
+2
+6,400
+2
+5
+16 ( ) ( ) 2,000lb /in
+120
+0
+3 2 4 5
+4
+120
+0
+3 3 4
+4
+0
+L
+L x Lx x
+L
+L x Lx x dx
+L
+F p x x dx
+L
+E
+b. From Equation 3-41, find the load factor
+2,000 lb/ in 120 in
+153,600 lb
+F
+F
+K
+E
+L
+KL = 0.64 in the elastic range
+Step 7: a. Find the equivalent mass from Equation 3-48:
+0 3325 lb s /in
+0 00277
+8 9
+4
+7
+4
+6
+2
+5
+4
+25 3
+1 408
+4 2 4 4
+25
+1 408
+2
+25
+256 0 0055
+2
+120
+0
+6 3 4 5 3 6 2 7 8 9
+8
+120
+0
+6 2 4 4 3 5 2 6 7 8
+8
+120
+0
+2 3 3 4
+0 8
+2
+L
+L x L x L x L x Lx x
+L
+L x L x L x L x Lx x dx
+L
+L x Lx x dx
+L
+M m x x dx
+L
+E
+b. From Equation 3-47, calculate the mass factor:
+0 0055 lb in 120 in
+0 3325 lb in
+2 2
+2
+s
+s
+M
+M
+K
+E
+M
+KM = 0.50 in the elastic range
+3A-19
+
+===== batch 18 | page 26 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Step 8: Calculate the load-mass factor as defined by Equation 3-51:
+KLM = KM/KL
+= 0.50/0.64
+KLM = 0.78 in the elastic range
+3A-20
+
+===== batch 18 | page 27 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+EXAMPLE 3A-3 (B)DYNAMIC DESIGN FACTORS FOR A ONE-WAY ELEMENT
+Required: The load, mass and load-mass factors for a structural steel beam in 
+the plastic range with a distributed load.
+Solution:
+Step 1. Given the structural steel beam shown in Figure 3A-8 (+):
+a. L = 120 in
+b. Simply-supported on both ends
+c. p(x) = 2,000 lb/in
+d. m(x) = 0.0055 (lb - s2
+/in)/in
+Step 2. Assume deflected shape for the plastic range is shown in Figure 3A-10
+(+).
+Figure 3A-10
+Step 3. Determine maximum deflection:
+max = (L/2)tan
+Step 4. Determine the deflection at any point:
+(x) = xtan x < L/2
+Step 5. Calculate the shape function, Equation 3-43:
+2 / / 2
+/ 2 tan
+( ) tan ( )
+max
+x L x L
+L
+x x
+x
+3A-21
+
+===== batch 18 | page 28 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Step 6:
+a. Find FE using Equation 3-42:
+120,000 lb
+4,000 lb/in /
+( ) ( ) 2 2,000lb/in 2 /
+60
+0
+2
+60
+0 0
+x L
+F p x x dx x L dx
+L
+E
+b. From Equation 3-41:
+2,000 lb / in 120 in
+120,000 lb
+F
+F
+K
+E
+L
+KL = 0.5 in the plastic range 
+Step 7:
+a. Use Equation 3-48 to find the equivalent mass:
+0 22 lb in
+3
+0 044
+2 0 0055 4
+2
+60
+0
+2
+3
+60
+0
+2 2
+0
+2
+s
+L
+x
+M m x x dx x L dx
+L
+E
+b. As defined by Equation 3-47
+0 0055 lb in 120 in
+0 22 lb in
+2 2
+2
+s
+s
+M
+M
+K
+E
+M
+KM = 0.33 in the plastic range
+Step 8. Calculate KLM using Equation 3-53
+KLM = KM/KL
+= 0.33/0.5
+KLM = 0.66 in the plastic range
+3A-22
+
+===== batch 18 | page 29 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+EXAMPLE 3A-3 (C)DYNAMIC DESIGN FACTORS FOR A ONE-WAY ELEMENT
+Required: The load, mass and load-mass factors for a structural steel beam in 
+the elastic range, with a concentrated load.
+Solution:
+Step 1: Given structural steel beam shown in Figure 3A-11 (+):
+Figure 3A-11
+a. L = 120 in
+b. Simply supported on both sides
+c. F = 240 kips
+m(x) = 0.0055(lb - s2
+/in)/in
+Step 2: Assume deflected shape for elastic range is shown in Figure 3A-12 (+):
+Figure 3A-12
+Step 3: Determine maximum deflection:
+EI
+PL
+48
+3
+max
+Step 4: Determine deflection functions:
+a. for continuous mass
+2 2
+3 4
+48
+( ) L x
+EI
+Px
+x
+b. for concentrated load
+EI
+PL
+r
+48
+3
+3A-23
+
+===== batch 18 | page 30 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Step 5: Calculate shape functions 
+a. For continuous mass use Equation 3-43
+2 3 3
+3
+2 2
+max
+3 4 /
+48
+48
+( ) 3 4
+( )
+L x x L
+PL
+EI
+EI
+x Px L x
+x
+b. For concentrated load, use Equation 3-46
+1.0
+48
+48 3
+3
+PL
+EI
+EI
+PL
+r
+Step 6: a. Find equivalent force from Equation 3-45
+F F Pxl 240kips
+i
+E r r
+b. Using Equation 3-41, calculate the load factor
+240kips
+240kips
+F
+F
+K
+E
+L
+KL = 1.0 for the elastic range
+Step 7: a. Equation 3-48 gives the equivalent mass.
+0 32 lb in
+0 0027
+2
+25
+256 0 0055
+2
+120
+0
+2 3 3 4
+0 8
+2
+s
+L
+L x Lx x dx
+L
+M m x x dx
+L
+E
+b. From Equation 3-47, calculate the mass factor
+0 0055 lb in 120 in
+0 32 lb in
+2 2
+2
+s
+s
+M
+M
+K
+E
+M
+KM = 0.49 in the elastic range 
+Step 8: Calculate the load-mass factor, from Equation 3-53
+KLM = KM/KL
+= 0.49/1.0
+KLM = 0.49 for the elastic range
+3A-24
+
+===== batch 18 | page 31 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+EXAMPLE 3A-3 (D)DYNAMIC DESIGN FACTORS FOR A ONE-WAY ELEMENT
+Required: Determine the load, mass and the load-mass factors for a structural 
+steel beam, in the plastic range, with a concentrated load.
+Solution:
+Step 1. Given structural steel beams shown in Figure 3A-11 (+).
+a. L = 120 in
+b. Simply-supported at both edges
+c. F = 240 kips
+m(x) = 0.0055 (lb - s
+2
+/in)/in
+Step 2. Assumed deflected shape for the plastic range is shown in Figure 3A-13
+(+)
+Figure 3A-13
+Step 3: Determine maximum deflection
+max = (L/2) tan
+Step 4: Determine deflection function.
+a. for continuous mass
+(x)= x tan x < L/2
+b. for a concentrated load
+r = (L/2) tan
+Step 5: Calculate shape factors using
+a. Equation 3-43 for continuous mass
+2 / / 2
+/ 2 tan
+( ) tan ( )
+max
+x L x L
+L
+x x
+x
+3A-25
+
+===== batch 18 | page 32 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+b. Equation 3-46 for concentrated load
+1.0
+/ 2 tan
+/ 2 tan
+max L
+r L
+r
+Step 6: a. The equivalent force is found using Equation 3-45
+1 240kips
+1
+F F Px
+i
+r
+E r r
+b. Equation 3-41 gives the load factor
+240kips
+240kips
+F
+F
+K
+E
+L
+KL = 1.0 for plastic range
+Step 7: a. The equivalent mass is found using Equation 3-48
+0 22lb in
+3
+0 044
+2 0 0055 4
+2
+60
+0
+2
+3
+60
+0
+2 2
+0
+2
+s
+L
+x
+M m x x dx x L dx
+L
+E
+b. Solve for KM using Equation 3-47
+0 0055 lb in 120 in
+0 22 lb in
+2 2
+2
+s
+s
+M
+M
+K
+E
+M
+KM = 0.33 in the plastic range
+Step 8: From Equation 3-53, calculate KLM
+KLM = KM/KL
+= 0.33 in the plastic range
+3A-26
+
+===== batch 18 | page 33 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+PROBLEM 3A-4 PLASTIC LOAD-MASS FACTOR
+Problem: Determine the plastic load-mass factor KLM for a two-way element 
+using (1) general solution and (2) chart solution.
+Note: The determination of the plastic load-mass factor follows the calculations 
+for the ultimate resistance, hence the structural configuration and the 
+location of the plastic yield lines will be known.
+Procedure: Part (a) - General Solution
+Step 1. See Part (a), Problem 3A-1 for the structural configuration and location of 
+plastic yield lines. Denote sectors formed by yield lines.
+Step 2. Determine the load-mass factors properties I, c, and L' for all sectors.
+Step 3. Determine the factor I/cL' for all sectors.
+Step 4. Calculate the total area of the element.
+Step 5. With values obtained above, calculate the plastic load-mass factor for the 
+element using Equation 3-57.
+Note: In the above problem, an element of uniform thickness was considered. 
+For non-uniform elements, the load-mass factor is calculated using 
+Equation 3-53 where the mass of the individual sectors must be 
+considered.
+Procedure: Part (b) - Chart Solution
+Step 1. See Part (b), Problem 3A-1 for structural configuration and location of 
+plastic yield lines in terms of x/L or y/H.
+Step 2. For known value of X/L or y/H and support condition, determine the load￾mass factor for the element from Figure 3-44 (+).
+Note: Chart solution may be used only if the element conforms to the 
+requirements listed in Section 3-17.3.
+3A-27
+
+===== batch 18 | page 34 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+EXAMPLE 3A-4 PLASTIC LOAD-MASS FACTOR
+Required: Plastic load-mass factor for the element considered in Example 3A￾1(A) using (1) general solution and (2) chart solution.
+Solution: Part (a) - General Solution
+Step 1. Given structural configuration and location of yield lines shown below (see 
+Part (a), Example 3A-1(A)) in Figure 3A-14 (+).
+L = 240 in
+H = 168 in
+X = 120 in
+y = 137.6 in
+Tc = constant
+Figure 3A-14
+Step 2. Load-mass factor properties.
+a. Sector I.
+L' = y = 137.6 in 
+c = y/3 = 137.6/3
+I = L(L' 3
+) /12 = 240(137.6)3/12. 
+b. Sector II.
+3A-28
+
+===== batch 18 | page 35 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Figure 3A-15 Figure 3A-16
+L' = x = 120 in
+H - y = 168 - 137.6 = 30.4 in
+3 168 30.4
+120 168 2 30.4
+3
+' 2
+H H y
+L H H y
+c
+c = 120 (0.384)
+3
+3 3 3 3
+21.60 120
+12
+137.6 120
+3
+30.4 120
+3 12
+H y L y L
+I
+Step 3. Calculate factor I/cL' f or each sector:
+Sector I. 2
+3
+8,784in
+133.4 / 3 133.4
+240 137.6 /12
+cL'
+I
+Sector II. 2
+3
+6,646in
+0.390 120 120
+21.60 120
+cL'
+I
+Sector III. 2
+6,646in
+cL'
+I
+Step 4. Area of panel
+A = LH = 240 (168) = 40,320 in2
+Step 5. Load-mass factor
+0.534
+40,320
+8,256 2 6,646
+/ '
+A
+I cL
+KLM
+3A-29
+
+===== batch 18 | page 36 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Solution: Part (b) - Chart Solution
+Step 1. Given: Panel fixed on 3 edges, 1 free and y/H = 0.803 (see Part (b),
+Example 3A-1(A)).
+Step 2. From Figure 3-44 (+), read load-mass factor
+KLM = 0.543
+3A-30
+
+===== batch 18 | page 37 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+PROBLEM 3A-5 RESPONSE OF A SINGLE-DEGREE-OF-FREEDOM SYSTEM 
+SUBJECT TO DYNAMIC LOAD
+Problem: Determine the maximum response and the corresponding time it 
+occurs of a single-degree-of-freedom system subjected to dynamic 
+load using (a) numerical methods and (b) design charts.
+Procedure: Part (a) - Numerical Methods
+Step 1. Establish dimensional parameters of the system.
+Step 2. Determine the natural period of vibration and integration time interval.
+Step 3. Construct a table similar to Table 3-14 (+) of Section 3-19.2.
+Note: For the first interval n=1, Equation 3-59 is used and subsequent intervals, 
+the recurrence formula (Equation 3-56) is used.
+Procedure: Part (b) - Chart solution
+Step 1. Same as Step 1 of Example 3A-5, Part (a).
+Step 2. Determine the non-dimensional parameters.
+Step 3. Determine the ratio of the maximum displacement to the elastic 
+displacement Xm/XE and the ratio of the time at which this maximum 
+displacement occurs to the duration of the blast load.
+3A-31
+
+===== batch 18 | page 38 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+EXAMPLE 3A-5 MAXIMUM RESPONSE OF SINGLE-DEGREE-OF-FREEDOM 
+SYSTEM SUBJECTED TO A TRIANGULAR LOAD.
+Required: The maximum response and the time it occurs, of a single-degree-of￾freedom system subjected to blast loads, using (a) numerical 
+methods and (b) design charts.
+Solution: Part (a) - Numerical Methods
+Step 1. Given:
+Figure 3A-17
+m = 2.5 Kips-sec2
+/ft
+K = 9,860 Kips/ft
+ru = 750 Kips
+XE = 0.076 ft
+T = 0.10 sec
+P = 1000 Kips
+Step 2. Natural period of vibration and integration time interval:
+TN = 2 [m/K]
+1/2 = 2 [2.5/9,860]1/2 = 0.10 sec
+t = TN/10 = 0.01 sec
+3A-32
+
+===== batch 18 | page 39 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Step 3. Construct table as shown below.
+1 2 3 4 5 6 7 8 9 10
+n t Pn Rn Pn-Rn An=(Pn-Rn)/m an( t)
+2 2Xn Xn-1 Xn+1
+(sec) (Kips) (Kips) (Kips) (ft/sec2
+) (ft) (ft) (ft) (ft)
+0 0 1000 0 1000 400 0.040 0.0 0.0 0.020
+1 0.01 900 197.20 702.80 281.120 0.028112 0.0400 0.0 0.068112
+2 0.02 800 671.68 128.43 51.366 0.05137 0.13622 0.020 0.121357
+3 0.03 700 750 -50.0 -20.0 -0.00200 0.242714 0.06811 0.17261
+4 0.04 600 750 -150.0 -60.0 -0.00600 0.34522 0.121357 0.21786
+5 0.05 500 750 -250.0 -100.0 -0.0100 0.43673 0.17261 0.25312
+6 0.06 400 750 -350.0 -140.0 -0.0140 0.050623 0.21786 0.27437
+7 0.07 300 750 -450.0 -180.0 -0.0180 0.54874 0.25312 0.27762
+8 0.08 200 750 -550.0 -220.0 -0.0220 0.55525 0.27437 0.25880
+9 0.09
+Note: P = f(t ) = 1000 [1 - n( t/T)]
+u e
+n e
+n
+r X
+KX X
+R
+n
+n
+750 for X
+for X
+Xn+1 = 2Xn - Xn-1+ an ( t)
+2
+Note:
+For n=0, Xn+1 (Column 10) = X0+1 = X1 = (1/2)a0( t)
+2
+= (1/2)(0.040)
+= 0.02 ft
+3A-33
+
+===== batch 18 | page 40 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+For n=1, 2Xn (Column 8) = 2X1 = 2[(1/2)a0( t)
+2
+]
+= 2(0.02) = 0.04 ft
+Xn-1 (Column 9) = X0 = 0.0
+Xn+1 (Column 10) = X2 = 2X1 - X0 + a1( t)
+2
+= 2(0.02) - 0 + 0.02811
+= 0.06811 ft
+For n=2, 2Xn (Column 8) = 2X2 = 2(0.06811)
+= 0.13622 ft
+Xn-1 (Column 9) = X1 = 0.02 ft.
+Xn+1 (Column 10) = X3 = 2X2 - X1 + a2 ( t)
+2
+= (2)(0.06811) - 0.02 + 0.005137 
+= 0.121357 ft.
+For n=3, 4,..., repeat the above procedure.
+Solution: Part (b) - Design Charts
+Step 1. Same as Step 1 of Example 3A-5, Part (a).
+Step 2. Non-dimensional parameters:
+a. Natural period of vibration, Tn
+Tn = 2 [m/K]
+1/2 = 2 [2.5/9,860]1/2 = 0.10 sec 
+b. Ratio of duration of blast load T to natural period TN
+T/TN = 0.10/0.10 = 1.0
+c. Ratio of peak resistance ru to peak load P
+ru/P = 750/1000 = 0.75
+Step 3. Using the ratios calculated in Step 2 and Figures 3-54 (+) and 3-55 (+),
+determine the value of Xm/XE and tm/TN.
+For T/TN = 1 and ru/P = 0.75
+Xm/XE = 3.7 from Figure 3-54
+tm/T = 0.77 from Figure 3-55
+3A-34
+
+===== batch 18 | page 41 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Step 4. Determine Xm and tm.
+Xm/XE = 3.7
+Xm = 3.7XE = 3.7(.076) = 0.28144 ft
+tm/T = 0.77
+tm = 0.77T = 0.77(0.10) = 0.077 sec
+3A-35
+
+===== batch 18 | page 42 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+PROBLEM 3A-6 MAXIMUM RESPONSE OF A SINGLE-DEGREE-OF-FREEDOM 
+SYSTEM TO BILINEAR BLAST LOADS
+Problem: Determine Xm/XE, tm/TN and tE/T (when applicable) for a single-degree￾of-freedom system subject to various bilinear blast loads.
+Procedure: Part (a) - Solution in Region D
+Step 1. Establish normalized parameters.
+Step 2. Enter Table 3-15 (+) with the given C parameters and determine which 
+figures have to be used.
+Step 3. Enter each of the figures determined in Step 2, with the given values of 
+the other two parameters and determine the region where the intersection 
+points are located.
+Step 4. Based on the region where the intersection points are located, enter the 
+appropriate figure and find Xm/XE, tm/TN and tE/T.
+Procedure: Part (b) - Solution in Region C - Graphical Interpolation.
+Step 1. Same as Step 1 in Part (a).
+Step 2. Same as Step 2 in Part (a).
+Step 3. Same as Step 3 in Part (a).
+Step 4. Set up a table as shown in Table 3A-1 (+). Post each figure number and 
+the corresponding values of C1 and C2, leaving a space between each line 
+of information. Post in the spaces the appropriate values of C1 and C2
+needed for interpolation. Enter each of the figures determined in Step 2 
+with the given parameters and find the values of Xm/XE. Post these values 
+in Table 3A-1.
+Step 5. Use log-log graph paper to plot the points obtained in Step 4. Post these 
+values in Table 3A-1 (+), using linear interpolation where necessary.
+Step 6. Plot on log-log graph paper the points which represent (Xm/XE, C2) for the 
+given value of C. Use linear interpolation to find Xm/XE for given value of 
+C2.
+Procedure: Part (c) - Solution in Region C - Mathematical Interpolation
+Step 1. Same as Step 1 in Part (a).
+Step 2. Same as Step 2 in Part (a).
+Step 3. Same as Step 3 in Part (a).
+Step 4. Same as Step 4 in Part (b).
+3A-36
+
+===== batch 18 | page 43 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Step 5. Solve for lnYa and lnYb using Equations 3-83 and 3-84.
+Step 6. Solve for lnY using Equation 3-85.
+Step 7. Solve for Y using Equation 3-86.
+3A-37
+
+===== batch 18 | page 44 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+EXAMPLE 3A-6 MAXIMUM RESPONSE OF A SINGLE-DEGREE-OF-FREEDOM 
+SYSTEM TO BILINEAR BLAST LOADS
+Required: Determine Xm/XE, tm/TN and tE/T (when applicable) for a single-degree￾of-freedom system subject to various bilinear blast loads.
+Solution: Part (a) - Solution in Region D
+Step 1. Given: P/ru = 1.0
+T/TN = 3.0
+C1 = 0.66
+C2 = 50
+Step 2. Enter Table 3-15 (+) with C1 = 0.66 and C2 = 50. Note Figures 3-119
+(+/+/+), 3-120 (+/+/+), 3-147 (+/+/+), and 3-148 (+/+/+) apply.
+Step 3. Enter each of the figures determined in Step 2, with P/ru = 1.0 and T/TN =
+3.0. Note that the intersection point is located to the right of the line of 
+solid squares, defined as Region D. In Region D, the maximum dynamic 
+response depends only on the shock load described by P/ru and T/TN; the 
+gas load described by C1P/ru and C2T/Tn does not influence the maximum 
+dynamic response. Consequently, Figures 3-64a (+) and 3-64b (+) for a 
+single triangular load pulse apply. Enter Figure 3-64a with P/ru = 1.0 and 
+T/TN = 3.0 and find Xm/XE = 3.55, tm/TN = 0.98, tE/T = 0.086.
+Solution: Part (b) - Solution in Region C - Graphical Interpolation
+Step 1. Given: P/ru = 32
+T/TN = 0.10
+C1 = 0.06
+C2 = 20
+Step 2. Enter Table 3-15 (+) with C1 = 0.06 and C2 = 20. Note Figures 3-108
+(+/+/+), 3-109 (+/+/+), 3-133 (+/+/+) and 3-134 (+/+/+) apply.
+Step 3. Enter each of these Figures with P/ru = 32 and T/Tn = 0.10. Note that the 
+intersection point is not located in Regions A, B or D. Therefore the 
+intersection points lie in region C and interpolation between charts is 
+required to obtain a solution.
+Step 4. Set up table as shown in Table 3A-1 (+) below. Post each chart number 
+and the corresponding values of C1 and C2 leaving a space between each 
+line of information. Post in the spaces the appropriate values of C1 and C2
+needed for interpolation. Enter Figure 3-108 (+/+/+) with P/ru = 32 and 
+3A-38
+
+===== batch 18 | page 45 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+T/TN = 0.10 and find Xm/XE = 112. Post this value in the table. Enter 
+Figure 3-109 (+/+/+) with P/ru = 32 and T/TN = 0.10 and find Xm/XE = 86. 
+Post this value in the table. Repeat this process for Figures 3-133 (+/+/+)
+and 3-134 (+/+/+), and post values for Xm/XE in the table.
+Step 5. Use log-log graph paper to plot the points (112, 0.068) and (86, 0.046) 
+which represent (Xm/XE, C1) for C2 = 10 as shown in Figure 3-267 (+). Use 
+straight-line interpolation to find Xm/XE = 103 for C1 = 0.060. Post this 
+value in the table. Repeat this process for C2 = 30, and find Xm/XE = 251 
+for C1 = 0.06 as shown in Figure 3-267.
+Step 6. Plot on log-log graph paper the points (103, 10) and (251, 30) which 
+represent (Xm/XE, C2) for C1, = 0.060. Use straight-line interpolation for 
+finding Xm/XE = 182 for C2 = 50 as shown in Figure 3-267 (+). Thus the 
+solution is Xm/XE = 182.
+Table 3A-1
+Figure No. C1 C2 Xm/XE
+3-108 (+/+/+) 0.068 112
+0.060 10 -- 103
+3-109 (+/+/+) 0.046 10 86
+0.060 20 -- 182
+3-133 (+/+/+) 0.075 30 340
+0.060 30 -- 251
+3-134 (+/+/+) 0.056 30 230
+Solution: Part (c) - Solution in Region C - Mathematical Interpolation
+Step 1. Same as Step 1 of Part (b).
+Step 2. Same as Step 2 of Part (b).
+Step 3. Same as Step 3 of Part (b).
+Step 4. Same as Step 4 of Part (b).
+Step 5. Using Equations 3-83 and 3-84, find lnYa and lnYb.
+3A-39
+
+===== batch 18 | page 46 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+ln 5.5304
+ln 0.056 / 0.075
+ln 230 / 340 ln 0.06 / 0.075 ln 340
+ln /
+ln / ln /
+ln ln
+ln 4.6339
+ln 0.046 / 0.068
+ln 86 /112 ln 0.060 / 0.068 ln 112
+ln /
+ln / ln /
+ln ln
+14 13
+4 3 1 13
+3
+12 11
+2 1 1 11
+1
+b
+b
+a
+a
+Y
+C C
+Y Y C C
+Y Y
+Y
+C C
+Y Y C C
+Y Y
+Step 6. Find lnY from Equation 3-85:
+ln 5.1995
+ln 30/10
+5.5304 4.639 ln 20 /10 4.6339
+ln /
+ln ln ln /
+ln ln
+23 21
+2 21
+Y
+C C
+Y Y C C
+Y Y
+b a
+a
+Step 7. Solve for Y using Equation 3-86:
+181
+= e
+5.1995
+ln
+Y
+e
+Y
+Y
+3A-40
+
+===== batch 18 | page 47 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+APPENDIX 3B LIST OF SYMBOLS
+a (1) acceleration (in/ms2
+)
+(2) depth of equivalent rectangular stress block (in)
+A area (in2
+)
+Aa area of diagonal bars at the support within a width b (in2
+)
+Ao area of openings (ft2
+)
+As area of tension reinforcement within a width b (in2
+)
+A's area of compression reinforcement within a width b (in2
+)
+AsH area of flexural reinforcement within a width b in the horizontal direction on 
+each face (in2
+)
+*
+AsV area of flexural reinforcement within a width b in the vertical direction on 
+each face (in2
+)*
+Av total area of stirrups or lacing reinforcement in tension within a distance, ss
+or sl and a width bs or bl (in2
+)
+AI,AII area of sector I and II, respectively (in2
+)
+b (1) width of compression face of flexural member (in)
+(2) width of concrete strip in which the direct shear stresses at the 
+supports are resisted by diagonal bars (in)
+bs width of concrete strip in which the diagonal tension stresses are resisted 
+by stirrups of area Av (in)
+b1 width of concrete strip in which the diagonal tension stresses are resisted 
+by lacing of area Av (in)
+B constant defined in paragraph
+c (1) distance from the resultant applied load to the axis of rotation (in)
+(2) damping coefficient
+cI
+,cII distance from the resultant applied load to the axis of rotation for sectors I 
+and II, respectively (in)
+cs dilatational velocity of concrete (ft/sec)
+C shear coefficient
+Ccr critical damping
+* See note at end of List of Symbols.
+3A-41
+
+===== batch 18 | page 48 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Cd shear coefficient for ultimate shear stress of one-way elements
+Cf post-failure fragment coefficient (lb2
+-ms4
+/in8
+)
+Cr peak reflected pressure coefficient at angle of incidence 
+Cs shear coefficient for ultimate support shear for one-way elements
+CsH shear coefficient for ultimate support shear in horizontal direction for two￾way elements*
+CsV shear coefficient for ultimate support shear in vertical direction for two-way 
+elements*
+CD drag coefficient
+CDq drag pressure (psi)
+CDqo peak drag pressure (psi)
+CE equivalent load factor
+CH shear coefficient for ultimate shear stress in horizontal direction for two￾way elements*
+CL leakage pressure coefficient
+CM maximum shear coefficient
+Cu impulse coefficient at deflection Xu (psi-ms2
+/in2
+)
+Cu' impulse coefficient at deflection Xm (psi-ms2
+/in2
+)
+Cv shear coefficient for ultimate shear stress in vertical direction for two-way 
+elements*
+C (1) impulse coefficient at deflection X (psi-ms2
+/in2
+)
+(2) parameter defined in figure
+(3) ratio of gas load to shock load
+C1' impulse coefficient at deflection Xm (psi-ms2
+/in2
+)
+C2 ratio of gas load duration to shock load duration
+d distance from extreme compression fiber to centroid of tension 
+reinforcement (in)
+d' distance from extreme compression fiber to centroid of compression
+reinforcement (in)
+* See note at end of List of Symbols.
+3A-42
+
+===== batch 18 | page 49 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+dc distance between the centroids of the compression and tension 
+reinforcement (in)
+de distance from support and equal to distance d or dc (in)
+di
+inside diameter of cylindrical explosive container (in)
+dl distance between center lines of adjacent lacing bends measured normal 
+to flexural reinforcement (in)
+dco diameter of steel core (in)
+d1 diameter of cylindrical portion of primary fragment (in)
+D (1) unit flexural rigidity (lb-in)
+(2) location of shock front for maximum stress (ft)
+(3) minimum magazine separation distance (ft)
+Do nominal diameter of reinforcing bar (in)
+DE equivalent loaded width of structure for non-planar wave front (ft)
+DIF dynamic increase factor
+DLF dynamic load factor
+e base of natural logarithms and equal to 2.71828...
+(2E')
+1/2 Gurney Energy Constant (ft/sec)
+E modulus of elasticity
+Ec modulus of elasticity of concrete (psi)
+Es modulus of elasticity of reinforcement (psi)
+f unit external force (psi)
+f'c static ultimate compressive strength of concrete at 28 days (psi)
+f'dc dynamic ultimate compressive strength of concrete (psi)
+fds dynamic design stress for reinforcement (psi)
+fdu dynamic ultimate stress of reinforcement (psi)
+fdy dynamic yield stress of reinforcement (psi)
+fs static design stress for reinforcement (a function of fy, fu and ) (psi)
+fu static ultimate stress of reinforcement (psi)
+fy static yield stress of reinforcement (psi)
+3A-43
+
+===== batch 18 | page 50 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+F (1) total external force (lbs)
+(2) coefficient for moment of inertia of cracked section
+(3) function of C2 and C1 for bilinear triangular load
+Fo force in the reinforcing bars (lbs)
+FE equivalent external force (lbs)
+g variable defined in Table 4-3 (+)
+h charge location parameter (ft)
+H (1) span height (in)
+(2) distance between reflecting surface(s) and/or free edge(s) in 
+vertical direction (ft)
+Hc height of charge above ground (ft)
+Hc scaled height of charge above ground (ft/lb1/3)
+Hs height of structure (ft)
+HT scaled height of triple point (ft/lb1/3)
+i unit positive impulse (psi-ms)
+i
+-
+unit negative impulse (psi-ms)
+a
+i sum of scaled unit blast impulse capacity of receiver panel and scaled unit 
+blast impulse attenuated through concrete and sand in a composite 
+element (psi-ms/lb1/3)
+ib unit blast impulse (psi-ms)
+b
+i scaled unit blast impulse (psi-ms/lb1/3)
+bt i total scaled unit blast impulse capacity of composite element (psi-ms/lb1/3)
+ba i scaled unit blast impulse capacity of receiver panel of composite element 
+(psi-ms/lb1/3)
+bd i scaled unit blast impulse capacity of donor panel of composite element 
+(psi-ms/lb1/3)
+ie unit excess blast impulse (psi-ms)
+ir unit positive normal reflected impulse (psi-ms)
+ir
+-
+unit negative normal reflected impulse (psi-ms)
+is unit positive incident impulse (psi-ms)
+3A-44
+
+===== batch 18 | page 51 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+is
+-
+unit negative incident impulse (psi-ms)
+I moment of inertia (in4
+)
+Ia average of gross and cracked moments of inertia of width b (in4
+)
+Ic moment of inertia of cracked concrete section of width b (in4
+)
+Ig moment of inertia of gross concrete section of width b (in4
+)
+Im mass moment of inertia (lb-ms2
+-in)
+j ratio of distance between centroids of compression and tension forces to 
+the depth d
+k constant defined in paragraph
+K (1) unit stiffness (psi-in for slabs) (lb/in/in for beams)
+(2) constant defined in paragraph
+Ke elastic unit stiffness (psi/in for slabs) (lb/in/in for beams)
+Kep elasto-plastic unit stiffness (psi-in for slabs) (psi for beams)
+KE equivalent elastic unit stiffness (psi-in for slabs) (psi for beams)
+KL load factor
+KLM load-mass factor
+(KLM)u load-mass factor in the ultimate range
+(KLM)up load-mass factor in the post-ultimate range
+KM mass factor
+KR resistance factor
+K1 factor defined in paragraph
+KE kinetic energy
+l charge location parameter (ft)
+lp spacing of same type of lacing bar (in)
+L (1) span length (in) except in chapter 4 (ft)*
+(2) distance between reflecting surface(s) and/or free edge(s) in 
+horizontal direction (ft)
+Ll
+length of lacing bar required in distance sl (in)
+* See note at end of List of Symbols.
+3A-45
+
+===== batch 18 | page 52 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+Lo embedment length of reinforcing bars (in)
+Lw wave length of positive pressure phase (ft)
+Lw
+- wave length of negative pressure phase (ft)
+Lwb, Lwd wave length of positive pressure phase at points b and d, respectively (ft)
+L1 total length of sector of element normal to axis of rotation (in)
+m unit mass (psi-ms2
+/in)
+ma average of the effective elastic and plastic unit masses (psi-ms2
+/in)
+me effective unit mass (psi-ms2
+/in)
+mu effective unit mass in the ultimate range (psi-ms2
+/in)
+mup effective unit mass in the post-ultimate range (psi-ms2
+/in)
+M (1) unit bending moment (in-lbs/in)
+(2) total mass (lb-ms2
+/in)
+Me effective total mass (lb-ms2
+/in)
+Mu ultimate unit resisting moment (in-lbs/in)
+Mc moment of concentrated loads about line of rotation of sector (in-lbs)
+MA fragment distribution parameter
+ME equivalent total mass (lb-ms2
+/in)
+MHN ultimate unit negative moment capacity in horizontal direction (in-lbs/in)*
+MHP ultimate unit positive moment capacity in horizontal direction (in-lbs/in)*
+MN ultimate unit negative moment capacity at supports (in-lbs/in)
+MP ultimate unit positive moment capacity at midspan (in-lbs/in)
+MVN ultimate unit negative moment capacity in vertical direction (in-lbs/in)*
+MVP ultimate unit positive moment capacity in vertical direction (in-lbs/in)*
+n (1) modular ratio
+(2) number of time intervals
+N number of adjacent reflecting surfaces
+Nf number of primary fragments larger than Wf
+* See note at end of List of Symbols.
+3A-46
+
+===== batch 18 | page 53 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+p reinforcement ratio equal to 
+c
+s s
+bd
+A
+bd
+A
+or
+p' reinforcement ratio equal to 
+c
+s s
+bd
+A
+bd
+A '
+or
+'
+pb reinforcement ratio producing balanced conditions at ultimate strength
+pm mean pressure in a partially vented chamber (psi)
+pmo peak mean pressure in a partially vented chamber (psi)
+pH reinforcement ratio in horizontal direction on each face*
+pT reinforcement ratio equal to pH + pv
+pv reinforcement ratio in vertical direction on each face*
+p(x) distributed load per unit length
+P (1) pressure (psi)
+(2) concentrated load (lbs)
+P
+-
+negative pressure (psi)
+Pi
+interior pressure within structure (psi).
+Pi
+interior pressure increment (psi)
+Pf fictitious peak pressure (psi)
+Po peak pressure (psi)
+Pr peak positive normal reflected pressure (psi)
+Pr
+-
+peak negative normal reflected pressure (psi)
+Pr peak reflected pressure at angle of incidence (psi)
+Ps positive incident pressure (psi)
+Psb, Pse positive incident pressure at points b and e, respectively (psi)
+Pso peak positive incident pressure (psi)
+Pso
+-
+peak negative incident pressure
+Psob, Psod, Psoe peak positive incident pressure at points b, d, and e, respectively (psi)
+q dynamic pressure (psi)
+* See note at end of List of Symbols.
+3A-47
+
+===== batch 18 | page 54 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+qb, qe dynamic pressure at points b and e, respectively (psi)
+qo peak dynamic pressure (psi)
+qob, qoe peak dynamic pressure at points b and e, respectively (psi)
+r (1) unit resistance (psi)
+(2) radius of spherical TNT (density equals 95 lb/ft3
+charge (ft))
+r
+-
+unit rebound resistance (psi)
+r change in unit resistance (psi) 
+re elastic unit resistance
+rep elasto-plastic unit resistance (psi)
+ru ultimate unit resistance (psi, for slabs) (lb/in for beams)
+rup post-ultimate unit resistant (psi)
+r1 radius of hemispherical portion of primary fragment (in)
+R (1) total internal resistance (lbs)
+(2) slant distance (ft)
+Rf distance traveled by primary fragment (ft)
+Rl radius of lacing bend (in)
+RA normal distance (ft)
+RE equivalent total internal resistance (lbs)
+RG ground distance (ft)
+Ru total ultimate resistance
+RI, RII total internal resistance of sectors I and II, respectively (lbs)
+ss spacing of stirrups in the direction parallel to the longitudinal reinforcement 
+(in)
+sl spacing of lacing in the direction parallel to the longitudinal reinforcement 
+(in)
+S height of front wall or one-half its width, whichever is smaller (ft)
+SE strain energy
+t time (ms)
+t time increment (ms)
+ta any time (ms)
+3A-48
+
+===== batch 18 | page 55 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+tb, te, tf time of arrival of blast wave at points b, e, and f, respectively (ms)
+t (1) clearing time for reflected pressures (ms)
+(2) container thickness of explosive charges (in)
+td rise time (ms)
+tE time to reach maximum elastic deflection
+tm time at which maximum deflection occurs (ms)
+to duration of positive phase of blast pressure (ms)
+to
+-
+duration of negative phase of blast pressure (ms)
+tof fictitious positive phase pressure duration (ms)
+tof
+-
+fictitious negative phase pressure duration (ms)
+tr fictitious reflected pressure duration (ms)
+tu time at which ultimate deflection occurs (ms)
+ty time to reach yield (ms)
+tA time of arrival of blast wave (ms)
+t1 time at which partial failure occurs (ms)
+T duration of equivalent triangular loading function (ms)
+Tc thickness of concrete section (in)
+Tc scaled thickness of concrete section (ft/lb1/3)
+TN effective natural period of vibration (ms)
+Tr rise time (ms)
+Ts thickness of sand fill (in)
+Ts scaled thickness of sand fill (ft/lb1/3)
+u particle velocity (ft/ms)
+uu ultimate flexural or anchorage bond stress (psi)
+U shock front velocity (ft/ms)
+v velocity (in/ms)
+va instantaneous velocity at any time (in/ms)
+vb boundary velocity for primary fragments (ft/sec)
+vc ultimate shear stress permitted on an unreinforced web (psi)
+3A-49
+
+===== batch 18 | page 56 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+vf maximum post-failure fragment velocity (in/ms)
+vf (avg.) average post-failure fragment velocity (in/ms)
+vi velocity at incipient failure deflection (in/ms)
+vo initial velocity of primary fragment (ft/sec)
+vr residual velocity of primary fragment after perforation (ft/sec)
+vs striking velocity of primary fragment (ft/sec)
+vu ultimate shear stress (psi)
+vuH ultimate shear stress at distance de from the horizontal support (psi)*
+vuV ultimate shear stress at distance de from the vertical support (psi)*
+V volume of partially vented chamber (ft3
+)
+Vd ultimate direct shear capacity of the concrete of width b (lbs)
+VdH shear at distance de from the vertical support on a unit width (lbs/in)*
+VdV shear at distance de from the horizontal support on a unit width (lbs/in)*
+Vo volume of structure (ft3
+)
+Vs shear at the support on a unit width (lbs/in)*
+VsH shear at the vertical support on a unit width (lbs/in)*
+VsV shear at the horizontal support on a unit width (lbs/in)*
+Vu total shear on a width b (lbs)
+w weight density of concrete (lbs/ft3
+)
+ws weight density of sand (lbs/ft3
+)
+W charge weight (lbs)
+Wc total weight of explosive containers (lbs)
+Wf weight of primary fragment (oz)
+Wco total weight of steel core (lbs)
+Wc1, Wc2 total weight of plates 1 and 2, respectively (lbs)
+Ws width of structure (ft)
+WD work done
+x yield line location in horizontal direction (in) *
+* See note at end of List of Symbols.
+3A-50
+
+===== batch 18 | page 57 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+X deflection (in)
+Xa any deflection (in)
+Xe elastic deflection (in)
+Xep elasto-plastic deflection (in)
+Xf maximum penetration into concrete of armor-piercing fragments (in)
+Xf
+' maximum penetration into concrete of fragments other than armor-piercing 
+(in)
+Xm maximum transient deflection (in)
+Xp plastic deflection (in)
+X (1) maximum penetration into sand of armor-piercing fragments (in)
+(2) static deflection (in)
+Xu ultimate deflection (in)
+XE equivalent elastic deflection (in)
+X1 partial failure deflection (in)
+y yield line location in vertical direction (in)*
+Z scaled slant distance (ft/lb1/3)
+ZA scaled normal distance (ft/lb1/3)
+ZG scaled ground distance (ft/lb1/3)
+(1) angle formed by the plane of stirrups, lacing, or diagonal 
+reinforcement and the plane of the longitudinal reinforcement (deg)
+(2) angle of incidence of the pressure front (deg)
+ß (1) coefficient for determining elastic and elasto-plastic resistances
+(2) particular support rotation angle (deg)
+(1) coefficient for determining elastic and elasto-plastic deflections
+(2) deflection’s increase in support rotation angle after partial failure 
+(deg)
+(1) support rotation angle (deg)
+(2) angular acceleration (rad/ms2
+)
+max maximum support rotation angle (deg)
+3A-51
+
+===== batch 18 | page 58 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+H horizontal rotation angle (deg) *
+V vertical rotation angle (deg)*
+o effective perimeter of reinforcing bars (in)
+M summation of moments (in-lbs)
+MN sum of the ultimate unit resisting moments acting along the negative yield 
+lines (in-lbs)
+MP sum of the ultimate unit resisting moments acting along the positive yield 
+lines (in-lbs)
+ductility factor
+Poisson's ratio
+(1) capacity reduction factor
+(2) bar diameter (in)
+r assumed shape function for concentrated loads
+(x) assumed shape function for distributed loads
+free edge
+simple support
+fixed support
+either fixed, restrained, or simple support
+* See note at end of List of Symbols.
+3A-52
+
+===== batch 18 | page 59 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+APPENDIX 3C BIBLIOGRAPHY
+1. Blast Resistant Design, NAVFAC Design Manual 2.8, Department of the Navy, 
+Naval Facilities Engineering Command, Alexandria, VA 22332, April 1982.
+2. Design of Structures to Resist Nuclear Weapons Effects, ASCE Manual of 
+Engineering Practice, No. 42, American Society of Civil Engineers, New York, NY, 
+1961. (1983 Edition under preparation)
+3. Designing Facilities to Resist Nuclear Weapons Effects, Structures, TM5-858-3, 
+Headquarters, Department of the Army, Washington, DC.
+4. Structures to Resist the Effects of Accidental Explosions, Technical Manual TM5-
+1300, Navy Publication NAVFAC P-397, Air Force Manual AFM 88-22, Department 
+of the Army, the Navy, and the Air Force, Washington, DC, June 1969.
+5. Crawford, R. E., et al, The Air Force Manual for Design and Analysis of Hardened 
+Structures, AFWL-TR-74-102, Air Force Weapons Laboratory, Kirtland Air Force 
+Base, New Mexico, 87117.
+6. Healey, J., et al, Design of Steel Structures to Resist the Effects of HE Explosions,
+by Ammann and Whitney, Consulting Engineers, New York, NY, Technical Report 
+4837, Picatinny Arsenal, Dover, NJ, August 1975.
+7. Hopkins, J., Charts for Predicting Response of a Simple Spring-Mass System to a 
+Bilinear Blast Load, Technical Note N-1450, Naval Civil Engineering Laboratory, Port 
+Hueneme, CA, April 1983.
+8. Stea, W., et al, Nonlinear Analysis of Frame Structures Subjected to Blast 
+Overpressures, by Ammann and Whitney, Consulting Engineers, New York, NY, 
+Contractor report ARLCD-CR-77008, U.S. Army Armament Research and 
+Development Command, Large Caliber Weapon Systems Laboratory, Dover, NJ, 
+May 1977.
+9. Stea, W., Weissman, S., and Dobbs, N., Overturning and Sliding Analysis of 
+Reinforced Concrete Protective Structures, by Ammann and Whitney, Consulting 
+Engineers, New York, NY, Technical Report 4921, Picatinny Arsenal, Dover, NJ, 
+February 1976.
+10.Javornicky, J. and Van Amerongen, C., Tables for the Analysis of Plates, Slabs and 
+Diaphragms Based on the Elastic Theory, Bauverlag GmbH., Wiesbaden/Germany 
+(2nd Edition 1971).
+11.Roark, R.J. and Young, W. C., Formulas for Stress and Strain, McGraw Hill, New 
+York (5th Edition 1975).
+12.Cohen, E. and Dobbs, N., Design Procedures and Details for Reinforced Concrete 
+Structures Utilized in Explosive Storage and Manufacturing Facilities, Ammann and 
+Whitney, Consulting Engineers, New York, NY, Annals of the New York Academy of 
+Sciences, Conference on Prevention of and Protection Against Accidental Explosion 
+3A-53
+
+===== batch 18 | page 60 =====
+UFC 3-340-02
+5 December 2008
+Change 2, 1 September 2014
+of Munitions, Fuels and Other Hazardous Mixtures, Volume 152, Art. 1, October 
+1968.
+3A-54

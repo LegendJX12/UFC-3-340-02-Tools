@@ -1,0 +1,1140 @@
+
+
+<!-- batch 34 | page 1 -->
+
+## UNDERGROUND STRUCTURES 
+
+## 6 -33INTRODUCTION
+
+Underground structures are not usually used for production and handling of explosives since access for both personnel and explosives is more difficult than for an aboveground structure. However, an explosion may result in severe hazards from which an aboveground structure cannot provide adequate protection and a buried structure will be required. An example might be a manned control building at a test site which must be located very close to a high-hazard operation involving a relatively large quantity of explosives.
+
+
+
+There is limited test data available to predict the pressures acting on an underground structure. What test data that is available was developed for use in the design of protective structures to resist the effects of an attack with conventional weapons. The results of this data and the design procedures developed from it are given in the technical manual, "Fundamentals of Protective Design for Conventional Weapons," TM 5-855-1. The data presented may be expanded to include the design of structures subjected to accidental explosions. The pertinent sections are briefly summarized below.
+
+
+
+A typical underground structure used to resist conventional weapons attack is shown in Figure 6-56 (+). The burster slab prevents a weapon from penetrating through the soil and detonating adjacent to the structure. A burster slab is not mandatory, but if it is not used the structure will have to be buried much deeper. The burster slab must extend far enough beyond the edge of the building to form at least a 45 degree angle with the bottom edge of the building. It may have to be extended further, though, if it is possible for a bomb to penetrate at a very shallow angle, travel beneath the burster slab and detonate adjacent to the structure (see Figure 6-56). Sand is used as backfill because materials with high volume of air-filled voids and low relative densities are poor transmitters of ground shock. In addition, sand resists penetration better than soil.
+
+## 6 -34DESIGNLOADS FORUNDERGROUND STRUCTURES
+
+### 6 -34.1General
+
+The pressure-time relationships for roof panels and exterior walls are determined separately. For the roof panel, an overhead burst produces the most critical loading while for an exterior wall a sideburst is critical. A general description of the procedure for determining the peak pressures and their durations is given below. For a more detailed description, including the required equations, see TM 5-855-1.
+
+The magnitude of the ground shock is affected by:
+
+1.The size of the explosive charge and its distance from the structure;
+
+2.The mechanical properties of the soil, rock, and/or concrete between the detonation point and the structure; and 
+
+<!-- batch 34 | page 2 -->
+
+### 3. The depth of penetration at the time of detonation
+
+The stresses and ground motions are greatly enhanced as the depth of the explosion increases. To account for this effect a coupling factor is used. The coupling factor is defined as the ratio of the ground shock magnitude from a near surface burst to that of a fully buried burst. A single coupling factor applies to all ground shock parameters and depends on the depth of the explosion and whether detonation occurs in soil, concrete or air.
+
+
+
+### 6 -34.2Roof Loads
+
+Atypical roof load (shown in Figure 6-57 (+)) consists of a free-field pressure $P_{o}$ and a reflected pressure $P_{r}$ .The reflected pressure occurs when the free-field pressure impinges on the roof panel and is instantly increased to a higher pressure. The amount of increase is a function of the pressure in the free-field wave and the angle formed between the rigid surface and the plane of the pressure front. However, TM 5-855-1suggests that an average reflection factor of 1.5 is reasonable.
+
+The pressures on the roof of an underground structure are not uniform across the panel,especially if the depth of the explosion is shallow. However, in order to use a singledegree-of-freedom analysis, a uniform load is required and hence an average uniform pressure must be determined. TM 5-855-1 presents figures that give the ratio peak pressures at the center of a roof panel to the average pressure across the entire panel.This ratio is a function of the support conditions and aspect ratio of the panel and the height of the burst above the roof.
+
+
+
+For the most severe roof load the explosive is positioned directly over the center of the panel. The average free-field and average reflected pressures are calculated as described above. The duration of the pressure pulse also varies across the roof panel and a fictitious average duration $t_{0}$ must be determined. TM 5-855-1 recommends calculating the duration of the peak free-field pressure pulse at a point located one quarter of the way along the short span and at the center of the long span. This duration is then used as the average duration of the entire panel. The peak free-field pressure and impulse are calculated using equations given in TM 5-855-1. The duration is found by assuming a triangular pressure-time relationship. The duration of the average reflected pressure t, is given in TM 5-855-1 as a function of either the thickness of the structural element or the distance to the nearest free edge of the structure. The smaller of the two numbers should be used in analysis.
+
+
+
+### 6 -34.3Wall Loads
+
+The design loads on an exterior wall are determined using the procedures described in Section 6-34.2 for roof loads. However, in addition to the pressure wave traveling directly from the explosion, the wall may be subject to a pressure wave reflected off the ground surface or burster slab and/or a pressure wave reflected off a lower rock layer or water table.
+
+
+
+<!-- batch 34 | page 3 -->
+
+The parameters of each wave (average reflected pressure, average free-field pressure,durations and time of arrival) are determined separately using procedures very similar to those described in Section 6-34.2. The total pressure-time history is equal to the superposition of the three waves as shown in Figure 6-58 (+). The superposition results in a very complicated load shape. The response charts of Chapter 3 are not applicable for such a shape, therefore the load must be idealized. The actual load is transformed into a triangular load having the same total impulse (area under the actual load curve equal to the sum of the areas of the direct and reflected waves). The maximum pressure of the idealized load is equal to the maximum pressure of the actual load neglecting the short reflected peaks. The duration is then established as a function of the total impulse and maximum pressure (Figure 6-58). For an exact solution, the actual load curve is used in a single-degree-of-freedom computer program analysis or numerical analysis as given in Section 3-19.2.
+
+
+
+#### 6 -35STRUCTURAL DESIGN.6-35.1Wall and Roof Slabs
+
+The structural design of underground structures is very similar to the design of aboveground structures as described in Chapter 4. The effect of the soil is to modify the response of the structural components. The dead load of the soil reduces the resistance available to resist blast. At the same time a portion of the soil acts with the structural elements to increase the natural period of vibration. In the case of a wall, it is assumed that the mass of two (2) feet of soil acts with the mass of the wall. Whereas for a roof,the entire mass of the soil supported by the roof, or a depth of soil equal to one quarter of the roof span (short span for a two-way panel) whichever is smaller, is added to the mass of the roof.
+
+
+
+The dynamic response of underground structures must obviously be limited to comparatively small deformations to prevent collapse of the structure due to earth loads. A maximum deflection corresponding to a support rotation of two (2) degrees or a ductility ratio of 10.0 is permitted for underground structures subjected to accidental explosions. In calculating the maximum deflection of underground structures, static deflection due to soil overburden must be considered.
+
+
+
+Spalling is the ejection of material from the back face of a slab or beam. It results from high-intensity, close-in explosions. Fragment shields or backing plates, as shown in Figure 6-59 (+), are of some value in protecting personnel and equipment. These steel plates must be securely anchored to the inside face of the concrete member. Tests have shown that the shock of a deep penetrating detonation to be enough to cause inadequate welds to fail over a large area, adding the whole steel plate to the concrete spall. A strongly attached plate adds about 10 percent to the perforation resistance of a concrete slab. For a further discussion of backing plates, see Chapter 4.
+
+<!-- batch 34 | page 4 -->
+
+### 6 -35.2Burster Slab
+
+For protective structures, a burster slab prevents a weapon from penetrating through the soil and detonating adjacent to the structure. Its thickness and length may have to be determined by a trial and error procedure in order to limit pressures on the structure to a given value. However, the minimum dimensions are shown in Figure 6-56 (+). The minimum reinforcement is 0.1 percent in each face, in each direction or a total of 0.4percent. In the design of structures subject to accidental explosions, the ground floor slab of the donor building serves a purpose similar to that of a burster slab. The floor slab helps to prevent fragment penetration and to attenuate the load.
+
+## 6 -36STRUCTURE MOTIONS
+
+### 6 -36.1Shock Spectra
+
+TM 5-855-1 gives equations for acceleration, velocity and displacements for underground structures. These simplified methods take into account the attenuation of the pressure wave as it transverses the structure. For a sideburst, the vertical acceleration, velocity and displacements are 20 percent of the horizontal values. The horizontal motions are uniform over the entire floor while vertical motions at the leading edge are twice those at midspan.
+
+
+
+Once the peak in-structure acceleration, velocity and displacements have been determined an in-structure shock spectra can be developed using the principles of Chapter 2 of this manual.
+
+
+
+### 6 -36.2Shock Isolation Systems
+
+Chapter 1 presents the upper limits of the shock environment that personnel and equipment can tolerate. If the shock environment exceeds human tolerances and/or equipment "fragility levels" then shock isolation systems are required to protect personnel and sensitive equipment. Using the shock spectra developed as described above, shock isolation systems are designed as outlined in Sections 6-43 through 6-49.
+
+<!-- batch 34 | page 5 -->
+
+<div style="text-align: center;">Figure 6-56 Geometry of a Buried Structure </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_154_315_1028_671.jpg" alt="Image" width="73%" /></div>
+
+
+<div style="text-align: center;">Figure 6-57 Typical Roof Panel Load </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_chart_box_360_787_817_1103.jpg" alt="Image" width="38%" /></div>
+
+
+<div style="text-align: center;">TIME (ms)</div>
+
+
+<!-- batch 34 | page 6 -->
+
+<div style="text-align: center;">Figure 6-58 Contribution of Three Pressure Waves on a Wall </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_chart_box_199_322_959_849.jpg" alt="Image" width="63%" /></div>
+
+
+<!-- batch 34 | page 7 -->
+
+<div style="text-align: center;">Figure 6-59 Spall Plate </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_312_326_846_814.jpg" alt="Image" width="44%" /></div>
+
+
+## EARTH-COVERED ARCH-TYPE MAGAZINES 
+
+## 6 -37GENERAL 
+
+Certain types of earth-covered concrete-arch and steel-arch magazines have been approved and standardized for use by the Department of Defense Explosives Safety Board. These magazines provide definite advantages over other types of magazines.Among these advantages are:
+
+1.Less real estate per magazine is required because of the decreased intermagazine separations permitted when approved magazines are used.2.An almost infinite number of storage situations exists because magazines can be designed to any length.
+
+
+
+3.Because of the reduced separation distances, less roads, fences, utilities,etc., are required.
+
+
+
+Unlike the other structures discussed elsewhere in this manual, an earth-covered magazine is not designed to resist the damaging effects of its exploding contents. lt is accepted that the magazine will be demolished if an internal explosion occurs. During such an incident, the inside of a large-span arch might experience initial blast pressures considerably in excess of 10,000 psi. Less than 100 psi could lift the arch completely 
+
+<!-- batch 34 | page 8 -->
+
+out of the ground; therefore, the major portion of the protection is provided by the receiver magazines rather than the donor magazine.
+
+
+
+Earth-covered magazines are utilized primarily to prevent propagation of explosion.These structures may also be used for operating buildings and can provide personnel protection. In such cases, separation distances greater than those required to prevent propagation of explosions will be necessary. In addition, a special evaluation of the structure is required. This evaluation must include the leakage of blast pressures into the protected area, the strength and attachment of easily damaged or lightly supported accessories which may become hazardous debris, the transmission of shock to personnel through the walls or floors, and overall movement of the magazines.
+
+## 6 -38DESCRIPTION OF EARTH-COVERED ARCH-TYPE MAGAZINES
+
+A typical earth-covered arch-type magazine used for storing explosives has the following features:
+
+1.A semicircular or oval arch constructed of reinforced concrete or corrugated steel used to form roof and sides.
+
+2.A reinforced concrete floor slab, sloped for drainage.
+
+3.A reinforced concrete rear wall.
+
+4.A reinforced concrete headwall that extends at least 2-1/2 feet above the crown of the arch.
+
+
+
+5.Reinforced concrete wingwalls on either side of the headwall. The wingwalls may slope to the ground or may adjoin wingwalls from adjacent magazines. The wingwalls may be either monolithic or separated by expansion joints from the headwall.
+
+
+
+6.Heavy steel doors in the headwall (either manually operated and/or motorized).
+
+
+
+7.An optional gravity ventilation system.
+
+8.Earth cover over the top, sides and rear of the structure. This cover must be at least 2 feet thick at the crown of the arch. The earth above the structure (within the spring line of each arch and between the head and rear walls) is sloped for drainage while beyond the outline of the structure the earth is sloped 2 horizontal to 1 vertical.
+
+
+
+9.Its own built-in lightning protection and grounding systems.
+
+A typical earth-covered steel arch magazine is illustrated in Figure 6-60 (+)
+
+<!-- batch 34 | page 9 -->
+
+## 6 -39
+
+## SEPARATION DISTANCES OF STANDARD MAGAZINES
+
+Numerous full scale tests of standard magazines have been performed over a period of several years. As a result magazine separation formulae have been established, which will prevent magazine-to-magazine propagation of explosions. All possible right angle arrangements have been considered, i.e., side-to-side, rear-to-rear, front-to-rear, etc.The standard magazines, which are at least equivalent in strength to those tested, are listed in the DoD Standard, "DoD Ammunition and Explosives Safety Standards,6055.9-STD." The required separation distances, as a function of the quantity of explosives stored in the structure are also given in the DoD Standard. A possible magazine arrangement is shown in Figure 6-61 (+).
+
+
+
+## 6 -40DESIGN
+
+Protection of magazines adjacent to a donor magazine is accomplished by combining the following factors:
+
+1.The intensity of the pressure front moving from the donor magazine to receiver magazines diminishes rapidly as the distance traveled increases.2.The earth cover over and around the donor magazine provides some confinement and tends to directionalize the explosive force both upward and outward from the door end of the magazine.
+
+
+
+3.The earth around and over receiver magazines resists fragment penetrations and provides mass to the arch to resist the blast pressures.4.The arch of receiver magazines is capable of resisting blast loads considerably in excess of the dead loads normally imposed on it.
+
+Design of presently used magazines is essentially conventional except for two features,which are doors and arch. The doors are designed to withstand the dynamic forces from an explosion in a nearby magazine if the siting is in accordance with Figure 6-1 (+)However, they provide almost no resistance to the effects of an explosion within the magazine. Also, the capacity of the doors to resist elastic rebound and negative phase pressures may be less than their capacity to resist positive phase pressures. Therefore,where personnel are concerned, all doors should be analyzed to determine their ultimate capacity to resist all the loadings involved. The arches used for the standard earth-covered magazines are the same as those used in the test structures to establish the required separation distances. These arches have not been dynamically designed for the blast loads and may be in excess of that required.
+
+
+
+## 6 -41CONSTRUCTION
+
+Effectiveness of earth-covered magazines is largely determined by the quality of construction. A few of the construction details that could be sources for problems in this type of structure are discussed below.
+
+
+
+<!-- batch 34 | page 10 -->
+
+Moisture proofing of any earth-covered structure is usually difficult. This difficulty is increased with a steel-arch structure because of the many lineal feet of joints available for introducing moisture. For example, a large 26- by 80-foot magazine contains approximately 1,050 feet of edges. A sealant tape must be used that will not deteriorate or excessively deform under any anticipated environmental or structural condition.
+
+Earthfill material should be clean, cohesive, and free from large stones.A minimum earth cover of two feet must be maintained. Surface preparation of the fill is usually required to prevent erosion of the 2-foot cover.
+
+
+
+Restricting granular size of material reduces throwout of fragments in case of an accidental explosion and creates a more uniform energy absorbent over the top of the magazine.
+
+
+
+Lightning protection is rather easily obtained in a steel-arch structure. All sections of steel-arch plate must be interconnected so that they become electrically continuous. In a concrete-arch magazine, the reinforcing steel must be interconnected. In effect, a "cage" is created about the magazine contents. Probably the most critical point for lightning protection is the optional ventilator stack which projects above the surrounding earth cover.
+
+
+
+## 6 -42NON-STANDARD MAGAZINES
+
+Non-standard earth-covered magazines, that is magazines not listed in DoD Standard 6055.9-STD may also be used for explosive storage. However, if a "non-standard"earth-covered magazine or an aboveground magazine is used the separation distances must be increased. The DoD Standard 6055.9-STD includes the increased separation distances, as well as other criteria, for "nonstandard" earth-covered and aboveground magazines.
+
+
+
+<!-- batch 34 | page 11 -->
+
+<div style="text-align: center;">Figure 6-60 Typical Earth-Covered Steel-Arch Magazine </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_277_311_904_1379.jpg" alt="Image" width="52%" /></div>
+
+
+<!-- batch 34 | page 12 -->
+
+<div style="text-align: center;">Figure 6-61 Minimum Separation Distances of Standard Magazine </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_198_311_983_1031.jpg" alt="Image" width="65%" /></div>
+
+
+HEADWALL 
+
+REAR WALL 
+
+EDGE OF EARTH COVER 
+
+EDGE OF ARCH 
+
+W CHARGE WEIGHT 
+
+
+
+<!-- batch 34 | page 13 -->
+
+## BLAST VALVES 
+
+#### 6 -43GENERAL.6-43.1Applications
+
+A prime concern of blast resistant structures is to restrict the flow of high pressures into or out of a structure. For donor structures pressures released may have to be restricted in order to limit pressures acting on adjacent structures to tolerable levels. Also,pressures leaking into acceptor structures must be limited to prevent pressure buildup beyond acceptable levels. In either case openings may have to be completely sealed to prevent the diffusion of contaminants.
+
+
+
+The simplest, most economical way of limiting leakage pressure into or out of a protective structure is to restrict the number and size of air intake and exhaust openings. In a donor structure the leakage pressures may be further reduced by venting them through a stack. The stack increases the distance from the point of release of the pressure to the acceptor structure thereby attenuating the blast loading. Methods for predicting the pressures leaking out of a building and the pressure buildup within a building are discussed in Chapter 2. If the leakage pressure cannot be reduced to acceptable levels or if contaminants are released during an explosion, the openings must be sealed with either blast valves or other protective closure device.
+
+Blast valves may be either remote-actuated (closed mechanically by remote sensors) or blast-actuated (closed by the pressure wave itself). Both types can be non-latching or latching. A non-latching valve will open under negative pressures.A latching valve is one that can only be reopened manually. In addition, a blast-actuated valve can be double-acting. A double-acting valve will seal against the positive blast pressure, move in the opposite direction to seal against negative pressures and then reopen when pressures return to normal.
+
+
+
+### 6 -43.2Remote-Actuated Valves
+
+Remote-actuated valves are dependent on external sensing devices which trigger the closure mechanism and close the valve before arrival of the blast wave. Actuating devices have been developed that are sensitive to the blast pressure of an explosion and react electrically to trigger protective closure systems. Other actuating devices sensitive to flash and thermal radiation are also available. The pressure sensing device is placed on a circumference at a predetermined radius from the valve (closer to ground zero) in order to compensate for time delays of electrical and mechanical control equipment and to permit valve closure before the blast arrives. Thermal sensors are designed to detect the characteristic pulse emitted by an explosion to prevent actuation by other sources such as lightning, fires, etc., which may occur with flash sensors.Remote-actuated valves present problems of protection against multibursts and buttonup time for combustion-type equipment installed within the structure. In addition to problems of hardenability of the exposed sensor and suitability for multiburst operation,it is often necessary for sensors to initiate reopening of the valves as soon as 
+
+<!-- batch 34 | page 14 -->
+
+dangerous pressures have subsided. In general, remote-actuated valves cannot close fast enough to be effective during an H.E. explosion.
+
+
+
+### 6 -43.3Blast-Actuated Valves
+
+Self-acting blast-actuated valves, which close under the action of the blast pressure,overcome some of the disadvantages described above and present other factors to be considered. Since the valves are closed by pressure, they are not dependent upon sensing devices for operation. They can be automatically reopened after passage of the positive phase or latched closed during the negative phase if this is required. Doubleacting valves automatically seal the opening during the negative phase. Since blastactuated valves are closed by the blast, there is an inherent leakage problem to be considered due to the finite closing time. Although this is in the order of milliseconds for most valves, sufficient flow to cause damage may pass the port openings for certain valve designs and pressure levels. Effectiveness of closing at both high- and lowpressure ranges must be checked. The amount of blast entering depends on the closing time of the valve which, in turn, depends on the mass of the moving parts, disk diameter, and the distribution of pressures on both faces of the disk.
+
+Ideally, a blast-actuated valve should possess the following characteristics:instantaneous closure or no leakage beyond the valve during and after closure, no rebound of moving parts, equal efficiency at all pressures below the design pressure,operational and structural reliability, minimum of moving parts, low-pressure drop through the valve at normal ventilation or combustion air flows, multiple detonation capability, durability, and easy maintenance.
+
+
+
+Although instantaneous closure is not physically possible, the closing time can be reduced sufficiently to reduce the leakage to insignificant values. This may be accomplished by increasing the activating pressure-force-to-moving-mass ratio,decreasing the length of travel, permitting no deceleration during closure, and other methods.
+
+
+
+### 6 -43.4Plenums
+
+Blast valves, especially blast-actuated valves, will allow some pressure leakage. While the leakage pressure may not significantly increase the ambient pressure at some distance from the valve, there might be a "jetting effect" causing very high pressures in the immediate vicinity. A plenum may be used to protect against these high pressures.Two examples of plenums are a plenum chamber and a plenum constructed of hardened duct work. A plenum chamber is a room where pressures attenuate by expansion. A hardened duct work plenum reduces the pressures by increasing the distance traveled (similar to the stack discussed in Section 6-43.1). For a donor structure, a plenum would only be necessary if contaminants are released during an explosion and the air must be filtered before being vented to the exterior. In that case, a plenum would be used to lower the pressures and prevent damage to the filters. A plenum in an acceptor structure would be used to prevent high leakage pressures from 
+
+<!-- batch 34 | page 15 -->
+
+directly entering the building's air duct system and possibly causing local failure of the system.
+
+
+
+Plenum chambers should be designed to avoid a buildup of interior pressure which would impede closing of the valve. The ratio of the area of the chamber cross section to that of the valve outlet should be preferably greater than 4:1 so as to diffuse leakage flow as quickly as possible. A chamber which has the prescribed necessary volume but has little change in area would act like a tunnel wherein entering pressures would encounter little attenuation in the length provided.
+
+
+
+### 6 -43.5Fragment Protection
+
+To ensure that blast valves function properly, they must be protected from fragments that may perforate the valves or jam them in an open position. One of several methods of accomplishing the required protection is by offsetting the opening from the blast valve by means of a blast-resistant duct or tunnel which would prevent the propagation of fragments to the blast valve. Another method is to enclose the blast valve in a concrete chimney. Other methods include using a debris pit or steel shields or debris cover attached directly to the blast valves.
+
+
+
+## 6 -44TYPES OF BLAST VALVES
+
+### 6 -44.1General
+
+Various types of blast valves have been developed and many of them are available commercially from suppliers both here and overseas (see Table 6-14 (+)). For present designs, air flow rates from about 300 cfm to 35,000 cfm can be obtained. Some valve designs are available in more than one size and can be either blast or remote-actuated.The pressure loss across the valve at the rated air flow is, in most cases, less than one inch of watr.
+
+
+
+The maximum incident pressure capability of available valves is above 50 psi and generally at least 100 psi. For shelter purposes, these valves may be overdesigned since the protection level for many shelters will be less than 50 psi. Except for cost factors, using a 100-psi valve for a 10-psi shelter design should not necessarily present technical problems since a valve must operate at all pressures below the maximum design level.
+
+
+
+The best type of actuation (blast or remote) depends partly on the design pressure as previously discussed with regard to reaction time and operational considerations. For long arrival times (low pressure) a remote-actuated device can close the valve before the blast arrival whereas leakage may occur for a blast-actuated valve. At a high pressure (short arrival time), the closing time for the remote-actuated valve may be longer than the arrival time.
+
+
+
+<!-- batch 34 | page 16 -->
+
+### 6 -44.2Blast Shield
+
+If it can be assumed that the ventilation system can be closed off during a hazardous operation and kept closed until there is no danger of further blast, a relatively simple structural closure (blast shield), such as a steel plate can be utilized. This type of closure is especially useful for an exterior opening which would only be opened periodically, such as maintenance facilities where the release of toxic fumes from within the structure is required.
+
+
+
+### 6 -44.3Sand Filter
+
+In shelters where normal operational air requirements are small, sand filters are useful in the attenuation of leakage pressures. With this type of filter the pressures continue to increase throughout the positive phase. Thus this filter is good only for loads with a relatively short duration. A sketch of a 300-cfm sand filter is shown in Figure 6-62 (+)
+
+### 6 -44.4Blast Resistant Louvers
+
+The blast resistant louver shown in Figure 6-63 (+) is blast actuated and has a rated flow of 600 cfm at less than 1 inch water (gage) pressure drop. If a larger volume of air is required the louvers can be set into a frame and used in series (see Figure 6-64 (+))Louvers can be used in acceptor structures subject up to 50 psi. A major drawback of the louvers is that there may be as much as 40 percent leakage across the valve,especially at lower pressures.
+
+
+
+### 6 -44.5Poppet Valves
+
+#### 6 -44.5.1Applications
+
+A poppet valve has many advantages. It has few moving parts which might need repair.It can be blast or remote-actuated, latching, non-latching, or double-acting and is available in sizes from 600 to 5,000 cfm. A blast-actuated poppet valve has a very fast closing time, approximately 20 milliseconds, making it the only valve that reacts fast enough to be used in a containment cell.
+
+
+
+A typical blast-actuated poppet valve is shown in Figure 6-65 (+). The valve consists of an actuating plate, a valve seat, a backing plate that supports the actuating plate, and a spring which holds the valve open during normal operations. The normal air flow is around the actuating plate. A blast load will compress the spring and move the actuating plate against the valve seat thereby sealing the opening. As the blast pressure moves the actuating plate, some pressure will flow around the plate while it is closing.
+
+The leakage pressures can be completely prevented by using a valve similar to the one schematically illustrated in Figure 6-66 (+). In this valve the normal air flow is around the actuating plate through a length of duct. When the valve is subjected to a blast load, the pressure starts moving the actuating plate while at the same time flowing through the duct. The length of the duct must be long enough to ensure that the time it takes the blast pressures to flow through the duct (delay path) will be longer than the time 
+
+<!-- batch 34 | page 17 -->
+
+required for the actuating plate to seal the valve. As an alternate to the long duct, an expansion chamber may be used to delay the blast.
+
+
+
+#### 6 -44.5.2Recommended Specification for Poppet Valves
+
+Presented below is an example specification for the design, testing and construction of a poppet valve, but it may be adapted for other types of blast valves. This example specification is presented using the Construction Specification Institute (CSl) format and shall contain as a minimum the following:
+
+1.APPLICABLE PUBLICATIONS: Except as otherwise stated herein all materials and work furnished in accordance with this specification shall comply with the following codes and standards.
+
+
+
+1.1Federal Specification (Fed. Spec.)
+
+TT-P-37D Paint, Alkyd Resin; Exterior Trim, Deep Colors 
+
+TT-P-645A Primer, Paint Zinc Chromate Alkyd Type 
+
+TT-P-86G Paint, Red- Lead-Base, Ready Mixed 
+
+1.2American Society for Testing and Materials (ASTM)
+
+A53-81a Pipe, Steel Black, and Hot-Dipped, Zinc-Coated,Welded and Seamless 
+
+D 2000-80Rubber Products in Automotive Appllications,Classification System For 
+
+E-709-80Magnetic Particle Examination 
+
+1.3American Institute of Steel Construction (AISC)
+
+Specification for the Design, Fabrication and Erection of Structural Steel for Buildings (Eighth Edition) with commentary 
+
+1.4American Iron and Steel Institute (AISI)
+
+304 17-7th 
+
+1.5American Welding Society (AWS)
+
+D.1.1 Structural Welding Code (latest edition)
+
+2.SUBMITTALS: The following information shall be submitted for approval.Materials shall not be delivered to the site until approved shop drawings have been returned to the Contractor. Partial submittals, or submittals for less than the whole of any system made up of interdependent components will not be accepted. Submittals for manufactured items shall be manufacturer's descriptive literature, shop drawings, and catalog cuts that 
+
+<!-- batch 34 | page 18 -->
+
+include the manufacturer's dimensions, capacity, specification reference,and all other information necessary to establish contract compliance.
+
+2.1Qualifications: The Contractor shall submit for approval, data to support the qualifications of the manufacturer and installer. A list of previously successfully completed jobs of a similar nature,indicating the name and address of the owner of the installation shall be included with the information.
+
+
+
+2.2Manufacturer's Data: Before executing any fabrication work, a completely marked and coordinated package of documents sufficient to assure full compliance with the drawings and specifications shall be submitted. The submittal shall include a complete technical evaluation of the capacity of each valve as described below. The drawings shall include: detailed fabrication and equipment drawings; assembly showing the complete installation, including methods for supporting the valves, subframes and frames; a listing of all materials and material specifications;surface finishes; fabrication, assembly and installation tolerances;locking devices and locking device release mechanisms; and a detailed sequence for installation of valves and frames in conjunction with other phases of construction. Structural fabrication drawings shall conform to the requirements of AISC and welding shall conform to AWS. Assembly and installation shall be based on field established conditions and shall be fully coordinated with architectural, structural, and mechanical systems. All aspects of any work developed in connection with the development of these valves shall be fully documented and become the property of the Government.
+
+
+
+2.2.1 Standard Compliance: Where equipment or materials are specified to conform to requirements of the standards of organizations such as ANSl, NFPA, UL, etc., which use a label or listing as a method of indicating compliance, proof of such conformance shall be submitted for approval. The label or listing of the specified organization will be acceptable evidence. In lieu of the label or listing, the Contractor shall submit a notarized certificate from a nationally recognized testing organization adequately equipped and competent to perform such services, and approved by the Contracting Officer stating that the items have been tested with the specified organization's methods and that the item conforms to the specified organization's standards.
+
+
+
+2.3Preliminary Hydraulic Characteristics: Prior to Construction, submit with shop drawings an estimate of the hydraulic characteristics of 
+
+<!-- batch 34 | page 19 -->
+
+each valve, under actual operating conditions. Ratings shall be based on tests or test data. All necessary corrections and adjustments shall be clearly identified. Corrections shall be established for actual altitude and air flow directions as shown on the drawings as well as hydraulic effects produced by mounting and/or connection of the valve.
+
+
+
+2.4Tests and Test Reports: Except as noted otherwise, the testing requirements for materials stated herein or incorporated in referenced documents, will be waived, provided certified copies of reports of tests from approved laboratories performed on previously manufactured materials are submitted and approved. Test reports shall be accompanied by notarized certificates from the manufacturer certifying that the previously tested material is of the same type, quality and manufacture as that furnished for this project.
+
+
+
+2.5Blast pressure analysis calculations and/or results of approved tests shall be submitted, for both the blast valve and subframe, for approval and shall conform to the requirement of the paragraph entitled, BLAST VALVE TESTS. The calculations and/or test results shall include all components of the valves and subframe subjected to the blast pressures. Calculations are not required for the frame embedded in the concrete. This frame shall conform to that shown on the drawings. However, the fabrications of the blast valve and associated subframe and embedded frame shall be the responsibility of the blast valve manufacturer. This manufacturer shall also be responsible for installation of this equipment.
+
+2.6Qualification of Welders: Before assigning any welder to work covered by this section of the specification, the Contractor shall submit the names of the welders to be employed on the work together with certification that each of these welders has passed the qualification test using procedures covered in AWS Standard D1.1.
+
+
+
+2.7Operational and Maintenance Manual: Operation and maintenance manuals shall be furnished by the Contractor. Complete manuals shall be furnished prior to the time of installation. The manual shall have a table of contents and shall be assembled to conform to the table of contents with tab sheets placed before instructions covering the subject.
+
+
+
+2.8Shop Test Reports: The Contractor shall furnish copies of shop inspection and test results of fabrication welding.
+
+<!-- batch 34 | page 20 -->
+
+### 3. MATERIALS:
+
+3.1Structural steel pipe used for blast valve construction shall conform to ASTM A 53 seamless pipe.
+
+
+
+3.2All structural steel plate components of the valve shall consist of stainless steel and shall conform to AlSl 304.
+
+3.3Spring type components shall consist of stainless steel and conform to AISI 17-7th, Condition C.
+
+
+
+3.4Blast Seal Material: Seals for blast valves shall conform to ASTM D 2000.
+
+
+
+4.BLAST VALVE REQUIREMENTS: All blast valves shall be poppet type and shall have the following characteristics.
+
+
+
+4.1Pressure capacity: Each valve shall be capable of withstanding a sustained blast pressure of 100 psi as well as the impact force produced by the closing of the valve. The valve shall be designed to sustain elastic deformation when subjected to the above loads.The blast valve shall be capable of closing under a force of 15pounds.
+
+
+
+4.2Temperature Capacity: Each valve shall be capable of satisfactory operation over a temperature range of 35 to 300°F.
+
+4.3Valve Actuation: Each valve shall be actuated by the blast overpressure. The valve shall be in the closed position 20milliseconds after the onset of the blast front. The blast pressures are given on the drawings.
+
+
+
+4.4Valve Parameters: A minimum of 12-inch diameter blast valve shall be used. After the valve is closed by the blast overpressure, it shall remain in the closed position until manually opened. This shall require that the valve be equipped with a locking device which shall be located at the exterior side of the valve.A release mechanism for the locking devices shall be provided which shall be operated from a position immediately adjacent to the interior of the valve.Any penetration through the valve or the structure must be capable of being sealed against blast leakage through the penetration. The air flow capacity of the valves shall be 1500 SCFM (1710 ACFM)for the supply and return valves and 880 SCFM (1000 ACFM) for the exhaust valve. Total actual pressure drop across the valve with air movement in either direction shall not exceed one inch of water (gage). The valve and its operating parts shall be designed for a 20-year life and shall have an operating frequency of 10,000.
+
+<!-- batch 34 | page 21 -->
+
+4.5Blast Seals: Blast seals shall be provided between the face of each valve and subframe and between the subframe and the frame to provide a pressure tight condition. Seals shall be adjustable and easily replaceable. The seal shall be designed to be leakproof with a pressure differential across the seal of 100 psi.
+
+4.5.1 Blast Seal Material: Seal material shall conform to ASTM D 2000. Four sets of blast seals shall be furnished with each valve. Three sets of the seals shall be packaged for long term storage.
+
+
+
+4.5.2 Adhesive: Adhesive for blast seals shall be as recommended by the manufacturer of the seals. Sufficient adhesive shall be provided for installation of the packaged seals at a later date.4.6Field Removal: Blast valves shall have the capabilities of being completely field removed and disassembled.
+
+### 5. FABRICATION:
+
+5.1Qualification of Manufacturer: The manufacture and installation of blast valves and frames shall be performed by the blast valve manufacturer who shall be fully responsible for valve operation. The manufacturer shall have complete facilities, equipment and technical personnel for the design, fabrication, installation and testing of complete blast valve assemblies.
+
+
+
+5.2General: The drawings indicate the location of the blast valves in the structure. The manufacturer shall carefully investigate the drawings and finished conditions affecting his work and shall design the units to meet the job condition and the dynamic loads. The blast valves shall be complete with gaskets, fasteners, anchors,mechanical operators, and all other equipment and accessories as required for complete installation.
+
+
+
+5.3Metalwork: Except as modified herein, fabrication shall be at a minimum, in accordance with the AISC Specification for the Design,Fabrication and Erection of Structural Steel for Buildings. Welding of steel shall be in accordance with the requirements for AWS Specification D1.1. A welding sequence to reduce distortion and locked-up stresses to a minimum shall be used. All welded units shall be stress relieved. All welded members shall be post weld straightened free of twist and wind. Fabricated steel shall be well formed to shape and size, with sharp lines and angles. Exposed welds shall be ground smooth. Exposed surface of work, in place,shall have a smooth finish. Where tight fits are required joints shall be milled to a close fit. Corner joint shall be coped or mitered, well 
+
+<!-- batch 34 | page 22 -->
+
+formed, and in true alignment. Permanent connections for all assemblies and components, except those requiring removal for installation and maintenance, shall be welded. Each valve and subframe shall be removable from the embedded frame.
+
+5.3.1 Machining: Parts and assemblies shall be machine finished wherever necessary to insure proper fit of the parts and the satisfactory performance of the valves.
+
+
+
+5.3.2Weld Details: The types of edge preparation used for welds shall be chosen by the manufacturer to be the most suitable for the joint and position of welding. Where required, all groove welds shall be complete penetration welds with complete joint fusion. Groove weld edge preparations shal be accurately and neatly made. All full penetration groove joints shall be back-chipped and back welded where both sides are accessible. Where both sides are not accessible,backing strips not exposed to view may be left in place unless removal is required for clearance. Backing strip not removed shall be made continuous by welding ends and junctions.
+
+
+
+5.3.3Weld Tests: Inspection and tests of welds shall be as specified in AWS Specification D1.1. All welding shall be subjected to normal continuous inspection.
+
+5.3.3.1Nondestructive dye penetrator testing shall be performed for all welding in accordance with Method B of ASTM E 165 or ASTM E 709.Allowable defects shall conform to AWS Specification D1.1.
+
+
+
+5.3.3.2Penetration Welds: All full or partial penetration corners, tees and inaccessible butt joints shall be subjected to 100 percent ultrasonic examination.All penetration joints shall be considered to be tension joints. All tests shall be performed by a testing laboratory approved by the Contracting Officer. The testing laboratory shall be responsible for interpretation of the testing, which shall be certified and submitted in a written report for each test. In addition to the weld examination performed by the Contractor, the Contracting Officer reserves the right to perform independent examination of any welds at any time. The cost of all Government reexamination will be borne by the Government.
+
+<!-- batch 34 | page 23 -->
+
+5.3.3.3Correction of Defective Welds: Welds containing defects exceeding the allowable which have been revealed by the above testing shall be chipped or ground out for full depth and rewelded. This correction of the defected weld area and retest shall be at the Contractor's expense.
+
+### 5.4 Metal Cleaning and Painting:
+
+5.4.1 Cleaning: Except as modified herein, surfaces shall be cleaned to bare metal by an approved blasting process. Any surface that may be damaged by blasting shall be cleaned to bare metal by powered wire brushing or other mechanical means. Cleaned surfaces which become contaminated with rust, dirt, oil, grease, or other contaminants shall be washed with solvents until thoroughly clean.
+
+
+
+5.4.2Pretreatment: Except as modified herein, immediately after cleaning, steel surfaces shall be given a crystalline phosphate base coating; the phosphate base coating shall be applied only to blast cleaned, bare metal surfaces.
+
+5.4.3Priming: Treated surfaces shall be primed as soon as practicable after the pretreatment coating has dried. Except as modified herein, the primer shall be a coat of zinc chromate primer conforming to Fed. Spec. TT-P-645, or a coat of red lead paint, Type Ior Type IIl conforming to Fed.Spec. TT-P-86G, applied to a minimum dry film thickness of 1.0 mil. Surfaces that will be concealed after construction and will require no overpainting for appearance may be primed with a coat of asphalt varnish, applied to a minimum dry film thickness of 1.0 mil. Damage to primed surfaces shall be repaired with the primer.
+
+
+
+5.4.4Painting: Shop painting shall be provided for all metalwork,except for non-ferrous metals and corrosion resistant metals and surfaces to be embedded in concrete. Surfaces to be welded shall not be coated within three inches of the weld,prior to welding. All machined surfaces in contact with outer surfaces and bearing surfaces shall not be painted. These surfaces shall be corrosion protected by the application of a corrosion preventive compound. Surfaces to receive adhesives for gaskets shall not be painted. Surfaces shall be thoroughly dry and clean when the paint is applied. No painting shall be done in freezing or wet weather except under cover; the temperature shall be above 45 F but not 
+
+<!-- batch 34 | page 24 -->
+
+over 90 F. Paint shall be applied in a workmanlike manner and all joints and crevices shall be coated thoroughly.Surfaces which will be concealed or inaccessible after assembly shall be painted prior to assembly. Paint shall conform to Fed. Spec. TT-P37D.
+
+
+
+### 6. BLAST VALVE TESTS:
+
+6.1Response Tests: The following static and dynamic response shall be performed to demonstrate the blast resistant capabilities of the blast value design. These tests shall be witnessed by the Contracting Officer.
+
+
+
+6.1.1Closure Time Test: Prior to shipment to the site, the Contractor shall perform a test to demonstrate that the closure of the blast valve will not exceed the 20 milliseconds specified. A suggested method for recording the valve closure is with the use of a high speed camera.
+
+6.1.2Static Pressure Test: Prior to shipment to the site, the Contractor shall perform a pneumatic test to demonstrate the static capacity of the blast valve design. The valve must sustain the pressure of 100 psi for a minimum of two hours.The total pressure loss during that period shall not exceed 1psi.
+
+
+
+6.1.3Dynamic Pressure Test: Prior to shipment to the site, the Contractor shall perform a test to demonstrate the dynamic capacity of the blast valve design. This test shall simulate the combined effects of impact forces produced by the valve closure system and the blast load. This test may be replaced by design analyses which demonstrate that the head and frame of the valve shall have the capability to resist the stresses produced by the above forces. The blast load as indicated on the drawings shall be used for this analysis.
+
+6.1.4Blast Tests: If the effects of one or more of the above blast valve tests have been demonstrated by prior blast valve tests on similar valves, then the results of these tests shall be submitted for review; and the above test performances may not be required.
+
+
+
+6.2Test: After installation, a trip test shall be performed and demonstrated to the operating personnel.
+
+6.3Hydraulic Characteristics: Prior to shipment to the site, the Contractor shall perform a final test to establish the hydraulic 
+
+<!-- batch 34 | page 25 -->
+
+characteristics of each valve and provide the necessary corrections and adjustments as stated previously.
+
+
+
+<div style="text-align: center;">Figure 6-62 Sketch of 300 cfm Sand Filter </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_140_413_1053_936.jpg" alt="Image" width="76%" /></div>
+
+
+<!-- batch 34 | page 26 -->
+
+<div style="text-align: center;">Figure 6-63 Blast-Actuated Louver </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_152_311_1037_766.jpg" alt="Image" width="74%" /></div>
+
+
+<div style="text-align: center;">Figure 6-64 Arrangement of Multiple Louvers for a Large Volume of Air </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_236_878_956_1438.jpg" alt="Image" width="60%" /></div>
+
+
+<!-- batch 34 | page 27 -->
+
+<div style="text-align: center;">Figure 6-65 Typical Blast-Actuated Poppet Value </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_150_309_1043_792.jpg" alt="Image" width="74%" /></div>
+
+
+<div style="text-align: center;">Figure 6-66 Time Delay Path </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_174_854_1018_1372.jpg" alt="Image" width="70%" /></div>
+
+
+<!-- batch 34 | page 28 -->
+
+<div style="text-align: center;">Figure 6-67 Idealized Model of Shock Isolated Mass </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_305_332_878_766.jpg" alt="Image" width="48%" /></div>
+
+
+<!-- batch 34 | page 29 -->
+
+<div style="text-align: center;">Table 6-14Blast Valves </div>
+
+
+
+<div style="text-align: center;"><html><body><table border="1"><tbody><tr><td colspan="2" rowspan="2">Name of Valve</td><td rowspan="2">Type (Actuated)</td><td colspan="2">Blast Characteristics</td><td rowspan="2">Locking Mechanism</td><td rowspan="2">Air Flow Rates (cfm)</td><td rowspan="2">Tested</td></tr><tr><td>Pressure (psi)</td><td>Closing Time (ms)</td></tr><tr><td colspan="2">U.S.Army Chemical Corps M-1</td><td>Blast</td><td>100</td><td>*</td><td>Yes</td><td>300</td><td>Field</td></tr><tr><td colspan="2">U.S. Army Chemical Corps E191R1</td><td>Blast</td><td>50</td><td>*</td><td>Yes</td><td>600</td><td>Shock tube and field</td></tr><tr><td>Office of Civil Defense</td><td>12"0 16"0 24"0</td><td>Blast and Remote</td><td>100 50 50</td><td>* 50 *</td><td>Yes Yes Yes</td><td>600 1,200 2,500</td><td>Field</td></tr><tr><td colspan="2">Office of Corps of Engineers</td><td>Blast and Remote</td><td>*</td><td>20</td><td>Yes</td><td>5,000</td><td>Shock tube</td></tr><tr><td colspan="2">Bureau of Yards and Docks</td><td>Remote</td><td>*</td><td>500</td><td>Yes</td><td>2,200 to 30,000</td><td>*</td></tr><tr><td colspan="2">Temet USA, Inc.</td><td>Blast</td><td>100</td><td>20</td><td>Yes</td><td>2,250 to 3,700</td><td>Shock tube</td></tr><tr><td>Jaern and Platt</td><td>4"0 8"0 14"0</td><td></td><td>280</td><td>*</td><td></td><td>150 600 1,750</td><td>Field</td></tr><tr><td colspan="2">Technical Facilities WS-107 A2</td><td>Remote</td><td>*</td><td>*</td><td></td><td>35,000</td><td>*</td></tr><tr><td colspan="2">American Machine Foundry</td><td>Blast</td><td>100</td><td>*</td><td>Yes</td><td>80</td><td>*</td></tr><tr><td colspan="2">Luwa</td><td>Blast</td><td>15 to 160</td><td>2</td><td>No</td><td>450</td><td>Shock tube</td></tr><tr><td colspan="2">Suffield Experimental Stations</td><td>Blast</td><td>4 to 20</td><td>*</td><td></td><td>*</td><td>*</td></tr><tr><td>New Naval Civil Engineering Lab</td><td>Brechenridge Bayles-Denny Stephenson</td><td>Blast</td><td>100 5 to 100 5to 104</td><td>* * *</td><td>No No No</td><td>600 180 125</td><td>Compressed Air</td></tr><tr><td colspan="2">Artes Machinery (Sand Filtered)</td><td>Blast</td><td>100</td><td>*</td><td>No</td><td>300</td><td>Field</td></tr></tbody></table></body></html></div>
+
+
+<!-- batch 34 | page 30 -->
+
+## SHOCK ISOLATION SYSTEMS 
+
+## 6 -45INTRODUCTION
+
+Previous sections have presented methods for the prediction of blast and fragment effects associated with the detonation of explosives and the design or analysis of structures to withstand these effects. In the design of shelters, an important part of the design process is to insure the survival of personnel and equipment. lt is possible that the structure could withstand the air blast and ground shock effects but the contents be so severely damaged by structure motions that the facility could not accomplish its intended function. A similar problem is in the design of shelter type structures that houses sensitive explosives. These explosives must be protected from structure motions since these motions could result in initiation of the explosive. This section deals with the protection of vulnerable components from structure motions due to air blast and ground shock.
+
+
+
+## 6 -46OBJECTIVES
+
+The objective of shock isolation in protective design applications is to reduce the magnitude of motions transmitted by a vibrating structure to personnel or shock sensitive equipment. These motions must be attenuated to levels tolerable to personnel and to be various pieces of equipment used in the facility. A second consideration in some cases is to reduce the magnitude of motions transmitted by vibrating equipment to its supports. These latter motions can be significant for equipment mounted on shock isolated platforms.
+
+
+
+The general functional objectives of a shock isolation system are:
+
+1.Reduce input motions to acceptable levels.
+
+2.Minimize rattle space requirements consistent with system effectiveness and cost.
+
+
+
+3.Minimize coupling of horizontal and vertical motions.
+
+4.Accommodate a spectrum of inputs of uncertain waveforms.
+
+5.Limit the number of cycles of motion of the isolated body.
+
+6.Support the system under normal operating conditions without objectionable motions.
+
+
+
+7.Maintain constant attitude under normal operating conditions.
+
+8.Accommodate changes in load and load distribution.
+
+9.Maintain system vibration characteristics over long periods of time.
+
+10.Interface properly with other components or parts.
+
+<!-- batch 34 | page 31 -->
+
+### 11. Require minimum maintenance 
+
+## 6 -47
+
+## STRUCTURE MOTIONS
+
+Ground shock results from the energy which is imparted to the ground by an explosion.Some of this energy is transmitted through the air in the form of air-blast-induced ground shock and some is transmitted through the ground as direct-induced ground shock. Both of these forms of ground shock when imparted to a structure will cause the structure to move in both a vertical and horizontal direction. Movement of the structure imparts motions to items attached to the structure's interior. Motion of interior items is obtained from a response spectrum. This is a plot giving the maximum responses (in terms of displacement, velocity, and acceleration) of all possible linear single-degree-offreedom systems which may be attached to the structure due to a given input motion.Therefore, having the spectra for the structure and given input motion, the maximum response of any item within the structure is obtained based on the natural frequency of the item. Methods for preparing response shock spectra are presented in Chapter 2 of this manual.
+
+
+
+In addition to motion of the structure as a whole, the exterior walls and roof respond to the direct application of the blast load. Methods for calculating the response of these elements are given in Chapter 3 of this manual using the parameters given in Chapter 4and 5 for concrete and steel, respectively. Maximum displacements, velocities, and accelerations of these elements can be determined in a straightforward manner. These quantities can be used to determine effects on items attached or located near walls or roofs.
+
+
+
+## 6 -48SHOCK TOLERANCE OF PERSONNEL AND EQUIPMENT
+
+The requirement for shock isolation is based upon the shock tolerance of personnel and/or critical items of equipment contained within the protective structure. If the predicted shock input exceeds the shock tolerance of personnel, a shock isolation system is required. If the shock input exceeds the shock tolerance of equipment, the equipment can either be ruggedized to increase its shock tolerance or it can be shock isolated. There are practical limits to ruggedization and the costs may exceed those of an isolation system. If the input does not exceed the shock tolerance of the equipment,it can be hard-mounted to the structure.
+
+
+
+### 6 -48.1Personnel
+
+The effects of structural motions on personnel depend on the magnitude, duration,frequency, and direction of the motion, as well as their position at the time of the loading. The shock tolerance of personnel is presented in Chapter 1 of this manual.
+
+### 6 -48.2Equipment
+
+In many cases, the need for shock isolation of equipment must be established before detailed characteristics of the system components are established. Further, because of the constraints of procurement procedures, shock isolation systems must be designed 
+
+<!-- batch 34 | page 32 -->
+
+and built prior to specific knowledge of the equipment to be installed. In such instances,the choice lies between specifying minimum acceptable shock tolerances for the new equipment or using whatever data is available for similar types of equipment.
+
+The most practical means of determining the shock tolerance of a particular item of equipment is by testing. However, even experimental data can be of questionable value if the test input motion characteristics differ greatly from those that would actually be experienced by the equipment. Since testing of equipment may not be practical in many cases due to the amount of time allotted from the inception of a project to its completion,procurement procedures, and cost limitations, it is often necessary to rely on data obtained from shock tests of similar items. The shock capacity of various types of equipment is presented in Chapter 1 of this manual.
+
+
+
+## 6 -49
+
+### 6 -49.1General Concepts
+
+## SHOCK ISOLATION PRINCIPLES
+
+A full treatment of the problem of shock isolation systems is not possible in this manual.The following discussion provides an introduction to the subject and presents some of the important characteristics of shock isolation systems.
+
+
+
+In general, the analytical treatment of shock isolation systems is based upon the principles of dynamic analysis presented in Chapter 3. In most cases, the actual system can be represented by a simplified mathematical model consisting of a rigid mass connected by a spring and dash pot as shown in Figure 6-67 (+). The figure represents the simplest case, that of a single-degree-of-freedom system restrained to move in only one direction. Actually, an isolation system would have at least six degrees of freedom,i.e., three displacements and three rotations. Under certain conditions, these six modes can be uncoupled and the system analyzed as six single-degree-of-freedom systems.
+
+The single-degree-of-freedom system shown in Figure 6-67 (+) can be used to illustrate the importance of some of the parameters affecting the effectiveness of shock isolation systems in general. The isolator is represented by the linear spring and viscous damping device enclosed within the dotted square. The suspended mass is taken to be a rigid body. lt is assumed that the base of the system is subjected to a periodic sinusoidal motion whose frequency is f. The undamped natural frequency of the system is $f_{n}$ and is given by:
+
+$$f_{n}=\frac{1}{2\pi}\left[\frac{386.4K}{W}\right]^{1/2}$$
+
+where 
+
+$f_{n}=$ natural frequency of vibration $K=$ unit stiffness of spring 
+
+<!-- batch 34 | page 33 -->
+
+## W = weight supported by spring 
+
+When the frequency of the disturbing motion fis small compared to the natural frequency $f_{n}$ of the single-degree-of-freedom system, the displacement of the mass is approximately equal to the displacement of the base. When the frequency of the base motion is several times that of the system, the motion of the mass is a small fraction of the base motion. When the ratio of frequencies become large (20 to 30), the system cannot respond to the base motion to any significant degree. At frequency ratios near one, large motions of the mass are possible and the magnitude is strongly affected by the amount of damping in the system.
+
+
+
+One obvious shock isolation approach is to use a low frequency suspension system so that the ratio of frequencies is always large. However, low frequency (referred to as sofft)systems possess the undesirable characteristic of larger static and dynamic displacements and greater probability of coupling between modes of vibration. Although soft systems may be acceptable under some conditions, the obvious constraint that will preclude their use is a limit on the relative motion between the suspended mass and its supports or adjacent parts of the facility. This relative motion determines the amount of rattle space that must be provided to avoid impact between the mass and other fixed or moving parts of the facility.
+
+
+
+The acceleration of the mass is a function of the forces applied to the mass by the spring and damping devices. In the case of a linear undamped spring, the force is a function of the relative displacement between the mass and its support. In viscous damping devices, the damping force is a function of the percent damping and the relative velocity between the mass and its supports. Acceleration limits for the critical items will impose restraints on spring stiffness and the amount of damping in the isolation system. In practice, a compromise combination of spring stiffness and damping is necessary to minimize input motions to the mass for a specified allowable rattle space or to minimize the rattle space required for specified allowable motions of the mass.
+
+The need to avoid resonance (ratio of the frequency of the base motion to the natural frequency of the isolation system equal to one) is obvious. The structural motions resulting from an explosion are not steady-state sinusoidal in nature. However, these motions are of an oscillatory type and the displacement-frequency relationships discussed above are applicable.
+
+
+
+A more detailed discussion of the effects of load duration, nonlinear springs, damping,and system frequency on response can be obtained from publications listed in the bibliography.
+
+
+
+The basic objective in shock isolation is to select a combination of isolation system properties which will reduce the input motions to the desired level. In design, it is a straightforward process. System properties are assumed and an analysis is performed to determine its response to the input motions. If the shock tolerance and rattle space 
+
+<!-- batch 34 | page 34 -->
+
+criteria are not satisfied, the system must be altered and the analysis repeated untl the criteria are satisfied.
+
+
+
+### 6 -49.2Single-Mass Dynamic Systems
+
+A single mass system can have six degrees of freedom, that is, translation in three orthogonal axes and three rotations. The system can also be classified as coupled or uncoupled.
+
+
+
+A coupled system is one in which forces or displacements in one mode will affect or cause a response in another mode. For example, a vertical displacement of a single rigid mass might also cause rotation of the mass. An uncoupled system, on the other hand, is one where forces or displacements in one mode do not generate a response in another mode. If the system is completely uncoupled, base translations in any one of the three orthogonal directions will cause translations of the mass in that direction only.Similarly, a pure rotation of the base about any one of the three orthogonal principal inertia axes with their origin through the mass center, will cause only pure rotations of the body about that axis. The principal inertia axes are those about which the products of inertia vanish. The principal elastic axes of a resilient element (isolator) are those axes for which an unconstrained element will experience a displacement collinear with the direction of the applied force. If the principal elastic axes and the principal inertia axes of the shock isolation system coincide with the origin or point of intersection of both sets of axes at the center of gravity of the mass, the modes of vibration are uncoupled. Such a system is also referred to as a balanced system.
+
+In Figure 6-68 (+), if all the springs have the same elastic stiffness, the elastic center will be located at point A, which, in this case, is at the center of the individual springs. If the suspended mass is of uniform density, its center of gravity is also located at A, and the system is uncoupled for motion input through the springs. Some systems may be uncoupled only for motions in a particular direction. If point B in Figure 6-68 is the center of gravity of the mass, a horizontal motion in the direction parallel to the x-axis of the structure would cause only a horizontal motion of the mass. A vertical motion of the structure would cause both a vertical and rotational motion of the mass. In this case, the vertical and rotational modes are coupled. If the center of gravity were located at point C, then vertical, horizontal and rotational modes are coupled. If the characteristics of the mass and shock isolation system are such that the modes of vibration can be uncoupled, the system can be analyzed as a series of independent single-degree-offreedom systems. The response of each of these systems can be determined on the basis of input motions and isolator properties in a direction parallel to or about one of the principal inertia axes. The response in each one of these modes can be summed in various ways to obtain the total response of the system. The sum of the maximum responses would neglect differences in phasing and should represent an upper limit of the actual motions. It is recommended that the square root of the sum of the squares of the maximums (root mean square values) be used to represent a realistic maximum response since it is unlikely that response will occur simultaneously in all modes.Superposition of modal response is appropriate for elastic systems only.
+
+<!-- batch 34 | page 35 -->
+
+A dynamically balanced shock isolation system offers advantages other than a simplification of the computation effort. A balanced system results in reduced motions during oscillation. As a result of the absence of coupling of modes in a balanced system and the usually small, if any, rotational inputs to the system in protective construction applications, rotational motions of the shock isolated mass will be minimized. This is particularly important for large masses where small angles of rotation can result in large displacements at locations far from the center of gravity.
+
+
+
+Because of the advantages of a dynamically balanced system, various approaches are taken to minimize coupling of modes. One criterion is that frequencies in the six modes should be separated sufficiently to avoid resonance between modes. Because of the importance of minimizing rotational modes of response, it is suggested that extremely low stiffnesses in these modes should be avoided. For the analysis of multiple degrees of freedom, single-mass systems where the various modes of response are coupled,the modal method of analysis or numerical integration techniques can be utilized. The modal method of analysis requires solution of simultaneous equations of motion to determine characteristic shapes and frequencies of each mode and is limited to the elastic case. The numerical techniques do not require prediction of mode shapes and frequencies and will handle both elastic and inelastic response. If the dynamic system is also a multiple mass system, the above methods can be utilized to analyze the system.While an in-depth discussion is beyond the scope of this manual, a complete discussion of these methods can be found in publications listed in the bibliography.
+
+### 6 -49.3Shock Isolation Arrangements
+
+#### 6 -49.3.1Individual versus Group Mounting
+
+The two basic approaches to shock isolation in protective construction are to provide individually tailored systems for each component and to group together two or more items on a common platform. In the latter case, the system is selected to satisfy the requirements of the most critical item. In some cases, where the shock tolerance of the various items differs greatly, a combination of the two approaches may be the most effective solution. Although the relative location or size of some items may make individual mounts the more practical approach in certain cases, group mounting will generally be as reliable and the least costly solution.
+
+
+
+Where personnel must be protected, a platform is the most practical solution. Except for extremely sensitive equipment, the shock tolerance of the personnel will govern the design of the system. The combination of personnel and equipment on the same platform will permit the personnel to move freely (however cautiously) between items of equipment. Where personnel are not required to be mobile, but rather may be able to remain seated while operating the equipment during hazardous periods, the shock tolerance of the personnel are greatly increased. This increased tolerance will reduce the shock isolation requirements while at the same time affording a higher degree of protection for personnel since they are protected from the unknown consequences of falling.
+
+
+
+<!-- batch 34 | page 36 -->
+
+There are several advantages of group mounted systems. A group mounted system is less sensitive to variations in weights of individual items of equipment because of the larger combined weight of all items and the platform. With a number of items there is a greater flexibility of controlling the center of gravity of the total mass. In fact, ballast may be added to the platform to align the center of gravity with the principal axis to form a balanced system. A group mounted system generally requires less rattle space than several independently mounted items. Also, the interconnections between components is greatly simplified if they are all mounted on a single platform. Finally, an important advantage of group systems is cost. Individual mounts will require a large number of isolator units. Although larger, more costly, units are required for the group mounting system, fewer units are required and the cost per pound of supported load will be much lower.
+
+
+
+#### 6 -49.3.2Platform Characteristics
+
+A platform for group mounted systems offers great flexibility in controlling the center of gravity of the supported masses to produce a balanced system where modes of vibration are uncoupled. Ballast may be securely anchored to the platform at locations which would move the center of gravity of the total mass to coincide with the elastic center of the isolation system. The determination of the weight and location of this ballast can be greatly simplified by uncoupling the effect of adding weight in the x and y directions of the principle elastic axes. This uncoupling can be accomplished by locating the ballast symmetrically about the x-axis when moving the location of the center of gravity in the y direction. In this manner, the location of the center of gravity may be altered independently about the elastic center in the x and y directions. If for practical reasons the ballast cannot be located symmetrically about a principle axis, then the two directions must be considered simultaneously.
+
+
+
+Providing additional ballast in excess of that required to balance the platform provides for future changes in equipment or the addition of new equipment without actually changing the isolation system. The springs will not require replacement nor will the structural members of the platform need to be increased in size. Additional equipment is placed on the platform and ballast is removed and/or relocated to balance the new equipment arrangement. To provide for future equipment changes, it is suggested that additional ballast equal to 25 percent of the weight of the equipment and the required ballast be distributed on the platform. The location of this ballast must not change the center of gravity of the existing balanced system. If future needs have been established,the platform and isolators would be designed for the future equipment. However, ballast would be provided to compensate for the weight of the future equipment and balance the system for the existing equipment.
+
+
+
+The stiffness of the platform must be large enough to insure that the platform and associated group mounted equipment can be treated as a rigid body. This criterion is usually satisfied if the lowest natural frequency of any member of the platform is at least five (5) times the natural frequency of the spring mass system. When large, heavy items of equipment are involved, platforms meeting this stifness criteria may not be practical.
+
+<!-- batch 34 | page 37 -->
+
+In such cases, the platform equipment configuration should be treated as a multi-mass system.
+
+
+
+#### 6 -49.3.3Isolator Arrangements
+
+There are many ways to support a shock isolated item. Some desirable features have been discussed previously in connection with dynamically balanced systems. The isolators may be positioned in many ways. The more important factors affecting the selection of an isolator arrangement are:
+
+1.The size, weight, shape and location of the center of gravity of the suspended mass.
+
+
+
+2.The direction and magnitude of the input motions.
+
+3.Rotation of the lines of action of the devices should be small over the full range of displacements of the system to avoid system nonlinearities.
+
+4.Coupling of modes should be minimized.
+
+5.Static and dynamic instability must be prevented.
+
+6.It is desirable in most cases, and necessary in some, that the system return to its nominal position.
+
+
+
+7.Space available for the isolation system; and type of isolation devices used.
+
+
+
+Some of the more common isolator arrangements are shown in Figure 6-70 (+) and Figure 6-71 (+). The systems shown are assumed to have the same arrangements of isolators in a plane through the center of gravity (c. g.) and perpendicular to the surface of the page. The dynamically balanced system (intersection of the elastic axes and the principal inertia axes located at point A) shown in Figure 6-68 (+), is probably the least common of all suspension systems.
+
+
+
+#### 6 -49.3.4Base-Mounted lsolation Systems
+
+In Figure 6-66a (+), the mass is supported on four (4) isolators. These isolators must provide horizontal, vertical and rotational stiffnesses in order for the system to be stable under all possible motions. There will be coupling between horizontal displacements and rotations about horizontal axes. This arrangement and that shown in Figure 6-69b (+) are appropriate in those cases where there are no convenient supports for horizontal isolators.
+
+
+
+The arrangement of Figure 6-69b (+) is preferred since the line of action of the isolators can be directed towards the c. g. of the mass to allow decoupling of some modes. As in the case of Figure 6-69a, the isolators must possess adequate stiffness in axial and lateral directions to insure stability under static and dynamic conditions.
+
+<!-- batch 34 | page 38 -->
+
+In Figure 6-69c (+), the isolators are oriented parallel to the three orthogonal system axes. This arrangement provides system stability even when the isolators possess only axial stiffness. If the c. g. of the suspended mass is located as shown, decoupling of modes is possible. While the lines of action of the isolators pass through the c. g. under static conditions, response of the system to base motions will obviously alter its geometry. When the line of action of the isolators is changed due to displacement of the mass relative to its supports, coupling of the modes of vibration will be introduced. The degree of coupling is affected by the magnitude of the displacements and the length of the isolators. Consequently, isolator properties and arrangement should be selected so as to minimize the effects of displacements.
+
+
+
+#### 6 -49.3.5Overhead Pendulum Systems Using Platforms
+
+Two arrangements of overhead pendulum shock isolation devices using platforms to support the sensitive components are shown in Figure 6-70 (+). In both cases, the center of gravity of the suspended mass is relatively low. These types of suspension systems have been used extensively in protective structures for various conditions including individual small and large items, multiple items of various sizes as well as a combination of personnel and equipment supported on various sized platforms. The overhead pendulum system normally uses swivel joints at the points of attachment so that the system may swing freely. Horizontal input motions cause the pendulum to swing. Gravity provides the horizontal restoring force or stiffness. This force is a function of the total weight of the suspended mass. The natural frequency of vibration of the pendulum is a function of the length of the pendulum and is given by:
+
+$$f_{n}=\frac{1}{2\pi}\left[\frac{386.4}{L}\right]^{1/2}$$
+
+where 
+
+$$\begin{array}{r l}{f_{n}=}&{{}n a t u r a I f r e q u e n c y o f v i b r a t i o n}\\ {L=}&{{}l e n g t h o f p e n d u l u m}\end{array}$$
+
+Each pendulum arm includes an isolator which establishes the stiffness of the system in the vertical direction. These isolators can introduce nonlinearities and coupling between the pendulum and vertical spring modes. The system is linear for small angular displacements, that is, when the angular change Θ of the pendulum arm from the vertical position is approximately equal to the sine of the angle $(\Theta=\sin\Theta)$ . The system can be considered uncoupled if the pendulum frequency is not near one half of the vertical spring frequency. If the pendulum frequency is in the vicinity of one half the vertical frequency, the interchange of energy between the modes can lead to pendulum motions greatly exceeding those predicted by linear assumptions.
+
+<!-- batch 34 | page 39 -->
+
+In a shock spectra maximum displacements occur at low frequencies, maximum velocities at intermediate frequencies, and maximum accelerations at high frequencies.Since most pendulum systems have low natural frequencies, they are displacement sensitive. These systems attain maximum displacements and minimum accelerations.Consequently, they will normally require greater rattle space than other systems while at the same time providing maximum protection against horizontal accelerations at minimum costs. lt should be realized that for explosions, maximum displacements are comparatively small and can be accommodated. One of the main advantages of overhead pendulum systems is that they do not require horizontal stiffness elements.Their attractiveness is greatly diminished in those cases requiring horizontal damping because of large motions.
+
+
+
+The swivel joint attaching the pendulum arm to the platform determines the location of the horizontal elastic axis of the system. Figure 6-61b (+) illustrates two ways of varying the point of attachment of the pendulum arm to the platform. The horizontal elastic axis is raised to coincide with the center of gravity of the suspended mass at the equilibrium position and help minimize coupling between modes of response. At the left side of the platform the isolator is contained in a housing rigidly attached to the platform. At the right side, a structural member is rigidly attached to the platform and the isolator is included in the pendulum arm. In addition to supporting personnel and equipment,overhead pendulum systems can be used to shock-isolate building utilities. Individual utility runs may be isolated or several different utilities may be supported on a single platform. A single platform may cover an entire room and all building services may be supported. They would include a hung ceiling, lighting fixtures, utility piping, HVAC ducts, electrical cables and process piping. Of course, flexible connections must be used when connecting the services to the building or equipment.
+
+## 6 -50
+
+### 6 -50.1Introduction
+
+## SHOCK ISOLATION DEVICES
+
+A fundamental element of every shock isolation system is some sort of energy storage or energy dissipative device. These devices must be capable of supporting the items to be isolated under static and dynamic conditions and, at the same time, prevent transmission of any harmful shock loads to the items. In most cases, the isolator must have elastic force-displacement characteristics so that the system will return to a nominal equilibrium position after the dynamic loads have been applied. The desirable features of these devices include:
+
+1.The dynamic force-displacement relationship of the isolator should be predictable for all directions in which it is required to provide stiffness.
+
+2.The isolator should have low mass in order to minimize transmission of high frequency motions to the supported mass.
+
+
+
+3.The frequency of the isolator should remain constant with changes in load,that is, its stiffness should vary in direct proportion to the load it supports.
+
+<!-- batch 34 | page 40 -->
+
+This allows the system to remain dynamically balanced throughout changes in the position of the supported mass.
+
+4.The static position of the isolator should be adjustable so that the system can be leveled and returned to its nominal position should the suspended load change.
+
+
+
+5.The isolator should have high reliability, long service life and low cost.
+
+The various types of isolators used in most protective construction applications possess these characteristics in varying degrees. Any real isolator has some mass, and in some applications, the mass can be quite large and must be considered in the final analysis.Nonlinear force-displacement characteristics are often accepted to gain some other advantage. In energy dissipative systems, it may be necessary to provide other means of restoring the system to its original position. In general, most devices are some compromise combination of the desirable features which best suit the particular design situation.
+
+
+
+The inclusion of energy dissipative (damping) devices in the isolation system offers several significant advantages, that is, damping can:
+
+1.Reduce the severity of output motion response.
+
+2.Reduce the effect of coupling between modes, thus reducing rattle space requirements.
+
+
+
+3.Restore the system to an equilibrium position more quickly.
+
+4.Decrease the sensitivity of the system to variations in input motions.
+
+Damping can be provided internally in some isolation devices such as in liquid springs,but must be added externally in others such as those systems using helical coil springs.Different types of damping offer advantages and disadvantages which must be evaluated in the design process. A damping device may be effective in attenuating low frequency components of input motions but can increase the severity of high frequency components. Also, a damping device could prevent the system from returning to its nominal equilibrium position. Thus, care must be exercised in either designing a system employing isolator devices possessing inherent damping characteristics or adding damping devices, if the isolation system is to perform properly.
+
+There are numerous types of isolators which can be used to accomplish the shock isolating function. In the design of protective structures for explosions, the induced building motions are not usually severe and the maximum building displacements are relatively small. As a result, shock isolation systems using helical coil springs (Figure 6-71 (+)) are by far the most common system employed. The reasons for the extensive use of helical springs should be obvious from the discussion below. Other shock isolation devices which may also be used are presented, in less detail, below.
+
+<!-- batch 34 | page 41 -->
+
+It should be noted that the protective design engineer does not furnish the design for the shock isolator. The engineer designs the shock isolation system to be used but does not design the isolators (in most cases, a helical coil spring). Rather, specifications are furnished which define the desired characteristics of the isolator. For a helical spring,the specifications may include some or all of the following: maximum load, maximum static deflection, maximum dynamic deflection, spring stiffness, maximum height,maximum diameter, and factors of safety regarding allowable stresses and bottoming of the spring. It must be realized that as the number of specified parameters increase, the options available to the spring manufacturer are decreased.
+
+
+
+### 6 -50.2Helical Coil Springs
+
+A helical coil spring is fabricated from bar stock or wire which is coiled into a helical form. Figure 6-71 (+) illustrates several spring mounts.
+
+
+
+The helical coil spring has numerous advantages and comparatively few disadvantages.The advantages are that the spring is not strain-rate sensitive, self-restoring after an applied load has been removed, resists both axial and lateral loads, linear spring rate and requires little or no maintenance. For most applications, the coil spring usually requires a larger space compared to other available shock isolators, and the spring cannot be adjusted to compensate for changes in loading conditions. If the weight of the supported object is changed, it is necessary to either change the spring or add additional springs. For most purposes, the helical coil spring can be considered to have zero damping. If damping is required, it must be provided by external means.
+
+Helical coil springs may be used in either compression or extension. The extension springs are not subject to buckling and may offer a more convenient attachment arrangement. However, extension spring attachments are usually more costly and cause large stress concentrations at the point of attachment. For shock isolation applications, coil springs are generally used in compression. Buckling which can be a problem with compression springs, can be overcome by proper design or through the use of guides which are added either internally or externally to the coils. The discussion below will be concerned primarily with compression springs unless otherwise stated.
+
+Helical coil springs may be mounted in two ways; the ends are either clamped or hinged. In most shock isolation applications, the spring ends are clamped since this method greatly increases the force required to buckle the spring. If space is at a premium, the energy storage capacity may be increased by nesting the springs (placing one or more springs inside the outermost spring). When nesting springs, it is advisable to alternate the direction of coils to prevent the springs from becoming entangled.
+
+Although permanent set may be acceptable in some instances, it is normally required that the system return to its original position after being loaded. This can be accomplished in various ways, but the most common approach in the case of helical coil springs is to prevent inelastic action of the spring.
+
+
+
+<!-- batch 34 | page 42 -->
+
+Helical coil springs are capable of resisting lateral load. While it is possible to use springs in this application, care should be exercised. There are possible arrangements which avoid subjecting the springs to this type of loading.
+
+
+
+While the actual design of the helical coil spring is done by the manufacturer, the engineer must be certain that the springs he is specifying can actually be obtained and the space he has allocated for the springs are sufficient. Therefore, preliminary spring sizes must be obtained by the engineer to suit his intended application. lt is suggested that available manufacturer's data be used for this purpose.
+
+
+
+### 6 -50.3Torsion Springs
+
+Torsion springs provide resistance to torque applied to the spring. In shock isolation applications, the torque is usually the result of a load applied to a torsion lever which is part of the torsion spring system. A typical torsion spring shock isolation system is illustrated in Figure 6-72 (+).
+
+
+
+Since the axis of a torsion spring is normal to the direction of displacement, it can be used advantageously when space in the direction of displacement is limited. Torsion springs have linear spring rates, are not strain-rate sensitive, are self-restoring, and require little or no maintenance. Torsion springs cannot be adjusted to compensate for changes in weight of shock isolation equipment, and damping must be provided by external means. The axial length of some types may preclude their use when space is limited.
+
+
+
+There are three basic types of torsion springs: (1) torsion bars, (2) helical torsion springs, and (3) flat torsion springs. The type to be used will depend upon the space available and the capacity required. The torsion bar is normally used for light to heavy loads, the helical torsion spring for light to moderate loads, and the flat torsion spring for light loads. The torsion bar is the type most commonly found in protective structure applications and is most commonly used where large loads must be supported.
+
+### 6 -50.4Pneumatic Springs
+
+Pneumatic springs are springs whose action is due to the resilliency of compressed air.They are used in a manner similar to coil springs. The two basic types are the pneumatic cylinder with single or compound air chambers and the pneumatic bellows.The pneumatic cylinder is shown schematically in Figure 6-73 (+).
+
+Pneumatic springs have the advantage of being adjustable to compensate for load changes. The spring rate can be made approximately linear over one range of deflection but will be highly nonllinear over another. They are quite versatile due to the variety of system characteristics which can be obtained by regulation of the air flow between the cylinder chamber and the reservoir tank. Some of the possible variations include:
+
+1.Velocity-sensitive damping by a variable orifice between chamber and reservoir.
+
+
+
+<!-- batch 34 | page 43 -->
+
+2.Displacement-sensitive damping by a variable orifice controlled by differential pressure between chamber and reservoir.
+
+3.A nearly constant height maintained under slowly changing static load by increasing or decreasing the system air content using an external air supply and a displacement-sensitive servo-system controlling inlet and exhaust valves.
+
+
+
+A constant height under widely varying temperatures achieved by the same system described for maintaining a constant height.
+
+The disadvantages of pneumatic springs include higher cost and more fragile construction. They have a limited life span in comparison to mechanical springs and must be maintained. Also these springs provide resistance for axial loads only.
+
+### 6 -50.5Liquid Springs
+
+A liquid spring consists of a cylinder, piston rod, and a high pressure seal around the piston rod. The cylinder is completely filled with a liquid, and as the piston is pushed into the cylinder, it compresses the liquid to very high pressures. The configurations of liquid springs are divided into three major classes according to the method of loading. The classes are simple compression, simple tension and compound compression-tension.Although they are loaded in different ways, all three types function as a result of compression of the liquid in the cylinders. Schematics of the tension and compression types are shown in Figure 6-74 (+). The compound spring is merely a more complex mechanical combination of the two basic types. The tension type is the more common in protective construction applications. The cylinders are often fitted with ported heads to guide the piston and provide damping. Damping can also be provided through the addition of drag plates to the piston rods.
+
+
+
+Liquid springs are very compact devices with high, nearly linear, spring rates. They can be adjusted to compensate for load changes, are self-restoring and can absorb larger amounts of energy. They are highly sensitive to changes in temperature and fluid volume changes. Because liquid springs normally operate at high pressures, high quality, close tolerance seals are required around the piston. Friction between the seal and piston provides appreciable damping and increases the spring rate from 2 to 5percent. Liquid springs are high pressure vessels requiring high quality materials and precision machine work, and as a result, they are expensive. However, they are difficult to equal as compact energy absorption devices.
+
+
+
+### 6 -50.6Other Devices
+
+#### 6 -50.6.1Introduction
+
+The helical, torsion, pneumatic and liquid springs are the more common types of isolators for larger masses. There are other devices especially suited for particular applications and smaller loads. Some of these isolators are discussed below.
+
+<!-- batch 34 | page 44 -->
+
+#### 6 -50.6.2Belleville Springs
+
+Belleville springs, also called Belleville washers or coned-disc springs, are essentially spring steel washers which have been formed into a slightly conical shape.A typical Belleville spring is illustrated in Figure 6-75 (+).
+
+
+
+The main advantage of Belleville springs over other types of springs is the ability to support large loads at small deflections with minimum space requirements in the direction of loading. They are useful in applications requiring limited shock attenuation and as backup systems to reduce shock in the event of bottoming of coil springs. They are relatively inexpensive and readily available in capacities up to 60,000 pounds.Changes in loading conditions are accommodated by the addition or removal of units.
+
+#### 6 -50.6.3Flat Springs
+
+A flat spring is simply a steel beam or plate whose physical dimensions and support conditions are varied to provide the desired force displacement relationship. The two basic configurations are the simple spring with one element and leaf springs with multiple elements. Flat springs normally require only a limited amount of space in the direction of displacement and provide linear, non-strain-rate sensitive and self-restoring spring. They require little or no maintenance. Single element flat springs can be considered to have no damping while leaf springs will exhibit some damping due to the friction between individual elements.
+
+
+
+#### 6 -50.6.4Solid Elastomer Springs
+
+Solid elastomer springs are made from rubberlike materials. They are often called shock mounts because of their wide use in shock isolation applications. They are normally used in medium to light duty applications and represent an. economical solution to the isolation of small items of equipment. However, these springs will allow only smal displacements. These springs are fabricated from a wide variety of natural and synthetic rubbers and compounds and in numerous sizes and shapes to satisfy a wide range of applications. Because of the range in capacity and characteristics of commercially available units, only in unusual cases is it necessary to design a unit.
+
+In most applications, the solid elastomer spring will require lttle space and exhibits good weight to energy storage ratios. Use of these springs requires consideration of the operating environment. The desirable properties of some elastomers can be significantly degraded when exposed to low or high temperatures, sunlight, ozone,water or petroleum products.
+
+
+
+The response of elastomeric springs is nonlinear in most applications because of the nonlinear stress-strain properties of elastomers. The springs are self-damping because of the viscoelastic properties of the elastomers. They are almost always in compression because of bonding limitations. These springs will only permit comparatively small displacements.
+
+
+
+<!-- batch 34 | page 45 -->
+
+## 6 -51
+
+## HARDMOUNTED SYSTEMS
+
+Some items of equipment do not require shock isolation because the predicted motions at their point of attachment to the supporting structure does not exceed their shock tolerance. Those items can normally be hardmounted to the supporting structure. A hardmount is a method of attachment which has not been specifically designed to provide a significant reduction in the input motions to the equipment. Since all methods of attachment exhibit some flexibility, there is no precise division between shock isolators and hardmounts. Both types of devices will modify input motions to some degree. However, the modification of input motions produced by hardmounts will generally be small while shock isolators can greatly affect these motions.
+
+In contrast to shock isolation systems, hardmounted systems will normally exhibit natural frequencies much higher than those corresponding to the lower modes of vibration of the supporting structure. Although this characteristic offers the advantage of reduced rattlespace, it also provides for the more efficient transmission of higher frequency components of the support structure motion to the attached item. Thus, it would appear that a more exact structural analysis is required for hardmounted systems in order to include higher modes of vibration. In practice, the need for exact analyses is at least partially offset by higher factors of safety in mount design and equipment shock tolerance. However, such an approach can lead to unrealistic attachment designs. A more practical approach is to choose, or design, attachments which limit the fundamental frequency of the hardmounted system. A lower frequency system provides some attenuation of higher frequency input motions, and reduces the possibility of resonance with high frequency motions resulting from stress wave reflections within structural elements. Although the choice of a natural frequency will depend on the properties of the supporting structure and the hardmounted equipment, fundamental frequencies in the range of 10 to 1000 cycles per second are reasonable for most applications. The approach chosen for hardmount design is normally a combination of higher safety factors and the use of lower frequency systems. The design will be based upon considerations of cost, importance of the item supported, the size and weight of the item, and the consequence of failure of the attachment system.
+
+The use of shock spectra to define the input motions of hardmount systems is considered adequate for final design of all simple hardmount systems of a noncritical nature. lt is also considered adequate for preliminary design of critical systems and those whose representation as a single degree of freedom system is questionable.However, it is recommended that the final design be performed using a more exact dynamic analysis wherever practicall.
+
+
+
+## 6 -52ATTACHMENTS
+
+### 6 -52.1Introduction
+
+In a shelter type structure subjected to air blast and ground shock effects, all interior contents must be firmly attached to the structure. This attachment insures that the building contents will not be dislodged and become a source of injury to personnel or 
+
+<!-- batch 34 | page 46 -->
+
+damage to critical equipment. The building contents would include not only equipment which is either shock isolated or hardmounted (attached directly to structure) but also the building utilities as well as interior partitions and hung ceilings. The building utilities would include all piping (such as process, potable water, sanitary, fire protection, etc.),HVAC ducts, electrical cables, light fixtures and electrical receptacles.
+
+### 6 -52.2Design Loads
+
+An object subjected to a shock loading produces an inertial force which acts through its center of gravity. The magnitude of this force is given by:
+
+$$F=W a $$
+
+where 
+
+$$\begin{array}{l l}{F=}&{i n e r t i a l f o r c e}\\ {W=}&{w e i g h t o f o b j e c t}\\ {a=}&{a c c e l e r a t i o n i n g^{\prime}s}\end{array}$$
+
+Accelerations may be imparted to the object in one or more directions producing inertial forces in the respective directions. These inertial forces are resisted by the reactions developed at the object's supports. All inertial forces are assumed to be acting on the object concurrently. The support reactions are obtained by considering the static equilibrium of the system.
+
+
+
+<!-- batch 34 | page 47 -->
+
+<div style="text-align: center;">Figure 6-68 Shock Isolation System </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_228_312_960_866.jpg" alt="Image" width="61%" /></div>
+
+
+<!-- batch 34 | page 48 -->
+
+<div style="text-align: center;">Figure 6-69 Base Mounted Isolation Systems Configuration </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_236_308_959_1307.jpg" alt="Image" width="60%" /></div>
+
+
+<!-- batch 34 | page 49 -->
+
+<div style="text-align: center;">Figure 6-70 Overhead Pendulum Shock Isolation Systems Using Platforms </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_159_313_1028_1183.jpg" alt="Image" width="72%" /></div>
+
+
+<!-- batch 34 | page 50 -->
+
+<div style="text-align: center;">Figure 6-71 Helical Compression Spring Mounts </div>
+
+
+<div style="text-align: center;">VERTICAL SHOCK MOUNT </div>
+
+
+<!-- batch 34 | page 51 -->
+
+<div style="text-align: center;">Figure 6-72 Typical Torsion Spring Shock Isolation System </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_183_315_987_867.jpg" alt="Image" width="67%" /></div>
+
+
+<!-- batch 34 | page 52 -->
+
+Figure 6-73 Schematic of Single and Double Action Pneumatic Cylinders 
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_361_324_802_890.jpg" alt="Image" width="37%" /></div>
+
+
+<div style="text-align: center;">Figure 6-74 Schematic of Liquid Springs </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_151_1022_1039_1272.jpg" alt="Image" width="74%" /></div>
+
+
+<div style="text-align: center;">(a)COMPRESSION </div>
+
+
+<div style="text-align: center;">(b) TENSION </div>
+
+
+<!-- batch 34 | page 53 -->
+
+<div style="text-align: center;">Figure 6-75 Belleville Springs </div>
+
+
+<div style="text-align: center;"><img src="../pages/batch 34/imgs/img_in_image_box_261_311_891_689.jpg" alt="Image" width="52%" /></div>
+
+
+<div style="text-align: center;">(a)SERIES (b)PARALLEL (C)PARALLEL-SERIES </div>
