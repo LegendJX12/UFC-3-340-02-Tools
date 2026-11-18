@@ -31,7 +31,7 @@ See `reference/HANDOFF.md` for rebuild commands and open items.
 ## Counts (this build)
 - 1,982 pages (OCR and PDF text), 16,950 blocks, 3,302 images (3,168 placed on a page)
 - 1,864 captions, 2,385 index entries
-- 1,371 original plot files (10,835 curves, 591,110 points) and 19 generated (201 curves); all linked to a guide figure
+- 1,371 original plot files (10,835 curves, 591,110 points) and 22 generated (214 curves: 19 computed files, 3 digitized); all linked to a guide figure
 - 501 numbered equations checked
 - 840 figures and 84 tables with a data status
 

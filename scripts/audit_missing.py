@@ -46,8 +46,8 @@ FIX = {  # corrected title and page where the index entry is wrong
 }
 OCR_NOISE = {'2A-1640'}  # misread duplicate of 2A-16
 TABLE_NOTES = {
-    '5-4': ('MISSING DATA', 'high', 'Table body is blank in the source PDF (batch 28 page 3); only the caption and '
-                                    'footnote "* Whichever governs" are present. Get it from another copy of the guide.'),
+    '5-4': ('cells from PDF text', '', 'Table is not drawn on the page (renders blank, OCR found nothing) but its '
+                                      'values are in the PDF text layer: reference/tables/table_5-4.csv.'),
     '4-1': (None, None, 'Index page (batch 19 p34) only mentions the table; cells are on batch 19 page 42.'),
 }
 
@@ -100,8 +100,9 @@ def main():
         prio, note = '', ''
         if plots.get(k) and all(g in generated for g in plots[k]):
             status = 'has plot data (generated)'
-            note = (MISSING.get(k, ('', ''))[1] + ' Now computed: ' if k in MISSING else 'Computed: ') + \
-                ', '.join(sorted(plots[k])) + ' in graphs/generated (see scripts/generate_missing.py).'
+            note = (MISSING.get(k, ('', ''))[1] + ' Now generated: ' if k in MISSING else 'Generated: ') + \
+                ', '.join(sorted(plots[k])) + ' in graphs/generated (computed by scripts/generate_missing.py ' \
+                'or digitized by scripts/digitize_figures.py).'
         elif plots.get(k):
             status = 'has plot data'
             note = f'{len(plots[k])} plot file(s): ' + ', '.join(sorted(plots[k])[:6]) + (' ...' if len(plots[k]) > 6 else '')

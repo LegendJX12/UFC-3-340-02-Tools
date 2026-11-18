@@ -9,7 +9,9 @@ Read this first. It explains what is in the repo, what is verified, and what is 
 | `text/chapters/` | Chapters 1 to 6 as readable markdown (OCR; equations not verified) |
 | `ocr/batch-NN/` | Per-page OCR output: `page_NNNN_res.json` (text blocks, labels, positions) and `imgs/` (cropped charts, tables, images, formulas) |
 | `graphs/UFC_Plots_data/` | 1,371 original plot files (`.grf`, DPLOT v1.6) with curve data, split into subfolders by chapter |
-| `graphs/generated/` | 19 plot files **computed** by `scripts/generate_missing.py` for figures with no original plot file (see section 5) |
+| `graphs/generated/` | 22 plot files for figures with no original plot file: 19 **computed** (`generate_missing.py`) and 3 **digitized** from the PDF (`digitize_figures.py`); see section 5 |
+| `reference/tables/` | Tables recovered from the PDF text layer (Table 5-4) |
+| `reference/digitized_checks/` | Digitized curves drawn over the original charts, for checking by eye |
 | `reference/` | Index spreadsheet, database, check lists (CSV), database guide, this note |
 | `scripts/` | Build and check scripts (see below) |
 
@@ -19,6 +21,7 @@ Run from the repo root, in this order. `pdftotext` (poppler) is needed for the P
 
 ```bash
 python3 scripts/generate_missing.py --out graphs/generated
+python3 scripts/digitize_figures.py --pdf-root source/pdf --out graphs/generated --checks reference/digitized_checks
 python3 scripts/build_db.py --ocr-root ocr --grf-root graphs --index reference/UFC_3-340-02_index.xlsx --pdf-root source/pdf --out reference/ufc_340_02.db
 python3 scripts/map_grf.py --db reference/ufc_340_02.db --grf-root graphs --csv reference/grf_to_guide.csv
 python3 scripts/check_equations.py --db reference/ufc_340_02.db --csv reference/equation_check.csv
@@ -34,9 +37,10 @@ python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/mi
 | `audit_missing.py` | `missing_data.csv` and table `data_status`: every figure and table with its data status |
 | `sdof_bilinear.py` | Calculator: maximum response of an elasto-plastic SDOF system to a bilinear-triangular pulse |
 | `generate_missing.py` | Writes the computed plot files in `graphs/generated/` |
+| `digitize_chart.py`, `digitize_figures.py` | Digitizer (WebPlotDigitizer method) and the settings for Figures 2-8, 2-16, 6-11 |
 
 ## 1. Plot files: all linked to the guide (`grf_to_guide.csv`)
-The counts below are for the 1,371 original files. The 19 generated files are also linked (to Figures 3-64, 3-220 to 3-224 and 6-21) and marked GENERATED in `note`; table `plot_files` has `source` = original / generated.
+The counts below are for the 1,371 original files. The 22 generated files are also linked (to Figures 2-8, 2-16, 3-64, 3-220 to 3-224, 6-11 and 6-21) and marked GENERATED in `note`; table `plot_files` has `source` = original / generated.
 
 | Level | Count | Meaning |
 |---|---|---|
@@ -77,23 +81,19 @@ Rule for the analysis tools: take equations from the PDF text (`pdf_pages`) or f
 | Figure | has plot data | 562 |
 | Figure | no data needed (schematic, sketch, photo) | 257 |
 | Figure | example plot (values printed on it) | 10 |
-| Figure | has plot data (generated) | 7 |
-| Figure | **MISSING DATA** | **3** |
+| Figure | has plot data (generated) | 10 |
+| Figure | **MISSING DATA** | **0** |
 | Table | cells captured (OCR, values to check) | 83 |
-| Table | **MISSING DATA** | **1** |
+| Table | cells from PDF text | 1 |
 
-**Generated (computed) - now has plot data** (see section 5):
-- **3-64 (a), (b)**: C1 = 1.000, C2 = 1.0 (batch 13 p49-50).
-- **3-220 to 3-224**: C1 = 0.909 to 0.750, C2 = 1000 (batch 17 p1-5).
+**Generated - now has plot data** (see section 5):
+- **3-64 (a), (b)**: computed, C1 = 1.000, C2 = 1.0 (batch 13 p49-50).
+- **3-220 to 3-224**: computed, C1 = 0.909 to 0.750, C2 = 1000 (batch 17 p1-5).
 - **6-21**: Roof live load vs tributary area (exact rule from the guide text, spec 4.2.1).
+- **2-8, 2-16**: digitized from the scanned charts (batch 3 p8 and p15).
+- **6-11**: digitized example curve, four corner points (batch 31 p49).
 
-**Still missing, high priority:**
-- **2-8**: Negative phase shock wave parameters, spherical free-air burst (batch 3 p8). No `02_008.grf`. Scanned chart; needs digitizing.
-- **2-16**: Negative phase shock wave parameters, hemispherical surface burst (batch 3 p15). Only `02_016.BMP`, a picture. Needs digitizing.
-- **Table 5-4**: Preliminary Dynamic Load Factors for Plates (batch 28 p3). Blank in the source PDF itself; needs another copy of the guide.
-
-**Still missing, low priority:**
-- **6-11**: Resistance-deflection plot, unreinforced masonry with arching.
+**Table 5-4** (Preliminary Dynamic Load Factors for Plates, batch 28 p3) is not drawn on the page, so it renders blank and OCR found nothing, but its values are in the PDF text layer: `reference/tables/table_5-4.csv` (see the README there).
 
 How these were decided: every chart without a plot file was viewed (contact sheets of all 65 chart images), plus the PDF pages of figures where OCR found no picture. 206 figures marked "diagram, layout or photo" were judged from page content and title, not each viewed.
 
@@ -112,8 +112,16 @@ The generated 3-220 to 3-224 values fall smoothly between each other and into th
 
 Limits: the generated charts follow the computation, not the printed scan, so small differences from the printed figures are possible. The printed charts also show region boundary symbols (A/B/C/D), which are not generated.
 
+### Digitized charts (Figures 2-8, 2-16, 6-11)
+The WebPlotDigitizer website cannot be reached from the build machine, so its method is scripted (`digitize_chart.py`): the PDF page is rendered at 300 dpi, the log axes are calibrated from the plot frame and the decade tick marks (piecewise, which corrects a 9-pixel scan stretch on 2-8), and each curve is traced from a seed point. Where curves cross or overlap, the trace keeps its direction.
+- 6 curves per chart: P_so (2-8) or P_s (2-16), P_r, i_s/W^1/3, i_r/W^1/3 (left axis); t_o/W^1/3, L_w/W^1/3 (right axis). About 120 points per curve.
+- Check by eye: `reference/digitized_checks/fig_2-8.png` and `fig_2-16.png` show the traced curves drawn over the original charts.
+- Physical check: peak negative pressure at small Z reads 14.7 psi on both charts, which is atmospheric pressure (the vacuum limit).
+- Accuracy: one pixel is about 0.45% of a value on these log scales; with line thickness and calibration, expect about 1 to 3%.
+- 6-11 is an example curve of four straight segments (shape as Figure 6-13): (0, 0), (0.04, 0.614), (0.08, 0.051), (7.625, 0). The end point 7.61 measured matches the 7.625 in thickness of an 8-in masonry unit. The two small deflections (Xe, 2Xe) are within about ±0.03.
+
 ## Still open
-1. Digitize Figures 2-8 and 2-16, and obtain Table 5-4.
+1. Compare the digitized 2-8 and 2-16 with any other copy of these charts if one becomes available.
 2. Check the 16 `differ` and 40 `no-pdf-line` equations against the PDF.
 3. Table cells are OCR; check values against the PDF text layer before use.
 4. 134 images have no page assigned (`images.page` empty).
