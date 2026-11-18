@@ -1,0 +1,535 @@
+{
+    "input_path": "C:\\Users\\10029078\\OneDrive - Surbana Jurong Private Limited\\Attachments\\Desktop\\Technical Improvment\\DCMS basis report\\References\\UFC 3-340-02 batches\\ocr_output\\pages\\batch 19\\page_0009.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_seal_recognition": false,
+        "use_table_recognition": true,
+        "use_formula_recognition": true,
+        "use_chart_recognition": false,
+        "use_region_detection": true,
+        "format_block_content": false,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ]
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "content",
+            "block_content": "UFC 3-340-02\n5 December 2008\nChange 2,1 September 2014\n4-68 SINGLE AND MULTICUBICLE STRUCTURES..4-246\n4-699SEQUENCEOFCONSTRUCTION..4-247",
+            "block_bbox": [
+                133,
+                146,
+                1051,
+                329
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "number",
+            "block_content": "vii ",
+            "block_bbox": [
+                589,
+                1489,
+                612,
+                1505
+            ],
+            "block_id": 1,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false
+        },
+        "angle": -1
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 3,
+                "label": "number",
+                "score": 0.7897471189498901,
+                "coordinate": [
+                    589.2117919921875,
+                    1489.259765625,
+                    612.7237548828125,
+                    1505.47802734375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "content",
+                "score": 0.6791622042655945,
+                "coordinate": [
+                    135.2098388671875,
+                    264.14837646484375,
+                    1049.5992431640625,
+                    328.51043701171875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "content",
+                "score": 0.6372582316398621,
+                "coordinate": [
+                    133.8341064453125,
+                    146.8629150390625,
+                    1051.62841796875,
+                    329.45086669921875
+                ]
+            }
+        ]
+    },
+    "overall_ocr_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+        },
+        "dt_polys": [
+            [
+                [
+                    899,
+                    145
+                ],
+                [
+                    1054,
+                    145
+                ],
+                [
+                    1054,
+                    172
+                ],
+                [
+                    899,
+                    172
+                ]
+            ],
+            [
+                [
+                    855,
+                    175
+                ],
+                [
+                    1053,
+                    177
+                ],
+                [
+                    1053,
+                    204
+                ],
+                [
+                    855,
+                    201
+                ]
+            ],
+            [
+                [
+                    732,
+                    208
+                ],
+                [
+                    1053,
+                    208
+                ],
+                [
+                    1053,
+                    234
+                ],
+                [
+                    732,
+                    234
+                ]
+            ],
+            [
+                [
+                    135,
+                    264
+                ],
+                [
+                    704,
+                    264
+                ],
+                [
+                    704,
+                    294
+                ],
+                [
+                    135,
+                    294
+                ]
+            ],
+            [
+                [
+                    982,
+                    264
+                ],
+                [
+                    1054,
+                    264
+                ],
+                [
+                    1054,
+                    293
+                ],
+                [
+                    982,
+                    293
+                ]
+            ],
+            [
+                [
+                    137,
+                    305
+                ],
+                [
+                    193,
+                    305
+                ],
+                [
+                    193,
+                    330
+                ],
+                [
+                    137,
+                    330
+                ]
+            ],
+            [
+                [
+                    182,
+                    305
+                ],
+                [
+                    581,
+                    305
+                ],
+                [
+                    581,
+                    329
+                ],
+                [
+                    182,
+                    329
+                ]
+            ],
+            [
+                [
+                    979,
+                    304
+                ],
+                [
+                    1052,
+                    304
+                ],
+                [
+                    1052,
+                    330
+                ],
+                [
+                    979,
+                    330
+                ]
+            ],
+            [
+                [
+                    584,
+                    1486
+                ],
+                [
+                    617,
+                    1486
+                ],
+                [
+                    617,
+                    1510
+                ],
+                [
+                    584,
+                    1510
+                ]
+            ]
+        ],
+        "text_det_params": {
+            "limit_side_len": 736,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+            "UFC 3-340-02",
+            "5 December 2008",
+            "Change 2,1 September 2014",
+            "4-68 SINGLE AND MULTICUBICLE STRUCTURES.",
+            ".4-246",
+            "4-69",
+            "9SEQUENCEOFCONSTRUCTION.",
+            ".4-247",
+            "vii"
+        ],
+        "rec_scores": [
+            0.9684411883354187,
+            0.9778575301170349,
+            0.9818466305732727,
+            0.9866539239883423,
+            0.9933996200561523,
+            0.9997503757476807,
+            0.9721274375915527,
+            0.9996654987335205,
+            0.989023745059967
+        ],
+        "rec_polys": [
+            [
+                [
+                    899,
+                    145
+                ],
+                [
+                    1054,
+                    145
+                ],
+                [
+                    1054,
+                    172
+                ],
+                [
+                    899,
+                    172
+                ]
+            ],
+            [
+                [
+                    855,
+                    175
+                ],
+                [
+                    1053,
+                    177
+                ],
+                [
+                    1053,
+                    204
+                ],
+                [
+                    855,
+                    201
+                ]
+            ],
+            [
+                [
+                    732,
+                    208
+                ],
+                [
+                    1053,
+                    208
+                ],
+                [
+                    1053,
+                    234
+                ],
+                [
+                    732,
+                    234
+                ]
+            ],
+            [
+                [
+                    135,
+                    264
+                ],
+                [
+                    704,
+                    264
+                ],
+                [
+                    704,
+                    294
+                ],
+                [
+                    135,
+                    294
+                ]
+            ],
+            [
+                [
+                    982,
+                    264
+                ],
+                [
+                    1054,
+                    264
+                ],
+                [
+                    1054,
+                    293
+                ],
+                [
+                    982,
+                    293
+                ]
+            ],
+            [
+                [
+                    137,
+                    305
+                ],
+                [
+                    193,
+                    305
+                ],
+                [
+                    193,
+                    330
+                ],
+                [
+                    137,
+                    330
+                ]
+            ],
+            [
+                [
+                    182,
+                    305
+                ],
+                [
+                    581,
+                    305
+                ],
+                [
+                    581,
+                    329
+                ],
+                [
+                    182,
+                    329
+                ]
+            ],
+            [
+                [
+                    979,
+                    304
+                ],
+                [
+                    1052,
+                    304
+                ],
+                [
+                    1052,
+                    330
+                ],
+                [
+                    979,
+                    330
+                ]
+            ],
+            [
+                [
+                    584,
+                    1486
+                ],
+                [
+                    617,
+                    1486
+                ],
+                [
+                    617,
+                    1510
+                ],
+                [
+                    584,
+                    1510
+                ]
+            ]
+        ],
+        "rec_boxes": [
+            [
+                899,
+                145,
+                1054,
+                172
+            ],
+            [
+                855,
+                175,
+                1053,
+                204
+            ],
+            [
+                732,
+                208,
+                1053,
+                234
+            ],
+            [
+                135,
+                264,
+                704,
+                294
+            ],
+            [
+                982,
+                264,
+                1054,
+                293
+            ],
+            [
+                137,
+                305,
+                193,
+                330
+            ],
+            [
+                182,
+                305,
+                581,
+                329
+            ],
+            [
+                979,
+                304,
+                1052,
+                330
+            ],
+            [
+                584,
+                1486,
+                617,
+                1510
+            ]
+        ]
+    }
+}

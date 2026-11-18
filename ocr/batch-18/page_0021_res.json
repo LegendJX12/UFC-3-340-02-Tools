@@ -1,0 +1,989 @@
+{
+    "input_path": "C:\\Users\\10029078\\OneDrive - Surbana Jurong Private Limited\\Attachments\\Desktop\\Technical Improvment\\DCMS basis report\\References\\UFC 3-340-02 batches\\ocr_output\\pages\\batch 18\\page_0021.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_seal_recognition": false,
+        "use_table_recognition": true,
+        "use_formula_recognition": true,
+        "use_chart_recognition": false,
+        "use_region_detection": true,
+        "format_block_content": false,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ]
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "UFC 3-340-025 December 2008Change 2,1 September 2014",
+            "block_bbox": [
+                730,
+                147,
+                1050,
+                233
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "formula",
+            "block_content": "\\begin{aligned}r_{1}=20,&000/[(0.077)(168)^{2}]=9.20\\;\\mathsf{psi}\\\\r_{2}=20,&000/[(0.160)(168)^{2}]=4.43\\;\\mathsf{psi}\\\\r_{3}=20,&000/[(0.115)(168)^{2}]=6.16\\;\\mathsf{psi}\\\\&\\mathsf{First}\\;\\mathsf{yield}\\;\\mathsf{at}\\;\\mathsf{Point}\\;2\\;(\\mathsf{small}\\;\\mathsf{s}\\mathsf{mallest}\\;r)\\end{aligned}",
+            "block_bbox": [
+                342,
+                263,
+                749,
+                424
+            ],
+            "block_id": 1,
+            "block_order": 1
+        },
+        {
+            "block_label": "formula",
+            "block_content": "\\begin{aligned}&b.\\quad&r_{e}=4.43\\;psi\\\\&c.\\quad&M_{P}\\;(Point1)=(0.077)(4.43)(168)^2\\;=\\;9.627\\;in-lbs/in\\\\&\\quad&M_{N}\\;(Point3)=(0.115)(4.43)(168)^2\\;=\\;14,379\\;in-lbs/in\\\\&d.\\quad&D\\;=EII/(b(1-\\nu^2))\\\\&\\quad&=29\\times10^6\\times144/(1(1-(0.3)^2))=\\;45.9\\times10^8\\;in-lbs\\\\&\\quad&\\mathsf{X_{e}}=\\gamma_{1}r_{e}H^4/D=(0.0120)(4.43)(168)^4/(45.9*10^8)=0.0092\\;in\\end{aligned}",
+            "block_bbox": [
+                274,
+                442,
+                971,
+                696
+            ],
+            "block_id": 2,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "Step 6.Properties at second yield.",
+            "block_bbox": [
+                134,
+                712,
+                555,
+                736
+            ],
+            "block_id": 3,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "After first yield element assumes a simple-simple-fixed-free stiffness,therefore from Figure 3-29 (+) for $H/L=0.7;$ \n",
+            "block_bbox": [
+                273,
+                757,
+                989,
+                807
+            ],
+            "block_id": 4,
+            "block_order": 4
+        },
+        {
+            "block_label": "text",
+            "block_content": "should be 0$\\begin{aligned}&\\begin{aligned}\\\\ &\\beta_{1}&=0.120\\quad\\beta_{2}=0.220\\\\&0.03&\\quad\\gamma_{1}=0.945-\\quad\\nu=0.320\\\\&a.\\quad M_{P}\\quad(Point1)=M_{HP}-M_{P}\\quad(at r_{e})=20,000-9627=10373in-lbs/in\\\\&M_{N}\\quad(Point3)=M_{VN}-M_{P}\\quad(at r_{e})=20,000-14,379=5621in-lbs/in\\\\&b.\\quad M_{P}\\quad(Point1)=10373in-lbs/in=\\&_{1}\\Delta\\Gamma H^{2}\\\\&\\quad\\Delta r=10373/(0.120)(168)^{2}=3.06psi\\\\&\\quad\\Delta r=5.621in-lbs/in=\\beta_{2}\\Delta\\Gamma H^{2}\\\\&\\quad\\Delta r=5.621/[0.220)(168)^{2}]=9.09psi\\\\&\\quad Second yield at Point3(smaller\\Delta r)\\\\&c.\\quad\\Delta r=0.90psi\\\\&d.\\quad r_{ep}=r_{e}+\\Delta r=4.43+0.90=5.33psi\\\\&e.\\quad M_{P}\\quad(Point1)=0.120(0.90)(168)^{2}=3.048in-lbs/in\\\\&f.\\quad D=E//(1-n^{2})=(29)(10^{8})(144)/[14](-0.3)^{2}=45.9\\times10^{8}in-lbs/in\\\\&\\quad\\Delta x=\\gamma_{1}\\Delta r H^{4}/D=0.000(0.90)(168)^{4}/45.9(10)^{8}=0.0047in\\\\&g.\\quad X_{ep}=X_{e}+\\Delta X=0.0092+0.0047=0.014in\\\\ &\\end{aligned}\\\\ \\end{aligned}$ ",
+            "block_bbox": [
+                142,
+                838,
+                304,
+                885
+            ],
+            "block_id": 5,
+            "block_order": 5
+        },
+        {
+            "block_label": "formula",
+            "block_content": "\\begin{aligned}&\\begin{aligned}\\\\ &\\beta_{1}&=0.120\\quad\\beta_{2}=0.220\\\\&0.03&\\quad\\gamma_{1}=0.945-\\quad\\nu=0.320\\\\&a.\\quad M_{P}\\quad(Point1)=M_{HP}-M_{P}\\quad(at r_{e})=20,000-9627=10373in-lbs/in\\\\&M_{N}\\quad(Point3)=M_{VN}-M_{P}\\quad(at r_{e})=20,000-14,379=5621in-lbs/in\\\\&b.\\quad M_{P}\\quad(Point1)=10373in-lbs/in=\\&_{1}\\Delta\\Gamma H^{2}\\\\&\\quad\\Delta r=10373/(0.120)(168)^{2}=3.06psi\\\\&\\quad\\Delta r=5.621in-lbs/in=\\beta_{2}\\Delta\\Gamma H^{2}\\\\&\\quad\\Delta r=5.621/[0.220)(168)^{2}]=9.09psi\\\\&\\quad Second yield at Point3(smaller\\Delta r)\\\\&c.\\quad\\Delta r=0.90psi\\\\&d.\\quad r_{ep}=r_{e}+\\Delta r=4.43+0.90=5.33psi\\\\&e.\\quad M_{P}\\quad(Point1)=0.120(0.90)(168)^{2}=3.048in-lbs/in\\\\&f.\\quad D=E//(1-n^{2})=(29)(10^{8})(144)/[14](-0.3)^{2}=45.9\\times10^{8}in-lbs/in\\\\&\\quad\\Delta x=\\gamma_{1}\\Delta r H^{4}/D=0.000(0.90)(168)^{4}/45.9(10)^{8}=0.0047in\\\\&g.\\quad X_{ep}=X_{e}+\\Delta X=0.0092+0.0047=0.014in\\\\ &\\end{aligned}\\\\ \\end{aligned} 1",
+            "block_bbox": [
+                271,
+                828,
+                1021,
+                1481
+            ],
+            "block_id": 6,
+            "block_order": 6
+        },
+        {
+            "block_label": "footer",
+            "block_content": "3A-15",
+            "block_bbox": [
+                567,
+                1518,
+                631,
+                1537
+            ],
+            "block_id": 7,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false
+        },
+        "angle": -1
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.9455325603485107,
+                "coordinate": [
+                    273.2205810546875,
+                    757.7598266601562,
+                    989.4327392578125,
+                    807.3628540039062
+                ]
+            },
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8909558057785034,
+                "coordinate": [
+                    730.6839599609375,
+                    147.57369995117188,
+                    1050.4251708984375,
+                    233.24893188476562
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.7672204375267029,
+                "coordinate": [
+                    142.12301635742188,
+                    838.630615234375,
+                    304.8360290527344,
+                    885.58251953125
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.6651982665061951,
+                "coordinate": [
+                    626.5677490234375,
+                    785.1773681640625,
+                    727.4625244140625,
+                    806.8985595703125
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.6511127352714539,
+                "coordinate": [
+                    134.594970703125,
+                    712.410400390625,
+                    555.6278076171875,
+                    736.72021484375
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "footer",
+                "score": 0.6452832818031311,
+                "coordinate": [
+                    567.3282470703125,
+                    1518.0303955078125,
+                    631.0196533203125,
+                    1537.7681884765625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.6367856860160828,
+                "coordinate": [
+                    342.55364990234375,
+                    263.42779541015625,
+                    749.0125122070312,
+                    424.63482666015625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.5351245403289795,
+                "coordinate": [
+                    274.5914306640625,
+                    442.65557861328125,
+                    971.10302734375,
+                    696.4458618164062
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.3612864017486572,
+                "coordinate": [
+                    271.6092834472656,
+                    828.4373779296875,
+                    1021.6287841796875,
+                    1481.9415283203125
+                ]
+            }
+        ]
+    },
+    "overall_ocr_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+        },
+        "dt_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    732,
+                    210
+                ],
+                [
+                    1050,
+                    210
+                ],
+                [
+                    1050,
+                    233
+                ],
+                [
+                    732,
+                    233
+                ]
+            ],
+            [
+                [
+                    135,
+                    709
+                ],
+                [
+                    218,
+                    709
+                ],
+                [
+                    218,
+                    742
+                ],
+                [
+                    135,
+                    742
+                ]
+            ],
+            [
+                [
+                    277,
+                    712
+                ],
+                [
+                    555,
+                    712
+                ],
+                [
+                    555,
+                    739
+                ],
+                [
+                    277,
+                    739
+                ]
+            ],
+            [
+                [
+                    278,
+                    757
+                ],
+                [
+                    990,
+                    757
+                ],
+                [
+                    990,
+                    783
+                ],
+                [
+                    278,
+                    783
+                ]
+            ],
+            [
+                [
+                    279,
+                    785
+                ],
+                [
+                    624,
+                    785
+                ],
+                [
+                    624,
+                    809
+                ],
+                [
+                    279,
+                    809
+                ]
+            ],
+            [
+                [
+                    143,
+                    836
+                ],
+                [
+                    275,
+                    836
+                ],
+                [
+                    275,
+                    867
+                ],
+                [
+                    143,
+                    867
+                ]
+            ],
+            [
+                [
+                    145,
+                    864
+                ],
+                [
+                    274,
+                    864
+                ],
+                [
+                    274,
+                    888
+                ],
+                [
+                    145,
+                    888
+                ]
+            ],
+            [
+                [
+                    1017,
+                    970
+                ],
+                [
+                    1030,
+                    970
+                ],
+                [
+                    1030,
+                    986
+                ],
+                [
+                    1017,
+                    986
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    637,
+                    1514
+                ],
+                [
+                    637,
+                    1544
+                ],
+                [
+                    565,
+                    1544
+                ]
+            ],
+            [
+                [
+                    626,
+                    785
+                ],
+                [
+                    727,
+                    785
+                ],
+                [
+                    727,
+                    806
+                ],
+                [
+                    626,
+                    806
+                ]
+            ],
+            [
+                [
+                    342,
+                    263
+                ],
+                [
+                    749,
+                    263
+                ],
+                [
+                    749,
+                    424
+                ],
+                [
+                    342,
+                    424
+                ]
+            ],
+            [
+                [
+                    274,
+                    442
+                ],
+                [
+                    971,
+                    442
+                ],
+                [
+                    971,
+                    696
+                ],
+                [
+                    274,
+                    696
+                ]
+            ],
+            [
+                [
+                    271,
+                    828
+                ],
+                [
+                    1021,
+                    828
+                ],
+                [
+                    1021,
+                    1481
+                ],
+                [
+                    271,
+                    1481
+                ]
+            ]
+        ],
+        "text_det_params": {
+            "limit_side_len": 736,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+            "UFC 3-340-02",
+            "5 December 2008",
+            "Change 2,1 September 2014",
+            "Step 6.",
+            "Properties at second yield.",
+            "After first yield element assumes a simple-simple-fixed-free stiffness,",
+            "therefore from Figure 3-29 (+) for",
+            "typo, gamm",
+            "should be 0",
+            "1",
+            "3A-15",
+            "H/L=0.7;",
+            "\\begin{aligned}r_{1}=20,&000/[(0.077)(168)^{2}]=9.20\\;\\mathsf{psi}\\\\r_{2}=20,&000/[(0.160)(168)^{2}]=4.43\\;\\mathsf{psi}\\\\r_{3}=20,&000/[(0.115)(168)^{2}]=6.16\\;\\mathsf{psi}\\\\&\\mathsf{First}\\;\\mathsf{yield}\\;\\mathsf{at}\\;\\mathsf{Point}\\;2\\;(\\mathsf{small}\\;\\mathsf{s}\\mathsf{mallest}\\;r)\\end{aligned}",
+            "\\begin{aligned}&b.\\quad&r_{e}=4.43\\;psi\\\\&c.\\quad&M_{P}\\;(Point1)=(0.077)(4.43)(168)^2\\;=\\;9.627\\;in-lbs/in\\\\&\\quad&M_{N}\\;(Point3)=(0.115)(4.43)(168)^2\\;=\\;14,379\\;in-lbs/in\\\\&d.\\quad&D\\;=EII/(b(1-\\nu^2))\\\\&\\quad&=29\\times10^6\\times144/(1(1-(0.3)^2))=\\;45.9\\times10^8\\;in-lbs\\\\&\\quad&\\mathsf{X_{e}}=\\gamma_{1}r_{e}H^4/D=(0.0120)(4.43)(168)^4/(45.9*10^8)=0.0092\\;in\\end{aligned}",
+            "\\begin{aligned}&\\begin{aligned}\\\\ &\\beta_{1}&=0.120\\quad\\beta_{2}=0.220\\\\&0.03&\\quad\\gamma_{1}=0.945-\\quad\\nu=0.320\\\\&a.\\quad M_{P}\\quad(Point1)=M_{HP}-M_{P}\\quad(at r_{e})=20,000-9627=10373in-lbs/in\\\\&M_{N}\\quad(Point3)=M_{VN}-M_{P}\\quad(at r_{e})=20,000-14,379=5621in-lbs/in\\\\&b.\\quad M_{P}\\quad(Point1)=10373in-lbs/in=\\&_{1}\\Delta\\Gamma H^{2}\\\\&\\quad\\Delta r=10373/(0.120)(168)^{2}=3.06psi\\\\&\\quad\\Delta r=5.621in-lbs/in=\\beta_{2}\\Delta\\Gamma H^{2}\\\\&\\quad\\Delta r=5.621/[0.220)(168)^{2}]=9.09psi\\\\&\\quad Second yield at Point3(smaller\\Delta r)\\\\&c.\\quad\\Delta r=0.90psi\\\\&d.\\quad r_{ep}=r_{e}+\\Delta r=4.43+0.90=5.33psi\\\\&e.\\quad M_{P}\\quad(Point1)=0.120(0.90)(168)^{2}=3.048in-lbs/in\\\\&f.\\quad D=E//(1-n^{2})=(29)(10^{8})(144)/[14](-0.3)^{2}=45.9\\times10^{8}in-lbs/in\\\\&\\quad\\Delta x=\\gamma_{1}\\Delta r H^{4}/D=0.000(0.90)(168)^{4}/45.9(10)^{8}=0.0047in\\\\&g.\\quad X_{ep}=X_{e}+\\Delta X=0.0092+0.0047=0.014in\\\\ &\\end{aligned}\\\\ \\end{aligned}"
+        ],
+        "rec_scores": [
+            0.9953386187553406,
+            0.9823054075241089,
+            0.9772233366966248,
+            0.9292073845863342,
+            0.9781832695007324,
+            0.9647128582000732,
+            0.960494339466095,
+            0.979475200176239,
+            0.9910820126533508,
+            0.9936352968215942,
+            0.9995123147964478,
+            1,
+            1,
+            1,
+            1
+        ],
+        "rec_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    732,
+                    210
+                ],
+                [
+                    1050,
+                    210
+                ],
+                [
+                    1050,
+                    233
+                ],
+                [
+                    732,
+                    233
+                ]
+            ],
+            [
+                [
+                    135,
+                    709
+                ],
+                [
+                    218,
+                    709
+                ],
+                [
+                    218,
+                    742
+                ],
+                [
+                    135,
+                    742
+                ]
+            ],
+            [
+                [
+                    277,
+                    712
+                ],
+                [
+                    555,
+                    712
+                ],
+                [
+                    555,
+                    739
+                ],
+                [
+                    277,
+                    739
+                ]
+            ],
+            [
+                [
+                    278,
+                    757
+                ],
+                [
+                    990,
+                    757
+                ],
+                [
+                    990,
+                    783
+                ],
+                [
+                    278,
+                    783
+                ]
+            ],
+            [
+                [
+                    279,
+                    785
+                ],
+                [
+                    624,
+                    785
+                ],
+                [
+                    624,
+                    809
+                ],
+                [
+                    279,
+                    809
+                ]
+            ],
+            [
+                [
+                    143,
+                    836
+                ],
+                [
+                    275,
+                    836
+                ],
+                [
+                    275,
+                    867
+                ],
+                [
+                    143,
+                    867
+                ]
+            ],
+            [
+                [
+                    145,
+                    864
+                ],
+                [
+                    274,
+                    864
+                ],
+                [
+                    274,
+                    888
+                ],
+                [
+                    145,
+                    888
+                ]
+            ],
+            [
+                [
+                    1017,
+                    970
+                ],
+                [
+                    1030,
+                    970
+                ],
+                [
+                    1030,
+                    986
+                ],
+                [
+                    1017,
+                    986
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    637,
+                    1514
+                ],
+                [
+                    637,
+                    1544
+                ],
+                [
+                    565,
+                    1544
+                ]
+            ],
+            [
+                [
+                    626,
+                    785
+                ],
+                [
+                    727,
+                    785
+                ],
+                [
+                    727,
+                    806
+                ],
+                [
+                    626,
+                    806
+                ]
+            ],
+            [
+                [
+                    342,
+                    263
+                ],
+                [
+                    749,
+                    263
+                ],
+                [
+                    749,
+                    424
+                ],
+                [
+                    342,
+                    424
+                ]
+            ],
+            [
+                [
+                    274,
+                    442
+                ],
+                [
+                    971,
+                    442
+                ],
+                [
+                    971,
+                    696
+                ],
+                [
+                    274,
+                    696
+                ]
+            ],
+            [
+                [
+                    271,
+                    828
+                ],
+                [
+                    1021,
+                    828
+                ],
+                [
+                    1021,
+                    1481
+                ],
+                [
+                    271,
+                    1481
+                ]
+            ]
+        ],
+        "rec_boxes": [
+            [
+                900.0,
+                145.0,
+                1053.0,
+                172.0
+            ],
+            [
+                858.0,
+                178.0,
+                1052.0,
+                202.0
+            ],
+            [
+                732.0,
+                210.0,
+                1050.0,
+                233.0
+            ],
+            [
+                135.0,
+                709.0,
+                218.0,
+                742.0
+            ],
+            [
+                277.0,
+                712.0,
+                555.0,
+                739.0
+            ],
+            [
+                278.0,
+                757.0,
+                990.0,
+                783.0
+            ],
+            [
+                279.0,
+                785.0,
+                624.0,
+                809.0
+            ],
+            [
+                274.0,
+                836.0,
+                275.0,
+                867.0
+            ],
+            [
+                145.0,
+                864.0,
+                274.0,
+                888.0
+            ],
+            [
+                1017.0,
+                970.0,
+                1030.0,
+                986.0
+            ],
+            [
+                565.0,
+                1514.0,
+                637.0,
+                1544.0
+            ],
+            [
+                626.5677490234375,
+                785.1773681640625,
+                727.4625244140625,
+                806.8985595703125
+            ],
+            [
+                342.55364990234375,
+                263.42779541015625,
+                749.0125122070312,
+                424.63482666015625
+            ],
+            [
+                274.5914306640625,
+                442.65557861328125,
+                971.10302734375,
+                696.4458618164062
+            ],
+            [
+                271.6092834472656,
+                828.4373779296875,
+                1021.6287841796875,
+                1481.9415283203125
+            ]
+        ]
+    },
+    "formula_res_list": [
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "H/L=0.7;",
+            "formula_region_id": 1,
+            "dt_polys": [
+                626.5677490234375,
+                785.1773681640625,
+                727.4625244140625,
+                806.8985595703125
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "\\begin{aligned}r_{1}=20,&000/[(0.077)(168)^{2}]=9.20\\;\\mathsf{psi}\\\\r_{2}=20,&000/[(0.160)(168)^{2}]=4.43\\;\\mathsf{psi}\\\\r_{3}=20,&000/[(0.115)(168)^{2}]=6.16\\;\\mathsf{psi}\\\\&\\mathsf{First}\\;\\mathsf{yield}\\;\\mathsf{at}\\;\\mathsf{Point}\\;2\\;(\\mathsf{small}\\;\\mathsf{s}\\mathsf{mallest}\\;r)\\end{aligned}",
+            "formula_region_id": 2,
+            "dt_polys": [
+                342.55364990234375,
+                263.42779541015625,
+                749.0125122070312,
+                424.63482666015625
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "\\begin{aligned}&b.\\quad&r_{e}=4.43\\;psi\\\\&c.\\quad&M_{P}\\;(Point1)=(0.077)(4.43)(168)^2\\;=\\;9.627\\;in-lbs/in\\\\&\\quad&M_{N}\\;(Point3)=(0.115)(4.43)(168)^2\\;=\\;14,379\\;in-lbs/in\\\\&d.\\quad&D\\;=EII/(b(1-\\nu^2))\\\\&\\quad&=29\\times10^6\\times144/(1(1-(0.3)^2))=\\;45.9\\times10^8\\;in-lbs\\\\&\\quad&\\mathsf{X_{e}}=\\gamma_{1}r_{e}H^4/D=(0.0120)(4.43)(168)^4/(45.9*10^8)=0.0092\\;in\\end{aligned}",
+            "formula_region_id": 3,
+            "dt_polys": [
+                274.5914306640625,
+                442.65557861328125,
+                971.10302734375,
+                696.4458618164062
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "\\begin{aligned}&\\begin{aligned}\\\\ &\\beta_{1}&=0.120\\quad\\beta_{2}=0.220\\\\&0.03&\\quad\\gamma_{1}=0.945-\\quad\\nu=0.320\\\\&a.\\quad M_{P}\\quad(Point1)=M_{HP}-M_{P}\\quad(at r_{e})=20,000-9627=10373in-lbs/in\\\\&M_{N}\\quad(Point3)=M_{VN}-M_{P}\\quad(at r_{e})=20,000-14,379=5621in-lbs/in\\\\&b.\\quad M_{P}\\quad(Point1)=10373in-lbs/in=\\&_{1}\\Delta\\Gamma H^{2}\\\\&\\quad\\Delta r=10373/(0.120)(168)^{2}=3.06psi\\\\&\\quad\\Delta r=5.621in-lbs/in=\\beta_{2}\\Delta\\Gamma H^{2}\\\\&\\quad\\Delta r=5.621/[0.220)(168)^{2}]=9.09psi\\\\&\\quad Second yield at Point3(smaller\\Delta r)\\\\&c.\\quad\\Delta r=0.90psi\\\\&d.\\quad r_{ep}=r_{e}+\\Delta r=4.43+0.90=5.33psi\\\\&e.\\quad M_{P}\\quad(Point1)=0.120(0.90)(168)^{2}=3.048in-lbs/in\\\\&f.\\quad D=E//(1-n^{2})=(29)(10^{8})(144)/[14](-0.3)^{2}=45.9\\times10^{8}in-lbs/in\\\\&\\quad\\Delta x=\\gamma_{1}\\Delta r H^{4}/D=0.000(0.90)(168)^{4}/45.9(10)^{8}=0.0047in\\\\&g.\\quad X_{ep}=X_{e}+\\Delta X=0.0092+0.0047=0.014in\\\\ &\\end{aligned}\\\\ \\end{aligned}",
+            "formula_region_id": 4,
+            "dt_polys": [
+                271.6092834472656,
+                828.4373779296875,
+                1021.6287841796875,
+                1481.9415283203125
+            ]
+        }
+    ]
+}

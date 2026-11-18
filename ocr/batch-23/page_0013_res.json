@@ -1,0 +1,2330 @@
+{
+    "input_path": "C:\\Users\\10029078\\OneDrive - Surbana Jurong Private Limited\\Attachments\\Desktop\\Technical Improvment\\DCMS basis report\\References\\UFC 3-340-02 batches\\ocr_output\\pages\\batch 23\\page_0013.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_seal_recognition": false,
+        "use_table_recognition": true,
+        "use_formula_recognition": true,
+        "use_chart_recognition": false,
+        "use_region_detection": true,
+        "format_block_content": false,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ]
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "UFC 3-340-025 December 2008Change 2,1 September 2014",
+            "block_bbox": [
+                731,
+                147,
+                1050,
+                233
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "The expression for the deflection at any time may be found by multiplying each differential area (between the time $t_{o}$ and the time in question), divided by the appropriate effective mass, by the time which is defined by the distance between the centroid of the area and the time in question, and adding these values algebraically.Using this procedure and the expression for the deflection at partial failure (initial failure of a two-way element) the deflection at time $t_{1}$ is:",
+            "block_bbox": [
+                133,
+                267,
+                1041,
+                424
+            ],
+            "block_id": 1,
+            "block_order": 1
+        },
+        {
+            "block_label": "formula",
+            "block_content": "\\boldsymbol{X}_{1}=\\frac{\\boldsymbol{i}_{b}\\boldsymbol{t}_{1}}{m_{u}}-\\frac{\\boldsymbol{r}_{u}{\\boldsymbol{t}_{1}}^{2}}{2m_{u}}",
+            "block_bbox": [
+                139,
+                464,
+                311,
+                525
+            ],
+            "block_id": 2,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "while the equation for the deflection at incipient failure at $t_{u}$ is given by:",
+            "block_bbox": [
+                134,
+                584,
+                865,
+                609
+            ],
+            "block_id": 3,
+            "block_order": 3
+        },
+        {
+            "block_label": "formula",
+            "block_content": "X_{u}=\\frac{i_{b}t_{u}}{m_{u}}-\\frac{r_{u}t_{1}}{m_{u}}\\left[t_{u}-\\frac{t_{1}}{2}\\right]-\\frac{r_{u p}\\left(t_{u}-t_{1}\\right)^{2}}{2m_{u p}}",
+            "block_bbox": [
+                138,
+                650,
+                534,
+                722
+            ],
+            "block_id": 4,
+            "block_order": 4
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "4-58.2.2Post-Failure Impulse Capacity.",
+            "block_bbox": [
+                134,
+                782,
+                618,
+                805
+            ],
+            "block_id": 5,
+            "block_order": 5
+        },
+        {
+            "block_label": "text",
+            "block_content": "The expression for the blast overload impulse capacity of a two-way element includes both the flexural capacity and the post-failure fragment momentum portion of the element's response. Solving Equations 4-187 through 4-189 simultaneously gives the expression for the blast overload impulse capacity. For a two-way element the resulting equation is:",
+            "block_bbox": [
+                133,
+                827,
+                1037,
+                957
+            ],
+            "block_id": 6,
+            "block_order": 6
+        },
+        {
+            "block_label": "formula",
+            "block_content": "\\frac{i_{b}^{2}}{2m_{u}}=r_{u}X_{1}+\\left[\\frac{m_{u}}{m_{up}}\\right]r_{up}(X_{u}-X_{1})+\\frac{m_{u}v_{t}^{2}}{2}",
+            "block_bbox": [
+                136,
+                995,
+                544,
+                1072
+            ],
+            "block_id": 7,
+            "block_order": 7
+        },
+        {
+            "block_label": "text",
+            "block_content": "For a one-way element or a two-way element which does not exhibit a post-ultimate range, the blast overload impulse capacity is:",
+            "block_bbox": [
+                133,
+                1132,
+                1001,
+                1182
+            ],
+            "block_id": 8,
+            "block_order": 8
+        },
+        {
+            "block_label": "formula",
+            "block_content": "\\frac{{{i}_{b}}^{2}}{2m_{u}}={{r}_{u}}{{X}_{u}}+\\frac{m_{u}{{v}_{f}}^{2}}{2}=\n",
+            "block_bbox": [
+                137,
+                1221,
+                349,
+                1285
+            ],
+            "block_id": 9,
+            "block_order": 9
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "4-58.2.3Response Time.",
+            "block_bbox": [
+                134,
+                1344,
+                457,
+                1366
+            ],
+            "block_id": 10,
+            "block_order": 10
+        },
+        {
+            "block_label": "text",
+            "block_content": "The response time is the time at which the elements reach the ultimate deflection $X_{u}$ and failure occurs. The expression for the response time $t_{u}$ is found by solving ",
+            "block_bbox": [
+                134,
+                1389,
+                1012,
+                1440
+            ],
+            "block_id": 11,
+            "block_order": 11
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "4-188",
+            "block_bbox": [
+                984,
+                509,
+                1049,
+                530
+            ],
+            "block_id": 12,
+            "block_order": null
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "4-189",
+            "block_bbox": [
+                985,
+                708,
+                1049,
+                729
+            ],
+            "block_id": 13,
+            "block_order": null
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "4-190",
+            "block_bbox": [
+                985,
+                1057,
+                1049,
+                1078
+            ],
+            "block_id": 14,
+            "block_order": null
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "4-191",
+            "block_bbox": [
+                985,
+                1269,
+                1048,
+                1291
+            ],
+            "block_id": 15,
+            "block_order": null
+        },
+        {
+            "block_label": "footer",
+            "block_content": "4-206",
+            "block_bbox": [
+                568,
+                1485,
+                629,
+                1505
+            ],
+            "block_id": 16,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false
+        },
+        "angle": -1
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.9815670251846313,
+                "coordinate": [
+                    133.75469970703125,
+                    267.10321044921875,
+                    1041.1005859375,
+                    424.1422119140625
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.9798975586891174,
+                "coordinate": [
+                    133.5897216796875,
+                    827.1234130859375,
+                    1037.9422607421875,
+                    957.2347412109375
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.9636087417602539,
+                "coordinate": [
+                    138.01611328125,
+                    650.1165771484375,
+                    534.8868408203125,
+                    722.8262939453125
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.9633713364601135,
+                "coordinate": [
+                    136.73867797851562,
+                    995.1881713867188,
+                    544.148193359375,
+                    1072.211669921875
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.9603537321090698,
+                "coordinate": [
+                    137.81094360351562,
+                    1221.576416015625,
+                    349.0569763183594,
+                    1285.338134765625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.9554399251937866,
+                "coordinate": [
+                    139.51211547851562,
+                    464.89874267578125,
+                    311.3683166503906,
+                    525.8829956054688
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.9529153108596802,
+                "coordinate": [
+                    133.9388427734375,
+                    1132.75439453125,
+                    1001.0435791015625,
+                    1182.9775390625
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.9521062970161438,
+                "coordinate": [
+                    134.32147216796875,
+                    1389.1790771484375,
+                    1012.3828735351562,
+                    1440.3111572265625
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "formula_number",
+                "score": 0.9164201021194458,
+                "coordinate": [
+                    985.5838623046875,
+                    1057.1064453125,
+                    1049.667724609375,
+                    1078.382568359375
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "formula_number",
+                "score": 0.9141255021095276,
+                "coordinate": [
+                    985.30126953125,
+                    1269.88916015625,
+                    1048.384765625,
+                    1291.2158203125
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.9129602313041687,
+                "coordinate": [
+                    134.21963500976562,
+                    584.83984375,
+                    865.45849609375,
+                    609.227294921875
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "formula_number",
+                "score": 0.9092689752578735,
+                "coordinate": [
+                    985.2275390625,
+                    708.0330810546875,
+                    1049.59912109375,
+                    729.3768310546875
+                ]
+            },
+            {
+                "cls_id": 0,
+                "label": "paragraph_title",
+                "score": 0.9044791460037231,
+                "coordinate": [
+                    134.44873046875,
+                    782.8448486328125,
+                    618.4744262695312,
+                    805.0987548828125
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "formula_number",
+                "score": 0.8885939717292786,
+                "coordinate": [
+                    984.6649169921875,
+                    509.84039306640625,
+                    1049.8629150390625,
+                    530.2699584960938
+                ]
+            },
+            {
+                "cls_id": 0,
+                "label": "paragraph_title",
+                "score": 0.885003924369812,
+                "coordinate": [
+                    134.7371368408203,
+                    1344.7103271484375,
+                    457.61016845703125,
+                    1366.8765869140625
+                ]
+            },
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.7999395132064819,
+                "coordinate": [
+                    731.17529296875,
+                    147.06622314453125,
+                    1050.7021484375,
+                    233.15972900390625
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "footer",
+                "score": 0.7555134892463684,
+                "coordinate": [
+                    568.1993408203125,
+                    1485.172607421875,
+                    629.1851806640625,
+                    1505.071044921875
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.6747523546218872,
+                "coordinate": [
+                    981.5068359375,
+                    1390.9788818359375,
+                    1010.422607421875,
+                    1413.1346435546875
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.6508206129074097,
+                "coordinate": [
+                    726.1774291992188,
+                    587.4326171875,
+                    744.5768432617188,
+                    609.43505859375
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.6402795910835266,
+                "coordinate": [
+                    727.1959228515625,
+                    1417.986083984375,
+                    745.3492431640625,
+                    1439.38525390625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.6339024901390076,
+                "coordinate": [
+                    593.6162109375,
+                    402.4570617675781,
+                    611.7894287109375,
+                    425.0072326660156
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.6334482431411743,
+                "coordinate": [
+                    497.04876708984375,
+                    295.9266052246094,
+                    515.4918823242188,
+                    316.5851745605469
+                ]
+            }
+        ]
+    },
+    "overall_ocr_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+        },
+        "dt_polys": [
+            [
+                [
+                    900,
+                    144
+                ],
+                [
+                    1053,
+                    146
+                ],
+                [
+                    1053,
+                    173
+                ],
+                [
+                    899,
+                    171
+                ]
+            ],
+            [
+                [
+                    857,
+                    177
+                ],
+                [
+                    1052,
+                    177
+                ],
+                [
+                    1052,
+                    201
+                ],
+                [
+                    857,
+                    201
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1052,
+                    210
+                ],
+                [
+                    1052,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    139,
+                    267
+                ],
+                [
+                    951,
+                    267
+                ],
+                [
+                    951,
+                    291
+                ],
+                [
+                    139,
+                    291
+                ]
+            ],
+            [
+                [
+                    139,
+                    293
+                ],
+                [
+                    933,
+                    293
+                ],
+                [
+                    933,
+                    316
+                ],
+                [
+                    139,
+                    316
+                ]
+            ],
+            [
+                [
+                    137,
+                    321
+                ],
+                [
+                    1012,
+                    319
+                ],
+                [
+                    1012,
+                    345
+                ],
+                [
+                    137,
+                    347
+                ]
+            ],
+            [
+                [
+                    138,
+                    349
+                ],
+                [
+                    1003,
+                    349
+                ],
+                [
+                    1003,
+                    372
+                ],
+                [
+                    138,
+                    372
+                ]
+            ],
+            [
+                [
+                    139,
+                    374
+                ],
+                [
+                    1041,
+                    374
+                ],
+                [
+                    1041,
+                    398
+                ],
+                [
+                    139,
+                    398
+                ]
+            ],
+            [
+                [
+                    138,
+                    400
+                ],
+                [
+                    643,
+                    400
+                ],
+                [
+                    643,
+                    424
+                ],
+                [
+                    138,
+                    424
+                ]
+            ],
+            [
+                [
+                    984,
+                    509
+                ],
+                [
+                    1054,
+                    509
+                ],
+                [
+                    1054,
+                    534
+                ],
+                [
+                    984,
+                    534
+                ]
+            ],
+            [
+                [
+                    137,
+                    584
+                ],
+                [
+                    865,
+                    585
+                ],
+                [
+                    865,
+                    612
+                ],
+                [
+                    137,
+                    611
+                ]
+            ],
+            [
+                [
+                    984,
+                    708
+                ],
+                [
+                    1053,
+                    708
+                ],
+                [
+                    1053,
+                    733
+                ],
+                [
+                    984,
+                    733
+                ]
+            ],
+            [
+                [
+                    138,
+                    782
+                ],
+                [
+                    228,
+                    782
+                ],
+                [
+                    228,
+                    806
+                ],
+                [
+                    138,
+                    806
+                ]
+            ],
+            [
+                [
+                    277,
+                    780
+                ],
+                [
+                    620,
+                    783
+                ],
+                [
+                    619,
+                    810
+                ],
+                [
+                    277,
+                    807
+                ]
+            ],
+            [
+                [
+                    139,
+                    827
+                ],
+                [
+                    1021,
+                    827
+                ],
+                [
+                    1021,
+                    851
+                ],
+                [
+                    139,
+                    851
+                ]
+            ],
+            [
+                [
+                    138,
+                    855
+                ],
+                [
+                    970,
+                    855
+                ],
+                [
+                    970,
+                    879
+                ],
+                [
+                    138,
+                    879
+                ]
+            ],
+            [
+                [
+                    139,
+                    882
+                ],
+                [
+                    1020,
+                    882
+                ],
+                [
+                    1020,
+                    906
+                ],
+                [
+                    139,
+                    906
+                ]
+            ],
+            [
+                [
+                    139,
+                    910
+                ],
+                [
+                    1038,
+                    910
+                ],
+                [
+                    1038,
+                    933
+                ],
+                [
+                    139,
+                    933
+                ]
+            ],
+            [
+                [
+                    136,
+                    934
+                ],
+                [
+                    261,
+                    932
+                ],
+                [
+                    262,
+                    961
+                ],
+                [
+                    136,
+                    963
+                ]
+            ],
+            [
+                [
+                    984,
+                    1056
+                ],
+                [
+                    1054,
+                    1056
+                ],
+                [
+                    1054,
+                    1082
+                ],
+                [
+                    984,
+                    1082
+                ]
+            ],
+            [
+                [
+                    139,
+                    1134
+                ],
+                [
+                    1003,
+                    1134
+                ],
+                [
+                    1003,
+                    1157
+                ],
+                [
+                    139,
+                    1157
+                ]
+            ],
+            [
+                [
+                    138,
+                    1161
+                ],
+                [
+                    606,
+                    1161
+                ],
+                [
+                    606,
+                    1184
+                ],
+                [
+                    138,
+                    1184
+                ]
+            ],
+            [
+                [
+                    981,
+                    1268
+                ],
+                [
+                    1052,
+                    1266
+                ],
+                [
+                    1054,
+                    1294
+                ],
+                [
+                    983,
+                    1297
+                ]
+            ],
+            [
+                [
+                    176,
+                    1282
+                ],
+                [
+                    185,
+                    1282
+                ],
+                [
+                    185,
+                    1290
+                ],
+                [
+                    176,
+                    1290
+                ]
+            ],
+            [
+                [
+                    138,
+                    1344
+                ],
+                [
+                    227,
+                    1344
+                ],
+                [
+                    227,
+                    1369
+                ],
+                [
+                    138,
+                    1369
+                ]
+            ],
+            [
+                [
+                    278,
+                    1344
+                ],
+                [
+                    461,
+                    1344
+                ],
+                [
+                    461,
+                    1371
+                ],
+                [
+                    278,
+                    1371
+                ]
+            ],
+            [
+                [
+                    139,
+                    1390
+                ],
+                [
+                    978,
+                    1390
+                ],
+                [
+                    978,
+                    1413
+                ],
+                [
+                    139,
+                    1413
+                ]
+            ],
+            [
+                [
+                    138,
+                    1416
+                ],
+                [
+                    942,
+                    1417
+                ],
+                [
+                    942,
+                    1441
+                ],
+                [
+                    138,
+                    1440
+                ]
+            ],
+            [
+                [
+                    566,
+                    1482
+                ],
+                [
+                    635,
+                    1482
+                ],
+                [
+                    635,
+                    1511
+                ],
+                [
+                    566,
+                    1511
+                ]
+            ],
+            [
+                [
+                    138,
+                    650
+                ],
+                [
+                    534,
+                    650
+                ],
+                [
+                    534,
+                    722
+                ],
+                [
+                    138,
+                    722
+                ]
+            ],
+            [
+                [
+                    136,
+                    995
+                ],
+                [
+                    544,
+                    995
+                ],
+                [
+                    544,
+                    1072
+                ],
+                [
+                    136,
+                    1072
+                ]
+            ],
+            [
+                [
+                    137,
+                    1221
+                ],
+                [
+                    349,
+                    1221
+                ],
+                [
+                    349,
+                    1285
+                ],
+                [
+                    137,
+                    1285
+                ]
+            ],
+            [
+                [
+                    139,
+                    464
+                ],
+                [
+                    311,
+                    464
+                ],
+                [
+                    311,
+                    525
+                ],
+                [
+                    139,
+                    525
+                ]
+            ],
+            [
+                [
+                    981,
+                    1390
+                ],
+                [
+                    1010,
+                    1390
+                ],
+                [
+                    1010,
+                    1413
+                ],
+                [
+                    981,
+                    1413
+                ]
+            ],
+            [
+                [
+                    726,
+                    587
+                ],
+                [
+                    744,
+                    587
+                ],
+                [
+                    744,
+                    609
+                ],
+                [
+                    726,
+                    609
+                ]
+            ],
+            [
+                [
+                    727,
+                    1417
+                ],
+                [
+                    745,
+                    1417
+                ],
+                [
+                    745,
+                    1439
+                ],
+                [
+                    727,
+                    1439
+                ]
+            ],
+            [
+                [
+                    593,
+                    402
+                ],
+                [
+                    611,
+                    402
+                ],
+                [
+                    611,
+                    425
+                ],
+                [
+                    593,
+                    425
+                ]
+            ],
+            [
+                [
+                    497,
+                    295
+                ],
+                [
+                    515,
+                    295
+                ],
+                [
+                    515,
+                    316
+                ],
+                [
+                    497,
+                    316
+                ]
+            ]
+        ],
+        "text_det_params": {
+            "limit_side_len": 736,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+            "UFC 3-340-02",
+            "5 December 2008",
+            "Change 2,1 September 2014",
+            "The expression for the deflection at any time may be found by multiplying each",
+            "differential area (between the time and the time in question), divided by the",
+            "appropriate effective mass, by the time which is defined by the distance between the",
+            "centroid of the area and the time in question, and adding these values algebraically.",
+            "Using this procedure and the expression for the deflection at partial failure (initial failure",
+            "of a two-way element) the deflection at time is:",
+            "4-188",
+            "while the equation for the deflection at incipient failure at is given by:",
+            "4-189",
+            "4-58.2.2",
+            "Post-Failure Impulse Capacity.",
+            "The expression for the blast overload impulse capacity of a two-way element includes",
+            "both the flexural capacity and the post-failure fragment momentum portion of the",
+            "element's response. Solving Equations 4-187 through 4-189 simultaneously gives the",
+            "expression for the blast overload impulse capacity. For a two-way element the resulting",
+            "equation is:",
+            "4-190",
+            "For a one-way element or a two-way element which does not exhibit a post-ultimate",
+            "range, the blast overload impulse capacity is:",
+            "4-191",
+            "=",
+            "4-58.2.3",
+            "Response Time.",
+            "The response time is the time at which the elements reach the ultimate deflection",
+            "and failure occurs. The expression for the response time  is found by solving",
+            "4-206",
+            "X_{u}=\\frac{i_{b}t_{u}}{m_{u}}-\\frac{r_{u}t_{1}}{m_{u}}\\left[t_{u}-\\frac{t_{1}}{2}\\right]-\\frac{r_{u p}\\left(t_{u}-t_{1}\\right)^{2}}{2m_{u p}}",
+            "\\frac{i_{b}^{2}}{2m_{u}}=r_{u}X_{1}+\\left[\\frac{m_{u}}{m_{up}}\\right]r_{up}(X_{u}-X_{1})+\\frac{m_{u}v_{t}^{2}}{2}",
+            "\\frac{{{i}_{b}}^{2}}{2m_{u}}={{r}_{u}}{{X}_{u}}+\\frac{m_{u}{{v}_{f}}^{2}}{2}",
+            "\\boldsymbol{X}_{1}=\\frac{\\boldsymbol{i}_{b}\\boldsymbol{t}_{1}}{m_{u}}-\\frac{\\boldsymbol{r}_{u}{\\boldsymbol{t}_{1}}^{2}}{2m_{u}}",
+            "X_{u}",
+            "t_{u}",
+            "t_{u}",
+            "t_{1}",
+            "t_{o}"
+        ],
+        "rec_scores": [
+            0.9674196243286133,
+            0.9643939137458801,
+            0.9544738531112671,
+            0.9742212295532227,
+            0.9745734333992004,
+            0.9615273475646973,
+            0.9839491844177246,
+            0.9750074744224548,
+            0.9507166743278503,
+            0.9982063174247742,
+            0.9604701399803162,
+            0.9973252415657043,
+            0.9998644590377808,
+            0.9662405848503113,
+            0.9598305821418762,
+            0.973598301410675,
+            0.9816277027130127,
+            0.9584084153175354,
+            0.9821953177452087,
+            0.9982417225837708,
+            0.9728018641471863,
+            0.9838668704032898,
+            0.9986052513122559,
+            0.27909761667251587,
+            0.999891996383667,
+            0.9815810918807983,
+            0.9862731099128723,
+            0.9743233323097229,
+            0.9998623132705688,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+        ],
+        "rec_polys": [
+            [
+                [
+                    900,
+                    144
+                ],
+                [
+                    1053,
+                    146
+                ],
+                [
+                    1053,
+                    173
+                ],
+                [
+                    899,
+                    171
+                ]
+            ],
+            [
+                [
+                    857,
+                    177
+                ],
+                [
+                    1052,
+                    177
+                ],
+                [
+                    1052,
+                    201
+                ],
+                [
+                    857,
+                    201
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1052,
+                    210
+                ],
+                [
+                    1052,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    139,
+                    267
+                ],
+                [
+                    951,
+                    267
+                ],
+                [
+                    951,
+                    291
+                ],
+                [
+                    139,
+                    291
+                ]
+            ],
+            [
+                [
+                    139,
+                    293
+                ],
+                [
+                    933,
+                    293
+                ],
+                [
+                    933,
+                    316
+                ],
+                [
+                    139,
+                    316
+                ]
+            ],
+            [
+                [
+                    137,
+                    321
+                ],
+                [
+                    1012,
+                    319
+                ],
+                [
+                    1012,
+                    345
+                ],
+                [
+                    137,
+                    347
+                ]
+            ],
+            [
+                [
+                    138,
+                    349
+                ],
+                [
+                    1003,
+                    349
+                ],
+                [
+                    1003,
+                    372
+                ],
+                [
+                    138,
+                    372
+                ]
+            ],
+            [
+                [
+                    139,
+                    374
+                ],
+                [
+                    1041,
+                    374
+                ],
+                [
+                    1041,
+                    398
+                ],
+                [
+                    139,
+                    398
+                ]
+            ],
+            [
+                [
+                    138,
+                    400
+                ],
+                [
+                    643,
+                    400
+                ],
+                [
+                    643,
+                    424
+                ],
+                [
+                    138,
+                    424
+                ]
+            ],
+            [
+                [
+                    984,
+                    509
+                ],
+                [
+                    1054,
+                    509
+                ],
+                [
+                    1054,
+                    534
+                ],
+                [
+                    984,
+                    534
+                ]
+            ],
+            [
+                [
+                    137,
+                    584
+                ],
+                [
+                    865,
+                    585
+                ],
+                [
+                    865,
+                    612
+                ],
+                [
+                    137,
+                    611
+                ]
+            ],
+            [
+                [
+                    984,
+                    708
+                ],
+                [
+                    1053,
+                    708
+                ],
+                [
+                    1053,
+                    733
+                ],
+                [
+                    984,
+                    733
+                ]
+            ],
+            [
+                [
+                    138,
+                    782
+                ],
+                [
+                    228,
+                    782
+                ],
+                [
+                    228,
+                    806
+                ],
+                [
+                    138,
+                    806
+                ]
+            ],
+            [
+                [
+                    277,
+                    780
+                ],
+                [
+                    620,
+                    783
+                ],
+                [
+                    619,
+                    810
+                ],
+                [
+                    277,
+                    807
+                ]
+            ],
+            [
+                [
+                    139,
+                    827
+                ],
+                [
+                    1021,
+                    827
+                ],
+                [
+                    1021,
+                    851
+                ],
+                [
+                    139,
+                    851
+                ]
+            ],
+            [
+                [
+                    138,
+                    855
+                ],
+                [
+                    970,
+                    855
+                ],
+                [
+                    970,
+                    879
+                ],
+                [
+                    138,
+                    879
+                ]
+            ],
+            [
+                [
+                    139,
+                    882
+                ],
+                [
+                    1020,
+                    882
+                ],
+                [
+                    1020,
+                    906
+                ],
+                [
+                    139,
+                    906
+                ]
+            ],
+            [
+                [
+                    139,
+                    910
+                ],
+                [
+                    1038,
+                    910
+                ],
+                [
+                    1038,
+                    933
+                ],
+                [
+                    139,
+                    933
+                ]
+            ],
+            [
+                [
+                    136,
+                    934
+                ],
+                [
+                    261,
+                    932
+                ],
+                [
+                    262,
+                    961
+                ],
+                [
+                    136,
+                    963
+                ]
+            ],
+            [
+                [
+                    984,
+                    1056
+                ],
+                [
+                    1054,
+                    1056
+                ],
+                [
+                    1054,
+                    1082
+                ],
+                [
+                    984,
+                    1082
+                ]
+            ],
+            [
+                [
+                    139,
+                    1134
+                ],
+                [
+                    1003,
+                    1134
+                ],
+                [
+                    1003,
+                    1157
+                ],
+                [
+                    139,
+                    1157
+                ]
+            ],
+            [
+                [
+                    138,
+                    1161
+                ],
+                [
+                    606,
+                    1161
+                ],
+                [
+                    606,
+                    1184
+                ],
+                [
+                    138,
+                    1184
+                ]
+            ],
+            [
+                [
+                    981,
+                    1268
+                ],
+                [
+                    1052,
+                    1266
+                ],
+                [
+                    1054,
+                    1294
+                ],
+                [
+                    983,
+                    1297
+                ]
+            ],
+            [
+                [
+                    176,
+                    1282
+                ],
+                [
+                    185,
+                    1282
+                ],
+                [
+                    185,
+                    1290
+                ],
+                [
+                    176,
+                    1290
+                ]
+            ],
+            [
+                [
+                    138,
+                    1344
+                ],
+                [
+                    227,
+                    1344
+                ],
+                [
+                    227,
+                    1369
+                ],
+                [
+                    138,
+                    1369
+                ]
+            ],
+            [
+                [
+                    278,
+                    1344
+                ],
+                [
+                    461,
+                    1344
+                ],
+                [
+                    461,
+                    1371
+                ],
+                [
+                    278,
+                    1371
+                ]
+            ],
+            [
+                [
+                    139,
+                    1390
+                ],
+                [
+                    978,
+                    1390
+                ],
+                [
+                    978,
+                    1413
+                ],
+                [
+                    139,
+                    1413
+                ]
+            ],
+            [
+                [
+                    138,
+                    1416
+                ],
+                [
+                    942,
+                    1417
+                ],
+                [
+                    942,
+                    1441
+                ],
+                [
+                    138,
+                    1440
+                ]
+            ],
+            [
+                [
+                    566,
+                    1482
+                ],
+                [
+                    635,
+                    1482
+                ],
+                [
+                    635,
+                    1511
+                ],
+                [
+                    566,
+                    1511
+                ]
+            ],
+            [
+                [
+                    138,
+                    650
+                ],
+                [
+                    534,
+                    650
+                ],
+                [
+                    534,
+                    722
+                ],
+                [
+                    138,
+                    722
+                ]
+            ],
+            [
+                [
+                    136,
+                    995
+                ],
+                [
+                    544,
+                    995
+                ],
+                [
+                    544,
+                    1072
+                ],
+                [
+                    136,
+                    1072
+                ]
+            ],
+            [
+                [
+                    137,
+                    1221
+                ],
+                [
+                    349,
+                    1221
+                ],
+                [
+                    349,
+                    1285
+                ],
+                [
+                    137,
+                    1285
+                ]
+            ],
+            [
+                [
+                    139,
+                    464
+                ],
+                [
+                    311,
+                    464
+                ],
+                [
+                    311,
+                    525
+                ],
+                [
+                    139,
+                    525
+                ]
+            ],
+            [
+                [
+                    981,
+                    1390
+                ],
+                [
+                    1010,
+                    1390
+                ],
+                [
+                    1010,
+                    1413
+                ],
+                [
+                    981,
+                    1413
+                ]
+            ],
+            [
+                [
+                    726,
+                    587
+                ],
+                [
+                    744,
+                    587
+                ],
+                [
+                    744,
+                    609
+                ],
+                [
+                    726,
+                    609
+                ]
+            ],
+            [
+                [
+                    727,
+                    1417
+                ],
+                [
+                    745,
+                    1417
+                ],
+                [
+                    745,
+                    1439
+                ],
+                [
+                    727,
+                    1439
+                ]
+            ],
+            [
+                [
+                    593,
+                    402
+                ],
+                [
+                    611,
+                    402
+                ],
+                [
+                    611,
+                    425
+                ],
+                [
+                    593,
+                    425
+                ]
+            ],
+            [
+                [
+                    497,
+                    295
+                ],
+                [
+                    515,
+                    295
+                ],
+                [
+                    515,
+                    316
+                ],
+                [
+                    497,
+                    316
+                ]
+            ]
+        ],
+        "rec_boxes": [
+            [
+                899.0,
+                144.0,
+                1053.0,
+                173.0
+            ],
+            [
+                857.0,
+                177.0,
+                1052.0,
+                201.0
+            ],
+            [
+                733.0,
+                210.0,
+                1052.0,
+                233.0
+            ],
+            [
+                139.0,
+                267.0,
+                951.0,
+                291.0
+            ],
+            [
+                515.4918823242188,
+                293.0,
+                933.0,
+                316.0
+            ],
+            [
+                137.0,
+                319.0,
+                1012.0,
+                347.0
+            ],
+            [
+                138.0,
+                349.0,
+                1003.0,
+                372.0
+            ],
+            [
+                139.0,
+                374.0,
+                1041.0,
+                398.0
+            ],
+            [
+                611.7894287109375,
+                400.0,
+                643.0,
+                424.0
+            ],
+            [
+                984.0,
+                509.0,
+                1054.0,
+                534.0
+            ],
+            [
+                744.5768432617188,
+                584.0,
+                865.0,
+                612.0
+            ],
+            [
+                984.0,
+                708.0,
+                1053.0,
+                733.0
+            ],
+            [
+                138.0,
+                782.0,
+                228.0,
+                806.0
+            ],
+            [
+                277.0,
+                780.0,
+                620.0,
+                810.0
+            ],
+            [
+                139.0,
+                827.0,
+                1021.0,
+                851.0
+            ],
+            [
+                138.0,
+                855.0,
+                970.0,
+                879.0
+            ],
+            [
+                139.0,
+                882.0,
+                1020.0,
+                906.0
+            ],
+            [
+                139.0,
+                910.0,
+                1038.0,
+                933.0
+            ],
+            [
+                136.0,
+                932.0,
+                262.0,
+                963.0
+            ],
+            [
+                984.0,
+                1056.0,
+                1054.0,
+                1082.0
+            ],
+            [
+                139.0,
+                1134.0,
+                1003.0,
+                1157.0
+            ],
+            [
+                138.0,
+                1161.0,
+                606.0,
+                1184.0
+            ],
+            [
+                981.0,
+                1266.0,
+                1054.0,
+                1297.0
+            ],
+            [
+                176.0,
+                1282.0,
+                185.0,
+                1290.0
+            ],
+            [
+                138.0,
+                1344.0,
+                227.0,
+                1369.0
+            ],
+            [
+                278.0,
+                1344.0,
+                461.0,
+                1371.0
+            ],
+            [
+                139.0,
+                1390.0,
+                978.0,
+                1413.0
+            ],
+            [
+                745.3492431640625,
+                1416.0,
+                942.0,
+                1441.0
+            ],
+            [
+                566.0,
+                1482.0,
+                635.0,
+                1511.0
+            ],
+            [
+                138.01611328125,
+                650.1165771484375,
+                534.8868408203125,
+                722.8262939453125
+            ],
+            [
+                136.73867797851562,
+                995.1881713867188,
+                544.148193359375,
+                1072.211669921875
+            ],
+            [
+                137.81094360351562,
+                1221.576416015625,
+                349.0569763183594,
+                1285.338134765625
+            ],
+            [
+                139.51211547851562,
+                464.89874267578125,
+                311.3683166503906,
+                525.8829956054688
+            ],
+            [
+                981.5068359375,
+                1390.9788818359375,
+                1010.422607421875,
+                1413.1346435546875
+            ],
+            [
+                726.1774291992188,
+                587.4326171875,
+                744.5768432617188,
+                609.43505859375
+            ],
+            [
+                727.1959228515625,
+                1417.986083984375,
+                745.3492431640625,
+                1439.38525390625
+            ],
+            [
+                593.6162109375,
+                402.4570617675781,
+                611.7894287109375,
+                425.0072326660156
+            ],
+            [
+                497.04876708984375,
+                295.9266052246094,
+                515.4918823242188,
+                316.5851745605469
+            ]
+        ]
+    },
+    "formula_res_list": [
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "X_{u}=\\frac{i_{b}t_{u}}{m_{u}}-\\frac{r_{u}t_{1}}{m_{u}}\\left[t_{u}-\\frac{t_{1}}{2}\\right]-\\frac{r_{u p}\\left(t_{u}-t_{1}\\right)^{2}}{2m_{u p}}",
+            "formula_region_id": 1,
+            "dt_polys": [
+                138.01611328125,
+                650.1165771484375,
+                534.8868408203125,
+                722.8262939453125
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "\\frac{i_{b}^{2}}{2m_{u}}=r_{u}X_{1}+\\left[\\frac{m_{u}}{m_{up}}\\right]r_{up}(X_{u}-X_{1})+\\frac{m_{u}v_{t}^{2}}{2}",
+            "formula_region_id": 2,
+            "dt_polys": [
+                136.73867797851562,
+                995.1881713867188,
+                544.148193359375,
+                1072.211669921875
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "\\frac{{{i}_{b}}^{2}}{2m_{u}}={{r}_{u}}{{X}_{u}}+\\frac{m_{u}{{v}_{f}}^{2}}{2}",
+            "formula_region_id": 3,
+            "dt_polys": [
+                137.81094360351562,
+                1221.576416015625,
+                349.0569763183594,
+                1285.338134765625
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "\\boldsymbol{X}_{1}=\\frac{\\boldsymbol{i}_{b}\\boldsymbol{t}_{1}}{m_{u}}-\\frac{\\boldsymbol{r}_{u}{\\boldsymbol{t}_{1}}^{2}}{2m_{u}}",
+            "formula_region_id": 4,
+            "dt_polys": [
+                139.51211547851562,
+                464.89874267578125,
+                311.3683166503906,
+                525.8829956054688
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "X_{u}",
+            "formula_region_id": 5,
+            "dt_polys": [
+                981.5068359375,
+                1390.9788818359375,
+                1010.422607421875,
+                1413.1346435546875
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "t_{u}",
+            "formula_region_id": 6,
+            "dt_polys": [
+                726.1774291992188,
+                587.4326171875,
+                744.5768432617188,
+                609.43505859375
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "t_{u}",
+            "formula_region_id": 7,
+            "dt_polys": [
+                727.1959228515625,
+                1417.986083984375,
+                745.3492431640625,
+                1439.38525390625
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "t_{1}",
+            "formula_region_id": 8,
+            "dt_polys": [
+                593.6162109375,
+                402.4570617675781,
+                611.7894287109375,
+                425.0072326660156
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "t_{o}",
+            "formula_region_id": 9,
+            "dt_polys": [
+                497.04876708984375,
+                295.9266052246094,
+                515.4918823242188,
+                316.5851745605469
+            ]
+        }
+    ]
+}

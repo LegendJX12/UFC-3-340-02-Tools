@@ -1,0 +1,708 @@
+{
+    "input_path": "C:\\Users\\10029078\\OneDrive - Surbana Jurong Private Limited\\Attachments\\Desktop\\Technical Improvment\\DCMS basis report\\References\\UFC 3-340-02 batches\\ocr_output\\pages\\batch 25\\page_0031.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_seal_recognition": false,
+        "use_table_recognition": true,
+        "use_formula_recognition": true,
+        "use_chart_recognition": false,
+        "use_region_detection": true,
+        "format_block_content": false,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ]
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "UFC 3-340-025 December 2008Change 2,1 September 2014",
+            "block_bbox": [
+                730,
+                147,
+                1050,
+                233
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "Concrete ",
+            "block_bbox": [
+                344,
+                267,
+                445,
+                287
+            ],
+            "block_id": 1,
+            "block_order": 1
+        },
+        {
+            "block_label": "formula",
+            "block_content": "\\begin{aligned}f-cmpression\\quad f_{dc}^{\\prime}&=1.19\\times4,000\\\\&=4,760\\;ps\\\\ f-direct shear\\quad f_{dc}^{\\prime}&=1.10\\times4,000\\\\&=4,400\\;ps\\\\ f-diagonal tension\\quad f_{dy}&=1.00\\times4,000\\\\&=4,000\\;ps\\\\\\end{aligned}",
+            "block_bbox": [
+                378,
+                306,
+                818,
+                556
+            ],
+            "block_id": 2,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "Step 3.Assume 5 No. 6 bars for bending:",
+            "block_bbox": [
+                134,
+                576,
+                629,
+                599
+            ],
+            "block_id": 3,
+            "block_order": 3
+        },
+        {
+            "block_label": "formula",
+            "block_content": "A_{s}=5\\times0.44=2.20\\ln^{2}",
+            "block_bbox": [
+                343,
+                616,
+                591,
+                642
+            ],
+            "block_id": 4,
+            "block_order": 4
+        },
+        {
+            "block_label": "text",
+            "block_content": "For concrete cover and beam sections see Figure 4A-15b (+)",
+            "block_bbox": [
+                274,
+                665,
+                914,
+                689
+            ],
+            "block_id": 5,
+            "block_order": 5
+        },
+        {
+            "block_label": "number",
+            "block_content": "4A-65",
+            "block_bbox": [
+                567,
+                1517,
+                630,
+                1537
+            ],
+            "block_id": 6,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false
+        },
+        "angle": -1
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.9243170619010925,
+                "coordinate": [
+                    343.61407470703125,
+                    616.6770629882812,
+                    591.5962524414062,
+                    642.7373657226562
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.9183557033538818,
+                "coordinate": [
+                    274.5894775390625,
+                    665.7265625,
+                    914.8917236328125,
+                    689.13232421875
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.8525543808937073,
+                "coordinate": [
+                    134.69387817382812,
+                    576.5614624023438,
+                    629.2982177734375,
+                    599.5466918945312
+                ]
+            },
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8032128214836121,
+                "coordinate": [
+                    730.729248046875,
+                    147.4371795654297,
+                    1050.600830078125,
+                    233.2187042236328
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.7770629525184631,
+                "coordinate": [
+                    344.99224853515625,
+                    267.61297607421875,
+                    445.19805908203125,
+                    287.37103271484375
+                ]
+            },
+            {
+                "cls_id": 3,
+                "label": "number",
+                "score": 0.7074925303459167,
+                "coordinate": [
+                    567.6881103515625,
+                    1517.642822265625,
+                    630.3182373046875,
+                    1537.179443359375
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.40258073806762695,
+                "coordinate": [
+                    378.8026123046875,
+                    306.08807373046875,
+                    818.3631591796875,
+                    556.5092163085938
+                ]
+            }
+        ]
+    },
+    "overall_ocr_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+        },
+        "dt_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    731,
+                    206
+                ],
+                [
+                    1052,
+                    208
+                ],
+                [
+                    1052,
+                    234
+                ],
+                [
+                    731,
+                    233
+                ]
+            ],
+            [
+                [
+                    346,
+                    264
+                ],
+                [
+                    449,
+                    264
+                ],
+                [
+                    449,
+                    293
+                ],
+                [
+                    346,
+                    293
+                ]
+            ],
+            [
+                [
+                    135,
+                    573
+                ],
+                [
+                    219,
+                    573
+                ],
+                [
+                    219,
+                    606
+                ],
+                [
+                    135,
+                    606
+                ]
+            ],
+            [
+                [
+                    277,
+                    575
+                ],
+                [
+                    628,
+                    576
+                ],
+                [
+                    628,
+                    604
+                ],
+                [
+                    277,
+                    603
+                ]
+            ],
+            [
+                [
+                    278,
+                    665
+                ],
+                [
+                    915,
+                    665
+                ],
+                [
+                    915,
+                    692
+                ],
+                [
+                    278,
+                    692
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    636,
+                    1514
+                ],
+                [
+                    636,
+                    1544
+                ],
+                [
+                    565,
+                    1544
+                ]
+            ],
+            [
+                [
+                    343,
+                    616
+                ],
+                [
+                    591,
+                    616
+                ],
+                [
+                    591,
+                    642
+                ],
+                [
+                    343,
+                    642
+                ]
+            ],
+            [
+                [
+                    378,
+                    306
+                ],
+                [
+                    818,
+                    306
+                ],
+                [
+                    818,
+                    556
+                ],
+                [
+                    378,
+                    556
+                ]
+            ]
+        ],
+        "text_det_params": {
+            "limit_side_len": 736,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+            "UFC 3-340-02",
+            "5 December 2008",
+            "Change 2,1 September 2014",
+            "Concrete",
+            "Step 3.",
+            "Assume 5 No. 6 bars for bending:",
+            "For concrete cover and beam sections see Figure 4A-15b (+)",
+            "4A-65",
+            "A_{s}=5\\times0.44=2.20\\ln^{2}",
+            "\\begin{aligned}f-cmpression\\quad f_{dc}^{\\prime}&=1.19\\times4,000\\\\&=4,760\\;ps\\\\ f-direct shear\\quad f_{dc}^{\\prime}&=1.10\\times4,000\\\\&=4,400\\;ps\\\\ f-diagonal tension\\quad f_{dy}&=1.00\\times4,000\\\\&=4,000\\;ps\\\\\\end{aligned}"
+        ],
+        "rec_scores": [
+            0.9923232197761536,
+            0.9667463302612305,
+            0.9648728966712952,
+            0.9995636940002441,
+            0.9474499821662903,
+            0.9537554979324341,
+            0.9908218383789062,
+            0.9994004368782043,
+            1,
+            1
+        ],
+        "rec_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    731,
+                    206
+                ],
+                [
+                    1052,
+                    208
+                ],
+                [
+                    1052,
+                    234
+                ],
+                [
+                    731,
+                    233
+                ]
+            ],
+            [
+                [
+                    346,
+                    264
+                ],
+                [
+                    449,
+                    264
+                ],
+                [
+                    449,
+                    293
+                ],
+                [
+                    346,
+                    293
+                ]
+            ],
+            [
+                [
+                    135,
+                    573
+                ],
+                [
+                    219,
+                    573
+                ],
+                [
+                    219,
+                    606
+                ],
+                [
+                    135,
+                    606
+                ]
+            ],
+            [
+                [
+                    277,
+                    575
+                ],
+                [
+                    628,
+                    576
+                ],
+                [
+                    628,
+                    604
+                ],
+                [
+                    277,
+                    603
+                ]
+            ],
+            [
+                [
+                    278,
+                    665
+                ],
+                [
+                    915,
+                    665
+                ],
+                [
+                    915,
+                    692
+                ],
+                [
+                    278,
+                    692
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    636,
+                    1514
+                ],
+                [
+                    636,
+                    1544
+                ],
+                [
+                    565,
+                    1544
+                ]
+            ],
+            [
+                [
+                    343,
+                    616
+                ],
+                [
+                    591,
+                    616
+                ],
+                [
+                    591,
+                    642
+                ],
+                [
+                    343,
+                    642
+                ]
+            ],
+            [
+                [
+                    378,
+                    306
+                ],
+                [
+                    818,
+                    306
+                ],
+                [
+                    818,
+                    556
+                ],
+                [
+                    378,
+                    556
+                ]
+            ]
+        ],
+        "rec_boxes": [
+            [
+                900.0,
+                145.0,
+                1053.0,
+                172.0
+            ],
+            [
+                858.0,
+                178.0,
+                1052.0,
+                202.0
+            ],
+            [
+                731.0,
+                206.0,
+                1052.0,
+                234.0
+            ],
+            [
+                346.0,
+                264.0,
+                449.0,
+                293.0
+            ],
+            [
+                135.0,
+                573.0,
+                219.0,
+                606.0
+            ],
+            [
+                277.0,
+                575.0,
+                628.0,
+                604.0
+            ],
+            [
+                278.0,
+                665.0,
+                915.0,
+                692.0
+            ],
+            [
+                565.0,
+                1514.0,
+                636.0,
+                1544.0
+            ],
+            [
+                343.61407470703125,
+                616.6770629882812,
+                591.5962524414062,
+                642.7373657226562
+            ],
+            [
+                378.8026123046875,
+                306.08807373046875,
+                818.3631591796875,
+                556.5092163085938
+            ]
+        ]
+    },
+    "formula_res_list": [
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "A_{s}=5\\times0.44=2.20\\ln^{2}",
+            "formula_region_id": 1,
+            "dt_polys": [
+                343.61407470703125,
+                616.6770629882812,
+                591.5962524414062,
+                642.7373657226562
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "\\begin{aligned}f-cmpression\\quad f_{dc}^{\\prime}&=1.19\\times4,000\\\\&=4,760\\;ps\\\\ f-direct shear\\quad f_{dc}^{\\prime}&=1.10\\times4,000\\\\&=4,400\\;ps\\\\ f-diagonal tension\\quad f_{dy}&=1.00\\times4,000\\\\&=4,000\\;ps\\\\\\end{aligned}",
+            "formula_region_id": 2,
+            "dt_polys": [
+                378.8026123046875,
+                306.08807373046875,
+                818.3631591796875,
+                556.5092163085938
+            ]
+        }
+    ]
+}

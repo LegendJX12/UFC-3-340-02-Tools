@@ -1,0 +1,1057 @@
+{
+    "input_path": "C:\\Users\\10029078\\OneDrive - Surbana Jurong Private Limited\\Attachments\\Desktop\\Technical Improvment\\DCMS basis report\\References\\UFC 3-340-02 batches\\ocr_output\\pages\\batch 24\\page_0055.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_seal_recognition": false,
+        "use_table_recognition": true,
+        "use_formula_recognition": true,
+        "use_chart_recognition": false,
+        "use_region_detection": true,
+        "format_block_content": false,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ]
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "UFC 3-340-025 December 2008Change 2,1 September 2014",
+            "block_bbox": [
+                731,
+                147,
+                1050,
+                232
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "Step 21.Estimate minimum area of continuous steel in column strip using unit moment ratios from Step 7.\n",
+            "block_bbox": [
+                134,
+                266,
+                990,
+                315
+            ],
+            "block_id": 1,
+            "block_order": 1
+        },
+        {
+            "block_label": "formula",
+            "block_content": "\\left(A_{s}\\right)_{m9}=\\frac{m_{9}^{+}}{m_{5}^{+}}\\times\\left(A_{s}\\right)_{m5}=\\frac{0.348\\frac{M_{OH}}{240}}{0.256\\frac{M_{OH}}{240}}\\times0.20=0.27\\ln^{2}/\\mathrm{ft}",
+            "block_bbox": [
+                346,
+                338,
+                889,
+                450
+            ],
+            "block_id": 2,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "Calculate the average unit tension force in continuous steel.",
+            "block_bbox": [
+                274,
+                474,
+                897,
+                496
+            ],
+            "block_id": 3,
+            "block_order": 3
+        },
+        {
+            "block_label": "formula",
+            "block_content": "\\begin{aligned}T_{L}=\\frac{\\left(A_{s}\\right)_{m5}H/2+\\left(A_{s}\\right)_{m9}(L-H/2)}{b\\times L}\\times f_{ds}\\times2\\\\=\\frac{0.20\\times240/2+0.27\\times(240-240/2)}{12\\times240}\\times85,860\\times2=3.362\\text{lbs/in}\\end{aligned}",
+            "block_bbox": [
+                347,
+                513,
+                1044,
+                633
+            ],
+            "block_id": 4,
+            "block_order": 4
+        },
+        {
+            "block_label": "text",
+            "block_content": "Calculate tension membrane resistance from Equation 4-85.",
+            "block_bbox": [
+                275,
+                657,
+                901,
+                680
+            ],
+            "block_id": 5,
+            "block_order": 5
+        },
+        {
+            "block_label": "formula",
+            "block_content": "\\begin{aligned}r_{T}=&\\frac{\\pi^{3}\\times1.5\\times\\boldsymbol{X}\\times\\boldsymbol{T}_{H}/\\boldsymbol{L}_{H}^{2}}{4\\sum_{n=1,3,5}\\left[\\frac{1}{n^{3}}(-1)^{(n-1)/2}\\left[1-\\frac{1}{cosh\\left[\\frac{n\\pi\\boldsymbol{L}_{L}}{2\\boldsymbol{L}_{H}}\\left[\\frac{\\boldsymbol{T}_{H}}{\\boldsymbol{T}_{L}}\\right]^{1/2}\\right]}\\right]\\right]}\\\\H_{L}=&\\boldsymbol{H}-\\boldsymbol{C}=240-40=200i n\\\\r_{T}=&\\frac{\\pi^{3}\\times1.5\\times14.05\\times3.363/200^{2}}{4\\sum_{n=1,3,5}\\left[\\frac{1}{n^{3}}(-1)^{(n-1)/2}\\left[1-\\frac{1}{cosh\\left[\\frac{n\\pi(20)}{2(200)}\\left[\\frac{3.363}{3.363}\\right]^{1/2}\\right]}\\right]\\right]}\\\\r_{T}=&\\frac{\\pi^{3}\\times1.5\\times14.05\\times3.363}{4\\times(200)^{2}(0.6015-0.0364+0.0080)}=23.97\\mathrm{psi}>13.15\\mathrm{psi}\\text{O.K.}\\end{aligned}",
+            "block_bbox": [
+                349,
+                703,
+                1077,
+                1213
+            ],
+            "block_id": 6,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "Step 22.Calculate diagonal tension stresses at $d_{e}$ distance from the edge of wall supports according to Section 4-31.2 in both directions.",
+            "block_bbox": [
+                134,
+                1258,
+                1017,
+                1310
+            ],
+            "block_id": 7,
+            "block_order": 7
+        },
+        {
+            "block_label": "number",
+            "block_content": "4A-31",
+            "block_bbox": [
+                566,
+                1517,
+                628,
+                1537
+            ],
+            "block_id": 8,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false
+        },
+        "angle": -1
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.9660195112228394,
+                "coordinate": [
+                    346.5076904296875,
+                    338.85540771484375,
+                    889.3834228515625,
+                    450.19696044921875
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.9643316268920898,
+                "coordinate": [
+                    347.9859924316406,
+                    513.9658813476562,
+                    1044.8685302734375,
+                    633.1306762695312
+                ]
+            },
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.9388720989227295,
+                "coordinate": [
+                    731.30224609375,
+                    147.30908203125,
+                    1050.394775390625,
+                    232.927734375
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.9379282593727112,
+                "coordinate": [
+                    134.76123046875,
+                    266.35760498046875,
+                    990.4959716796875,
+                    315.15069580078125
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.9203869104385376,
+                "coordinate": [
+                    275.0440368652344,
+                    657.8954467773438,
+                    901.8780517578125,
+                    680.1521606445312
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.9160212278366089,
+                "coordinate": [
+                    274.89239501953125,
+                    474.03436279296875,
+                    897.2640991210938,
+                    496.08721923828125
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.900032103061676,
+                "coordinate": [
+                    349.37890625,
+                    703.9073486328125,
+                    1077.31005859375,
+                    1213.1114501953125
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.870678186416626,
+                "coordinate": [
+                    134.1588134765625,
+                    1258.6162109375,
+                    1017.3106689453125,
+                    1310.9794921875
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "formula",
+                "score": 0.6179769039154053,
+                "coordinate": [
+                    678.4105224609375,
+                    1262.073974609375,
+                    703.1015625,
+                    1284.318603515625
+                ]
+            },
+            {
+                "cls_id": 3,
+                "label": "number",
+                "score": 0.6141536831855774,
+                "coordinate": [
+                    566.9583129882812,
+                    1517.946044921875,
+                    628.5023803710938,
+                    1537.528564453125
+                ]
+            }
+        ]
+    },
+    "overall_ocr_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+        },
+        "dt_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1051,
+                    210
+                ],
+                [
+                    1051,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    137,
+                    265
+                ],
+                [
+                    229,
+                    265
+                ],
+                [
+                    229,
+                    294
+                ],
+                [
+                    137,
+                    294
+                ]
+            ],
+            [
+                [
+                    278,
+                    266
+                ],
+                [
+                    992,
+                    268
+                ],
+                [
+                    992,
+                    292
+                ],
+                [
+                    278,
+                    290
+                ]
+            ],
+            [
+                [
+                    279,
+                    294
+                ],
+                [
+                    560,
+                    294
+                ],
+                [
+                    560,
+                    317
+                ],
+                [
+                    279,
+                    317
+                ]
+            ],
+            [
+                [
+                    280,
+                    475
+                ],
+                [
+                    897,
+                    475
+                ],
+                [
+                    897,
+                    498
+                ],
+                [
+                    280,
+                    498
+                ]
+            ],
+            [
+                [
+                    279,
+                    656
+                ],
+                [
+                    901,
+                    657
+                ],
+                [
+                    901,
+                    681
+                ],
+                [
+                    279,
+                    680
+                ]
+            ],
+            [
+                [
+                    136,
+                    1256
+                ],
+                [
+                    230,
+                    1256
+                ],
+                [
+                    230,
+                    1288
+                ],
+                [
+                    136,
+                    1288
+                ]
+            ],
+            [
+                [
+                    279,
+                    1260
+                ],
+                [
+                    1019,
+                    1260
+                ],
+                [
+                    1019,
+                    1284
+                ],
+                [
+                    279,
+                    1284
+                ]
+            ],
+            [
+                [
+                    280,
+                    1288
+                ],
+                [
+                    851,
+                    1288
+                ],
+                [
+                    851,
+                    1312
+                ],
+                [
+                    280,
+                    1312
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    635,
+                    1514
+                ],
+                [
+                    635,
+                    1543
+                ],
+                [
+                    565,
+                    1543
+                ]
+            ],
+            [
+                [
+                    346,
+                    338
+                ],
+                [
+                    889,
+                    338
+                ],
+                [
+                    889,
+                    450
+                ],
+                [
+                    346,
+                    450
+                ]
+            ],
+            [
+                [
+                    347,
+                    513
+                ],
+                [
+                    1044,
+                    513
+                ],
+                [
+                    1044,
+                    633
+                ],
+                [
+                    347,
+                    633
+                ]
+            ],
+            [
+                [
+                    349,
+                    703
+                ],
+                [
+                    1077,
+                    703
+                ],
+                [
+                    1077,
+                    1213
+                ],
+                [
+                    349,
+                    1213
+                ]
+            ],
+            [
+                [
+                    678,
+                    1262
+                ],
+                [
+                    703,
+                    1262
+                ],
+                [
+                    703,
+                    1284
+                ],
+                [
+                    678,
+                    1284
+                ]
+            ]
+        ],
+        "text_det_params": {
+            "limit_side_len": 736,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+            "UFC 3-340-02",
+            "5 December 2008",
+            "Change 2,1 September 2014",
+            "Step 21.",
+            "Estimate minimum area of continuous steel in column strip using unit",
+            "moment ratios from Step 7.",
+            "Calculate the average unit tension force in continuous steel.",
+            "Calculate tension membrane resistance from Equation 4-85.",
+            "Step 22.",
+            "Calculate diagonal tension stresses at distance from the edge of wall",
+            "supports according to Section 4-31.2 in both directions.",
+            "4A-31",
+            "\\left(A_{s}\\right)_{m9}=\\frac{m_{9}^{+}}{m_{5}^{+}}\\times\\left(A_{s}\\right)_{m5}=\\frac{0.348\\frac{M_{OH}}{240}}{0.256\\frac{M_{OH}}{240}}\\times0.20=0.27\\ln^{2}/\\mathrm{ft}",
+            "\\begin{aligned}T_{L}=\\frac{\\left(A_{s}\\right)_{m5}H/2+\\left(A_{s}\\right)_{m9}(L-H/2)}{b\\times L}\\times f_{ds}\\times2\\\\=\\frac{0.20\\times240/2+0.27\\times(240-240/2)}{12\\times240}\\times85,860\\times2=3.362\\text{lbs/in}\\end{aligned}",
+            "\\begin{aligned}r_{T}=&\\frac{\\pi^{3}\\times1.5\\times\\boldsymbol{X}\\times\\boldsymbol{T}_{H}/\\boldsymbol{L}_{H}^{2}}{4\\sum_{n=1,3,5}\\left[\\frac{1}{n^{3}}(-1)^{(n-1)/2}\\left[1-\\frac{1}{cosh\\left[\\frac{n\\pi\\boldsymbol{L}_{L}}{2\\boldsymbol{L}_{H}}\\left[\\frac{\\boldsymbol{T}_{H}}{\\boldsymbol{T}_{L}}\\right]^{1/2}\\right]}\\right]\\right]}\\\\H_{L}=&\\boldsymbol{H}-\\boldsymbol{C}=240-40=200i n\\\\r_{T}=&\\frac{\\pi^{3}\\times1.5\\times14.05\\times3.363/200^{2}}{4\\sum_{n=1,3,5}\\left[\\frac{1}{n^{3}}(-1)^{(n-1)/2}\\left[1-\\frac{1}{cosh\\left[\\frac{n\\pi(20)}{2(200)}\\left[\\frac{3.363}{3.363}\\right]^{1/2}\\right]}\\right]\\right]}\\\\r_{T}=&\\frac{\\pi^{3}\\times1.5\\times14.05\\times3.363}{4\\times(200)^{2}(0.6015-0.0364+0.0080)}=23.97\\mathrm{psi}>13.15\\mathrm{psi}\\text{O.K.}\\end{aligned}",
+            "d_{e}"
+        ],
+        "rec_scores": [
+            0.9918913841247559,
+            0.9649916291236877,
+            0.9730842113494873,
+            0.9540767669677734,
+            0.9854254126548767,
+            0.966758131980896,
+            0.9822608828544617,
+            0.993834376335144,
+            0.9830971956253052,
+            0.9775322079658508,
+            0.9823235273361206,
+            0.9989205598831177,
+            1,
+            1,
+            1,
+            1
+        ],
+        "rec_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1051,
+                    210
+                ],
+                [
+                    1051,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    137,
+                    265
+                ],
+                [
+                    229,
+                    265
+                ],
+                [
+                    229,
+                    294
+                ],
+                [
+                    137,
+                    294
+                ]
+            ],
+            [
+                [
+                    278,
+                    266
+                ],
+                [
+                    992,
+                    268
+                ],
+                [
+                    992,
+                    292
+                ],
+                [
+                    278,
+                    290
+                ]
+            ],
+            [
+                [
+                    279,
+                    294
+                ],
+                [
+                    560,
+                    294
+                ],
+                [
+                    560,
+                    317
+                ],
+                [
+                    279,
+                    317
+                ]
+            ],
+            [
+                [
+                    280,
+                    475
+                ],
+                [
+                    897,
+                    475
+                ],
+                [
+                    897,
+                    498
+                ],
+                [
+                    280,
+                    498
+                ]
+            ],
+            [
+                [
+                    279,
+                    656
+                ],
+                [
+                    901,
+                    657
+                ],
+                [
+                    901,
+                    681
+                ],
+                [
+                    279,
+                    680
+                ]
+            ],
+            [
+                [
+                    136,
+                    1256
+                ],
+                [
+                    230,
+                    1256
+                ],
+                [
+                    230,
+                    1288
+                ],
+                [
+                    136,
+                    1288
+                ]
+            ],
+            [
+                [
+                    279,
+                    1260
+                ],
+                [
+                    1019,
+                    1260
+                ],
+                [
+                    1019,
+                    1284
+                ],
+                [
+                    279,
+                    1284
+                ]
+            ],
+            [
+                [
+                    280,
+                    1288
+                ],
+                [
+                    851,
+                    1288
+                ],
+                [
+                    851,
+                    1312
+                ],
+                [
+                    280,
+                    1312
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    635,
+                    1514
+                ],
+                [
+                    635,
+                    1543
+                ],
+                [
+                    565,
+                    1543
+                ]
+            ],
+            [
+                [
+                    346,
+                    338
+                ],
+                [
+                    889,
+                    338
+                ],
+                [
+                    889,
+                    450
+                ],
+                [
+                    346,
+                    450
+                ]
+            ],
+            [
+                [
+                    347,
+                    513
+                ],
+                [
+                    1044,
+                    513
+                ],
+                [
+                    1044,
+                    633
+                ],
+                [
+                    347,
+                    633
+                ]
+            ],
+            [
+                [
+                    349,
+                    703
+                ],
+                [
+                    1077,
+                    703
+                ],
+                [
+                    1077,
+                    1213
+                ],
+                [
+                    349,
+                    1213
+                ]
+            ],
+            [
+                [
+                    678,
+                    1262
+                ],
+                [
+                    703,
+                    1262
+                ],
+                [
+                    703,
+                    1284
+                ],
+                [
+                    678,
+                    1284
+                ]
+            ]
+        ],
+        "rec_boxes": [
+            [
+                900.0,
+                145.0,
+                1053.0,
+                172.0
+            ],
+            [
+                858.0,
+                178.0,
+                1052.0,
+                202.0
+            ],
+            [
+                733.0,
+                210.0,
+                1051.0,
+                233.0
+            ],
+            [
+                137.0,
+                265.0,
+                229.0,
+                294.0
+            ],
+            [
+                278.0,
+                266.0,
+                992.0,
+                292.0
+            ],
+            [
+                279.0,
+                294.0,
+                560.0,
+                317.0
+            ],
+            [
+                280.0,
+                475.0,
+                897.0,
+                498.0
+            ],
+            [
+                279.0,
+                656.0,
+                901.0,
+                681.0
+            ],
+            [
+                136.0,
+                1256.0,
+                230.0,
+                1288.0
+            ],
+            [
+                703.1015625,
+                1260.0,
+                1019.0,
+                1284.0
+            ],
+            [
+                280.0,
+                1288.0,
+                851.0,
+                1312.0
+            ],
+            [
+                565.0,
+                1514.0,
+                635.0,
+                1543.0
+            ],
+            [
+                346.5076904296875,
+                338.85540771484375,
+                889.3834228515625,
+                450.19696044921875
+            ],
+            [
+                347.9859924316406,
+                513.9658813476562,
+                1044.8685302734375,
+                633.1306762695312
+            ],
+            [
+                349.37890625,
+                703.9073486328125,
+                1077.31005859375,
+                1213.1114501953125
+            ],
+            [
+                678.4105224609375,
+                1262.073974609375,
+                703.1015625,
+                1284.318603515625
+            ]
+        ]
+    },
+    "formula_res_list": [
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "\\left(A_{s}\\right)_{m9}=\\frac{m_{9}^{+}}{m_{5}^{+}}\\times\\left(A_{s}\\right)_{m5}=\\frac{0.348\\frac{M_{OH}}{240}}{0.256\\frac{M_{OH}}{240}}\\times0.20=0.27\\ln^{2}/\\mathrm{ft}",
+            "formula_region_id": 1,
+            "dt_polys": [
+                346.5076904296875,
+                338.85540771484375,
+                889.3834228515625,
+                450.19696044921875
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "\\begin{aligned}T_{L}=\\frac{\\left(A_{s}\\right)_{m5}H/2+\\left(A_{s}\\right)_{m9}(L-H/2)}{b\\times L}\\times f_{ds}\\times2\\\\=\\frac{0.20\\times240/2+0.27\\times(240-240/2)}{12\\times240}\\times85,860\\times2=3.362\\text{lbs/in}\\end{aligned}",
+            "formula_region_id": 2,
+            "dt_polys": [
+                347.9859924316406,
+                513.9658813476562,
+                1044.8685302734375,
+                633.1306762695312
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "\\begin{aligned}r_{T}=&\\frac{\\pi^{3}\\times1.5\\times\\boldsymbol{X}\\times\\boldsymbol{T}_{H}/\\boldsymbol{L}_{H}^{2}}{4\\sum_{n=1,3,5}\\left[\\frac{1}{n^{3}}(-1)^{(n-1)/2}\\left[1-\\frac{1}{cosh\\left[\\frac{n\\pi\\boldsymbol{L}_{L}}{2\\boldsymbol{L}_{H}}\\left[\\frac{\\boldsymbol{T}_{H}}{\\boldsymbol{T}_{L}}\\right]^{1/2}\\right]}\\right]\\right]}\\\\H_{L}=&\\boldsymbol{H}-\\boldsymbol{C}=240-40=200i n\\\\r_{T}=&\\frac{\\pi^{3}\\times1.5\\times14.05\\times3.363/200^{2}}{4\\sum_{n=1,3,5}\\left[\\frac{1}{n^{3}}(-1)^{(n-1)/2}\\left[1-\\frac{1}{cosh\\left[\\frac{n\\pi(20)}{2(200)}\\left[\\frac{3.363}{3.363}\\right]^{1/2}\\right]}\\right]\\right]}\\\\r_{T}=&\\frac{\\pi^{3}\\times1.5\\times14.05\\times3.363}{4\\times(200)^{2}(0.6015-0.0364+0.0080)}=23.97\\mathrm{psi}>13.15\\mathrm{psi}\\text{O.K.}\\end{aligned}",
+            "formula_region_id": 3,
+            "dt_polys": [
+                349.37890625,
+                703.9073486328125,
+                1077.31005859375,
+                1213.1114501953125
+            ]
+        },
+        {
+            "input_path": null,
+            "page_index": null,
+            "rec_formula": "d_{e}",
+            "formula_region_id": 4,
+            "dt_polys": [
+                678.4105224609375,
+                1262.073974609375,
+                703.1015625,
+                1284.318603515625
+            ]
+        }
+    ]
+}

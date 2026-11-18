@@ -1,0 +1,435 @@
+{
+    "input_path": "C:\\Users\\10029078\\OneDrive - Surbana Jurong Private Limited\\Attachments\\Desktop\\Technical Improvment\\DCMS basis report\\References\\UFC 3-340-02 batches\\ocr_output\\pages\\batch 10\\page_0019.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_seal_recognition": false,
+        "use_table_recognition": true,
+        "use_formula_recognition": true,
+        "use_chart_recognition": false,
+        "use_region_detection": true,
+        "format_block_content": false,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ]
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "UFC 3-340-025 December 2008Change 2,1 September 2014",
+            "block_bbox": [
+                731,
+                147,
+                1051,
+                233
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 2A-25",
+            "block_bbox": [
+                521,
+                265,
+                667,
+                293
+            ],
+            "block_id": 1,
+            "block_order": null
+        },
+        {
+            "block_label": "image",
+            "block_content": "BLAST ",
+            "block_bbox": [
+                359,
+                321,
+                782,
+                886
+            ],
+            "block_id": 2,
+            "block_order": null
+        },
+        {
+            "block_label": "footer",
+            "block_content": "2A-92",
+            "block_bbox": [
+                567,
+                1517,
+                630,
+                1537
+            ],
+            "block_id": 3,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false
+        },
+        "angle": -1
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 1,
+                "label": "image",
+                "score": 0.7697082161903381,
+                "coordinate": [
+                    359.50140380859375,
+                    321.8934326171875,
+                    782.3768920898438,
+                    886.1595458984375
+                ]
+            },
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.625340461730957,
+                "coordinate": [
+                    731.106201171875,
+                    147.3967742919922,
+                    1051.0126953125,
+                    233.7425994873047
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "footer",
+                "score": 0.598237156867981,
+                "coordinate": [
+                    567.9866333007812,
+                    1517.48095703125,
+                    630.7267456054688,
+                    1537.5537109375
+                ]
+            },
+            {
+                "cls_id": 6,
+                "label": "figure_title",
+                "score": 0.5279019474983215,
+                "coordinate": [
+                    521.81396484375,
+                    265.7434387207031,
+                    667.6683349609375,
+                    293.7580871582031
+                ]
+            }
+        ]
+    },
+    "overall_ocr_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+        },
+        "dt_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    857,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    857,
+                    202
+                ]
+            ],
+            [
+                [
+                    731,
+                    206
+                ],
+                [
+                    1052,
+                    208
+                ],
+                [
+                    1052,
+                    234
+                ],
+                [
+                    731,
+                    233
+                ]
+            ],
+            [
+                [
+                    521,
+                    264
+                ],
+                [
+                    670,
+                    264
+                ],
+                [
+                    670,
+                    295
+                ],
+                [
+                    521,
+                    295
+                ]
+            ],
+            [
+                [
+                    665,
+                    521
+                ],
+                [
+                    761,
+                    459
+                ],
+                [
+                    786,
+                    496
+                ],
+                [
+                    690,
+                    558
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    636,
+                    1514
+                ],
+                [
+                    636,
+                    1544
+                ],
+                [
+                    565,
+                    1544
+                ]
+            ]
+        ],
+        "text_det_params": {
+            "limit_side_len": 736,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+            "UFC 3-340-02",
+            "5 December 2008",
+            "Change 2,1 September 2014",
+            "Figure 2A-25",
+            "BLAST",
+            "2A-92"
+        ],
+        "rec_scores": [
+            0.995154082775116,
+            0.9356985092163086,
+            0.9712548851966858,
+            0.9661570191383362,
+            0.9877942204475403,
+            0.9998005032539368
+        ],
+        "rec_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    857,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    857,
+                    202
+                ]
+            ],
+            [
+                [
+                    731,
+                    206
+                ],
+                [
+                    1052,
+                    208
+                ],
+                [
+                    1052,
+                    234
+                ],
+                [
+                    731,
+                    233
+                ]
+            ],
+            [
+                [
+                    521,
+                    264
+                ],
+                [
+                    670,
+                    264
+                ],
+                [
+                    670,
+                    295
+                ],
+                [
+                    521,
+                    295
+                ]
+            ],
+            [
+                [
+                    665,
+                    521
+                ],
+                [
+                    761,
+                    459
+                ],
+                [
+                    786,
+                    496
+                ],
+                [
+                    690,
+                    558
+                ]
+            ],
+            [
+                [
+                    565,
+                    1514
+                ],
+                [
+                    636,
+                    1514
+                ],
+                [
+                    636,
+                    1544
+                ],
+                [
+                    565,
+                    1544
+                ]
+            ]
+        ],
+        "rec_boxes": [
+            [
+                900,
+                145,
+                1053,
+                172
+            ],
+            [
+                857,
+                178,
+                1052,
+                202
+            ],
+            [
+                731,
+                206,
+                1052,
+                234
+            ],
+            [
+                521,
+                264,
+                670,
+                295
+            ],
+            [
+                665,
+                459,
+                786,
+                558
+            ],
+            [
+                565,
+                1514,
+                636,
+                1544
+            ]
+        ]
+    }
+}

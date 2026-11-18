@@ -1,9 +1,11 @@
 # UFC 3-340-02 database
 
 File: `reference/ufc_340_02.db` (SQLite). Built by `scripts/build_db.py` from:
-- OCR output for batches 1–35 (page text, layout blocks, cropped images)
+- OCR output in `ocr/` for batches 1–35 (page text, layout blocks, cropped images)
 - the index spreadsheet `reference/UFC_3-340-02_index.xlsx`
 - plot files in `graphs/UFC_Plots_data/` (.grf)
+
+Plot-to-guide links are in table `grf_guide_links` (also `reference/grf_to_guide.csv`), built by `scripts/map_grf.py`. See `reference/HANDOFF.md` for the open items.
 
 ## Tables
 | Table | What it holds |
@@ -18,15 +20,16 @@ File: `reference/ufc_340_02.db` (SQLite). Built by `scripts/build_db.py` from:
 | plot_files | Each .grf file: folder, figure numbers in its text, point count |
 | plot_points | x, y values of every plot curve (in order) |
 | plot_labels | Text lines in each .grf file (axis titles, legends) |
+| grf_guide_links | One row per plot file: the guide figure it belongs to, and how it was matched |
 
 ## Counts (this build)
-- 1,982 pages, 16,950 blocks, 3,302 images
-- 1,205 captions, 1,112 figures
+- 1,982 pages, 16,950 blocks, 3,302 images (3,168 placed on a page)
+- 1,910 captions, 1,739 figures
 - 2,385 index entries
-- 1,371 plot files, 561,397 plot points
+- 1,371 plot files, 561,397 plot points, all linked to a guide figure
 
 ## Known limits
-- Image-to-page links use box coordinates. 134 images have no page; 124 match more than one page.
+- Image-to-page links use box coordinates. 134 images have no page.
 - Some "figure" captions come from the table of contents, so check the page number.
 - Figure-to-plot matching uses the figure number inside each .grf file. Plot files without a caption cannot be matched.
 - Equations are OCR output and are not verified against the PDF.

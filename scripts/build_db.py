@@ -17,8 +17,8 @@ CHAPTERS = [  # chapter, first batch, last batch, title (from chapter file heade
     (6, 31, 35, 'Special Considerations in Explosive Facility Design'),
 ]
 NUM_RE = re.compile(r'^\s*-?[\d.]+(?:[eE][-+]?\d+)?\s*,\s*-?[\d.]+(?:[eE][-+]?\d+)?\s*$')
-FIG_RE = re.compile(r'^\s*(Figure|FIGURE)\s+(\d+-\d+[A-Za-z]?)', re.I)
-TAB_RE = re.compile(r'^\s*(Table|TABLE)\s+(\d+-\d+[A-Za-z]?)', re.I)
+FIG_RE = re.compile(r'^\s*(?i:figure)\s+(\d+[A-Z]?-\d+[a-z]?)(?![a-z])')
+TAB_RE = re.compile(r'^\s*(?i:table)\s+(\d+[A-Z]?-\d+[a-z]?)(?![a-z])')
 IMG_RE = re.compile(r'img_in_(\w+?)_box_(\d+)_(\d+)_(\d+)_(\d+)\.jpg$', re.I)
 
 
@@ -38,10 +38,11 @@ def bbox(v):
 
 
 def find_batch_dirs(root):
+    """Find folders named 'batch N' or 'batch-NN' that contain page_*_res.json files."""
     out = {}
-    for d in glob.glob(os.path.join(root, '**', 'batch *'), recursive=True):
-        m = re.search(r'batch (\d+)$', d)
-        if m and os.path.isdir(d) and glob.glob(os.path.join(d, 'page_*.md')):
+    for d in glob.glob(os.path.join(root, '**', 'batch*'), recursive=True):
+        m = re.search(r'batch[ -](\d+)$', d)
+        if m and os.path.isdir(d) and glob.glob(os.path.join(d, 'page_*_res.json')):
             out[int(m.group(1))] = d
     return out
 
@@ -95,7 +96,10 @@ def main():
             pg = int(re.search(r'page_(\d+)_res', jf).group(1))
             data = json.load(open(jf, encoding='utf-8'))
             md_path = os.path.join(d, f'page_{pg:04d}.md')
-            text = open(md_path, encoding='utf-8', errors='ignore').read() if os.path.exists(md_path) else ''
+            if os.path.exists(md_path):
+                text = open(md_path, encoding='utf-8', errors='ignore').read()
+            else:
+                text = '\n'.join((x.get('block_content') or '') for x in (data.get('parsing_res_list') or []))
             blocks = data.get('parsing_res_list', []) or []
             db.execute('INSERT INTO pages VALUES (?,?,?,?,?,?,?)',
                        (b, pg, chapter_of(b), data.get('width'), data.get('height'), len(blocks), text))
@@ -106,17 +110,22 @@ def main():
                 db.execute('INSERT INTO blocks VALUES (?,?,?,?,?,?,?,?,?)',
                            (b, pg, int(bid) if str(bid).isdigit() else None,
                             blk.get('block_label'), content, x1, y1, x2, y2))
-                first = content.strip().split('\n')[0]
-                fm = FIG_RE.match(first)
-                tm = TAB_RE.match(first)
-                if fm:
-                    all_caps.append(('figure', fm.group(2), first, b, pg, bid, (x1, y1, x2, y2)))
-                if tm:
-                    all_caps.append(('table', tm.group(2), first, b, pg, bid, (x1, y1, x2, y2)))
-                if fm or tm:
-                    db.execute('INSERT OR IGNORE INTO captions VALUES (?,?,?,?,?,?)',
-                               ('figure' if fm else 'table', (fm or tm).group(2), first, b, pg,
-                                int(bid) if str(bid).isdigit() else None))
+                for line in content.split('\n'):
+                    first = line.strip()
+                    fm = FIG_RE.match(first)
+                    tm = TAB_RE.match(first)
+                    if fm:
+                        all_caps.append(('figure', fm.group(1), first, b, pg, bid, (x1, y1, x2, y2)))
+                        db.execute('INSERT OR IGNORE INTO captions VALUES (?,?,?,?,?,?)',
+                                   ('figure', fm.group(1), first, b, pg,
+                                    int(bid) if str(bid).isdigit() else None))
+                    if tm:
+                        all_caps.append(('table', tm.group(1), first, b, pg, bid, (x1, y1, x2, y2)))
+                        db.execute('INSERT OR IGNORE INTO captions VALUES (?,?,?,?,?,?)',
+                                   ('table', tm.group(1), first, b, pg,
+                                    int(bid) if str(bid).isdigit() else None))
+    db.commit()
+
     # ---- images: link each image to its page by matching its box coordinates to block boxes
     db.execute('DROP TABLE IF EXISTS images')
     db.execute('CREATE TABLE images(file TEXT, batch INT, page INT, kind TEXT, x1 INT, y1 INT, '

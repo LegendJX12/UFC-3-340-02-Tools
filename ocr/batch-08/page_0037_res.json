@@ -1,0 +1,344 @@
+{
+    "input_path": "C:\\Users\\10029078\\OneDrive - Surbana Jurong Private Limited\\Attachments\\Desktop\\Technical Improvment\\DCMS basis report\\References\\UFC 3-340-02 batches\\ocr_output\\pages\\batch 8\\page_0037.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_seal_recognition": false,
+        "use_table_recognition": true,
+        "use_formula_recognition": true,
+        "use_chart_recognition": false,
+        "use_region_detection": true,
+        "format_block_content": false,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ]
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "text",
+            "block_content": "UFC 3-340-025 December 2008Change 2, 1 September 2014",
+            "block_bbox": [
+                731,
+                147,
+                1051,
+                233
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "APPENDIX 2: BLAST, FRAGMENT,AND SHOCK LOADS ",
+            "block_bbox": [
+                193,
+                671,
+                1025,
+                775
+            ],
+            "block_id": 1,
+            "block_order": 2
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false
+        },
+        "angle": -1
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.8013560771942139,
+                "coordinate": [
+                    193.64102172851562,
+                    671.37939453125,
+                    1025.5115966796875,
+                    775.087158203125
+                ]
+            },
+            {
+                "cls_id": 2,
+                "label": "text",
+                "score": 0.740278959274292,
+                "coordinate": [
+                    731.266845703125,
+                    147.72384643554688,
+                    1051.47265625,
+                    233.51138305664062
+                ]
+            }
+        ]
+    },
+    "overall_ocr_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+        },
+        "dt_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1051,
+                    210
+                ],
+                [
+                    1051,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    193,
+                    670
+                ],
+                [
+                    1027,
+                    672
+                ],
+                [
+                    1027,
+                    723
+                ],
+                [
+                    193,
+                    721
+                ]
+            ],
+            [
+                [
+                    360,
+                    732
+                ],
+                [
+                    863,
+                    732
+                ],
+                [
+                    863,
+                    779
+                ],
+                [
+                    360,
+                    779
+                ]
+            ]
+        ],
+        "text_det_params": {
+            "limit_side_len": 736,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+            "UFC 3-340-02",
+            "5 December 2008",
+            "Change 2, 1 September 2014",
+            "APPENDIX 2: BLAST, FRAGMENT,",
+            "AND SHOCK LOADS"
+        ],
+        "rec_scores": [
+            0.9943732619285583,
+            0.9682027697563171,
+            0.9628716111183167,
+            0.9099141359329224,
+            0.9483574628829956
+        ],
+        "rec_polys": [
+            [
+                [
+                    900,
+                    145
+                ],
+                [
+                    1053,
+                    145
+                ],
+                [
+                    1053,
+                    172
+                ],
+                [
+                    900,
+                    172
+                ]
+            ],
+            [
+                [
+                    858,
+                    178
+                ],
+                [
+                    1052,
+                    178
+                ],
+                [
+                    1052,
+                    202
+                ],
+                [
+                    858,
+                    202
+                ]
+            ],
+            [
+                [
+                    733,
+                    210
+                ],
+                [
+                    1051,
+                    210
+                ],
+                [
+                    1051,
+                    233
+                ],
+                [
+                    733,
+                    233
+                ]
+            ],
+            [
+                [
+                    193,
+                    670
+                ],
+                [
+                    1027,
+                    672
+                ],
+                [
+                    1027,
+                    723
+                ],
+                [
+                    193,
+                    721
+                ]
+            ],
+            [
+                [
+                    360,
+                    732
+                ],
+                [
+                    863,
+                    732
+                ],
+                [
+                    863,
+                    779
+                ],
+                [
+                    360,
+                    779
+                ]
+            ]
+        ],
+        "rec_boxes": [
+            [
+                900,
+                145,
+                1053,
+                172
+            ],
+            [
+                858,
+                178,
+                1052,
+                202
+            ],
+            [
+                733,
+                210,
+                1051,
+                233
+            ],
+            [
+                193,
+                670,
+                1027,
+                723
+            ],
+            [
+                360,
+                732,
+                863,
+                779
+            ]
+        ]
+    }
+}

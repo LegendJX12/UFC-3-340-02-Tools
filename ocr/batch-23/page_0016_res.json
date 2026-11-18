@@ -1,0 +1,525 @@
+{
+    "input_path": "C:\\Users\\10029078\\OneDrive - Surbana Jurong Private Limited\\Attachments\\Desktop\\Technical Improvment\\DCMS basis report\\References\\UFC 3-340-02 batches\\ocr_output\\pages\\batch 23\\page_0016.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_seal_recognition": false,
+        "use_table_recognition": true,
+        "use_formula_recognition": true,
+        "use_chart_recognition": false,
+        "use_region_detection": true,
+        "format_block_content": false,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ]
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "UFC 3-340-025 December 2008Change 2,1 September 2014",
+            "block_bbox": [
+                731,
+                147,
+                1051,
+                233
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 4-63Direct Spalled Element ",
+            "block_bbox": [
+                385,
+                267,
+                801,
+                290
+            ],
+            "block_id": 1,
+            "block_order": null
+        },
+        {
+            "block_label": "image",
+            "block_content": "ROUNDIO \nACCEPTOR \n",
+            "block_bbox": [
+                313,
+                306,
+                882,
+                751
+            ],
+            "block_id": 2,
+            "block_order": null
+        },
+        {
+            "block_label": "number",
+            "block_content": "4-209",
+            "block_bbox": [
+                569,
+                1484,
+                629,
+                1505
+            ],
+            "block_id": 3,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": false,
+            "use_doc_unwarping": false
+        },
+        "angle": -1
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 1,
+                "label": "image",
+                "score": 0.9675007462501526,
+                "coordinate": [
+                    313.3822021484375,
+                    306.8691711425781,
+                    882.4058837890625,
+                    751.99755859375
+                ]
+            },
+            {
+                "cls_id": 6,
+                "label": "figure_title",
+                "score": 0.8881595134735107,
+                "coordinate": [
+                    385.7873840332031,
+                    267.0545654296875,
+                    801.641845703125,
+                    290.2916259765625
+                ]
+            },
+            {
+                "cls_id": 3,
+                "label": "number",
+                "score": 0.6609575748443604,
+                "coordinate": [
+                    569.41064453125,
+                    1484.918212890625,
+                    629.54345703125,
+                    1505.291259765625
+                ]
+            },
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.6108943223953247,
+                "coordinate": [
+                    731.4442138671875,
+                    147.37310791015625,
+                    1051.1812744140625,
+                    233.6514892578125
+                ]
+            }
+        ]
+    },
+    "overall_ocr_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+        },
+        "dt_polys": [
+            [
+                [
+                    899,
+                    145
+                ],
+                [
+                    1054,
+                    145
+                ],
+                [
+                    1054,
+                    172
+                ],
+                [
+                    899,
+                    172
+                ]
+            ],
+            [
+                [
+                    855,
+                    175
+                ],
+                [
+                    1053,
+                    177
+                ],
+                [
+                    1053,
+                    204
+                ],
+                [
+                    855,
+                    201
+                ]
+            ],
+            [
+                [
+                    731,
+                    206
+                ],
+                [
+                    1053,
+                    208
+                ],
+                [
+                    1053,
+                    234
+                ],
+                [
+                    731,
+                    233
+                ]
+            ],
+            [
+                [
+                    385,
+                    266
+                ],
+                [
+                    519,
+                    264
+                ],
+                [
+                    519,
+                    293
+                ],
+                [
+                    386,
+                    295
+                ]
+            ],
+            [
+                [
+                    543,
+                    266
+                ],
+                [
+                    803,
+                    266
+                ],
+                [
+                    803,
+                    293
+                ],
+                [
+                    543,
+                    293
+                ]
+            ],
+            [
+                [
+                    553,
+                    339
+                ],
+                [
+                    655,
+                    347
+                ],
+                [
+                    652,
+                    379
+                ],
+                [
+                    550,
+                    371
+                ]
+            ],
+            [
+                [
+                    553,
+                    367
+                ],
+                [
+                    648,
+                    374
+                ],
+                [
+                    646,
+                    402
+                ],
+                [
+                    551,
+                    395
+                ]
+            ],
+            [
+                [
+                    566,
+                    1482
+                ],
+                [
+                    635,
+                    1482
+                ],
+                [
+                    635,
+                    1512
+                ],
+                [
+                    566,
+                    1512
+                ]
+            ]
+        ],
+        "text_det_params": {
+            "limit_side_len": 736,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+        },
+        "text_type": "general",
+        "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "text_rec_score_thresh": 0.0,
+        "return_word_box": false,
+        "rec_texts": [
+            "UFC 3-340-02",
+            "5 December 2008",
+            "Change 2,1 September 2014",
+            "Figure 4-63",
+            "Direct Spalled Element",
+            "ROUNDIO",
+            "ACCEPTOR",
+            "4-209"
+        ],
+        "rec_scores": [
+            0.969692051410675,
+            0.979789674282074,
+            0.9737684726715088,
+            0.9970085620880127,
+            0.9793119430541992,
+            0.8754590153694153,
+            0.9947367906570435,
+            0.9997579455375671
+        ],
+        "rec_polys": [
+            [
+                [
+                    899,
+                    145
+                ],
+                [
+                    1054,
+                    145
+                ],
+                [
+                    1054,
+                    172
+                ],
+                [
+                    899,
+                    172
+                ]
+            ],
+            [
+                [
+                    855,
+                    175
+                ],
+                [
+                    1053,
+                    177
+                ],
+                [
+                    1053,
+                    204
+                ],
+                [
+                    855,
+                    201
+                ]
+            ],
+            [
+                [
+                    731,
+                    206
+                ],
+                [
+                    1053,
+                    208
+                ],
+                [
+                    1053,
+                    234
+                ],
+                [
+                    731,
+                    233
+                ]
+            ],
+            [
+                [
+                    385,
+                    266
+                ],
+                [
+                    519,
+                    264
+                ],
+                [
+                    519,
+                    293
+                ],
+                [
+                    386,
+                    295
+                ]
+            ],
+            [
+                [
+                    543,
+                    266
+                ],
+                [
+                    803,
+                    266
+                ],
+                [
+                    803,
+                    293
+                ],
+                [
+                    543,
+                    293
+                ]
+            ],
+            [
+                [
+                    553,
+                    339
+                ],
+                [
+                    655,
+                    347
+                ],
+                [
+                    652,
+                    379
+                ],
+                [
+                    550,
+                    371
+                ]
+            ],
+            [
+                [
+                    553,
+                    367
+                ],
+                [
+                    648,
+                    374
+                ],
+                [
+                    646,
+                    402
+                ],
+                [
+                    551,
+                    395
+                ]
+            ],
+            [
+                [
+                    566,
+                    1482
+                ],
+                [
+                    635,
+                    1482
+                ],
+                [
+                    635,
+                    1512
+                ],
+                [
+                    566,
+                    1512
+                ]
+            ]
+        ],
+        "rec_boxes": [
+            [
+                899,
+                145,
+                1054,
+                172
+            ],
+            [
+                855,
+                175,
+                1053,
+                204
+            ],
+            [
+                731,
+                206,
+                1053,
+                234
+            ],
+            [
+                385,
+                264,
+                519,
+                295
+            ],
+            [
+                543,
+                266,
+                803,
+                293
+            ],
+            [
+                550,
+                339,
+                655,
+                379
+            ],
+            [
+                551,
+                367,
+                648,
+                402
+            ],
+            [
+                566,
+                1482,
+                635,
+                1512
+            ]
+        ]
+    }
+}
