@@ -11,14 +11,14 @@ Status: match | ocr-missing (PDF numbers absent from OCR) | ocr-extra (OCR numbe
 from PDF) | differ (both). Flagged lines need a look at the rendered page.
 
 With --review, also writes table equation_status / --status CSV: one verdict per equation,
-combining this automatic check with the hand-checked review (reference/equation_review.csv):
+combining this automatic check with the hand-checked review (reference/manual/equation_review.csv):
   error / missed / check operator    - from the review; correct text from the PDF is in the review
   ok (minor slip)                    - OCR usable; small symbol slip noted in the review
   ok (checked by eye)                - flagged automatically, then checked and found correct
   ok (automatic)                     - numbers (and variable names, where present) match the PDF text
 
-Usage: python3 scripts/check_equation_lines.py --db reference/ufc_340_02.db --csv reference/equation_lines.csv \
-           --review reference/equation_review.csv --status reference/equation_status.csv
+Usage: python3 scripts/check_equation_lines.py --db reference/ufc_340_02.db --csv reference/equations/equation_lines.csv \
+           --review reference/manual/equation_review.csv --status reference/equations/equation_status.csv
 """
 import argparse, collections, csv, difflib, re, sqlite3
 

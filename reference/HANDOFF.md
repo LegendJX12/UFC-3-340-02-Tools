@@ -3,38 +3,37 @@
 Read this first. It explains what is in the repo, what is verified, and what is still open.
 
 ## Repo layout
+See `reference/README.md` for a full "where is what" map. In short:
+
 | Folder | Contents |
 |---|---|
 | `source/pdf/` | The 35 batch PDFs (`batch 1.pdf` to `batch 35.pdf`). Born-digital: they have an exact text layer. |
-| `text/chapters/` | Chapters 1 to 6 as readable markdown (OCR; equations not verified) |
+| `text/chapters/` | Chapters 1 to 6 as readable markdown, `ch1_introduction.md` to `ch6_...md` (OCR; equations not verified) |
 | `ocr/batch-NN/` | Per-page OCR output: `page_NNNN_res.json` (text blocks, labels, positions) and `imgs/` (cropped charts, tables, images, formulas) |
 | `graphs/UFC_Plots_data/` | 1,371 original plot files (`.grf`, DPLOT v1.6) with curve data, split into subfolders by chapter |
 | `graphs/generated/` | 22 plot files for figures with no original plot file: 19 **computed** (`generate_missing.py`) and 3 **digitized** from the PDF (`digitize_figures.py`); see section 5 |
-| `reference/tables/` | Tables recovered from the PDF text layer (Table 5-4) |
-| `reference/digitized_checks/` | Digitized curves drawn over the original charts, for checking by eye |
-| `reference/` | Index spreadsheet, database, check lists (CSV), database guide, this note |
+| `reference/ufc_340_02.db` | **The database.** Everything below is also loaded into it |
+| `reference/manual/` | **Hand-checked inputs. Never overwritten by scripts; edit by hand only** |
+| `reference/equations/`, `formulas/`, `plots/` | Script outputs (CSV), rebuilt every run |
+| `reference/tables/` | Tables typed in by hand (Table 5-4); list in `tables_index.csv`; loaded into table `extra_tables` |
+| `reference/index/` | Index spreadsheet |
 | `scripts/` | Build and check scripts (see below) |
 
 ## Rebuild commands
-Run from the repo root, in this order. `pdftotext` (poppler) is needed for the PDF text layer.
-`--grf-root graphs` reads both the original and the generated plot files. The `--katex` check needs Node.js with `npm install katex` (run it in the `scripts` folder); without it, leave the option out.
+One command, from the repo root (needs `pdftotext` from poppler):
 
 ```bash
-python3 scripts/generate_missing.py --out graphs/generated
-python3 scripts/digitize_figures.py --pdf-root source/pdf --out graphs/generated --checks reference/digitized_checks
-python3 scripts/build_db.py --ocr-root ocr --grf-root graphs --index reference/UFC_3-340-02_index.xlsx --pdf-root source/pdf --out reference/ufc_340_02.db
-python3 scripts/map_grf.py --db reference/ufc_340_02.db --grf-root graphs --csv reference/grf_to_guide.csv
-python3 scripts/check_equations.py --db reference/ufc_340_02.db --csv reference/equation_check.csv --issues reference/formula_issues.csv --review reference/equation_review.csv
-python3 scripts/check_equation_lines.py --db reference/ufc_340_02.db --csv reference/equation_lines.csv --review reference/equation_review.csv --status reference/equation_status.csv
-python3 scripts/fix_formulas.py --db reference/ufc_340_02.db --csv reference/formula_fixes.csv --review reference/formula_review.csv --manual reference/formula_manual_fixes.csv
-python3 scripts/build_equations.py --db reference/ufc_340_02.db --corrections reference/equation_corrections.csv --csv reference/equations.csv --katex scripts/katex_check.js
-python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/missing_data.csv
+bash scripts/rebuild_all.sh
 ```
+
+Add `--plots` to also recompute the generated and digitized plot files. For the LaTeX check, run `npm install` once in the repo root (installs KaTeX from `package.json`); without it the check is skipped. The script lists every step in order, with all file paths.
 
 | Script | Output |
 |---|---|
 | `build_db.py` | `reference/ufc_340_02.db` (uses `grf.py` to read plot files) |
 | `grf.py` | Reader for DPLOT `.grf` files (both `data` and `dx` layouts, curves kept separate with labels) |
+| `load_tables.py` | Table `extra_tables` from `reference/tables/` |
+| `rebuild_all.sh` | Runs every step below in order |
 | `map_grf.py` | `grf_to_guide.csv` and table `grf_guide_links`: every plot file to its guide figure |
 | `check_equations.py` | `equation_check.csv` / table `equation_check` (OCR vs PDF text), `formula_issues.csv` / table `formula_issues` (OCR error patterns), and loads the hand-checked `equation_review.csv` |
 | `check_equation_lines.py` | `equation_lines.csv` (line-level check) and `equation_status.csv` / table `equation_status`: one verdict per equation |
@@ -152,7 +151,7 @@ Limits: the generated charts follow the computation, not the printed scan, so sm
 ### Digitized charts (Figures 2-8, 2-16, 6-11)
 The WebPlotDigitizer website cannot be reached from the build machine, so its method is scripted (`digitize_chart.py`): the PDF page is rendered at 300 dpi, the log axes are calibrated from the plot frame and the decade tick marks (piecewise, which corrects a 9-pixel scan stretch on 2-8), and each curve is traced from a seed point. Where curves cross or overlap, the trace keeps its direction.
 - 6 curves per chart: P_so (2-8) or P_s (2-16), P_r, i_s/W^1/3, i_r/W^1/3 (left axis); t_o/W^1/3, L_w/W^1/3 (right axis). About 120 points per curve.
-- Check by eye: `reference/digitized_checks/fig_2-8.png` and `fig_2-16.png` show the traced curves drawn over the original charts.
+- Check by eye: `reference/plots/digitized_checks/fig_2-8.png` and `fig_2-16.png` show the traced curves drawn over the original charts.
 - Physical check: peak negative pressure at small Z reads 14.7 psi on both charts, which is atmospheric pressure (the vacuum limit).
 - Accuracy: one pixel is about 0.45% of a value on these log scales; with line thickness and calibration, expect about 1 to 3%.
 - 6-11 is an example curve of four straight segments (shape as Figure 6-13): (0, 0), (0.04, 0.614), (0.08, 0.051), (7.625, 0). The end point 7.61 measured matches the 7.625 in thickness of an 8-in masonry unit. The two small deflections (Xe, 2Xe) are within about ±0.03.

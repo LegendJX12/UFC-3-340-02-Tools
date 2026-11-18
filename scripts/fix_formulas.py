@@ -18,7 +18,7 @@ Output:
   table `formulas`       every OCR formula block with the fixed LaTeX (column latex) and the
                          original (ocr_latex); table `blocks` is not changed
   --csv                  one row per fix, with the PDF line that shows the comma form
-Usage: python3 scripts/fix_formulas.py --db reference/ufc_340_02.db --csv reference/formula_fixes.csv
+Usage: python3 scripts/fix_formulas.py --db reference/ufc_340_02.db --csv reference/formulas/formula_fixes.csv
 """
 import argparse, collections, csv, difflib, os, re, sqlite3, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

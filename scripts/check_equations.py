@@ -18,11 +18,11 @@ Also:
   - scans every OCR formula for two error patterns seen in the review: a thousands comma read
     as a decimal point (OCR "47.690" where the PDF has "47,690"), and a lost minus sign in a
     power of ten (OCR 10^9 where the PDF has 10-9). Output: table formula_issues and --issues CSV.
-  - loads the hand-checked review (reference/equation_review.csv) into table equation_review.
+  - loads the hand-checked review (reference/manual/equation_review.csv) into table equation_review.
 
 Usage:
-  python3 scripts/check_equations.py --db reference/ufc_340_02.db --csv reference/equation_check.csv \
-      --issues reference/formula_issues.csv --review reference/equation_review.csv
+  python3 scripts/check_equations.py --db reference/ufc_340_02.db --csv reference/equations/equation_check.csv \
+      --issues reference/formulas/formula_issues.csv --review reference/manual/equation_review.csv
 """
 import argparse, collections, csv, re, sqlite3
 

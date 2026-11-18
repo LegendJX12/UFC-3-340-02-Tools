@@ -3,11 +3,11 @@
 File: `reference/ufc_340_02.db` (SQLite). Built by `scripts/build_db.py` from:
 - OCR output in `ocr/` for batches 1–35 (page text, layout blocks, cropped images)
 - the exact text layer of the PDFs in `source/pdf/`
-- the index spreadsheet `reference/UFC_3-340-02_index.xlsx`
+- the index spreadsheet `reference/index/UFC_3-340-02_index.xlsx`
 - plot files in `graphs/UFC_Plots_data/` (original .grf) and `graphs/generated/` (computed)
 
-Then `map_grf.py`, `check_equations.py` and `audit_missing.py` add their tables.
-See `reference/HANDOFF.md` for rebuild commands and open items.
+Then the other scripts add their tables. Rebuild everything with `bash scripts/rebuild_all.sh`.
+See `reference/README.md` for where each file is, and `reference/HANDOFF.md` for open items.
 
 ## Tables
 | Table | What it holds |
@@ -32,6 +32,7 @@ See `reference/HANDOFF.md` for rebuild commands and open items.
 | equation_status | One verdict per numbered equation: ok (automatic / checked by eye / minor slip), error, missed, check operator |
 | formula_issues | OCR formula error patterns as found in the raw OCR: thousands comma read as decimal point, lost minus in powers of ten |
 | formulas | Every OCR formula block (1,876) with thousands separators, letters and primes fixed (`latex`), original in `ocr_latex`, list of fixes in `fixes` |
+| extra_tables | Tables typed in by hand from `reference/tables/` (Table 5-4): one row per table row, values as JSON in `data` |
 | data_status | Every figure and table with its data status (has plot data, MISSING DATA, ...) |
 
 ## Counts (this build)
@@ -66,6 +67,10 @@ WHERE p.file = '02_194A.grf' AND c.label = '7000' ORDER BY p.seq;
 A checked equation, as LaTeX:
 ```sql
 SELECT number, latex, source FROM equations WHERE number = '2-23';
+```
+Table 5-4 values:
+```sql
+SELECT row_no, data FROM extra_tables WHERE number = '5-4' ORDER BY row_no;
 ```
 Everything still missing data:
 ```sql

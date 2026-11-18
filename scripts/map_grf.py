@@ -7,7 +7,7 @@ Match levels (first that works wins):
   D not found    - no match; needs manual check
 
 Usage:
-  python3 scripts/map_grf.py --db reference/ufc_340_02.db --grf-root graphs/UFC_Plots_data --csv reference/grf_to_guide.csv
+  python3 scripts/map_grf.py --db reference/ufc_340_02.db --grf-root graphs/UFC_Plots_data --csv reference/plots/grf_to_guide.csv
 """
 import argparse, csv, glob, os, re, sqlite3
 

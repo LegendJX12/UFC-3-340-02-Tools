@@ -6,9 +6,9 @@ decade tick marks, then trace each curve from a seed point (scripts/digitize_cha
 
 Outputs:
   graphs/generated/02_008.grf, 02_016.grf, 06_011.grf   curves (DPLOT layout, marked GENERATED)
-  reference/digitized_checks/fig_2-8.png, ...  traced curves drawn over the chart, for checking
+  reference/plots/digitized_checks/fig_2-8.png, ...  traced curves drawn over the chart, for checking
 
-Usage: python3 scripts/digitize_figures.py --pdf-root source/pdf --out graphs/generated --checks reference/digitized_checks
+Usage: python3 scripts/digitize_figures.py --pdf-root source/pdf --out graphs/generated --checks reference/plots/digitized_checks
 Needs pdftoppm (poppler).
 """
 import argparse, math, os, subprocess, sys, tempfile

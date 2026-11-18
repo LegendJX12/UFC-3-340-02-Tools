@@ -1,6 +1,6 @@
 """Build table `equations`: one checked LaTeX form per numbered equation of UFC 3-340-02.
 
-  latex  = corrected form from reference/equation_corrections.csv where the OCR was wrong,
+  latex  = corrected form from reference/manual/equation_corrections.csv where the OCR was wrong,
            missing, paired with the wrong line, or had a minor slip (written from the
            rendered PDF page), otherwise the OCR line, cleaned of layout leftovers
   source = 'corrected from PDF' or 'OCR'
@@ -10,7 +10,7 @@ Needs tables equation_status and equation_lines (scripts/check_equation_lines.py
 Optional --katex: path to a Node script that checks LaTeX with KaTeX (adds column latex_ok).
 
 Usage: python3 scripts/build_equations.py --db reference/ufc_340_02.db \
-           --corrections reference/equation_corrections.csv --csv reference/equations.csv [--katex check.js]
+           --corrections reference/manual/equation_corrections.csv --csv reference/equations/equations.csv [--katex check.js]
 """
 import argparse, csv, json, os, re, sqlite3, subprocess, tempfile
 
