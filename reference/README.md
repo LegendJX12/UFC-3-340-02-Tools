@@ -14,7 +14,7 @@ Open items and how things were checked: `HANDOFF.md`. Database tables and exampl
 | `manual/equation_review.csv` | hand-checked | Finding for each equation checked by eye (150) |
 | `manual/formula_manual_fixes.csv` | hand-checked | 91 fix rules for worked-example formulas |
 | `manual/table_pages.csv` | hand-checked | Which OCR table block(s) make up each of the 85 tables; data or formula table; notes |
-| `manual/tables/` | hand-checked | Tables typed or read by hand (3-15, 4-8, 5-4, 6-7), with a README |
+| `manual/tables/` | hand-checked | Tables typed or read by hand: 4 data tables (3-15, 4-8, 5-4, 6-7) and the 40 formula tables, with a README |
 | `manual/table_6-7_review.csv` | hand-checked | The 74 Table 6-7 values the two OCR engines disagreed on, as read by eye |
 | `equations/equations.csv` | output | **One checked LaTeX form per numbered equation (501). Use this for equations.** |
 | `equations/equation_status.csv` | output | One verdict per equation (ok / error / missed ...) |
@@ -25,7 +25,6 @@ Open items and how things were checked: `HANDOFF.md`. Database tables and exampl
 | `plots/grf_to_guide.csv` | output | Every `.grf` plot file linked to its guide figure and page |
 | `plots/digitized_checks/` | output | Images: digitized curves drawn over the original charts |
 | `tables/table_N-M.csv` | output | **Every numbered table (85), one file each.** First column = batch/page it came from |
-| `tables/table_N-M_ocr_latex.csv` | output | Formula tables only: the OCR version, with formulas as LaTeX (Greek letters kept) |
 | `tables/tables_index.csv` | output | One row per table: data or formula, pages, how it was checked, result |
 | `tables/table_checks.csv` | output | Every number where the two readings differed, with the verdict |
 

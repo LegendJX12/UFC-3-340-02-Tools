@@ -119,13 +119,21 @@ All 85 numbered tables are exported, one CSV each (84 from the index plus Table 
 | Scanned image (Table 6-7, 7 pages) | PaddleOCR | Tesseract, 3 settings, row by row | 1,102 of 1,176 agree; the other 74 read by eye on 4x zoomed scans |
 | No usable grid (3-15, 4-8) or blank (5-4) | Typed or built from exact PDF word positions | Read by eye on the rendered page | |
 
-**Data tables (44, 9,261 values): checked.** 22 agree fully in both readings; in 18 the readings differ only where the OCR dropped or misread values (811 such values; the exact PDF text is kept, see `table_checks.csv`); 4 were done by hand (`reference/manual/tables/README.md`). Rows that differ from the OCR were compared with the rendered page by eye (Tables 1-2, 1-6, 2-1, 2-2, 2-3, 2A-3, 3-15, 4-15a, 5-8, 5-12, 6-5, 6-6, 6-13, 6-14). Tables 6-7, 6-12 and 6-13 also pass trend checks (values rise or fall steadily along rows and columns), except 7 places in 6-13 where the printed values break the trend; these were read on the page and are exported as printed.
+**Data tables (45, including 5-9): checked.** 22 agree fully in both readings; in 19 the readings differ only where the OCR dropped or misread values (such values; the exact PDF text is kept, see `table_checks.csv`); 4 were done by hand (`reference/manual/tables/README.md`). Rows that differ from the OCR were compared with the rendered page by eye (Tables 1-2, 1-6, 2-1, 2-2, 2-3, 2A-3, 3-15, 4-15a, 5-9, 6-5, 6-6, 6-13, 6-14). Tables 6-7, 6-12 and 6-13 also pass trend checks (values rise or fall steadily along rows and columns), except 7 places in 6-13 where the printed values break the trend; these were read on the page and are exported as printed.
 
 What the OCR got wrong in tables (now avoided): dropped rows (Table 1-6 lost 5 rows and scrambled its end), merged rows (6-7), shifted columns, and values such as 2000 read as 200 (6-5).
 
 **Values printed oddly in the PDF (exported as printed):** Table 4-8 Cc = 0.0301 (L/H 1.25, c/L 0.1; probably 0.00301); Table 6-13 values that break the trend (e.g. 23.0 after 43.9 at 26x26, 5/8 in; 14.23 at 23x34.5); Table 6-7 39x39 3/4 in, printed 20.5 as a correction pasted over the scanned 10.5.
 
-**Formula tables (41): numbers checked, formulas not yet checked by eye.** These hold formulas and drawings (e.g. Tables 3-1 to 3-13, 4-3 to 4-15, 5-5 to 5-16). Each has two files: `table_N-M.csv` (exact PDF text, but Greek letters and some symbols are missing because they are images in the PDF) and `table_N-M_ocr_latex.csv` (OCR LaTeX, Greek kept, but may contain OCR errors). 249 numbers in 13 of them still differ between the readings (`table_checks.csv`, verdict TO CHECK); several are drawn entirely as pictures (2-6, 4-5, 4-10 page 22/2, 4-11, 4-14, 5-10, 5-11). Before using a formula from these tables, read it on the PDF page.
+**Formula tables (40): checked by eye.** Tables 2-6, 3-1 to 3-14, 4-2 to 4-15 (except 4-8), 5-5 to 5-8 and 5-10 to 5-16, and 6-4 hold formulas, often drawn as pictures and Greek letters the PDF text cannot carry. Each was transcribed by eye from the rendered PDF page (zoomed where small) into `reference/manual/tables/table_N-M.csv`: formulas as LaTeX (all 450 formula cells parse in KaTeX), support and loading diagrams described in words (for example "Fixed one end, simply supported other; uniform load"), and footnotes kept as a `Notes:` row. Every number in the transcriptions that the PDF text layer holds was found there; the rest are in formulas drawn as pictures (2-6, 3-2, 3-3, 3-10, 3-11, 3-13, 4-10 page 22/2, 4-13) and were read twice on zoomed renders. The 3-13 interpolation formulas reproduce the table values at both ends of their ranges. Table 5-9 turned out to be a data table and is checked as one.
+
+Places where the printed formula looks like a slip in the guide (kept as printed, explained in the `note` of `reference/manual/table_pages.csv`):
+- 3-3, three-edges row: first term uses M_HP1 where the others use M_HP.
+- 3-6, three-edges row x <= H: x tan(theta_V), where the other rows use theta_H.
+- 3-11, four-edges row y_2: 3 r_u x (L-x)(...), probably 3 r_u (L-x)(...).
+- 3-14, last row: X_{n-1} printed as X_{j-1} (pattern gives X_j).
+- 5-15, row 6: 3 alpha H + (n-1) L without the squares that Table 5-13 has.
+Also: the PDF text of Table 5-8 contains hidden words ("maximum end reaction") that are not printed; the printed wording is used.
 
 ## 4. Missing data (`missing_data.csv`, table `data_status`)
 840 figures and 84 tables, each with a status.

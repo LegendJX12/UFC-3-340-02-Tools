@@ -1,6 +1,7 @@
-page,col1,col2,col3,col4,col5
-12/40,Table 3-2 Ultimate Unit Resistances for Two-Way Elements (Symmetrical Yield Lines),,,,
-12/40,Edge Conditions,Yield Line Locations,Limits,Ultimate Unit Resistance,
-12/40,Two adjacent edges supported and two edges free,X H 7 L,×≤L y≤H,5(MHN+MHP)OR 6LMVN+(5MVP-MVN)X $x^{2}$ $H^{2}{3}}-2x) $5(MVN+MvP) 6HMHN+(5MHP-MHN)y OR $y^{2}$ $L{2}{3H-2y),
-12/40,Three edges supported and one edge free,X X 2 3 X 1 2 3 L,×≤L/2 y≤H$,5(M{HN+MHP)OR 2M_n(3L-x)+10xMvP $x^{}$ $H_{2}{3 }-4x$ 5(Mv{n}+MvP)OR 4(MHN+MHP)(6H-y) $y^{2}$ $^²{2}{3H}-2y,Four edges supported
-12/40,y ≤H/2$,,,,
+page,Edge conditions,Yield line location,Limits,Ultimate unit resistance
+12/40,Two adjacent edges supported and two edges free,"Diagonal yield line from corner, distance x along free edge",x <= L,\frac{5(M_{HN}+M_{HP})}{x^{2}}\ \text{OR}\ \frac{6LM_{VN}+(5M_{VP}-M_{VN})x}{H^{2}(3L-2x)}
+12/40,Two adjacent edges supported and two edges free,"Diagonal yield line from corner, distance y along free edge",y <= H,\frac{5(M_{VN}+M_{VP})}{y^{2}}\ \text{OR}\ \frac{6HM_{HN}+(5M_{HP}-M_{HN})y}{L^{2}(3H-2y)}
+12/40,Three edges supported and one edge free,"Regions 1-2-3, yield lines at distance x from each side edge along the free edge",x <= L/2,\frac{5(M_{HN}+M_{HP})}{x^{2}}\ \text{OR}\ \frac{2M_{VN}(3L-x)+10xM_{VP}}{H^{2}(3L-4x)}
+12/40,Three edges supported and one edge free,"Regions 1-2-3, yield lines meeting at distance y from the supported edge opposite the free edge, x from side",y <= H,\frac{5(M_{VN}+M_{VP})}{y^{2}}\ \text{OR}\ \frac{4(M_{HN}+M_{HP})(6H-y)}{L^{2}(3H-2y)}
+12/40,Four edges supported,"Regions 1-4, yield lines at distance x from the short edges",x <= L/2,\frac{5(M_{HN}+M_{HP})}{x^{2}}\ \text{OR}\ \frac{8(M_{VN}+M_{VP})(3L-x)}{H^{2}(3L-4x)}
+12/40,Four edges supported,"Regions 1-4, yield lines at distance y from the long edges",y <= H/2,\frac{5(M_{VN}+M_{VP})}{y^{2}}\ \text{OR}\ \frac{8(M_{HN}+M_{HP})(3H-y)}{L^{2}(3H-4y)}

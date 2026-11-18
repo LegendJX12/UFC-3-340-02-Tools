@@ -1,0 +1,11 @@
+Edge conditions,Loading,"Elastic stiffness, K_e","Elasto-plastic stiffness, K_ep","Equivalent elastic stiffness, K_E"
+Simply supported both ends,"Uniform load, span L",\frac{384EI}{5L^{4}},-,\frac{384EI}{5L^{4}}
+Simply supported both ends,"Concentrated load P at midspan (L/2, L/2)",\frac{48EI}{L^{3}},-,\frac{48EI}{L^{3}}
+"Fixed one end, simply supported other","Uniform load, span L",\frac{185EI}{L^{4}},\frac{384EI}{5L^{4}},\frac{160EI}{L^{4}}\ (*)
+"Fixed one end, simply supported other","Concentrated load P at midspan (L/2, L/2)",\frac{107EI}{L^{3}},\frac{48EI}{L^{3}},\frac{106EI}{L^{3}}\ (*)
+Fixed both ends,"Uniform load, span L",\frac{384EI}{L^{4}},\frac{384EI}{5L^{4}},\frac{307EI}{L^{4}}\ (*)
+Fixed both ends,"Concentrated load P at midspan (L/2, L/2)",\frac{192EI}{L^{3}},\frac{48EI}{L^{3}}\ (**),\frac{192EI}{L^{3}}\ (*)
+"Cantilever (fixed one end, free other)","Uniform load, span L",\frac{8EI}{L^{4}},-,\frac{8EI}{L^{4}}
+"Cantilever (fixed one end, free other)",Concentrated load P at free end,\frac{3EI}{L^{3}},-,\frac{3EI}{L^{3}}
+Simply supported both ends,"Two loads P/2 at third points (L/3, L/3, L/3)",\frac{56.4EI}{L^{3}},-,\frac{56.4EI}{L^{3}}
+Notes: (*) valid only if M_N = M_P; (**) valid only if M_N < M_P,,,,

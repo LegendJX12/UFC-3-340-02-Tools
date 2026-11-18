@@ -1,0 +1,7 @@
+Edge conditions,Yield line location,Horizontal ultimate support shear coefficient C_sH,Vertical ultimate support shear coefficient C_sV
+Two adjacent edges supported and two edges free,"Diagonal yield line, distance x",\frac{6}{(x/L)},\frac{6(2-x/L)(3+2x/L)}{(6-x/L)(3-2x/L)}
+Two adjacent edges supported and two edges free,"Diagonal yield line, distance y",\frac{6(2-y/H)(3+2y/H)}{(6-y/H)(3-2y/H)},\frac{6}{y/H}
+Three edges supported and one edge free,Yield lines at distance x from each side edge,\frac{6}{(x/L)},\frac{6(1-x/L)(3+4x/L)}{(3-x/L)(3-4x/L)}
+Three edges supported and one edge free,Yield lines meeting at distance y from supported edge,\frac{12(2-y/H)}{(3-2y/H)},\frac{6}{y/H}
+Four edges supported,Yield lines at distance x from the short edges,\frac{6}{(x/L)},\frac{24(1-x/L)}{(3-4x/L)}
+Four edges supported,Yield lines at distance y from the long edges,\frac{24(1-y/H)}{(3-4y/H)},\frac{6}{y/H}

@@ -1,17 +1,22 @@
-page,col1,col2,col3,col4,col5
-13/12,Edge Conditions and Loading Diagrams,Range of Behavior,Load Factor K_{L},Mass Factor K_{M},Load-Mass Factor K_{LM}
-13/12,,Elastic Plastic,0.64 0.50,0.50 0.33,0.78 0.66
-13/12,,Elastic Plastic,1.0 1.0,0.49 0.33,0.49 0.33
-13/12,,Elastic,0.58,0.45,0.78
-13/12,,Elasto-Plastic,0.64,0.50,0.78
-13/12,,Plastic,0.50,0.33,0.66
-13/12,,Elastic,1.0,0.43,0.43
-13/12,,Elasto-Plastic,1.0,0.49,0.49
-13/12,,Plastic,1.0,0.33,0.33
-13/12,,Elastic,0.53,0.41,0.77
-13/12,,Elasto-Plastic,0.64,0.50,0.78
-13/12,,Plastic,0.50,0.33,0.66
-13/12,,Elastic Plastic,1.0 1.0,0.37 0.33,0.37 0.33
-13/12,,Elastic Plastic,0.40 0.50,0.26 0.33,0.65 0.66
-13/12,,Elastic Plastic,1.0 1.0,0.24 0.33,0.24 0.33
-13/12,,Elastic Plastic,0.87 1.0,0.52 0.56,0.60 0.56
+page,Edge conditions,Loading,Range of behavior,Load factor K_L,Mass factor K_M,Load-mass factor K_LM
+13/12,Simply supported both ends,"Uniform load, span L",Elastic,0.64,0.50,0.78
+13/12,Simply supported both ends,"Uniform load, span L",Plastic,0.50,0.33,0.66
+13/12,Simply supported both ends,"Concentrated load P at midspan (L/2, L/2)",Elastic,1.0,0.49,0.49
+13/12,Simply supported both ends,"Concentrated load P at midspan (L/2, L/2)",Plastic,1.0,0.33,0.33
+13/12,"Fixed one end, simply supported other","Uniform load, span L",Elastic,0.58,0.45,0.78
+13/12,"Fixed one end, simply supported other","Uniform load, span L",Elasto-Plastic,0.64,0.50,0.78
+13/12,"Fixed one end, simply supported other","Uniform load, span L",Plastic,0.50,0.33,0.66
+13/12,"Fixed one end, simply supported other","Concentrated load P at midspan (L/2, L/2)",Elastic,1.0,0.43,0.43
+13/12,"Fixed one end, simply supported other","Concentrated load P at midspan (L/2, L/2)",Elasto-Plastic,1.0,0.49,0.49
+13/12,"Fixed one end, simply supported other","Concentrated load P at midspan (L/2, L/2)",Plastic,1.0,0.33,0.33
+13/12,Fixed both ends,"Uniform load, span L",Elastic,0.53,0.41,0.77
+13/12,Fixed both ends,"Uniform load, span L",Elasto-Plastic,0.64,0.50,0.78
+13/12,Fixed both ends,"Uniform load, span L",Plastic,0.50,0.33,0.66
+13/12,Fixed both ends,"Concentrated load P at midspan (L/2, L/2)",Elastic,1.0,0.37,0.37
+13/12,Fixed both ends,"Concentrated load P at midspan (L/2, L/2)",Plastic,1.0,0.33,0.33
+13/12,"Cantilever (fixed one end, free other)","Uniform load, span L",Elastic,0.40,0.26,0.65
+13/12,"Cantilever (fixed one end, free other)","Uniform load, span L",Plastic,0.50,0.33,0.66
+13/12,"Cantilever (fixed one end, free other)",Concentrated load P at free end,Elastic,1.0,0.24,0.24
+13/12,"Cantilever (fixed one end, free other)",Concentrated load P at free end,Plastic,1.0,0.33,0.33
+13/12,Simply supported both ends,"Two loads P/2 at third points (L/3, L/3, L/3)",Elastic,0.87,0.52,0.60
+13/12,Simply supported both ends,"Two loads P/2 at third points (L/3, L/3, L/3)",Plastic,1.0,0.56,0.56

@@ -43,7 +43,7 @@ See `reference/README.md` for where each file is, and `reference/HANDOFF.md` for
 - 1,371 original plot files (10,835 curves, 591,110 points) and 22 generated (214 curves: 19 computed files, 3 digitized); all linked to a guide figure
 - 501 numbered equations checked: 112 OCR errors, 26 minor slips and 3 missed equations, now corrected in table `equations` (148 rows corrected from the PDF in all). About 41 numbered equations are still missing from the table (OCR missed their numbers)
 - OCR formula fixes: 207 thousands commas, 124 letters, 14 primes, 119 checked by eye (`formula_fixes.csv`)
-- 85 numbered tables exported and checked (44 data tables, 9,261 values; 41 formula tables); 840 figures with a data status
+- 85 numbered tables exported and checked (45 data tables; 40 formula tables transcribed by eye as LaTeX); 840 figures with a data status
 
 ## Known limits
 - OCR text and tables can contain errors; prefer `pdf_pages` for exact wording and numbers. In raw OCR formulas, a.bbb is often a thousands value; use table `formulas`, where these are fixed.

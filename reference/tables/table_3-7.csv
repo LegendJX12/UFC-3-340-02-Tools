@@ -1,11 +1,10 @@
-page,col1,col2,col3
-12/45,Edge Conditions and Loading Diagrams,"Elastic Resistance, r_{e}","Elasto-Plastic Resistance, r_{ep}"
-12/45,,r_{u},-----
-12/45,,R_{u},-----
-12/45,,8 M_{N} 2 L,r_{u}
-12/45,,16 M_{N} 3 L,R_{u}
-12/45,,12 M_{N} 2 L,r_{u}
-12/45,,8 M_{N} L,R_{u}
-12/45,,r_{u},-----
-12/45,,R_{u},-----
-12/45,,R_{u},-----
+page,Edge conditions,Loading,"Elastic resistance, r_e","Elasto-plastic resistance, r_ep"
+12/45,Simply supported both ends,"Uniform load, span L",r_{u},-
+12/45,Simply supported both ends,"Concentrated load P at midspan (L/2, L/2)",R_{u},-
+12/45,"Fixed one end, simply supported other","Uniform load, span L",\frac{8M_{N}}{L^{2}},r_{u}
+12/45,"Fixed one end, simply supported other","Concentrated load P at midspan (L/2, L/2)",\frac{16M_{N}}{3L},R_{u}
+12/45,Fixed both ends,"Uniform load, span L",\frac{12M_{N}}{L^{2}},r_{u}
+12/45,Fixed both ends,"Concentrated load P at midspan (L/2, L/2)",\frac{8M_{N}}{L},R_{u}
+12/45,"Cantilever (fixed one end, free other)","Uniform load, span L",r_{u},-
+12/45,"Cantilever (fixed one end, free other)",Concentrated load P at free end,R_{u},-
+12/45,Simply supported both ends,"Two loads P/2 at third points (L/3, L/3, L/3)",R_{u},-

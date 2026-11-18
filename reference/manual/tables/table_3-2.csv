@@ -1,0 +1,7 @@
+Edge conditions,Yield line location,Limits,Ultimate unit resistance
+Two adjacent edges supported and two edges free,"Diagonal yield line from corner, distance x along free edge",x <= L,\frac{5(M_{HN}+M_{HP})}{x^{2}}\ \text{OR}\ \frac{6LM_{VN}+(5M_{VP}-M_{VN})x}{H^{2}(3L-2x)}
+Two adjacent edges supported and two edges free,"Diagonal yield line from corner, distance y along free edge",y <= H,\frac{5(M_{VN}+M_{VP})}{y^{2}}\ \text{OR}\ \frac{6HM_{HN}+(5M_{HP}-M_{HN})y}{L^{2}(3H-2y)}
+Three edges supported and one edge free,"Regions 1-2-3, yield lines at distance x from each side edge along the free edge",x <= L/2,\frac{5(M_{HN}+M_{HP})}{x^{2}}\ \text{OR}\ \frac{2M_{VN}(3L-x)+10xM_{VP}}{H^{2}(3L-4x)}
+Three edges supported and one edge free,"Regions 1-2-3, yield lines meeting at distance y from the supported edge opposite the free edge, x from side",y <= H,\frac{5(M_{VN}+M_{VP})}{y^{2}}\ \text{OR}\ \frac{4(M_{HN}+M_{HP})(6H-y)}{L^{2}(3H-2y)}
+Four edges supported,"Regions 1-4, yield lines at distance x from the short edges",x <= L/2,\frac{5(M_{HN}+M_{HP})}{x^{2}}\ \text{OR}\ \frac{8(M_{VN}+M_{VP})(3L-x)}{H^{2}(3L-4x)}
+Four edges supported,"Regions 1-4, yield lines at distance y from the long edges",y <= H/2,\frac{5(M_{VN}+M_{VP})}{y^{2}}\ \text{OR}\ \frac{8(M_{HN}+M_{HP})(3H-y)}{L^{2}(3H-4y)}

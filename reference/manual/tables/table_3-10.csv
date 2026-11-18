@@ -1,0 +1,7 @@
+Edge conditions,Yield line location,Limits,"Horizontal shear, V_sH","Vertical shear, V_sV"
+Two adjacent edges supported and two edges free,"Diagonal yield line, distance x along free edge",x <= L,\frac{3r_{u}x}{5},\frac{3r_{u}H\left(2-\frac{x}{L}\right)}{\left(6-\frac{x}{L}\right)}
+Two adjacent edges supported and two edges free,"Diagonal yield line, distance y along free edge",y <= H,\frac{3r_{u}L\left(2-\frac{y}{H}\right)}{\left(6-\frac{y}{H}\right)},\frac{3r_{u}y}{5}
+Three edges supported and one edge free,Yield lines at distance x from each side edge,x <= L/2,\frac{3r_{u}x}{5},\frac{3r_{u}H\left(1-\frac{x}{L}\right)}{\left(3-\frac{x}{L}\right)}
+Three edges supported and one edge free,Yield lines meeting at distance y from supported edge,y <= H,\frac{3r_{u}L\left(2-\frac{y}{H}\right)}{2\left(6-\frac{y}{H}\right)},\frac{3r_{u}y}{5}
+Four edges supported,Yield lines at distance x from the short edges,x <= L/2,\frac{3r_{u}x}{5},\frac{3r_{u}H\left(1-\frac{x}{L}\right)}{2\left(3-\frac{x}{L}\right)}
+Four edges supported,Yield lines at distance y from the long edges,y <= H/2,\frac{3r_{u}L\left(1-\frac{y}{H}\right)}{2\left(3-\frac{y}{H}\right)},\frac{3r_{u}y}{5}

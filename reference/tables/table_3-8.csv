@@ -1,11 +1,11 @@
-page,col1,col2,col3,col4
-12/46,Edge Conditions and Loading Diagrams,"Elastic Stiffness, K_{e}","Elasto- Plastic Stiffness, K_{ep}","Equivalent Elastic Stiffness, K_{E}"
-12/46,,384 EI 4 5 L,_____,384 EI 4 5 L
-12/46,,48 EI 3 L,_____,48 EI 3 L
-12/46,,185 EI 4 L,384 EI 4 5 L,* 160 EI 4 L
-12/46,,107 EI 3 L,48 EI 3 L,* 106 EI 3 L
-12/46,,384 EI 4 L,384 EI 4 5 L,* 307 EI 4 L
-12/46,,192 EI 3 L,* * 48 EI 3 L,* 192 EI 3 L
-12/46,,8 EI 4 L,_____,8 EI 4 L
-12/46,,3 EI 3 L,_____,3 EI 3 L
-12/46,,56 . 4 EI 3 L,_____,56 . 4 EI 3 L
+page,Edge conditions,Loading,"Elastic stiffness, K_e","Elasto-plastic stiffness, K_ep","Equivalent elastic stiffness, K_E"
+12/46,Simply supported both ends,"Uniform load, span L",\frac{384EI}{5L^{4}},-,\frac{384EI}{5L^{4}}
+12/46,Simply supported both ends,"Concentrated load P at midspan (L/2, L/2)",\frac{48EI}{L^{3}},-,\frac{48EI}{L^{3}}
+12/46,"Fixed one end, simply supported other","Uniform load, span L",\frac{185EI}{L^{4}},\frac{384EI}{5L^{4}},\frac{160EI}{L^{4}}\ (*)
+12/46,"Fixed one end, simply supported other","Concentrated load P at midspan (L/2, L/2)",\frac{107EI}{L^{3}},\frac{48EI}{L^{3}},\frac{106EI}{L^{3}}\ (*)
+12/46,Fixed both ends,"Uniform load, span L",\frac{384EI}{L^{4}},\frac{384EI}{5L^{4}},\frac{307EI}{L^{4}}\ (*)
+12/46,Fixed both ends,"Concentrated load P at midspan (L/2, L/2)",\frac{192EI}{L^{3}},\frac{48EI}{L^{3}}\ (**),\frac{192EI}{L^{3}}\ (*)
+12/46,"Cantilever (fixed one end, free other)","Uniform load, span L",\frac{8EI}{L^{4}},-,\frac{8EI}{L^{4}}
+12/46,"Cantilever (fixed one end, free other)",Concentrated load P at free end,\frac{3EI}{L^{3}},-,\frac{3EI}{L^{3}}
+12/46,Simply supported both ends,"Two loads P/2 at third points (L/3, L/3, L/3)",\frac{56.4EI}{L^{3}},-,\frac{56.4EI}{L^{3}}
+12/46,Notes: (*) valid only if M_N = M_P; (**) valid only if M_N < M_P,,,,

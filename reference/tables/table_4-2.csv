@@ -1,7 +1,15 @@
-page,col1,col2,col3,col4,col5
-19/43,TYPE OF STRESS,TYPE OF REINFORCEMENT,"MAXIMUM SUPPORT ROTATION, m (DEGREES)","DYNAMIC DESIGN STRESS REINFORCEMENT, f_{ds} REINFORCEMENT, f_{ds}","DYNAMIC DESIGN STRESS CONCRETE, f_{dc} CONCRETE, f_{dc}"
-19/43,Bending,Tension and Compression,0 < m 2 2 < m 6 6 < m 12,f_{dy} (1) f_{dy} + (f_{du} -f_{dy})/4 (f_{dy}+f_{du})/2,f'_{dc} (2) (2)
-19/43,Diagonal Tension,Stirrups,0 < m 2 2 < m 6 6 < 12 m,f_{dy} f_{dy} f_{dy},f'_{dc} f'_{dc} f'_{dc}
-19/43,Diagonal Tension,Lacing,0 < 2 m 2 < 6 m 6 < m 12,f_{dy} f_{dy} + (f_{du}-f_{dy})/4 (f_{dy} + f_{du})/2,f'_{dc} f'_{dc} f'_{dc}
-19/43,Direct Shear,Diagonal Bars,0 < m 2 2 < m 6 6 < m 12,f_{dy} f_{dy} + (f_{du}-f_{dy})/4 (f_{dy} + f_{du})/2,f'_{dc} (3) (3)
+page,Type of stress,Type of reinforcement,"Maximum support rotation, theta_m (degrees)","Dynamic design stress, reinforcement f_ds","Dynamic design stress, concrete f_dc"
+19/43,Bending,Tension and compression,0 < \theta_{m} \le 2,f_{dy}\ (1),f'_{dc}
+19/43,Bending,Tension and compression,2 < \theta_{m} \le 6,f_{dy}+(f_{du}-f_{dy})/4,(2)
+19/43,Bending,Tension and compression,6 < \theta_{m} \le 12,(f_{dy}+f_{du})/2,(2)
+19/43,Diagonal tension,Stirrups,0 < \theta_{m} \le 2,f_{dy},f'_{dc}
+19/43,Diagonal tension,Stirrups,2 < \theta_{m} \le 6,f_{dy},f'_{dc}
+19/43,Diagonal tension,Stirrups,6 < \theta_{m} \le 12,f_{dy},f'_{dc}
+19/43,Diagonal tension,Lacing,0 < \theta_{m} \le 2,f_{dy},f'_{dc}
+19/43,Diagonal tension,Lacing,2 < \theta_{m} \le 6,f_{dy}+(f_{du}-f_{dy})/4,f'_{dc}
+19/43,Diagonal tension,Lacing,6 < \theta_{m} \le 12,(f_{dy}+f_{du})/2,f'_{dc}
+19/43,Direct shear,Diagonal bars,0 < \theta_{m} \le 2,f_{dy},f'_{dc}
+19/43,Direct shear,Diagonal bars,2 < \theta_{m} \le 6,f_{dy}+(f_{du}-f_{dy})/4,(3)
+19/43,Direct shear,Diagonal bars,6 < \theta_{m} \le 12,(f_{dy}+f_{du})/2,(3)
 19/43,Compression,Column,(4),f_{dy},f'_{dc}
+19/43,Notes: (1) Tension reinforcement only. (2) Concrete crushed and not effective in resisting moment. (3) Concrete is considered not effective and shear is resisted by the reinforcement only. (4) Capacity is not a function of support rotation.,,,,

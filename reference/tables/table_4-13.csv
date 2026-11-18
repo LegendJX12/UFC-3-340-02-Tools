@@ -1,17 +1,13 @@
-page,col1,col2,col3,col4,col5,col6
-22/5,Edge,Yield line,,Horizontal ultimate shear stress,,Vertical ultimate shear stress
-22/5,Edge,Yield line,Limits,Horizontal ultimate shear stress,Limits,Vertical ultimate shear stress
-22/5,conditions,location,Limits,coefficient C_{H},Limits,coefficient C_{V}
-22/5,conditions,location,,coefficient C_{H},,coefficient C_{V}
-22/5,Two adjacent edges fixed and two edges free,,0 < d_{c}/x < ½,,0 < d_{c}/H < ½,
-22/5,Two adjacent edges fixed and two edges free,,½ < d_{c}/x < 1,,½ < d_{c}/H < 1,
-22/5,Two adjacent edges fixed and two edges free,,0 < d_{c}/L < ½,,0 < d_{c}/y < ½,
-22/5,Two adjacent edges fixed and two edges free,,½ < d_{c}/L < 1,,½ < d_{c}/y < 1,
-22/5,Three edges fixed and one edge free,,0 < d_{c}/x < ½,,0 < d_{c}/H < ½,
-22/5,Three edges fixed and one edge free,,½ < d_{c}/x < 1,,½ < d_{c}/H < 1,
-22/5,Three edges fixed and one edge free,,0 < d_{c}/L < ¼,,0 < d_{c}/y < ½,
-22/5,Three edges fixed and one edge free,,¼ < d_{c}/L < ½,,½ < d_{c}/y < 1,
-22/6,Four edges fixed,0 < d_{c}/x < ½,0 < d_{c}/H < ¼,,,
-22/6,Four edges fixed,½ < d_{c}/x < 1,¼ < d_{c}/H < ½,,,
-22/6,Four edges fixed,0 < d_{c}/L < ¼,0 < d_{c}/y < ½,,,
-22/6,Four edges fixed,¼ < d_{c}/L < ½,½ < d_{c}/y < 1,,,
+page,Edge conditions,Yield line location,Limits (horizontal),Horizontal ultimate shear stress coefficient C_H,Limits (vertical),Vertical ultimate shear stress coefficient C_V
+22/5 22/6,Two adjacent edges fixed and two edges free,"Diagonal yield line, distance x",0 <= d_c/x <= 1/2,\frac{30(d_{c}/x)(1-d_{c}/x)^{2}}{(5-4d_{c}/x)},0 <= d_c/H <= 1/2,\frac{6(d_{c}/H)(3+2x/L)(1-d_{c}/H)(2-x/L-d_{c}x/HL)}{(3-2x/L)(6-x/L-4d_{c}x/HL)}
+22/5 22/6,Two adjacent edges fixed and two edges free,"Diagonal yield line, distance x",1/2 <= d_c/x <= 1,5(d_{c}/x)(1-d_{c}/x),1/2 <= d_c/H <= 1,\frac{(d_{c}/H)(3+2x/L)(1-d_{c}/H)(2-x/L-d_{c}x/HL)}{(3-2x/L)(1-d_{c}x/HL)}
+22/5 22/6,Two adjacent edges fixed and two edges free,"Diagonal yield line, distance y",0 <= d_c/L <= 1/2,\frac{6(d_{c}/L)(3+2y/H)(1-d_{c}/L)(2-y/H-d_{c}y/LH)}{(3-2y/H)(6-y/H-4d_{c}y/LH)},0 <= d_c/y <= 1/2,\frac{30(d_{c}/y)(1-d_{c}/y)^{2}}{(5-4d_{c}/y)}
+22/5 22/6,Two adjacent edges fixed and two edges free,"Diagonal yield line, distance y",1/2 <= d_c/L <= 1,\frac{(d_{c}/L)(3+2y/H)(1-d_{c}/L)(2-y/H-d_{c}y/LH)}{(3-2y/H)(1-d_{c}y/LH)},1/2 <= d_c/y <= 1,5(d_{c}/y)(1-d_{c}/y)
+22/5 22/6,Three edges fixed and one edge free,Yield lines at distance x from each side edge,0 <= d_c/x <= 1/2,\frac{30(d_{c}/x)(1-d_{c}/x)^{2}}{(5-4d_{c}/x)},0 <= d_c/H <= 1/2,\frac{6(d_{c}/H)(3+4x/L)(1-d_{c}/H)(1-x/L-d_{c}x/HL)}{(3-4x/L)(3-x/L-4d_{c}x/HL)}
+22/5 22/6,Three edges fixed and one edge free,Yield lines at distance x from each side edge,1/2 <= d_c/x <= 1,5(d_{c}/x)(1-d_{c}/x),1/2 <= d_c/H <= 1,\frac{2(d_{c}/H)(3+4x/L)(1-d_{c}/H)(1-x/L-d_{c}x/HL)}{(3-4x/L)(1-2d_{c}x/HL)}
+22/5 22/6,Three edges fixed and one edge free,Yield lines meeting at distance y from supported edge,0 <= d_c/L <= 1/4,\frac{12(d_{c}/L)(6-y/H)(1-2d_{c}/L)(2-y/H-2d_{c}y/LH)}{(3-2y/H)(6-y/H-8d_{c}y/LH)},0 <= d_c/y <= 1/2,\frac{30(d_{c}/y)(1-d_{c}/y)^{2}}{(5-4d_{c}/y)}
+22/5 22/6,Three edges fixed and one edge free,Yield lines meeting at distance y from supported edge,1/4 <= d_c/L <= 1/2,\frac{2(d_{c}/L)(6-y/H)(1-2d_{c}/L)(2-y/H-2d_{c}y/LH)}{(3-2y/H)(1-2d_{c}y/LH)},1/2 <= d_c/y <= 1,5(d_{c}/y)(1-d_{c}/y)
+22/5 22/6,Four edges fixed,Yield lines at distance x from the short edges,0 <= d_c/x <= 1/2,\frac{30(d_{c}/x)(1-d_{c}/x)^{2}}{(5-4d_{c}/x)},0 <= d_c/H <= 1/4,\frac{24(d_{c}/H)(3-x/L)(1-2d_{c}/H)(1-x/L-2d_{c}x/HL)}{(3-4x/L)(3-x/L-8d_{c}x/HL)}
+22/5 22/6,Four edges fixed,Yield lines at distance x from the short edges,1/2 <= d_c/x <= 1,5(d_{c}/x)(1-d_{c}/x),1/4 <= d_c/H <= 1/2,\frac{8(d_{c}/H)(3-x/L)(1-2d_{c}/H)(1-x/L-2d_{c}x/HL)}{(3-4x/L)(1-4d_{c}x/HL)}
+22/5 22/6,Four edges fixed,Yield lines at distance y from the long edges,0 <= d_c/L <= 1/4,\frac{24(d_{c}/L)(3-y/H)(1-2d_{c}/L)(1-y/H-2d_{c}y/LH)}{(3-4y/H)(3-y/H-8d_{c}y/LH)},0 <= d_c/y <= 1/2,\frac{30(d_{c}/y)(1-d_{c}/y)^{2}}{(5-4d_{c}/y)}
+22/5 22/6,Four edges fixed,Yield lines at distance y from the long edges,1/4 <= d_c/L <= 1/2,\frac{8(d_{c}/L)(3-y/H)(1-2d_{c}/L)(1-y/H-2d_{c}y/LH)}{(3-4y/H)(1-4d_{c}y/LH)},1/2 <= d_c/y <= 1,5(d_{c}/y)(1-d_{c}/y)

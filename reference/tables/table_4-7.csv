@@ -1,21 +1,13 @@
-page,col1,col2,col3,col4,col5,col6
-20/38,Edge,Yield Line Location,Limits,Ultimate Horizontal Shear Stress,Limits,Ultimate Vertical Shear
-20/38,Conditions,Yield Line Location,Limits,v_{uH},Limits,Stress v_{uV}
-20/38,,,0 < d_{e}/x,,0 < d_{e}/H,
-20/38,,,< ½,,< ½,
-20/38,,,½ < d_{e}/x,,½ <,
-20/38,,,< 1,,d_{e}/H < 1,
-20/38,Two adjacent,,,,,
-20/38,edges fixed,,,,,
-20/38,and two,,,,,
-20/38,edges free,,0 < d_{e}/L,,0 < d_{e}/y,
-20/38,,,< ½,,< ½,
-20/38,,,½ < d_{e}/L,,½ < d_{e}/y,
-20/38,,,< 1,,< 1,
-20/38,Three edges fixed and one edge free,VuH Vuv,0 < d_{e}/x < ½ ½ < d_{e}/x < 1,,0 < d_{e}/H < ½ ½ < d_{e}/H < 1,
-20/38,Three edges fixed and one edge free,VuH Vuv,0 < d_{e}/L < ¼,,0 < d_{e}/y < ½,
-20/39,Edge,Yield Line Location,Limits,Ultimate Horizontal Shear Stress,Limits,Ultimate Vertical Shear
-20/39,Conditions,Yield Line Location,Limits,v_{uH},Limits,Stress v_{uV}
-20/39,,,¼ < d_{e}/L < ½,,½ < d_{e}/y < 1,
-20/39,Four edges fixed,,0 < d_{e}/x < ½ ½ < d_{e}/x < 1,When y = H/2,0 < d_{e}/H < ¼ ¼ < d_{e}/H < ½,
-20/39,Four edges fixed,,0 < d_{e}/L < ¼ ¼ < d_{e}/L < ½,,0 < d_{e}/y < ½ ½ < d_{e}/y < 1,When x = L/2
+page,Edge conditions,Yield line location,Limits (horizontal),Ultimate horizontal shear stress v_uH,Limits (vertical),Ultimate vertical shear stress v_uV
+20/38 20/39,Two adjacent edges fixed and two edges free,"Diagonal yield line, distance x",0 <= d_e/x <= 1/2,\frac{3r_{u}(1-d_{e}/x)^{2}}{d_{e}/x(5-4d_{e}/x)},0 <= d_e/H <= 1/2,\frac{3r_{u}(1-d_{e}/H)(2-x/L-d_{e}x/HL)}{d_{e}/H(6-x/L-4d_{e}x/HL)}
+20/38 20/39,Two adjacent edges fixed and two edges free,"Diagonal yield line, distance x",1/2 <= d_e/x <= 1,\frac{r_{u}(1-d_{e}/x)}{2(d_{e}/x)},1/2 <= d_e/H <= 1,\frac{r_{u}(1-d_{e}/H)(2-x/L-d_{e}x/HL)}{2d_{e}/H(1-d_{e}x/HL)}
+20/38 20/39,Two adjacent edges fixed and two edges free,"Diagonal yield line, distance y",0 <= d_e/L <= 1/2,\frac{3r_{u}(1-d_{e}/L)(2-y/H-d_{e}y/LH)}{d_{e}/L(6-y/H-4d_{e}y/LH)},0 <= d_e/y <= 1/2,\frac{3r_{u}(1-d_{e}/y)^{2}}{d_{e}/y(5-4d_{e}/y)}
+20/38 20/39,Two adjacent edges fixed and two edges free,"Diagonal yield line, distance y",1/2 <= d_e/L <= 1,\frac{r_{u}(1-d_{e}/L)(2-y/H-d_{e}y/LH)}{2d_{e}/L(1-d_{e}y/LH)},1/2 <= d_e/y <= 1,\frac{r_{u}(1-d_{e}/y)}{2d_{e}/y}
+20/38 20/39,Three edges fixed and one edge free,Yield lines at distance x from each side edge,0 <= d_e/x <= 1/2,\frac{3r_{u}(1-d_{e}/x)^{2}}{d_{e}/x(5-4d_{e}/x)},0 <= d_e/H <= 1/2,\frac{3r_{u}(1-d_{e}/H)(1-x/L-d_{e}x/HL)}{d_{e}/H(3-x/L-4d_{e}x/HL)}
+20/38 20/39,Three edges fixed and one edge free,Yield lines at distance x from each side edge,1/2 <= d_e/x <= 1,\frac{r_{u}(1-d_{e}/x)}{2(d_{e}/x)},1/2 <= d_e/H <= 1,\frac{r_{u}(1-d_{e}/H)(1-x/L-d_{e}x/HL)}{d_{e}/H(1-2d_{e}x/HL)}
+20/38 20/39,Three edges fixed and one edge free,Yield lines meeting at distance y from supported edge,0 <= d_e/L <= 1/4,\frac{3r_{u}(1-2d_{e}/L)(2-y/H-2d_{e}y/LH)}{2d_{e}/L(6-y/H-8d_{e}y/LH)},0 <= d_e/y <= 1/2,\frac{3r_{u}(1-d_{e}/y)^{2}}{d_{e}/y(5-4d_{e}/y)}
+20/38 20/39,Three edges fixed and one edge free,Yield lines meeting at distance y from supported edge,1/4 <= d_e/L <= 1/2,\frac{r_{u}(1-2d_{e}/L)(2-y/H-2d_{e}y/LH)}{4d_{e}/L(1-2d_{e}y/LH)},1/2 <= d_e/y <= 1,\frac{r_{u}(1-d_{e}/y)}{2d_{e}/y}
+20/38 20/39,Four edges fixed,Yield lines at distance x from the short edges (when y = H/2),0 <= d_e/x <= 1/2,\frac{3r_{u}(1-d_{e}/x)^{2}}{d_{e}/x(5-4d_{e}/x)},0 <= d_e/H <= 1/4,\frac{3r_{u}(1/2-d_{e}/H)(1-x/L-2d_{e}x/HL)}{d_{e}/H(3-x/L-8d_{e}x/HL)}
+20/38 20/39,Four edges fixed,Yield lines at distance x from the short edges (when y = H/2),1/2 <= d_e/x <= 1,\frac{r_{u}(1-d_{e}/x)}{2d_{e}/x},1/4 <= d_e/H <= 1/2,\frac{r_{u}(1/2-d_{e}/H)(1-x/L-2d_{e}x/HL)}{d_{e}/H(1-4d_{e}x/HL)}
+20/38 20/39,Four edges fixed,Yield lines at distance y from the long edges (when x = L/2),0 <= d_e/L <= 1/4,\frac{3r_{u}(1/2-d_{e}/L)(1-y/H-2d_{e}y/LH)}{d_{e}/L(3-y/H-8d_{e}y/LH)},0 <= d_e/y <= 1/2,\frac{3r_{u}(1-d_{e}/y)^{2}}{d_{e}/y(5-4d_{e}/y)}
+20/38 20/39,Four edges fixed,Yield lines at distance y from the long edges (when x = L/2),1/4 <= d_e/L <= 1/2,\frac{r_{u}(1/2-d_{e}/L)(1-y/H-2d_{e}y/LH)}{d_{e}/L(1-4d_{e}y/LH)},1/2 <= d_e/y <= 1,\frac{r_{u}(1-d_{e}/y)}{2d_{e}/y}

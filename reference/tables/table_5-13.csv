@@ -1,15 +1,10 @@
-page,col1,col2,col3,col4,col5
-28/49,PLASTIC MOMENT MP,PLASTIC MOMENT MP,PLASTIC MOMENT MP,,
-28/49,PLASTIC MOMENT MP,PLASTIC MOMENT MP,PLASTIC MOMENT MP,COLLAPSEMECHANISM,FIXED BASES
-28/49,1. BEAM MECHANISM,$\frac{w L^{2}}{16}$,$\frac{w L^{2}}{16}$,,
-28/49,2.BEAM MECHANISM,$\frac{\omega w H^{2}}{4(2C+1)}$,$\frac{\alpha w H^{2}}{4(3C+1)}$,3a. PANEL MECHANISM,$\frac{\alpha wH^{2}}{2}\times\frac{1}{2+(n-1)C_{1}}\quad(C_{1}\overline{<}2)^{*}\quad\left[\quad\frac{\alpha wH^{2}}{4}\times\frac{1}{1+(n-1)C_{1}+C}\quad(C_{1}\overline{<}2)^{*}\right]$
-28/49,3b. PANEL MECHANISM,$\frac{\alpha w H^{2}}{4n}\left(C_{1}>2\right)^{\star}$,$\frac{owH^{2}}{2}\times\frac{1}{2(n+C)+(n-1)C_{1}}\quad(C_{1}>2)^{\star}$,4.COMBINED MECHANISM,$\frac{w}{8n}\left(\alpha H^{2}+\frac{n}{2}L^{2}\right)$
-28/49,5a. COMBINED MECHANISM,$\frac{\displaystyle\frac{3}{8}\omega w H^{2}}{\displaystyle\frac{1}{2}+\frac{1}{2}+\frac{C_{1}}{2}(n-1)}\quad(C_{1}<2)^{\star}.$,$\frac{\frac{3}{8}\omega wH^{2}}{\frac{5}{2}C+(n-1)C_{1}+\frac{1}{2}}\quad(C_{1}\bar{<}2)^{\star}$,5b. COMBINED MECHANISM,$\frac{\frac{3}{8}\omega wH^{2}}{C+\left(n-\frac{1}{2}\right)}\quad\left(C_{1}>2\right)^{\star}$
-28/49,$\left(C_{1}>2\right)^{\star}$,$\frac{5}{2}C+(n-1)\frac{C_{1}}{2}+\left(n-\frac{1}{2}\right)$,6. COMBINED MECHANISM,$\frac{w}{8}\left[3\alpha H^{2}+(n-1)L^{2}\right]$,$\frac{w}{8}\left[3\alpha H^{2}+(n-1)L^{2}\right]$
-28/49,$C+\left(2n-\frac{3}{2}\right)$,$\frac{5}{2}C+(n-1)\frac{C_{1}}{2}+\left(2n-\frac{3}{2}\right)$,W,$M{P,
-28/49,$\infty$,"$n={\mathrm{n u m b e r~o f~b a y s}}=1,2,3,\ldots$",$\mathsf{C M}_{\mathsf{P}}$,$C_{}_{$,H
-28/49,L,L,L,,
-28/49,,,,,
-28/49,,,,,
-28/49,,,,,
-28/49,,,,,
+page,Collapse mechanism,"Plastic moment M_p, pinned bases","Plastic moment M_p, fixed bases"
+28/49,1. Beam mechanism,\frac{wL^{2}}{16},\frac{wL^{2}}{16}
+28/49,2. Beam mechanism,\frac{\alpha wH^{2}}{4(2C+1)},\frac{\alpha wH^{2}}{4(3C+1)}
+28/49,3a. Panel mechanism,\frac{\alpha wH^{2}}{2}\times\frac{1}{2+(n-1)C_{1}}\quad(C_{1}\leq 2)^{*},\frac{\alpha wH^{2}}{4}\times\frac{1}{1+(n-1)C_{1}+C}\quad(C_{1}\leq 2)^{*}
+28/49,3b. Panel mechanism,\frac{\alpha wH^{2}}{4n}\quad(C_{1}\geq 2)^{*},\frac{\alpha wH^{2}}{2}\times\frac{1}{2(n+C)+(n-1)C_{1}}\quad(C_{1}\geq 2)^{*}
+28/49,4. Combined mechanism,\frac{w}{8n}\left(\alpha H^{2}+\frac{n}{2}L^{2}\right),\frac{w}{2}\times\frac{\alpha H^{2}+\frac{n}{2}L^{2}}{2(2n+C)+(n-1)C_{1}}
+28/49,5a. Combined mechanism,\frac{\frac{3}{8}\alpha wH^{2}}{C+\frac{1}{2}+\frac{C_{1}}{2}(n-1)}\quad(C_{1}\leq 2)^{*},\frac{\frac{3}{8}\alpha wH^{2}}{\frac{5}{2}C+(n-1)C_{1}+\frac{1}{2}}\quad(C_{1}\leq 2)^{*}
+28/49,5b. Combined mechanism,\frac{\frac{3}{8}\alpha wH^{2}}{C+\left(n-\frac{1}{2}\right)}\quad(C_{1}\geq 2)^{*},\frac{\frac{3}{8}\alpha wH^{2}}{\frac{5}{2}C+(n-1)\frac{C_{1}}{2}+\left(n-\frac{1}{2}\right)}\quad(C_{1}\geq 2)^{*}
+28/49,6. Combined mechanism,\frac{\frac{w}{8}\left[3\alpha H^{2}+(n-1)L^{2}\right]}{C+\left(2n-\frac{3}{2}\right)},\frac{\frac{w}{8}\left[3\alpha H^{2}+(n-1)L^{2}\right]}{\frac{5}{2}C+(n-1)\frac{C_{1}}{2}+\left(2n-\frac{3}{2}\right)}
+28/49,"Notes: frame of n bays of span L, height H; girder plastic moment M_p, exterior column C M_p, interior column C_1 M_p; lateral load alpha w, roof load w. n = number of bays = 1, 2, 3, ...; w = uniform equivalent static load. (*) For C_1 = 2 hinges form in the girders and columns at interior joints.",,

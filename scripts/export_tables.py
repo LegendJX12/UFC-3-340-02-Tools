@@ -464,7 +464,8 @@ def main():
         first_checks = len(check_rows)
         if not t['blocks'].strip():  # typed in by hand
             rows = list(csv.reader(open(os.path.join(a.manual, 'tables', f'table_{num}.csv'), encoding='utf-8')))
-            out_rows = [['page'] + rows[0]] + [['typed'] + r for r in rows[1:]]
+            src = t.get('source_pages', '') or 'typed'
+            out_rows = [['page'] + rows[0]] + [[src] + r for r in rows[1:]]
             methods.append('typed from PDF text layer')
             n_num = sum(len(numbers(c)) for r in rows[1:] for c in r)
         for item in t['blocks'].split():
@@ -561,10 +562,11 @@ def main():
                 cells_rows.append((num, ri, ci, r[0], v))
         mine = check_rows[first_checks:]
         open_ = sum(1 for c in mine if c[10] == 'TO CHECK')
-        status = ('typed or read by hand: see note' if not t['blocks'].strip() else
+        status = (('formula table checked by eye: see note' if t['kind'] == 'formula' else 'typed or read by hand: see note')
+                  if not t['blocks'].strip() else
                   'two readings agree' if not mine else
                   'differences resolved' if open_ == 0 else f'{open_} differences to check')
-        index_rows.append([num, title, t['kind'], ' '.join(pages) or 'typed', fname, len(out_rows), n_num, n_agree, len(mine),
+        index_rows.append([num, title, t['kind'], ' '.join(pages) or t.get('source_pages', ''), fname, len(out_rows), n_num, n_agree, len(mine),
                            n_fixed, rows_num, rows_ok, '; '.join(unmatched_rows), '; '.join(methods), status, t['note']])
 
     header = ['number', 'title', 'kind', 'pages', 'file', 'rows', 'numbers', 'numbers_agreeing', 'differences', 'cells_corrected',
@@ -591,7 +593,7 @@ def main():
     if db.execute("SELECT name FROM sqlite_master WHERE name='data_status'").fetchone():
         for r in index_rows:
             num, kind, status = r[0], r[2], r[-2]
-            st = 'checked data table' if kind == 'data' else 'formula table (formulas not yet checked by eye)'
+            st = 'checked data table' if kind == 'data' else 'checked formula table'
             note = f'reference/tables/{r[4]}: {status}'
             if db.execute("SELECT 1 FROM data_status WHERE type='table' AND number=?", (num,)).fetchone():
                 db.execute("UPDATE data_status SET status=?, priority='', note=? WHERE type='table' AND number=?", (st, note, num))

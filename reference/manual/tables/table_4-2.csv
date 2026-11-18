@@ -1,0 +1,15 @@
+Type of stress,Type of reinforcement,"Maximum support rotation, theta_m (degrees)","Dynamic design stress, reinforcement f_ds","Dynamic design stress, concrete f_dc"
+Bending,Tension and compression,0 < \theta_{m} \le 2,f_{dy}\ (1),f'_{dc}
+Bending,Tension and compression,2 < \theta_{m} \le 6,f_{dy}+(f_{du}-f_{dy})/4,(2)
+Bending,Tension and compression,6 < \theta_{m} \le 12,(f_{dy}+f_{du})/2,(2)
+Diagonal tension,Stirrups,0 < \theta_{m} \le 2,f_{dy},f'_{dc}
+Diagonal tension,Stirrups,2 < \theta_{m} \le 6,f_{dy},f'_{dc}
+Diagonal tension,Stirrups,6 < \theta_{m} \le 12,f_{dy},f'_{dc}
+Diagonal tension,Lacing,0 < \theta_{m} \le 2,f_{dy},f'_{dc}
+Diagonal tension,Lacing,2 < \theta_{m} \le 6,f_{dy}+(f_{du}-f_{dy})/4,f'_{dc}
+Diagonal tension,Lacing,6 < \theta_{m} \le 12,(f_{dy}+f_{du})/2,f'_{dc}
+Direct shear,Diagonal bars,0 < \theta_{m} \le 2,f_{dy},f'_{dc}
+Direct shear,Diagonal bars,2 < \theta_{m} \le 6,f_{dy}+(f_{du}-f_{dy})/4,(3)
+Direct shear,Diagonal bars,6 < \theta_{m} \le 12,(f_{dy}+f_{du})/2,(3)
+Compression,Column,(4),f_{dy},f'_{dc}
+Notes: (1) Tension reinforcement only. (2) Concrete crushed and not effective in resisting moment. (3) Concrete is considered not effective and shear is resisted by the reinforcement only. (4) Capacity is not a function of support rotation.,,,,

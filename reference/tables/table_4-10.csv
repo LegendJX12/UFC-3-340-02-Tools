@@ -1,20 +1,13 @@
-page,col1,col2,col3,col4,col5,col6,col7,col8,col9,col10,col11
-22/2,Edge Conditions,Limits,"Impulse Coefficient, Cu 3.333(KLM)u 287 x/H 4",Locations X,Locations X,Locations X,Locations X,Locations X,Locations X,Locations X,
-22/2,Two adjacent edges,+ (k)u 4,0≤xH≤ 1 $H≤x\,2(PV/PH)(1-x/H 2 x/ H-1 $(L^{}$ ×,2(PV/PH)(1-x/H 2 x/ H-1 $(L^{}$ ×,2(PV/PH)(1-x/H 2 x/ H-1 $(L^{}$ ×,2(PV/PH)(1-x/H 2 x/ H-1 $(L^{}$ ×,2(PV/PH)(1-x/H 2 x/ H-1 $(L^{}$ ×,2(PV/PH)(1-x/H 2 x/ H-1 $(L^{}$ ×,2(PV/PH)(1-x/H 2 x/ H-1 $(L^{}$ ×,
-22/2,Two adjacent edges,+ (k)u 4,287,supported and two edges free,supported and two edges free,,,,,,
-22/2,Two adjacent edges,+ (k)u 4,287,3.333(K}M)u 287 $(x}1^{}$,+(LM)u 2,+(LM)u 2,+(LM)u 2,4.705(L/H-x/H)tanλ (LH){}$,4.705(L/H-x/H)tanλ (LH){}$,4.705(L/H-x/H)tanλ (LH){}$,
-22/2,Two adjacent edges,(kLM)u2(L/H−y /H() (H)^}$,(kLM)u2(L/H−y /H() (H)^}$,$2(kM)u$ $xH-ra{}+$ 4 y/H,0≤y/L≤ 1 Y,0≤y/L≤ 1 Y,0≤y/L≤ 1 Y,287,287,+,+
-22/2,Two adjacent edges,H,L 4,3.33(K}M)u(L/H) $(y/}){}$,+（KM)²/H-L/H+4.705（1y/H)tn) 1,+（KM)²/H-L/H+4.705（1y/H)tn) 1,+（KM)²/H-L/H+4.705（1y/H)tn) 1,0.2126 y/ L,0.2126 y/ L,0.2126 y/ L,
-22/2,Two adjacent edges,H,L 4,,,,,,,,
-22/2,Two adjacent edges,$L≤y≤,287(pv/PH) 3.333(KLM)u 287 ×/H,287(pv/PH) 3.333(KLM)u 287 ×/H,287(pv/PH) 3.333(KLM)u 287 ×/H,"Where,\λ=12{-tan","Where,\λ=12{-tan","Where,\λ=12{-tan",-1,-1,
-22/2,X X,X X,0.833(K_M) 1148 u $(x}^{}$,"0.2126 Where,}=12{°-tan -1 ×/H","0.2126 Where,}=12{°-tan -1 ×/H","0.2126 Where,}=12{°-tan -1 ×/H",,,,,
-22/2,+2(kM) 2,+2(kM) 2,x/H-1 $(L/H){2}$ +,4.705(L/2H-×/H)tanλ (/H){}$,4.705(L/2H-×/H)tanλ (/H){}$,L12 0\≤y/L≤ 717 $_{$,L12 0\≤y/L≤ 717 $_{$,,,,
-22/2,X H,X H,1.333(K_M)y(pV/PH) y/H,+3.2(KM) 2,+3.2(KM) 2,+3.2(KM) 2,+3.2(KM) 2,+3.2(KM) 2,,,
-22/2,,,,,,,,,,,
-22/2,L,L,L12≤y≤= H,1.667(KLM)(L/H),1.667(KLM)(L/H),1.667(KLM)(L/H),1.667(KLM)(L/H),1.667(KLM)(L/H),1.667(KLM)(L/H),1.667(KLM)(L/H),
-22/3,Four edges supported,0 < x/H < ½,,,,,,,,,
-22/3,,H/2 < x <,,,,,,,,,
-22/3,,L/2,,,,,,,,,
-22/3,,0 < y/L < ½,,,,,,,,,
-22/3,,L/2 < y < H/2,,,,,,,,,
-22/3,,L/2 < y < H/2,,,,,,,,,
+page,Edge conditions,Yield line location,Limits,Impulse coefficient C_u
+22/2 22/3,Two adjacent edges supported and two edges free,"Diagonal yield line, distance x",0 <= x/H <= 1,287\left[\frac{3.333(K_{LM})_{u}}{x/H}+(K_{LM})_{u}^{2}(p_{V}/p_{H})(1-x/H)\right]
+22/2 22/3,Two adjacent edges supported and two edges free,"Diagonal yield line, distance x",H <= x <= L,287\left[\frac{3.333(K_{LM})_{u}}{(x/H)^{2}}+(K_{LM})_{u}^{2}\left(\frac{x/H-1}{(L/H)^{2}}+\frac{4.705(L/H-x/H)\tan\lambda}{(L/H)^{2}}\right)\right];\ \text{where }\lambda=12^{\circ}-\tan^{-1}\left(\frac{0.2126}{x/H}\right)
+22/2 22/3,Two adjacent edges supported and two edges free,"Diagonal yield line, distance y",0 <= y/L <= 1,287\left[\frac{3.333(K_{LM})_{u}(p_{V}/p_{H})}{y/H}+\frac{(K_{LM})_{u}^{2}(L/H-y/H)}{(L/H)^{2}}\right]
+22/2 22/3,Two adjacent edges supported and two edges free,"Diagonal yield line, distance y",L <= y <= H,287(p_{V}/p_{H})\left[\frac{3.333(K_{LM})_{u}(L/H)}{(y/H)^{2}}+(K_{LM})_{u}^{2}(y/H-L/H+4.705(1-y/H)\tan\lambda)\right];\ \text{where }\lambda=12^{\circ}-\tan^{-1}\left(\frac{0.2126}{y/L}\right)
+22/2 22/3,Three edges supported and one edge free,Yield lines at distance x from each side edge,0 <= x/H <= 1,287\left[\frac{3.333(K_{LM})_{u}}{x/H}+(K_{LM})_{u}^{2}(p_{V}/p_{H})(1-x/H)\right]
+22/2 22/3,Three edges supported and one edge free,Yield lines at distance x from each side edge,H <= x <= L/2,1148\left[\frac{0.833(K_{LM})_{u}}{(x/H)^{2}}+2(K_{LM})_{u}^{2}\left(\frac{x/H-1}{(L/H)^{2}}+\frac{4.705(L/2H-x/H)\tan\lambda}{(L/H)^{2}}\right)\right];\ \text{where }\lambda=12^{\circ}-\tan^{-1}\left(\frac{0.2126}{x/H}\right)
+22/2 22/3,Three edges supported and one edge free,Yield lines meeting at distance y from supported edge,0 <= y/L <= 1/2,717\left[\frac{1.333(K_{LM})_{u}(p_{V}/p_{H})}{y/H}+3.2(K_{LM})_{u}^{2}\frac{(L/2H-y/H)}{(L/H)^{2}}\right]
+22/2 22/3,Three edges supported and one edge free,Yield lines meeting at distance y from supported edge,L/2 <= y <= H,287(p_{V}/p_{H})\left[\frac{1.667(K_{LM})_{u}(L/H)}{(y/H)^{2}}+(K_{LM})_{u}^{2}(y/H-L/2H+4.705(1-y/H)\tan\lambda)\right];\ \text{where }\lambda=12^{\circ}-\tan^{-1}\left(\frac{0.2126}{2y/L}\right)
+22/2 22/3,Four edges supported,Yield lines at distance x from the short edges,0 <= x/H <= 1/2,1148\left[\frac{0.833(K_{LM})_{u}}{x/H}+(K_{LM})_{u}^{2}(p_{V}/p_{H})(1-2x/H)\right]
+22/2 22/3,Four edges supported,Yield lines at distance x from the short edges,H/2 <= x <= L/2,1148\left[\frac{0.417(K_{LM})_{u}}{(x/H)^{2}}+2(K_{LM})_{u}^{2}\left(\frac{x/H-1/2}{(L/H)^{2}}+\frac{4.705(L/2H-x/H)\tan\lambda}{(L/H)^{2}}\right)\right];\ \text{where }\lambda=12^{\circ}-\tan^{-1}\left(\frac{0.2126}{2x/H}\right)
+22/2 22/3,Four edges supported,Yield lines at distance y from the long edges,0 <= y/L <= 1/2,1148\left[\frac{0.833(K_{LM})_{u}(p_{V}/p_{H})}{y/H}+(K_{LM})_{u}^{2}\frac{(L/H-2y/H)}{(L/H)^{2}}\right]
+22/2 22/3,Four edges supported,Yield lines at distance y from the long edges,L/2 <= y <= H/2,1148(p_{V}/p_{H})\left[\frac{0.417(K_{LM})_{u}(L/H)}{(y/H)^{2}}+(K_{LM})_{u}^{2}(2y/H-L/H+4.705(1-2y/H)\tan\lambda)\right];\ \text{where }\lambda=12^{\circ}-\tan^{-1}\left(\frac{0.2126}{2y/L}\right)
