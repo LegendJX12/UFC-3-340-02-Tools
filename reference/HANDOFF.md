@@ -25,6 +25,7 @@ python3 scripts/digitize_figures.py --pdf-root source/pdf --out graphs/generated
 python3 scripts/build_db.py --ocr-root ocr --grf-root graphs --index reference/UFC_3-340-02_index.xlsx --pdf-root source/pdf --out reference/ufc_340_02.db
 python3 scripts/map_grf.py --db reference/ufc_340_02.db --grf-root graphs --csv reference/grf_to_guide.csv
 python3 scripts/check_equations.py --db reference/ufc_340_02.db --csv reference/equation_check.csv --issues reference/formula_issues.csv --review reference/equation_review.csv
+python3 scripts/check_equation_lines.py --db reference/ufc_340_02.db --csv reference/equation_lines.csv --review reference/equation_review.csv --status reference/equation_status.csv
 python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/missing_data.csv
 ```
 
@@ -34,6 +35,7 @@ python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/mi
 | `grf.py` | Reader for DPLOT `.grf` files (both `data` and `dx` layouts, curves kept separate with labels) |
 | `map_grf.py` | `grf_to_guide.csv` and table `grf_guide_links`: every plot file to its guide figure |
 | `check_equations.py` | `equation_check.csv` / table `equation_check` (OCR vs PDF text), `formula_issues.csv` / table `formula_issues` (OCR error patterns), and loads the hand-checked `equation_review.csv` |
+| `check_equation_lines.py` | `equation_lines.csv` (line-level check) and `equation_status.csv` / table `equation_status`: one verdict per equation |
 | `audit_missing.py` | `missing_data.csv` and table `data_status`: every figure and table with its data status |
 | `sdof_bilinear.py` | Calculator: maximum response of an elasto-plastic SDOF system to a bilinear-triangular pulse |
 | `generate_missing.py` | Writes the computed plot files in `graphs/generated/` |
@@ -61,36 +63,32 @@ Earlier builds read the `.grf` files wrongly: all curves of a file were merged i
 - 113 curves have no label in the file (single-curve plots or unlabelled reference lines).
 - Values checked against charts: 2-194 (a) and (b), 2-207, 2A-23, 4A-8.
 
-## 3. Equations (`equation_check.csv`)
-The PDFs have an exact text layer, now stored in table `pdf_pages`. Each OCR equation with a number was compared with the PDF line ending in the same number (numbers only; Greek letters are images in the PDF).
+## 3. Equations (`equation_status.csv`: one verdict per numbered equation)
+The PDFs have an exact text layer (table `pdf_pages`), but Greek letters and some symbols are small images, and exponents and fraction parts sit on separate text lines. Every numbered equation found by OCR (501) was checked against it:
 
-| Status | Count | Meaning |
+1. **Number check** (`check_equations.py`, `check_equation_lines.py`): numbers in the OCR equation vs the PDF lines around the equation number. Multi-line OCR blocks are split line by line.
+2. **Variable-name check**: OCR names one letter away from a name in the PDF text (e.g. f_dv vs f_dy).
+3. **By eye**: every equation flagged by 1 or 2, every equation that is an image in the PDF (40), and the 16 earlier "differ" cases were compared with the rendered PDF page.
+
+| Verdict | Count | Meaning |
 |---|---|---|
-| match | 254 | Same numbers in OCR and PDF |
-| close | 191 | One side contains the other (equation split over lines). Probably fine; check before use. |
-| differ | 16 | Hand-checked against the rendered PDF: see below and `equation_review.csv`. |
-| no-pdf-line | 40 | The equation is an image in the PDF; check by eye. |
+| ok (automatic) | 344 | Numbers and variable names agree with the PDF text |
+| ok (checked by eye) | 48 | Flagged, but correct on the rendered page (text-layer artefacts) |
+| ok (minor slip) | 16 | Usable; small slip noted (e.g. bracket style, θ shown as O) |
+| **error** | **88** | OCR is wrong; correct text from the PDF in `equation_review.csv` |
+| **missed** | **3** | OCR has no formula (4-45b, 4-196, 4-199); text from the PDF in the review |
+| check operator | 2 | 2-24, 2-25: OCR divides, PDF prints multiplication (2-28 has the same question and an error) |
 
-How "differ" is decided: for each OCR equation number, the nearest OCR formula on the page is compared with the PDF text line ending in that number. Only the numbers in each are compared (constants, exponents, subscripts). "differ" means each side has numbers the other lacks.
+Most common OCR faults (see `equation_review.csv` for each equation):
+- **y read as v**: f_dy, f_py, f_y, T_y, I_y, m_y, r_y read as f_dv, f_pv, f_v, ... (about 15 equations).
+- **Primes lost**: (p - p'), C'_1, X'_f, d', f'dc read without the prime; several equations become identities or zero.
+- **E read as F** (X_E, K_E), **p read as o/D** (M_p, M_up), **l (length) read as 1 or I**, **½ and ¼ read as a root sign or γ**.
+- **Thousands comma read as decimal point** (87,000 as 87.000) and **lost minus signs** in powers of ten.
+- **Brackets and fraction bars** misplaced (4-28, 4-166, 4-192, 6-31).
 
-**Review of the 16 (`equation_review.csv`, table `equation_review`):**
-| Finding | Count | Equations |
-|---|---|---|
-| OCR error | 6 | 2-23 (exponent 7.2944 should be 1.2944), 2-60 and 2-62 (47,690 and 58,400 read as 47.690 and 58.400), 4-140b (bracket/exponent wrong, 2,500 read as 2.500), 6-22b and 6-23b (f_ps read as f_os, 60,000/30,000 read as 60.000/30.000) |
-| OCR missed the equation | 2 | 4-196, 4-199 (the "Xf > 2d" equations); correct text from the PDF in the review file |
-| Pairing mistake, OCR correct | 4 | 2-21, 4-5, 4-71, 4-181c |
-| PDF text splits a number, OCR correct | 4 | 2-67, 4-173, 5-17, 6-7 |
+**Limits:** "ok (automatic)" cannot see Greek letters or primes, which are images or tiny marks in the PDF. A lost prime in an equation whose numbers and other names match would pass. For any equation used in a calculation, read it from the rendered PDF page.
 
-Found in the same blocks while checking (not in the 16):
-- 2-28: exponent G read as O. 2-30: minus signs lost (10^-4, 10^-9 read as 10^4, 10^9). 4-140a: spurious symbol. 4-181b: Cf read as C_t, "/" lost in R/W^0.333.
-- **2-24, 2-25, 2-28: OCR has a division between brackets; the PDF prints multiplication** (a small dot in 2-24, brackets side by side in 2-25 and 2-28). The PDF form is used; confirm against another copy of the guide if one is available.
-
-**Error patterns across all OCR formulas (`formula_issues.csv`, table `formula_issues`):**
-- Thousands comma read as decimal point: **207** places on 82 pages, mostly in worked examples (e.g. 153,600 read as 153.600). Any number in OCR LaTeX of the form a.bbb may be a thousands value.
-- Minus lost in a power of ten: 1 more found by scan (Equation 2-30).
-- The "close" group (191) compares whole multi-line blocks, so errors inside a block can hide there (2-30 was found this way). Splitting blocks line by line would check them properly.
-
-Rule for the analysis tools: take equations from the PDF text (`pdf_pages`) or from a checked source, not from OCR LaTeX alone.
+**Thousands-comma pattern across all OCR formulas (`formula_issues.csv`):** 207 places on 82 pages, mostly in worked examples.
 
 ## 4. Missing data (`missing_data.csv`, table `data_status`)
 840 figures and 84 tables, each with a status.
@@ -141,13 +139,13 @@ The WebPlotDigitizer website cannot be reached from the build machine, so its me
 
 ## Still open
 1. Compare the digitized 2-8 and 2-16 with any other copy of these charts if one becomes available.
-2. Check the 40 `no-pdf-line` equations by eye, and the 191 `close` blocks line by line.
-3. Confirm the operator in Equations 2-24, 2-25, 2-28 (multiply in the PDF, divide in OCR) against another copy of the guide.
+2. Confirm the operator in Equations 2-24, 2-25, 2-28 (multiply in the PDF, divide in OCR) against another copy of the guide.
+3. Read primes and Greek letters from the rendered page for any equation used in a tool (see the limits in section 3).
 4. Table cells are OCR; check values against the PDF text layer before use.
 5. 134 images have no page assigned (`images.page` empty).
 
 ## Suggested next steps for analysis tools
 1. Pick a plot file for a figure with `grf_guide_links`, and read its curves from `plot_curves` / `plot_points` (curve `label` gives the parameter, e.g. overpressure).
 2. Levels A, B and E are all checked links. Mind the chapter 6 renumbering (`plot_number` vs `figure`).
-3. Use `pdf_pages` text for equations and table values; it is exact, unlike OCR.
+3. For equations, use `equation_status`: take the text from `equation_review.csv` where the verdict is error or missed, and check primes and Greek letters on the rendered page. Use `pdf_pages` for table values; it is exact, unlike OCR.
 4. Check `data_status` before relying on a figure or table.
