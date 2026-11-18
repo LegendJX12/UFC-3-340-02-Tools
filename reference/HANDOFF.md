@@ -26,6 +26,7 @@ python3 scripts/build_db.py --ocr-root ocr --grf-root graphs --index reference/U
 python3 scripts/map_grf.py --db reference/ufc_340_02.db --grf-root graphs --csv reference/grf_to_guide.csv
 python3 scripts/check_equations.py --db reference/ufc_340_02.db --csv reference/equation_check.csv --issues reference/formula_issues.csv --review reference/equation_review.csv
 python3 scripts/check_equation_lines.py --db reference/ufc_340_02.db --csv reference/equation_lines.csv --review reference/equation_review.csv --status reference/equation_status.csv
+python3 scripts/fix_formulas.py --db reference/ufc_340_02.db --csv reference/formula_fixes.csv
 python3 scripts/build_equations.py --db reference/ufc_340_02.db --corrections reference/equation_corrections.csv --csv reference/equations.csv --katex scripts/katex_check.js
 python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/missing_data.csv
 ```
@@ -37,6 +38,7 @@ python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/mi
 | `map_grf.py` | `grf_to_guide.csv` and table `grf_guide_links`: every plot file to its guide figure |
 | `check_equations.py` | `equation_check.csv` / table `equation_check` (OCR vs PDF text), `formula_issues.csv` / table `formula_issues` (OCR error patterns), and loads the hand-checked `equation_review.csv` |
 | `check_equation_lines.py` | `equation_lines.csv` (line-level check) and `equation_status.csv` / table `equation_status`: one verdict per equation |
+| `fix_formulas.py` | Table `formulas` and `formula_fixes.csv`: every OCR formula block with thousands separators fixed |
 | `build_equations.py` | Table `equations` and `equations.csv`: one checked LaTeX form per numbered equation (corrections from `equation_corrections.csv`) |
 | `audit_missing.py` | `missing_data.csv` and table `data_status`: every figure and table with its data status |
 | `sdof_bilinear.py` | Calculator: maximum response of an elasto-plastic SDOF system to a bilinear-triangular pulse |
@@ -91,12 +93,12 @@ Most common OCR faults (see `equation_review.csv` for each equation):
 - **y read as v**: f_dy, f_py, f_y, T_y, I_y, m_y, r_y read as f_dv, f_pv, f_v, ... (about 15 equations).
 - **Primes lost**: (p - p'), C'_1, X'_f, d', f'dc read without the prime; several equations become identities or zero.
 - **E read as F** (X_E, K_E), **p read as o/D** (M_p, M_up), **l (length) read as 1 or I**, **½ and ¼ read as a root sign or γ**.
-- **Thousands comma read as decimal point** (87,000 as 87.000) and **lost minus signs** in powers of ten.
+- **Thousands comma read as decimal point** (87,000 as 87.000; fixed in tables `equations` and `formulas`) and **lost minus signs** in powers of ten.
 - **Brackets and fraction bars** misplaced (4-28, 4-166, 4-192, 6-31).
 
 **Limits:** the 344 "ok (automatic)" equations (taken from OCR in `equations`) were not each read by eye; the automatic checks cannot see Greek letters or primes, which are images or tiny marks in the PDF. A lost prime in an equation whose numbers and other names match would pass. For any equation used in a calculation, read it from the rendered PDF page.
 
-**Thousands-comma pattern across all OCR formulas (`formula_issues.csv`):** 207 places on 82 pages, mostly in worked examples.
+**Thousands commas in OCR formulas (worked examples included): fixed.** The OCR read 207 thousands commas as decimal points (87,000 as 87.000; 4,409,934 as 4.409.934), on 82 pages. Table `formulas` holds every OCR formula block (1,876) with these fixed (column `latex`; original in `ocr_latex`); `formula_fixes.csv` lists each fix with the PDF line that shows the comma form. A number is changed only where the PDF page prints the comma form and not the dotted one; 0 remain. 164 fixes were confirmed by neighbouring numbers on the same PDF line, 39 by reading them (values printed alone, such as "fy 66,000", "FE 153,600 lb"), and 4 have no other number nearby and rest on the page rule alone. `formula_issues.csv` keeps the list as found in the raw OCR. Other OCR mistakes in worked-example formulas (letters, primes) were not reviewed; use the PDF page for those.
 
 ## 4. Missing data (`missing_data.csv`, table `data_status`)
 840 figures and 84 tables, each with a status.

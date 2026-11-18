@@ -30,7 +30,8 @@ See `reference/HANDOFF.md` for rebuild commands and open items.
 | equation_review | Hand-checked findings (117), with the correct text from the PDF |
 | equations | **One checked LaTeX form per numbered equation** (501): corrected from the PDF where the OCR was wrong, otherwise OCR; original OCR kept in `ocr_latex` |
 | equation_status | One verdict per numbered equation: ok (automatic / checked by eye / minor slip), error, missed, check operator |
-| formula_issues | OCR formula error patterns: thousands comma read as decimal point, lost minus in powers of ten |
+| formula_issues | OCR formula error patterns as found in the raw OCR: thousands comma read as decimal point, lost minus in powers of ten |
+| formulas | Every OCR formula block (1,876) with thousands separators fixed (`latex`), original in `ocr_latex` |
 | data_status | Every figure and table with its data status (has plot data, MISSING DATA, ...) |
 
 ## Counts (this build)
@@ -41,7 +42,7 @@ See `reference/HANDOFF.md` for rebuild commands and open items.
 - 840 figures and 84 tables with a data status
 
 ## Known limits
-- OCR text and tables can contain errors; prefer `pdf_pages` for exact wording and numbers. In OCR formulas, a.bbb is often a thousands value (see `formula_issues`).
+- OCR text and tables can contain errors; prefer `pdf_pages` for exact wording and numbers. In raw OCR formulas, a.bbb is often a thousands value; use table `formulas`, where these are fixed.
 - Equation check compares numbers only; Greek letters are images in the PDF.
 - 134 images have no page.
 
