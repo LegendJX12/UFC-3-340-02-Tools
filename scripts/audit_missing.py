@@ -86,6 +86,7 @@ def main():
             f['loc'].append((b, p))
 
     plots = collections.defaultdict(list)
+    generated = set(f for (f,) in db.execute("SELECT file FROM plot_files WHERE source='generated'"))
     for g, fig in db.execute('SELECT grf_file, figure FROM grf_guide_links'):
         plots[fig.upper()].append(g)
     kinds = collections.defaultdict(set)
@@ -97,7 +98,11 @@ def main():
         ks = set().union(*[kinds[l] for l in f['loc']]) if f['loc'] else set()
         b, p = f['loc'][0] if f['loc'] else ('', '')
         prio, note = '', ''
-        if plots.get(k):
+        if plots.get(k) and all(g in generated for g in plots[k]):
+            status = 'has plot data (generated)'
+            note = (MISSING.get(k, ('', ''))[1] + ' Now computed: ' if k in MISSING else 'Computed: ') + \
+                ', '.join(sorted(plots[k])) + ' in graphs/generated (see scripts/generate_missing.py).'
+        elif plots.get(k):
             status = 'has plot data'
             note = f'{len(plots[k])} plot file(s): ' + ', '.join(sorted(plots[k])[:6]) + (' ...' if len(plots[k]) > 6 else '')
         elif k in MISSING:

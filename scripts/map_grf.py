@@ -81,9 +81,23 @@ def main():
         images[(num.upper(), b, p)] = img
     pic_pages = set(db.execute("SELECT DISTINCT batch, page FROM images WHERE kind IN ('chart','image','table')").fetchall())
 
-    # contents pages list many figure captions; real figure pages hold one or two
+    # contents pages: many figure captions on the page, or many dot-leader lines in the PDF text
     toc_pages = set((b, p) for b, p, n in db.execute(
         "SELECT batch, page, COUNT(*) FROM captions WHERE kind='figure' GROUP BY batch, page HAVING COUNT(*) >= 5"))
+    for b, p, t in db.execute('SELECT batch, page, text FROM pdf_pages'):
+        if len(re.findall(r'\.{6,}', t or '')) >= 5:
+            toc_pages.add((b, p))
+
+    # index entries per base figure number; prefer an entry whose page holds a picture
+    index_all = {}
+    for num, bf, pg, ufc in db.execute("SELECT number, batch_file, pdf_page_in_batch, ufc_page FROM index_entries WHERE type='Figure'"):
+        base_num = re.sub(r'\s*\(?[A-Za-z]\)?$', '', num.strip()) if re.search(r'-\d+\s*\(?[A-Za-z]\)?$', num.strip()) else num.strip()
+        index_all.setdefault(base_num.upper(), []).append((bf, pg, ufc))
+
+    def has_pic(e):
+        mb = re.search(r'batch (\d+)', e[0] or '')
+        return mb is not None and (int(mb.group(1)), e[1]) in pic_pages
+    index = {k: sorted(entries, key=lambda e: not has_pic(e))[0] for k, entries in index_all.items()}
 
     def is_toc(caption):
         return bool(re.search(r'\.{2,}|…|\d+-\d+\s*$', caption or ''))
@@ -91,9 +105,6 @@ def main():
     def best_hit(hits):
         # real figure page first: has a picture and is not a table-of-contents line
         return sorted(hits, key=lambda h: (is_toc(h[2]), (h[0], h[1]) not in pic_pages, h[0], h[1]))[0]
-    index = {}
-    for num, bf, pg, ufc in db.execute("SELECT number, batch_file, pdf_page_in_batch, ufc_page FROM index_entries WHERE type='Figure'"):
-        index.setdefault(num.upper(), (bf, pg, ufc))
     text_refs = {}
     for b, p, content in db.execute('SELECT batch, page, content FROM blocks'):
         for m in re.finditer(r'Figure\s*(\d+[A-Z]?-\d+)', content or '', re.I):
@@ -117,7 +128,9 @@ def main():
             out_rows.append([name, folder, '', '', sub, 'D not found', '', '', '', '', '', '', '', plot_caption, '', 'file name not recognised'])
             continue
         plot_number = key
-        key = to_guide_number(key)
+        generated = folder.split(os.sep)[0] == 'generated'
+        if not generated:
+            key = to_guide_number(key)  # generated files already use guide numbers
         gb = gp = gc = img = ib = ip = iu = ''
         level, note = 'D not found', ''
         sub_key = (key + sub).upper() if sub else None
@@ -153,6 +166,8 @@ def main():
             level, gc, img = 'E manual', '', ''
         if plot_number != key:
             note = (note + '; ' if note else '') + f'plot file numbered {plot_number} (TM 5-1300); guide figure {key}'
+        if generated:
+            note = 'GENERATED (computed by scripts/generate_missing.py); ' + note
         overlap = caption_overlap(gc, plot_caption) if (gc and plot_caption) else ''
         if overlap != '' and overlap < 0.5:
             note = (note + '; ' if note else '') + 'plot title and guide caption differ, check'

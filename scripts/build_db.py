@@ -79,7 +79,7 @@ def main():
                          nearest_image TEXT, plot_files TEXT);
     CREATE TABLE index_entries(type TEXT, number TEXT, title TEXT, batch_file TEXT,
                                pdf_page_in_batch INT, ufc_page TEXT, chapter INT);
-    CREATE TABLE plot_files(file TEXT PRIMARY KEY, folder TEXT, layout TEXT, captions TEXT,
+    CREATE TABLE plot_files(file TEXT PRIMARY KEY, folder TEXT, source TEXT, layout TEXT, captions TEXT,
                             curve_count INT, point_count INT);
     CREATE TABLE plot_curves(file TEXT, curve_no INT, label TEXT, point_count INT,
                              x_min REAL, x_max REAL, y_min REAL, y_max REAL, PRIMARY KEY(file, curve_no));
@@ -206,8 +206,9 @@ def main():
             total += len(pts)
         for ln, t in enumerate(g['text'], 1):
             db.execute('INSERT INTO plot_labels VALUES (?,?,?)', (name, ln, t))
-        db.execute('INSERT INTO plot_files VALUES (?,?,?,?,?,?)',
-                   (name, folder, g['layout'], ', '.join(caps), len(g['curves']), total))
+        source = 'generated' if folder.split(os.sep)[0] == 'generated' else 'original'
+        db.execute('INSERT INTO plot_files VALUES (?,?,?,?,?,?,?)',
+                   (name, folder, source, g['layout'], ', '.join(caps), len(g['curves']), total))
         for c in caps:
             fig_to_plots.setdefault(c, []).append(name)
     db.commit()

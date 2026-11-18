@@ -8,16 +8,19 @@ Read this first. It explains what is in the repo, what is verified, and what is 
 | `source/pdf/` | The 35 batch PDFs (`batch 1.pdf` to `batch 35.pdf`). Born-digital: they have an exact text layer. |
 | `text/chapters/` | Chapters 1 to 6 as readable markdown (OCR; equations not verified) |
 | `ocr/batch-NN/` | Per-page OCR output: `page_NNNN_res.json` (text blocks, labels, positions) and `imgs/` (cropped charts, tables, images, formulas) |
-| `graphs/UFC_Plots_data/` | 1,371 plot files (`.grf`, DPLOT v1.6) with curve data, split into subfolders by chapter |
+| `graphs/UFC_Plots_data/` | 1,371 original plot files (`.grf`, DPLOT v1.6) with curve data, split into subfolders by chapter |
+| `graphs/generated/` | 19 plot files **computed** by `scripts/generate_missing.py` for figures with no original plot file (see section 5) |
 | `reference/` | Index spreadsheet, database, check lists (CSV), database guide, this note |
 | `scripts/` | Build and check scripts (see below) |
 
 ## Rebuild commands
 Run from the repo root, in this order. `pdftotext` (poppler) is needed for the PDF text layer.
+`--grf-root graphs` reads both the original and the generated plot files.
 
 ```bash
-python3 scripts/build_db.py --ocr-root ocr --grf-root graphs/UFC_Plots_data --index reference/UFC_3-340-02_index.xlsx --pdf-root source/pdf --out reference/ufc_340_02.db
-python3 scripts/map_grf.py --db reference/ufc_340_02.db --grf-root graphs/UFC_Plots_data --csv reference/grf_to_guide.csv
+python3 scripts/generate_missing.py --out graphs/generated
+python3 scripts/build_db.py --ocr-root ocr --grf-root graphs --index reference/UFC_3-340-02_index.xlsx --pdf-root source/pdf --out reference/ufc_340_02.db
+python3 scripts/map_grf.py --db reference/ufc_340_02.db --grf-root graphs --csv reference/grf_to_guide.csv
 python3 scripts/check_equations.py --db reference/ufc_340_02.db --csv reference/equation_check.csv
 python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/missing_data.csv
 ```
@@ -29,8 +32,12 @@ python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/mi
 | `map_grf.py` | `grf_to_guide.csv` and table `grf_guide_links`: every plot file to its guide figure |
 | `check_equations.py` | `equation_check.csv` and table `equation_check`: OCR equations vs PDF text |
 | `audit_missing.py` | `missing_data.csv` and table `data_status`: every figure and table with its data status |
+| `sdof_bilinear.py` | Calculator: maximum response of an elasto-plastic SDOF system to a bilinear-triangular pulse |
+| `generate_missing.py` | Writes the computed plot files in `graphs/generated/` |
 
-## 1. Plot files: all 1,371 linked to the guide (`grf_to_guide.csv`)
+## 1. Plot files: all linked to the guide (`grf_to_guide.csv`)
+The counts below are for the 1,371 original files. The 19 generated files are also linked (to Figures 3-64, 3-220 to 3-224 and 6-21) and marked GENERATED in `note`; table `plot_files` has `source` = original / generated.
+
 | Level | Count | Meaning |
 |---|---|---|
 | A caption | 1,170 | Figure caption found on the figure page (contents pages excluded). Sub-panels link to the exact panel, e.g. `03_140B` to "Figure 3-140(b)". |
@@ -70,25 +77,43 @@ Rule for the analysis tools: take equations from the PDF text (`pdf_pages`) or f
 | Figure | has plot data | 562 |
 | Figure | no data needed (schematic, sketch, photo) | 257 |
 | Figure | example plot (values printed on it) | 10 |
-| Figure | **MISSING DATA** | **10** |
+| Figure | has plot data (generated) | 7 |
+| Figure | **MISSING DATA** | **3** |
 | Table | cells captured (OCR, values to check) | 83 |
 | Table | **MISSING DATA** | **1** |
 
-**Missing data, high priority** (design charts with no plot file; need digitizing):
-- **2-8**: Negative phase shock wave parameters, spherical free-air burst (batch 3 p8). No `02_008.grf`.
-- **2-16**: Negative phase shock wave parameters, hemispherical surface burst (batch 3 p15). Only `02_016.BMP`, a picture.
-- **3-64 (a), (b)**: Maximum response, elasto-plastic SDOF, bilinear-triangular pulse, C1 = 1.000 (batch 13 p49-50).
-- **3-220 to 3-224**: Maximum response, bilinear-triangular pulse, C1 = 0.909 to 0.750, C2 = 1000 (batch 17 p1-5).
-- **Table 5-4**: Preliminary Dynamic Load Factors for Plates (batch 28 p3). The table body is blank in the source PDF itself; needs another copy of the guide.
+**Generated (computed) - now has plot data** (see section 5):
+- **3-64 (a), (b)**: C1 = 1.000, C2 = 1.0 (batch 13 p49-50).
+- **3-220 to 3-224**: C1 = 0.909 to 0.750, C2 = 1000 (batch 17 p1-5).
+- **6-21**: Roof live load vs tributary area (exact rule from the guide text, spec 4.2.1).
 
-**Missing data, low priority:**
-- **6-21**: Roof live load vs tributary area (20 psf to 200 ft², linear to 12 psf at 600 ft²). Can be coded as a formula.
+**Still missing, high priority:**
+- **2-8**: Negative phase shock wave parameters, spherical free-air burst (batch 3 p8). No `02_008.grf`. Scanned chart; needs digitizing.
+- **2-16**: Negative phase shock wave parameters, hemispherical surface burst (batch 3 p15). Only `02_016.BMP`, a picture. Needs digitizing.
+- **Table 5-4**: Preliminary Dynamic Load Factors for Plates (batch 28 p3). Blank in the source PDF itself; needs another copy of the guide.
+
+**Still missing, low priority:**
 - **6-11**: Resistance-deflection plot, unreinforced masonry with arching.
 
 How these were decided: every chart without a plot file was viewed (contact sheets of all 65 chart images), plus the PDF pages of figures where OCR found no picture. 206 figures marked "diagram, layout or photo" were judged from page content and title, not each viewed.
 
+## 5. Generated plot data (`graphs/generated/`)
+Figures 3-64 to 3-266 are computed charts: the maximum response of an elasto-plastic one-degree-of-freedom system to a bilinear-triangular pulse (guide section 3-19.3.4). The load is the envelope of a shock triangle (P, T) and a gas triangle (C1·P, C2·T); its impulse matches the guide's Equation 3-82. `scripts/sdof_bilinear.py` computes the same three chart panels: A = tm/Tn, B = Xm/XE, C = tE/T, for P/ru = 0.5 to 20.
+
+Checks against original plot data:
+| Original chart | Case | Median error | Notes |
+|---|---|---|---|
+| 3-54 (triangular load) | C1 = C2 = 1, as Figure 3-64 | 0.00% (worst 0.04%) | Basis for generated 3-64 |
+| 3-225 | C1 = 0.715, C2 = 1000, nearest to 3-220..3-224 | 0.6% ductility, 0.7% time | Basis for generated 3-220..3-224 |
+| 3-65, 3-66, 3-99 | C2 = 1.7 to 10 | 0.05% to 0.8% | |
+| 3-200, 3-219, 3-240, 3-266 | small C1 with C2 = 300 to 1000 | large differences at short T/Tn | The printed charts have flat steps there (regions A/B, where the guide says to use simplified methods instead). Not used for generation. |
+
+The generated 3-220 to 3-224 values fall smoothly between each other and into the original 3-225 and 3-226 (e.g. ductility at P/ru = 1, T/Tn = 1: 5.5, 3.0, 2.29, then original 2.11, 2.00).
+
+Limits: the generated charts follow the computation, not the printed scan, so small differences from the printed figures are possible. The printed charts also show region boundary symbols (A/B/C/D), which are not generated.
+
 ## Still open
-1. Digitize the 8 high-priority charts and obtain Table 5-4.
+1. Digitize Figures 2-8 and 2-16, and obtain Table 5-4.
 2. Check the 16 `differ` and 40 `no-pdf-line` equations against the PDF.
 3. Table cells are OCR; check values against the PDF text layer before use.
 4. 134 images have no page assigned (`images.page` empty).

@@ -4,7 +4,7 @@ File: `reference/ufc_340_02.db` (SQLite). Built by `scripts/build_db.py` from:
 - OCR output in `ocr/` for batches 1–35 (page text, layout blocks, cropped images)
 - the exact text layer of the PDFs in `source/pdf/`
 - the index spreadsheet `reference/UFC_3-340-02_index.xlsx`
-- plot files in `graphs/UFC_Plots_data/` (.grf)
+- plot files in `graphs/UFC_Plots_data/` (original .grf) and `graphs/generated/` (computed)
 
 Then `map_grf.py`, `check_equations.py` and `audit_missing.py` add their tables.
 See `reference/HANDOFF.md` for rebuild commands and open items.
@@ -20,7 +20,7 @@ See `reference/HANDOFF.md` for rebuild commands and open items.
 | captions | Figure and table captions found in blocks (in-text references like "Figure 2-7 (+)" excluded) |
 | figures | Figure caption, page and nearest image |
 | index_entries | Sections, figures, tables, equations, examples, problems from the index |
-| plot_files | Each .grf file: folder, layout (data/dx), figure numbers in its text, curve and point counts |
+| plot_files | Each .grf file: folder, source (original / generated), layout (data/dx), figure numbers in its text, curve and point counts |
 | plot_curves | Each curve: file, curve number, legend label (e.g. "7000"), point count, x/y range |
 | plot_points | x, y of every curve point: file, curve number, order |
 | plot_labels | Title and axis text in each .grf file |
@@ -31,7 +31,7 @@ See `reference/HANDOFF.md` for rebuild commands and open items.
 ## Counts (this build)
 - 1,982 pages (OCR and PDF text), 16,950 blocks, 3,302 images (3,168 placed on a page)
 - 1,864 captions, 2,385 index entries
-- 1,371 plot files, 10,835 curves, 591,110 points; all plot files linked to a guide figure
+- 1,371 original plot files (10,835 curves, 591,110 points) and 19 generated (201 curves); all linked to a guide figure
 - 501 numbered equations checked
 - 840 figures and 84 tables with a data status
 
