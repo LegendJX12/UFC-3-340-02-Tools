@@ -16,7 +16,7 @@ Open items and how things were checked: `HANDOFF.md`. Database tables and exampl
 | `manual/table_pages.csv` | hand-checked | Which OCR table block(s) make up each of the 85 tables; data or formula table; notes |
 | `manual/tables/` | hand-checked | Tables typed or read by hand: 4 data tables (3-15, 4-8, 5-4, 6-7) and the 40 formula tables, with a README |
 | `manual/table_6-7_review.csv` | hand-checked | The 74 Table 6-7 values the two OCR engines disagreed on, as read by eye |
-| `equations/equations.csv` | output | **One checked LaTeX form per numbered equation (501). Use this for equations.** |
+| `equations/equations.csv` | output | **One checked LaTeX form per numbered equation (559). Use this for equations.** |
 | `equations/equation_status.csv` | output | One verdict per equation (ok / error / missed ...) |
 | `equations/equation_check.csv`, `equation_lines.csv` | output | Automatic OCR-vs-PDF checks behind the verdicts |
 | `formulas/formula_fixes.csv` | output | Every fix made to OCR formula blocks (thousands commas, letters, primes) with PDF evidence |
