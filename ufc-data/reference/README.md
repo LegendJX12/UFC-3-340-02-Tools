@@ -1,4 +1,5 @@
 # reference/: where is what
+Paths are relative to the `ufc-data/` folder.
 
 Start with the database `ufc_340_02.db`; the CSV files are the same data for reading in Excel.
 Open items and how things were checked: `HANDOFF.md`. Database tables and example queries: `DATABASE.md`.

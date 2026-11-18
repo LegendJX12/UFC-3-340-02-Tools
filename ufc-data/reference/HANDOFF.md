@@ -1,14 +1,14 @@
 # UFC 3-340-02: handoff notes
 
-Read this first. It explains what is in the repo, what is verified, and what is still open.
+Read this first. It explains what is in the data folder, what is verified, and what is still open. All paths are relative to the `ufc-data/` folder.
 
-## Repo layout
+## Folder layout (inside `ufc-data/`)
 See `reference/README.md` for a full "where is what" map. In short:
 
 | Folder | Contents |
 |---|---|
 | `source/pdf/` | The 35 batch PDFs (`batch 1.pdf` to `batch 35.pdf`). Born-digital: they have an exact text layer. |
-| `text/chapters/` | Chapters 1 to 6 as readable markdown, `ch1_introduction.md` to `ch6_...md` (OCR; equations not verified) |
+| `text/chapters/` | Chapters 1 to 6 as readable markdown, `ch1_introduction.md` to `ch6_...md` (OCR text; use table `equations` for equations) |
 | `ocr/batch-NN/` | Per-page OCR output: `page_NNNN_res.json` (text blocks, labels, positions) and `imgs/` (cropped charts, tables, images, formulas) |
 | `graphs/UFC_Plots_data/` | 1,371 original plot files (`.grf`, DPLOT v1.6) with curve data, split into subfolders by chapter |
 | `graphs/generated/` | 22 plot files for figures with no original plot file: 19 **computed** (`generate_missing.py`) and 3 **digitized** from the PDF (`digitize_figures.py`); see section 5 |
@@ -20,13 +20,13 @@ See `reference/README.md` for a full "where is what" map. In short:
 | `scripts/` | Build and check scripts (see below) |
 
 ## Rebuild commands
-One command, from the repo root (needs `pdftotext` from poppler):
+One command (needs `pdftotext` from poppler); it can be run from anywhere:
 
 ```bash
 bash scripts/rebuild_all.sh
 ```
 
-Add `--plots` to also recompute the generated and digitized plot files. For the LaTeX check, run `npm install` once in the repo root (installs KaTeX from `package.json`); without it the check is skipped. The script lists every step in order, with all file paths.
+Add `--plots` to also recompute the generated and digitized plot files. For the LaTeX check, run `npm install` once in the `ufc-data/` folder (installs KaTeX from `package.json`); without it the check is skipped. The script lists every step in order, with all file paths.
 
 | Script | Output |
 |---|---|

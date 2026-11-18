@@ -5,7 +5,7 @@ value with the PaddleOCR table. A value is confirmed when PaddleOCR agrees with 
 reading. The rest were read by eye on zoomed crops; decisions are in reference/manual/table_6-7_review.csv
 and the checked table is reference/manual/tables/table_6-7.csv.
 
-Usage: python3 scripts/check_table_6_7.py   (run from the repo root; writes table_6-7_check.json in --out)
+Usage: python3 scripts/check_table_6_7.py   (run from the ufc-data folder; writes table_6-7_check.json in --out)
 """
 import sys,csv,re,subprocess,os,tempfile,json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

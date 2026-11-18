@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Rebuild the whole database and every generated file, in the right order.
-# Run from the repository root:   bash scripts/rebuild_all.sh
+# Run from anywhere:   bash ufc-data/scripts/rebuild_all.sh   (it works inside the ufc-data folder)
 # Add --plots to also recompute the generated and digitized plot files (slower).
-# LaTeX check needs KaTeX once:   npm install   (uses package.json in the repo root)
+# LaTeX check needs KaTeX once:   npm install   (run in the ufc-data folder; uses its package.json)
 set -euo pipefail
 # Needs: python3 with pymupdf, numpy and pillow (pip install pymupdf numpy pillow), pdftotext (poppler),
 # and tesseract (apt-get install tesseract-ocr) for the table check.

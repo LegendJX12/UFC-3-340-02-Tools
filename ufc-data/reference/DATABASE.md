@@ -1,4 +1,5 @@
 # UFC 3-340-02 database
+Paths are relative to the `ufc-data/` folder.
 
 File: `reference/ufc_340_02.db` (SQLite). Built by `scripts/build_db.py` from:
 - OCR output in `ocr/` for batches 1–35 (page text, layout blocks, cropped images)
