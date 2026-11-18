@@ -17,7 +17,7 @@ Read this first. It explains what is in the repo, what is verified, and what is 
 
 ## Rebuild commands
 Run from the repo root, in this order. `pdftotext` (poppler) is needed for the PDF text layer.
-`--grf-root graphs` reads both the original and the generated plot files.
+`--grf-root graphs` reads both the original and the generated plot files. The `--katex` check needs Node.js with `npm install katex` (run it in the `scripts` folder); without it, leave the option out.
 
 ```bash
 python3 scripts/generate_missing.py --out graphs/generated
@@ -26,6 +26,7 @@ python3 scripts/build_db.py --ocr-root ocr --grf-root graphs --index reference/U
 python3 scripts/map_grf.py --db reference/ufc_340_02.db --grf-root graphs --csv reference/grf_to_guide.csv
 python3 scripts/check_equations.py --db reference/ufc_340_02.db --csv reference/equation_check.csv --issues reference/formula_issues.csv --review reference/equation_review.csv
 python3 scripts/check_equation_lines.py --db reference/ufc_340_02.db --csv reference/equation_lines.csv --review reference/equation_review.csv --status reference/equation_status.csv
+python3 scripts/build_equations.py --db reference/ufc_340_02.db --corrections reference/equation_corrections.csv --csv reference/equations.csv --katex scripts/katex_check.js
 python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/missing_data.csv
 ```
 
@@ -36,6 +37,7 @@ python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/mi
 | `map_grf.py` | `grf_to_guide.csv` and table `grf_guide_links`: every plot file to its guide figure |
 | `check_equations.py` | `equation_check.csv` / table `equation_check` (OCR vs PDF text), `formula_issues.csv` / table `formula_issues` (OCR error patterns), and loads the hand-checked `equation_review.csv` |
 | `check_equation_lines.py` | `equation_lines.csv` (line-level check) and `equation_status.csv` / table `equation_status`: one verdict per equation |
+| `build_equations.py` | Table `equations` and `equations.csv`: one checked LaTeX form per numbered equation (corrections from `equation_corrections.csv`) |
 | `audit_missing.py` | `missing_data.csv` and table `data_status`: every figure and table with its data status |
 | `sdof_bilinear.py` | Calculator: maximum response of an elasto-plastic SDOF system to a bilinear-triangular pulse |
 | `generate_missing.py` | Writes the computed plot files in `graphs/generated/` |
@@ -63,8 +65,14 @@ Earlier builds read the `.grf` files wrongly: all curves of a file were merged i
 - 113 curves have no label in the file (single-curve plots or unlabelled reference lines).
 - Values checked against charts: 2-194 (a) and (b), 2-207, 2A-23, 4A-8.
 
-## 3. Equations (`equation_status.csv`: one verdict per numbered equation)
-The PDFs have an exact text layer (table `pdf_pages`), but Greek letters and some symbols are small images, and exponents and fraction parts sit on separate text lines. Every numbered equation found by OCR (501) was checked against it:
+## 3. Equations (table `equations`, file `equations.csv`)
+**Use table `equations` for any equation.** It has one LaTeX form per numbered equation (501):
+- **114 corrected from the PDF** (`source` = 'corrected from PDF'), written from the rendered PDF page and listed in `equation_corrections.csv` with a `reason`: 88 OCR errors, 3 equations the OCR missed (4-45b, 4-196, 4-199), 16 minor OCR slips, 5 OCR lines paired with the wrong equation number, and 2-24 / 2-25 stored as printed (operator still to confirm).
+- **387 from OCR** (`source` = 'OCR'), where the checks below found no problem; layout leftovers (`&`, `\begin{aligned}`, stray characters) removed.
+- All 501 parse in KaTeX (`latex_ok` = 1). The original OCR text is kept in column `ocr_latex`; table `blocks` is unchanged.
+- Each correction was checked against the PDF text layer: numbers and variable names agree, except where the text layer itself splits or drops them (exponents on other lines, "87 ,000", "R eff").
+
+How equations were checked (`equation_status.csv`): the PDF text layer (table `pdf_pages`) has exact text, but Greek letters and some symbols are small images, and exponents and fraction parts sit on separate text lines. Every numbered equation found by OCR (501) was checked against it:
 
 1. **Number check** (`check_equations.py`, `check_equation_lines.py`): numbers in the OCR equation vs the PDF lines around the equation number. Multi-line OCR blocks are split line by line.
 2. **Variable-name check**: OCR names one letter away from a name in the PDF text (e.g. f_dv vs f_dy).
@@ -74,10 +82,10 @@ The PDFs have an exact text layer (table `pdf_pages`), but Greek letters and som
 |---|---|---|
 | ok (automatic) | 344 | Numbers and variable names agree with the PDF text |
 | ok (checked by eye) | 48 | Flagged, but correct on the rendered page (text-layer artefacts) |
-| ok (minor slip) | 16 | Usable; small slip noted (e.g. bracket style, θ shown as O) |
-| **error** | **88** | OCR is wrong; correct text from the PDF in `equation_review.csv` |
-| **missed** | **3** | OCR has no formula (4-45b, 4-196, 4-199); text from the PDF in the review |
-| check operator | 2 | 2-24, 2-25: OCR divides, PDF prints multiplication (2-28 has the same question and an error) |
+| ok (minor slip) | 16 | Small slip; now corrected in `equations` |
+| **error** | **88** | OCR was wrong; now corrected in `equations` |
+| **missed** | **3** | OCR had no formula (4-45b, 4-196, 4-199); now in `equations` |
+| check operator | 2 | 2-24, 2-25: OCR divides, PDF prints multiplication; `equations` follows the PDF |
 
 Most common OCR faults (see `equation_review.csv` for each equation):
 - **y read as v**: f_dy, f_py, f_y, T_y, I_y, m_y, r_y read as f_dv, f_pv, f_v, ... (about 15 equations).
@@ -86,7 +94,7 @@ Most common OCR faults (see `equation_review.csv` for each equation):
 - **Thousands comma read as decimal point** (87,000 as 87.000) and **lost minus signs** in powers of ten.
 - **Brackets and fraction bars** misplaced (4-28, 4-166, 4-192, 6-31).
 
-**Limits:** "ok (automatic)" cannot see Greek letters or primes, which are images or tiny marks in the PDF. A lost prime in an equation whose numbers and other names match would pass. For any equation used in a calculation, read it from the rendered PDF page.
+**Limits:** the 344 "ok (automatic)" equations (taken from OCR in `equations`) were not each read by eye; the automatic checks cannot see Greek letters or primes, which are images or tiny marks in the PDF. A lost prime in an equation whose numbers and other names match would pass. For any equation used in a calculation, read it from the rendered PDF page.
 
 **Thousands-comma pattern across all OCR formulas (`formula_issues.csv`):** 207 places on 82 pages, mostly in worked examples.
 
@@ -147,5 +155,5 @@ The WebPlotDigitizer website cannot be reached from the build machine, so its me
 ## Suggested next steps for analysis tools
 1. Pick a plot file for a figure with `grf_guide_links`, and read its curves from `plot_curves` / `plot_points` (curve `label` gives the parameter, e.g. overpressure).
 2. Levels A, B and E are all checked links. Mind the chapter 6 renumbering (`plot_number` vs `figure`).
-3. For equations, use `equation_status`: take the text from `equation_review.csv` where the verdict is error or missed, and check primes and Greek letters on the rendered page. Use `pdf_pages` for table values; it is exact, unlike OCR.
+3. For equations, use table `equations` (column `latex`). For an equation taken from OCR, check primes and Greek letters on the rendered page before using it in a calculation. Use `pdf_pages` for table values; it is exact, unlike OCR.
 4. Check `data_status` before relying on a figure or table.

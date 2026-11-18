@@ -28,6 +28,7 @@ See `reference/HANDOFF.md` for rebuild commands and open items.
 | equation_check | Numbered OCR equations compared with the PDF text: status match / close / differ / no-pdf-line |
 | equation_lines | Line-level check of each numbered equation against the PDF text |
 | equation_review | Hand-checked findings (117), with the correct text from the PDF |
+| equations | **One checked LaTeX form per numbered equation** (501): corrected from the PDF where the OCR was wrong, otherwise OCR; original OCR kept in `ocr_latex` |
 | equation_status | One verdict per numbered equation: ok (automatic / checked by eye / minor slip), error, missed, check operator |
 | formula_issues | OCR formula error patterns: thousands comma read as decimal point, lost minus in powers of ten |
 | data_status | Every figure and table with its data status (has plot data, MISSING DATA, ...) |
@@ -36,7 +37,7 @@ See `reference/HANDOFF.md` for rebuild commands and open items.
 - 1,982 pages (OCR and PDF text), 16,950 blocks, 3,302 images (3,168 placed on a page)
 - 1,864 captions, 2,385 index entries
 - 1,371 original plot files (10,835 curves, 591,110 points) and 22 generated (214 curves: 19 computed files, 3 digitized); all linked to a guide figure
-- 501 numbered equations checked: 88 OCR errors, 3 missed (see `equation_status`)
+- 501 numbered equations checked: 88 OCR errors and 3 missed equations, now corrected in table `equations` (114 rows corrected from the PDF in all)
 - 840 figures and 84 tables with a data status
 
 ## Known limits
@@ -59,6 +60,10 @@ Points of the 7000 psi curve in Figure 2-194(a):
 ```sql
 SELECT p.x, p.y FROM plot_points p JOIN plot_curves c ON c.file = p.file AND c.curve_no = p.curve_no
 WHERE p.file = '02_194A.grf' AND c.label = '7000' ORDER BY p.seq;
+```
+A checked equation, as LaTeX:
+```sql
+SELECT number, latex, source FROM equations WHERE number = '2-23';
 ```
 Everything still missing data:
 ```sql
