@@ -1,8 +1,11 @@
 number,batch,page,latex,source,verdict,reason,latex_ok
 2-1,2,24,W_{E}=\frac{H_{E X P}^{d}}{H_{T N T}^{d}}W_{E X P},OCR,ok (automatic),,1
+2-2,2,37,t_{o}=2i_{r}/p_{r},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 2-3,2,42,0\leq A_{f}\lambda^{2/3}\leq0.022,OCR,ok (automatic),,1
+2-4,2,43,t_{g}=2i_{g}/P_{g},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 2-5,2,44,W_{E_{g}}=\frac{\phi\left[H_{E X P}^{c}-H_{E X P}^{d}\right]+H_{E X P}^{d}}{\phi\left[H_{T N T}^{c}-H_{T N T}^{d}\right]+H_{T N T}^{d}}W_{E X P},OCR,ok (automatic),,1
 2-6,2,49,t_{o f}=2i/P …,OCR,ok (automatic),,1
+2-7,2,50,t_{of}^{-}=2i^{-}/P^{-},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 2-8,2,50,t_{c}=\frac{4S}{(1+R)C_{r}},OCR,ok (automatic),,1
 2-10,2,51,t_{\mathrm{r f}}=2i_{\mathrm{r}}/P_{\mathrm{r}},OCR,ok (automatic),,1
 2-11,2,51,t_{r f}=2i_{r u}/P_{r u},OCR,ok (automatic),,1
@@ -40,8 +43,10 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 2-42,7,46,W_{f}=M_{A}^{2}\ln^{2}{(1-C_{L})},OCR,ok (automatic),,1
 2-43,7,46,W_{f}=M_{A}^{2}\ln^{2}\left[1-C_{L}\left(1-e^{-\left[4\left(W_{c}\right)^{1/2}/M_{A}\right]}\right)\right],corrected from PDF,ok (minor slip),OCR minor slip,1
 2-44,7,46,N_{f}=N_{T}(1-C_{L}),OCR,ok (automatic),,1
+2-45,7,47,M_{A}=At_{c}\frac{\left[d_{i}+t_{c}\right]^{3/2}}{d_{i}}\left[1+\frac{W}{2W_{c}}\right]^{1/2},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 2-46,7,48,v_{s}=v_{o}e^{-\left[12k_{v}R_{f}\right]},corrected from PDF,ok (minor slip),OCR minor slip,1
 2-47,7,48,k_{v}=0.5(A W_{f})\rho_{a}C_{D},OCR,ok (automatic),,1
+2-48,7,49,v_{s}=v_{o}e^{-\left[.004R_{f}/W_{f}^{1/3}\right]},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 2-49,7,50,d_{i}^{\prime}=\left[1.25\left(d_{i}+2t_{c}\right)^{2}+d_{i}^{2}\right]^{1/2},corrected from PDF,error,OCR error,1
 2-50,7,50,t_{c}=0.75\left(d_{i}+2t_{c}\right)-0.5d_{i},OCR,ok (automatic),,1
 2-51,7,51,L_{f}=\frac{4W_{f}}{\pi\rho_{c}\left(t_{c}^{\prime}\right)^{2}}\leq L_{cyl},corrected from PDF,error,OCR error,1
@@ -49,6 +54,7 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 2-53,7,51,D=W_{f}/d^{3},OCR,ok (automatic),,1
 2-54,7,52,N=0.72,OCR,ok (automatic),,1
 2-55,7,52,N=0.72+0.25(n-0.2)^{1/2}<1.17,OCR,ok (automatic),,1
+2-56,7,53,Ap(t)=Ma,corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 2-57,7,54,v(T_{3})=\int(T_{3}/t_{a})d t=\frac{A}{M}\int(T_{3}/t_{a})p(t)d t=\frac{A}{M}i_{d},OCR,ok (automatic),,1
 2-58,7,55,i=M V/A,OCR,ok (automatic),,1
 2-59,7,55,v_{o}=1000i\beta A/(12M),OCR,ok (automatic),,1
@@ -57,6 +63,7 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 2-62,7,55,"\frac{i}{\beta R_{eff}}\left[R_{e}/R_{t}\right]^{0.158}=58{,}400\left[R_{e}/R\right]",corrected from PDF,error,OCR error,1
 2-63,7,56,"\frac{i}{\beta R_{\mathrm{e f f}}}\left[R_{e}/R_{t}\right]^{0.158}=203,000\left[R_{e}/R\right]^{1.75}",OCR,ok (automatic),,1
 2-64,7,56,R_{eff}=0.909\left[l_{e}/R_{e}\right]^{0.333}R_{e},corrected from PDF,error,OCR error,1
+2-65,7,56,I-I_{st}=mV_{o},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 2-66,7,57,V_{o}=\frac{1000}{12}\cdot\left[\frac{T}{p_{f}}\right]^{1/2}\left[C_{1}+\frac{C_{2}ib_{f}}{A[\rho_{f}T]^{1/2}}\left(\frac{2L_{f}}{b_{f}}\right)^{0.3}\right],OCR,ok (checked by eye),,1
 2-67,7,57,\frac{i b_{f}}{A\left[\rho_{f}T\right]^{1/2}}\left[\frac{2L_{f}}{b_{f}}\right]^{0.3}\geq0.602,OCR,ok (checked by eye),,1
 2-68,7,58,F_{L}=C_{L}A_{L}(1/2)\;\rho v^{2},OCR,ok (automatic),,1
@@ -66,8 +73,11 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 2-72,7,59,v_{y}=v_{o}\sin\alpha_{o},OCR,ok (automatic),,1
 2-73,7,59,v_{y}=v_{o}\sin\alpha_{o},OCR,ok (automatic),,1
 2-74,8,23,V_{v}=P_{s o}/(\rho C_{p}),OCR,ok (automatic),,1
+2-75,8,23,D_{V}=i_{s}/(1000\rho C_{p}),corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 2-76,8,23,A_{V}=100P_{s o}/(\rho C_{p}g),OCR,ok (automatic),,1
+2-77,8,24,"D_{H}=D_{V}\tan\left[\sin^{-1}\left(C_{p}/(12,000U)\right)\right]",corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 2-78,8,24,"V_{H}=V_{V}\tan\left[\sin^{-1}\left(C_{p}/(12,000U)\right)\right]",OCR,ok (checked by eye),,1
+2-79,8,24,"A_{H}=A_{V}\tan\left[\sin^{-1}\left(C_{p}/(12,000U)\right)\right]",corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 2-80,8,24,D_{V}=0.025R_{G}^{1/3}W^{1/3}/Z_{G}^{1/3},OCR,ok (automatic),,1
 2-81,8,25,Z_{G}=R_{G}/W^{1/3},OCR,ok (automatic),,1
 2-82,8,25,D_{H}=0.5D_{V},OCR,ok (automatic),,1
@@ -79,6 +89,7 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 2-88,8,26,A_{H}=0.5A_{V},OCR,ok (automatic),,1
 2-89,8,26,A_{H}=A_{V},OCR,ok (automatic),,1
 2-90,8,26,F-R-D=M a,OCR,ok (automatic),,1
+2-91,8,27,F_{f}=\mu F_{N},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 2-92,8,29,"t_{AG}=12{,}000\,R_{G}/C_{p}",corrected from PDF,error,OCR error,1
 2-93,8,30,V=2\pi f D,OCR,ok (automatic),,1
 2-94,8,31,A=\frac{(2\pi f)^{2}Dg}{387},OCR,ok (automatic),,1
@@ -120,6 +131,7 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 3-34,11,42,X_{E} =X_{e}+X_{p}(1-r_{e}/r_{u}),OCR,ok (automatic),,1
 3-35,11,42,X_{E} =x_{e}(r_{ep}/r_{u})+X_{ep}(1-r_{e}/r_{u})+X_{p}(1-r_{ep}/r_{u}),OCR,ok (automatic),,1
 3-36,11,43,K_{E}=r_{u}X_{E},OCR,ok (automatic),,1
+3-37,11,43,(2/3)V_{sV}(L/4+L/4)+V_{sV}(L/2)=r_{u}(Ly/2),corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 3-38,11,44,V_{s V}=3r_{u}\gamma/5,OCR,ok (automatic),,1
 3-39,11,44,(2/3)V_{sH}(y/2)+V_{sH}(H-y/2)=r_{u}(L/2)[(H-y+H)/2],OCR,ok (automatic),,1
 3-40,11,44,V_{sH}=[3r_{u}L(2-y/H)]/[2(6-y/H)],OCR,ok (automatic),,1
@@ -144,6 +156,7 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 3-52c,13,7,F-R=K_{LM}Ma=M_ea,OCR,ok (automatic),,1
 3-53,13,7,K_{LM}=\text{load-mass factor}=K_{M}/K_{L},corrected from PDF,ok (minor slip),OCR minor slip; OCR line was also paired wrongly,1
 3-54,13,7,f-r=K_{IM}ma=m_{e}a,OCR,ok (automatic),,1
+3-55,13,7,\Sigma M=I_{m}\Theta'',corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 3-56a,13,8,Fc-\left(\Sigma M_{N}+\Sigma M_{p}\right)=\left(I_{m}/L_{1}\right)a,corrected from PDF,ok (minor slip),OCR minor slip,1
 3-56b,13,8,F-\left(\Sigma M_{N}+\Sigma M_{p}\right)/c=\left(I_{m}/cL_{1}\right)a,corrected from PDF,ok (minor slip),OCR minor slip,1
 3-56c,13,8,F-R=(I_{m}/c L_{1})a=M_{e}a,OCR,ok (checked by eye),,1
@@ -182,6 +195,7 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 3-85,13,27,\mathrm{lnY}=\mathrm{lnY}_a+\frac{\left(\mathrm{lnY}_b-\mathrm{lnY}_a\right)\ln\left(C_2/C_{21}\right)}{\ln\left(C_{23}/C_{21}\right)},OCR,ok (automatic),,1
 3-86a,13,28,\boldsymbol{\mathsf{Y}}=\boldsymbol{\mathsf{e}}^{I n Y},OCR,ok (automatic),,1
 3-86b,13,28,Y=10^{\log Y},corrected from PDF,error,OCR error,1
+3-87,13,29,v_{a}=\int_{0}^{t_{a}}\frac{(f-r)dt}{m_{e}},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 3-88,13,30,X_{a}=\int\limits_{0}^{t_{a}}\frac{(f-r)}{m_{e}}[t_{a}-t]d t,OCR,ok (automatic),,1
 3-89,13,30,X_{m}=\frac{i_{b}t_{m}}{m_{u}}-\frac{r_{u}t_{1}[t_{m}-t_{1}/2]}{m_{u}}-\frac{r_{up}[t_{m}-t_{1}]}{2m_{up}}[t_{m}-t_{1}],OCR,ok (automatic),,1
 3-90,13,30,X_{1}=\frac{i_{b}t_{1}}{m_{u}}-\frac{r_{u}t_{1}^{2}}{2m_{u}},corrected from PDF,error,OCR error (name/prime check): i_b read as I_b,1
@@ -198,16 +212,21 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 4-4,19,44,E_{c}=w_{c}^{1.5}33(f_{c}^{\prime})^{1/2},OCR,ok (automatic),,1
 4-5,19,44,E_{s}=29\times10^{6}\ \text{psi},corrected from PDF,ok (checked by eye),OCR line was paired wrongly (OCR itself correct),1
 4-6,19,44,n=E_{s}/E_{c},corrected from PDF,error,OCR error,1
+4-7,19,44,I_{a}=\frac{I_{g}+I_{c}}{2},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-8a,19,45,I_{g}=\frac{b T_{c}^{3}}{12},OCR,ok (automatic),,1
 4-8b,19,45,I_{c}=F b d^{3},OCR,ok (automatic),,1
 4-9a,19,45,I_{g}=\frac{T_{c}^{3}}{12},OCR,ok (automatic),,1
 4-9b,19,45,I_{c}=F d^{3},OCR,ok (automatic),,1
+4-10,19,46,I_{c}=\frac{I_{cV}L+I_{cH}H}{L+H},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-11,20,2,M_{u}=(A_{s}f_{ds}/b)\left[d-(a/2)\right],corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-12,20,2,a=A_{s}f_{d s}/(0.85\:b\:f_{d c}^{\prime}),OCR,ok (automatic),,1
 4-13,20,3,p=A_{s}/(b d),OCR,ok (automatic),,1
 4-14,20,3,"p_{b}=\left(0.85K_{1}f_{dc}^{\prime}/f_{ds}\right)\left[87{,}000/\left(87{,}000+f_{ds}\right)\right]",corrected from PDF,error,OCR error,1
 4-15,20,3,M_{u}=f(A_{s}-A_{s}^{\prime})f_{d s}/b/(d-(a/2))+(A_{s}^{\prime}f_{d s}/b)(d-d^{\prime}),OCR,ok (automatic),,1
 4-16,20,3,a=(A_{s}-A_{s}^{\prime})f_{d s}/(0.85b f_{d c}^{\prime}),OCR,ok (automatic),,1
 4-17,20,3,p^{\prime}=A_{s}^{\prime}/(b d),OCR,ok (automatic),,1
+4-18,20,4,"p-p'\geq 0.85K_{1}(f'_{dc}d'/f_{ds}d)\left[87,000/(87,000-f_{ds})\right]",corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-19,20,4,M_{u}=A_{s}f_{ds}d_{c}/b,corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-20,20,4,p_{s}=p_{c}^{\prime}=A/(b d),OCR,ok (automatic),,1
 4-21,20,5,v_{u}=V_{u}/b d_{c},OCR,ok (automatic),,1
 4-22,20,5,v_{u}=V_{u}/b d_{c},OCR,ok (automatic),,1
@@ -221,6 +240,9 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 4-29a,20,7,A=s_{l}/d_{l},corrected from PDF,error,OCR error,1
 4-29b,20,8,B=\frac{2R_{l}+d_{b}}{d_{l}},corrected from PDF,error,OCR error,1
 4-30,20,9,V_{d}=0.16f_{d c}^{\prime}b d,OCR,ok (automatic),,1
+4-31,20,10,A_{d}=(V_{s}b-V_{d})/(f_{ds}\sin(\alpha)),corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-32,20,10,v_{u}=N_{u}/(b_{o}d_{e}),corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-33,20,10,v_{c}=4(f'_{dc})^{1/2},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-39,20,24,p_{T}=p_{V}+p_{H},OCR,ok (automatic),,1
 4-40,20,27,r_{T}=X\left[\frac{8T_{y}}{L_{y}^{2}}\right],corrected from PDF,ok (minor slip),OCR minor slip,1
 4-41,20,27,"r_{T}=\frac{1.5X\pi^{3}T_{y}/L_{y}^{2}}{4\sum_{n=1,3,5}\left[\frac{1}{n^{3}}\left(-1\right)^{\left(n-1\right)/2}\left[1-\frac{1}{\cosh\left[\frac{n\pi L_{x}}{2L_{y}}\left[\frac{T_{y}}{T_{x}}\right]^{1/2}\right]}\right]\right]}",corrected from PDF,ok (minor slip),OCR minor slip,1
@@ -258,6 +280,7 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 4-71,20,44,m_{18}^{+}=0.60\left(0.35\right)M_{OL}/\left(H/2\right),corrected from PDF,ok (minor slip),OCR minor slip (name/prime check): stray accent,1
 4-72,20,44,M_{_{O L}}=\frac{w H(L-c)^{2}}{8},OCR,ok (automatic),,1
 4-73,20,44,\alpha_{\mathrm{e c L}}^{\prime}=\frac{1}{1+\left(1/\alpha_{\mathrm{e c L}}\right)},OCR,ok (automatic),,1
+4-74,20,47,W=\Sigma r_{u}A\Delta,corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-75,20,48,E=\Sigma m\Theta I,OCR,ok (automatic),,1
 4-76,20,48,E=\Sigma m_{x}\Theta_{x}l_{y}+\Sigma m_{y}\Theta_{y}l_{x},corrected from PDF,error,OCR error,1
 4-77,20,48,\Sigma r_{u}A\Delta=\Sigma m_{x}\Theta_{x}l_{y}+\Sigma m_{y}\Theta_{y}l_{x},corrected from PDF,error,OCR error,1
@@ -269,12 +292,17 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 4-83,20,49,\sum E=2\Delta m\left[\frac{13I}{x}-\frac{1}{2}+\frac{18I-3.5x}{4I-x-c}\right],OCR,ok (automatic),,1
 4-84,20,49,r_{u}=\frac{6m\left[\frac{13l}{x}-\frac{1}{2}+\frac{18l-3.5x}{4l-x-c}\right]}{32l^{2}-4lx+cx-4cl-c^{2}},corrected from PDF,error,OCR error,1
 4-85,20,51,"r_{T}=\frac{1.5X\pi^{3}T_{H}/L_{H}^{2}}{4\sum_{n=1,3,5}\left[\frac{1}{n^{3}}(-1)^{(n-1)/2}\left[1-\frac{1}{\cosh\left[\frac{n\pi L_{L}}{2L_{H}}\left[\frac{T_{H}}{T_{L}}\right]^{1/2}\right]}\right]\right]}",OCR,ok (checked by eye),,1
+4-86,20,51,X_{e}=\frac{Cr_{u}L^{4}(1-\nu^{2})}{E_{c}I_{a}},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-87,20,52,C=C_{C}-C_{S}/2,OCR,ok (automatic),,1
 4-88,20,52,C=C_{C}-C_{L}/2,OCR,ok (automatic),,1
 4-89,20,52,C=C_{C}-C_{S}/2-C_{L}/2,OCR,ok (automatic),,1
 4-90,20,53,r_{avail}=r_{u}-r_{DL}\frac{f_{ds}}{f_{y}},corrected from PDF,ok (minor slip),OCR minor slip (name/prime check): stray accent,1
 4-91,20,53,\theta_{m}=\tan^{-1}\left(\frac{X_{m}-X_{DL}}{L_{s}}\right),corrected from PDF,ok (minor slip),OCR minor slip,1
+4-92,20,55,P=r_{u}\Sigma A+r_{u}c^{2},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-93,20,56,M_{x}=(V_{4}-V_{2})(c/2),corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-94,20,56,M_{y}=(V_{1}-V_{3})(c/2),corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-95,21,12,\frac{i_{b}^{2}}{2m_{u}}=r_{u}X_{1}+\frac{m_{u}}{m_{up}}r_{up}\left(X_{m}-X_{1}\right),corrected from PDF,error,OCR error,1
+4-96,21,12,\frac{i_{b}^{2}}{2m_{u}}=r_{u}X_{m},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-97,21,13,\frac{{{i}_{b}}^{2}H}{{{p}_{H}}{{d}_{c}}^{3}{{f}_{d s}}}=C,OCR,ok (checked by eye),,1
 4-98a,21,15,i_{b}^{2}=2\left(225d_{c}\right)\left(K_{LM}\right)_{u}\left[\frac{10p_{V}d_{c}^{2}f_{ds}}{y^{2}}\right]L\tan12^{\circ}+\frac{\left(K_{LM}\right)_{u}}{0.66}\left[\frac{2p_{V}d_{c}^{2}f_{ds}}{H^{2}}\right]\left[Y\tan12^{\circ}+\left(H-y\right)\tan\gamma-L\tan12^{\circ}\right],corrected from PDF,error,OCR error (name/prime check): p_V read as p_v; table held only the second line,1
 4-98b,21,15,i_{b}^{2}=2\left(225d_{c}\right)p_{V}d_{c}^{2}f_{ds}\tan12^{\circ}\left[\frac{10\left(K_{LM}\right)_{u}L}{y^{2}}+\frac{3\left(K_{LM}\right)_{u}^{2}}{H^{2}}\left(y-L+\frac{\left(H-y\right)\tan\gamma}{\tan12^{\circ}}\right)\right],corrected from PDF,error,OCR error (name/prime check): p_V read as p_v,1
@@ -284,6 +312,7 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 4-101,21,16,\frac{i_{b}^{2}H}{p_{H}d_{c}^{3}f_{ds}}=957\left(\frac{p_{V}}{p_{H}}\right)\left(K_{LM}\right)_{u}\frac{\left(L/H\right)}{\left(y/H\right)^{2}},OCR,ok (checked by eye),,1
 4-102,21,16,\frac{{{i_{b}}^{2}}H}{{{p_{H}}{d_{c}}^{3}}{{f_{d s}}}}={C_{1}},OCR,ok (automatic),,1
 4-103,21,16,\frac{{i_{b}}^{2}H}{{p_{H}}{d_{c}}^{3}{f_{d s}}}=C_{u},OCR,ok (checked by eye),,1
+4-104,21,16,p_{H}d_{c}^{3}=\frac{i_{b}^{2}H}{C_{1}f_{ds}},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-105,21,17,p_{H}d_{c}^{3}=\frac{i_{b}^{2}H}{C_{u}f_{ds}},corrected from PDF,error,OCR error (name/prime check): i_b read as I_b; stray accents,1
 4-106,21,19,p_{T}=p_{V}+p_{H},OCR,ok (automatic),,1
 4-107,21,19,p_{H}d_{c}^{3}=\mathrm{c o n s t a n t},OCR,ok (automatic),,1
@@ -293,10 +322,13 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 4-111,21,21,C_{1}^{\prime}=\left(\frac{X_{m}}{X_{1}}\right)C_{1},corrected from PDF,error,OCR error,1
 4-112,21,21,p_{H}T_{c}d_{c}^{2}=\frac{i_{b}^{2}H}{C_{1}f_{ds}},corrected from PDF,ok (checked by eye),OCR stray accent marks removed,1
 4-113,21,21,p_{H}T_{c}d_{c}^{2}=\frac{i_{b}^{2}H}{C_{u}f_{ds}},corrected from PDF,error,OCR error (name/prime check): i_b read as r_b,1
+4-114,21,22,\frac{i_{b}^{2}H}{2m_{a}}=\frac{r_{u}X_{E}}{2}+\frac{m_{a}}{m_{u}}r_{u}(X_{m}-X_{E}),corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-115,21,23,V_{s}=C\frac{pd_{c}^{2}f_{ds}}{L},OCR,ok (automatic),,1
 4-116,21,23,v_{u}=C p f_{d s},OCR,ok (automatic),,1
 4-117,21,23,v_{u}=C_{d}\rho f_{d s},OCR,ok (automatic),,1
 4-118,21,23,v_{u H}=C_{H}\rho_{H}f_{d s},OCR,ok (automatic),,1
+4-119,21,24,v_{uV}=C_{V}p_{V}f_{ds},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-120,21,24,V_{s}=C_{s}\frac{pd_{c}^{2}f_{ds}}{L},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-121,21,25,V_{s H}=C_{s}\frac{p_{_H}d_{c}^{2}f_{_{d s}}}{L},OCR,ok (automatic),,1
 4-122,21,25,V_{s V}=C_{s V}\frac{p_{v}d_{c}^{2}f_{d s}}{H},OCR,ok (automatic),,1
 4-123,22,10,\left(\left[\frac{\left(T_{c}+d_{c}\right)}{2}+\left(\frac{w_{s}}{w_{c}}\right)\left(\frac{T_{s}}{2}\right)\right]/d_{c}\right)^{1/2},OCR,ok (automatic),,1
@@ -313,10 +345,16 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 4-134,22,18,a=\frac{\left(A_{s}-A_{s}^{\prime}\right)f_{ds}}{0.85bf_{dc}^{\prime}},corrected from PDF,error,"OCR error (name/prime check): primes lost (A'_s, f'dc)",1
 4-135,22,18,p^{\prime}=\frac{A_{s}^{\prime}}{bd},corrected from PDF,error,OCR error (name/prime check): primes lost,1
 4-136,22,18,"p-p^{\prime}\leq0.85K_{1}\left[\frac{f_{dc}^{\prime}d^{\prime}}{f_{ds}d}\right]\left[\frac{87{,}000}{87{,}000-f_{ds}}\right]",corrected from PDF,error,OCR error,1
+4-137,22,19,M_{u}=A_{s}f_{ds}d_{c},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-138a,22,19,p=200/f_{y},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-138b,22,19,p=\frac{3\sqrt{f'_{c}}}{f_{y}},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-139,22,20,v_{u}=\frac{V_{u}}{b d},OCR,ok (automatic),,1
 4-139a,22,20,\boldsymbol{v}_{u}=\frac{V_{u}}{b d_{c}},OCR,ok (automatic),,1
 4-140a,22,20,v_{c}=2\left(f_{dc}^{\prime}\right)^{1/2},corrected from PDF,error,OCR error,1
 4-140b,22,20,"v_{c}=\left[1.9\left(f_{dc}^{\prime}\right)^{1/2}+2{,}500\,p\right]\leq3.5\left(f_{dc}^{\prime}\right)^{1/2}",corrected from PDF,error,OCR error,1
+4-141,22,21,A_{v}=\frac{\left[(v_{u}-v_{c})bs_{s}\right]}{\phi f_{dy}},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-142,22,22,A_{d}=(V_{s}b-V_{d})/(f_{ds}\sin(\alpha)),corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-143,22,23,v_{(tu)V}=\frac{3T_{u}}{b^{2}h},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-144,22,23,v_{(t u)H}=\frac{3T_{u}}{b h^{2}},OCR,ok (automatic),,1
 4-145,22,24,v_{c}=\frac{2\left(f_{dc}^{\prime}\right)^{1/2}}{\left[1+\left[\frac{v_{tu}}{1.2v_{u}}\right]^{2}\right]^{1/2}},corrected from PDF,ok (minor slip),OCR minor slip,1
 4-146,22,24,v_{tc}=\frac{2.4\left(f_{dc}^{\prime}\right)^{1/2}}{\left[1+\left[\frac{1.2v_{u}}{v_{tu}}\right]^{2}\right]^{1/2}},corrected from PDF,ok (minor slip),OCR minor slip,1
@@ -329,6 +367,8 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 4-151b,22,26,A_{l}=\left[\frac{400bs}{f_{dy}}\frac{v_{tu}}{v_{tu}+v_{u}}-2A_{t}\right]\left[\frac{b_{t}+h_{t}}{s}\right],corrected from PDF,error,OCR error,1
 4-152,22,30,r_{t}=\pmb{X}\left[\frac{8T}{L^{2}}\right],OCR,ok (automatic),,1
 4-153,22,30,T=A_{s c}f_{d v},OCR,ok (automatic),,1
+4-154,22,35,P_{o}=0.85f'_{dc}(A_{g}-A_{st})+A_{st}f_{dy},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-155,22,36,e_{b}=M_{b}/P_{b},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-156,22,36,e_{b}=0.20h+(1.54m A_{s})/b,OCR,ok (automatic),,1
 4-157,22,36,m=f_{dy}/\left(0.85f_{dc}^{\prime}\right),corrected from PDF,error,OCR error,1
 4-158,22,37,e_{b}=(0.24+0.39\;p_{T}m)\;D,OCR,ok (automatic),,1
@@ -336,6 +376,7 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 4-160,22,37,P_{u}=\frac{A_{s}f_{dy}}{\frac{e}{2d-h}+0.5}+\frac{bhf_{dc}}{\frac{3he}{d^{2}}+1.18},OCR,ok (automatic),,1
 4-161,22,38,P_{u}=\left[\frac{A_{st}f_{dy}}{\frac{3e}{D_{s}}+1.0}\right]+\left[\frac{A_{g}f_{dc}^{'}}{\frac{9.6D_{e}}{\left(0.8D+0.67D_{s}\right)^{2}}+1.18}\right],OCR,ok (checked by eye),,1
 4-162,22,39,P_{u}=0.85f_{dc}^{'}bd\left[1-p-\frac{e^{'}}{d}+\left[\left(1-\frac{e^{'}}{d}\right)^2+2p\left(m-1\left(2-\frac{h}{d}\right)+\frac{e^{'}}{d}\right)\right]^{1/2}\right],OCR,ok (automatic),,1
+4-163,22,39,p_{s}=A/(bd),corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page; printed as A / (bd) with a gap where a subscript should be (probably A_s); kept as printed,1
 4-164,22,39,e^{\prime}=e+d-(h/2),OCR,ok (automatic),,1
 4-165,22,39,m=f_{dy}/(0.85f_{dc}^{\prime}),OCR,ok (automatic),,1
 4-166,22,39,P_{u}=0.85f_{dc}^{\prime}D^{2}\left[\left[\left(\frac{0.85e}{D}-0.38\right)^{2}+\frac{P_{T}mD_{s}}{2.5D}\right]^{1/2}-\left(\frac{0.85e}{D}-0.38\right)\right],corrected from PDF,error,OCR error,1
@@ -348,14 +389,24 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 4-173,22,42,E I=\frac{E_{c}I_{a}}{1.5},OCR,ok (checked by eye),,1
 4-174,22,42,I_{a}=\frac{I_{g}+I_{c}}{2},OCR,ok (automatic),,1
 4-175,22,42,I_{c}=F b d^{3},OCR,ok (automatic),,1
+4-176,22,44,\frac{1}{P_{u}}=\frac{1}{P_{x}}+\frac{1}{P_{y}}-\frac{1}{P_{o}},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-176a,22,45,A_{sh}\geq 0.3\left[sh_{c}\frac{f'_{dc}}{f_{dy}}\right]\left[\frac{A_{g}}{A_{ch}}-1\right],corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-176b,22,45,A_{sh}\geq 0.09sh_{c}\frac{f'_{dc}}{f_{dy}},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-177a,22,47,A_{sp}=0.1125sD_{sp}\left[\frac{D^{2}}{D_{sp}^{2}}-1\right]\frac{f_{dc}^{\prime}}{f_{dy}},corrected from PDF,error,OCR error,1
 4-177b,22,47,p_{s}\geq0.12f_{dc}^{\prime}/f_{dy},corrected from PDF,error,OCR error,1
 4-177c,22,47,p_{s}=\frac{SpiralVolume}{CoreVolume}=\frac{A_{sp}\pi(D_{sp}-d_{s})}{(\pi D_{sp}^{2}/4)s}\approx\frac{4A_{s}}{sD_{sp}},OCR,ok (automatic),,1
+4-178,23,4,\frac{h}{R}=\frac{1}{a+b\Psi^{2.5}+c\Psi^{0.5}},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-179,23,4,\frac{h}{R}=\frac{1}{a+b\Psi+c\Psi^{2}},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-180a,23,5,\Psi=R^{0.926}f_{c}^{\prime}{}^{0.266}W_{a d j}{}^{-0.353}\left(\frac{W_{a d j}}{W_{a d j}+W_{c}}\right)^{0.333},OCR,ok (automatic),,1
 4-180b,23,5,\Psi=0.527R^{0.972}f_{c}^{\prime}{}^{0.308}W_{a d j}^{-0.341},OCR,ok (automatic),,1
 4-181a,23,5,W_{adj}=B_{f}C_{f}W,corrected from PDF,ok (minor slip),OCR minor slip,1
 4-181b,23,6,C_{f}=1+2\left(\frac{LD}{\pi\left(3LD^{2}/16\right)^{0.667}}-1\right)\left(1-\frac{R}{2W^{0.333}}\right);\ L>D\ \text{and}\ R/W^{0.333}<2.0,corrected from PDF,error,OCR error,1
 4-181c,23,6,C_{f}=1.0;\ \text{all other cases},corrected from PDF,ok (checked by eye),OCR line was paired wrongly (OCR itself correct),1
+4-182,23,8,a=r_{u}/m_{u},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-183,23,9,r_{fs}=m_{sp}a,corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-184,23,9,d_{sp}=(T_{c}-d_{c})/2,corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-185,23,10,v=i_{b}/m_{u},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-186,23,10,i_{fs}=m_{sp}v,corrected from PDF,missed,"OCR missed (equation number not captured): read from the rendered PDF page; the PDF page has an editorial note box next to this equation (""Find velocity using impulse and slab plastic mass; use detached mass to find impulse"")",1
 4-187,23,12,\boldsymbol{v}_{i}=\frac{\boldsymbol{i}_{b}}{m_{u}}-\frac{\boldsymbol{r}_{u}\boldsymbol{t}_{1}}{m_{u}}-\frac{\boldsymbol{r}_{u p}\left(\boldsymbol{t}_{u}-\boldsymbol{t}_{1}\right)}{m_{u p}},OCR,ok (automatic),,1
 4-188,23,13,\boldsymbol{X}_{1}=\frac{\boldsymbol{i}_{b}\boldsymbol{t}_{1}}{m_{u}}-\frac{\boldsymbol{r}_{u}{\boldsymbol{t}_{1}}^{2}}{2m_{u}},OCR,ok (automatic),,1
 4-189,23,13,X_{u}=\frac{i_{b}t_{u}}{m_{u}}-\frac{r_{u}t_{1}}{m_{u}}\left[t_{u}-\frac{t_{1}}{2}\right]-\frac{r_{u p}\left(t_{u}-t_{1}\right)^{2}}{2m_{u p}},OCR,ok (checked by eye),,1
@@ -372,8 +423,11 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 4-200,23,31,X_{f}=1.92\times10^{-3}W_{f}^{0.37}v_{s}^{0.9}\quad for X_{f}\leq2d,OCR,ok (automatic),,1
 4-201,23,31,X_{f}=1.32\times10^{-6}W_{f}^{0.4}v_{s}^{1.8}+0.695W_{f}^{0.33}\quad for X_{f}>2d,OCR,ok (automatic),,1
 4-202,23,31,"X_{f}^{\prime}=X_{f}\left[\frac{4{,}000}{f_{c}^{\prime}}\right]^{1/2}",corrected from PDF,error,OCR error,1
+4-203,23,32,X'_{f}=kX_{f},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
+4-204,23,32,T_{pf}=1.13X_{f}d^{0.1}+1.311d,corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-205,23,33,v_{r}/v_{s}=\left[1-\left(T_{c}/T_{p f}\right)^{2}\right]^{0.555},OCR,ok (automatic),,1
 4-206,23,33,v_{r}/v_{s}=\left[1-\left(T_{c}/T_{p f}\right)\right]^{0.555},OCR,ok (automatic),,1
+4-207,23,33,T_{sp}=1.215X_{f}d^{0.1}+2.12d,corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 4-208,23,35,X_{s}=1.188~D^{-}d^{-}I n\left(1+2.16\times10^{-3}~v_{s}^{2}\right),OCR,ok (automatic),,1
 4-209,23,35,X_{s}=3.53d\ln{(1+2.16\times10^{-3}v_{s}^{2})},OCR,ok (automatic),,1
 4-210,23,35,v_{r}/v_{s}=[1-T_{s}/X_{s}]^{0.555},OCR,ok (automatic),,1
@@ -435,9 +489,11 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 5-56,28,43,\mu=(H/25L)(\cos^{2}\gamma)(E/f_{d s}),OCR,ok (automatic),,1
 5-57,28,44,R_{u}=V1+nV2+mF_{H},OCR,ok (automatic),,1
 5-58,28,44,F_{v}=A_{b}f_{d s}\sin\gamma,OCR,ok (automatic),,1
+5-59,28,44,T_{N}=2\pi\left[m_{e}/(KK_{L}+K_{b})\right]^{1/2},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 5-60,28,45,X_{E}=R_{u}/\left(KK_{L}+K_{b}\right),corrected from PDF,error,OCR error,1
 5-61,28,45,K_{b}=(n A_{b}E\cos^{3}\gamma)/L,OCR,ok (automatic),,1
 5-62,28,45,r_{b}\ge L_{b}/300,OCR,ok (automatic),,1
+5-63,29,3,f_{d}=1.7(DIF)f_{s},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 5-64,29,7,\chi=0.30~W_{f}{}^{0.33}~V_{s}{}^{1.22},OCR,ok (automatic),,1
 5-65,29,7,x=0.21~W_{f}^{0.33}~V_{s}^{1.22},OCR,ok (automatic),,1
 5-66,29,8,V_{r}\Lambda V_{s}=[1-(V_{x}\Lambda V_{s})^{2}]^{1/2}/(1+t/d),OCR,ok (automatic),,1
@@ -451,6 +507,7 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 6-7,31,23,\left(\frac{V_{u o}}{V_{m o}+V_{s o}}\right)^{2}+\left(\frac{V_{u i}}{V_{m i}+V_{s i}}\right)^{2}\leq1.0,OCR,ok (checked by eye),,1
 6-8,31,24,V_{dm}=0.6A_{vd}f_{dy},corrected from PDF,error,OCR error,1
 6-9,31,31,M_{u}=\frac{A_{s}f_{dy}}{b}\left(d-\frac{a}{2}\right),OCR,ok (automatic),,1
+6-10,31,34,I_{a}=\frac{I_{n}+I_{c}}{2},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 6-11,31,34,I_{c}=0.005\;d^{3},OCR,ok (automatic),,1
 6-12,31,35,\boldsymbol{M}_{d u}=\boldsymbol{S}\left(\boldsymbol{f}_{d t}+\frac{\boldsymbol{P}}{\boldsymbol{A}}\right),OCR,ok (automatic),,1
 6-13,31,36,r_{a}=\frac{8}{L^{2}}(T-2X_{e})\left(P+\frac{wL}{2}\right)\quad where\quad X_{e}=\frac{r_{u}}{K_{e}},OCR,ok (automatic),,1
@@ -493,6 +550,7 @@ number,batch,page,latex,source,verdict,reason,latex_ok
 6-47,33,8,"V_{x}=C_{x}r_{u}b\sin\left(\pi x/a\right)+r_{u}w,l b/i n",OCR,ok (automatic),,1
 6-48,33,8,"V_{y}=C_{y}r_{u}b\sin{(\pi y/a)}+r_{u}w,I b/i n",OCR,ok (automatic),,1
 6-49,33,9,"R=C_{R}r_{u}b^{2},I b",OCR,ok (automatic),,1
+6-50,33,10,r_{s}=0.876r_{u},corrected from PDF,missed,OCR missed (equation number not captured): read from the rendered PDF page,1
 6-51,33,11,\overline{{r}}\geq r_{u}+s\alpha,OCR,ok (automatic),,1
 6-52,33,11,\overline{{r}}=\frac{\displaystyle\sum_{i=1}^{n}r_{i}}{n},OCR,ok (automatic),,1
 6-53,33,11,s=\left[\sum_{i=1}^{n}\frac{\left[r_{i}-\bar{r}\right]^{2}}{n-1}\right]^{1/2},corrected from PDF,error,OCR error,1

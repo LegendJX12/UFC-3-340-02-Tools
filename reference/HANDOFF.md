@@ -68,10 +68,10 @@ Earlier builds read the `.grf` files wrongly: all curves of a file were merged i
 - Values checked against charts: 2-194 (a) and (b), 2-207, 2A-23, 4A-8.
 
 ## 3. Equations (table `equations`, file `equations.csv`)
-**Use table `equations` for any equation.** It has one LaTeX form per numbered equation (501):
-- **148 corrected from the PDF** (`source` = 'corrected from PDF'), written from the rendered PDF page and listed in `equation_corrections.csv` with a `reason`: 112 OCR errors, 3 equations the OCR missed (4-45b, 4-196, 4-199), 26 minor OCR slips, OCR lines paired with the wrong equation number, and 2-24 / 2-25 stored as printed (operator still to confirm). 34 of these (reason contains 'name/prime check') were found by the letter and prime check of section 3a.
+**Use table `equations` for any equation.** It has one LaTeX form per numbered equation (559):
+- **206 corrected from the PDF** (`source` = 'corrected from PDF'), written from the rendered PDF page and listed in `equation_corrections.csv` with a `reason`: 112 OCR errors, 61 equations the OCR missed (4-45b, 4-196, 4-199, and 58 whose numbers the OCR never captured, see below), 26 minor OCR slips, OCR lines paired with the wrong equation number, and 2-24 / 2-25 stored as printed (operator still to confirm). 34 of these (reason contains 'name/prime check') were found by the letter and prime check of section 3a.
 - **353 from OCR** (`source` = 'OCR'), where the checks below found no problem; layout leftovers (`&`, `\begin{aligned}`, stray characters) removed.
-- All 501 parse in KaTeX (`latex_ok` = 1). The original OCR text is kept in column `ocr_latex`; table `blocks` is unchanged.
+- All 559 parse in KaTeX (`latex_ok` = 1). The original OCR text is kept in column `ocr_latex`; table `blocks` is unchanged.
 - Each correction was checked against the PDF text layer: numbers and variable names agree, except where the text layer itself splits or drops them (exponents on other lines, "87 ,000", "R eff").
 
 How equations were checked (`equation_status.csv`): the PDF text layer (table `pdf_pages`) has exact text, but Greek letters and some symbols are small images, and exponents and fraction parts sit on separate text lines. Every numbered equation found by OCR (501) was checked against it:
@@ -86,7 +86,7 @@ How equations were checked (`equation_status.csv`): the PDF text layer (table `p
 | ok (checked by eye) | 46 | Flagged, but correct on the rendered page (text-layer artefacts) |
 | ok (minor slip) | 26 | Small slip; now corrected in `equations` |
 | **error** | **112** | OCR was wrong; now corrected in `equations` |
-| **missed** | **3** | OCR had no formula (4-45b, 4-196, 4-199); now in `equations` |
+| **missed** | **61** | OCR had no formula or no number (4-45b, 4-196, 4-199 and the 58 above); now in `equations` |
 | check operator | 2 | 2-24, 2-25: OCR divides, PDF prints multiplication; `equations` follows the PDF |
 
 Most common OCR faults (see `equation_review.csv` for each equation):
@@ -108,7 +108,7 @@ Most common OCR faults (see `equation_review.csv` for each equation):
 - Every fix is listed in `formula_fixes.csv` (type, OCR text, fixed text, PDF evidence). 142 doubtful lines in `formula_review.csv` were read; two remain open: V_sv and V_st on batch 25 pages 14–15.
 - The same check found 34 errors in numbered equations that the number check had passed (lost primes, I_b for i_b, p_v for p_V, brackets read as J). These are now corrected in `equations`.
 
-**Coverage gap (open):** about 41 numbered equations printed in the PDF are not in table `equations`, because the OCR never captured their equation numbers (for example 2-2, 2-4, 2-7, 2-56, 3-37, 3-55, 4-11, 4-18, 4-19, 4-31 to 4-33, 4-92 to 4-94, 4-138a/b, 4-154, 4-155, 4-182 to 4-186, 5-59, 5-63, 6-50). Equations printed only as pictures may add more. These need adding from the rendered PDF pages.
+**Coverage: complete.** Every equation number printed at the right margin of the PDF pages was listed (PDF words, excluding page numbers and table cells). 58 were missing from the table because the OCR never captured their numbers (2-2, 2-4, 2-7, 2-45, 2-48, 2-56, 2-65, 2-75, 2-77, 2-79, 2-91, 3-37, 3-55, 3-87, 4-7, 4-10, 4-11, 4-18, 4-19, 4-31 to 4-33, 4-74, 4-86, 4-92 to 4-94, 4-96, 4-104, 4-114, 4-119, 4-120, 4-137, 4-138a/b, 4-141 to 4-143, 4-154, 4-155, 4-163, 4-176, 4-176a/b, 4-178, 4-179, 4-182 to 4-186, 4-203, 4-204, 4-207, 5-59, 5-63, 6-10, 6-50). Each was read on a zoomed render of its page and added (`equation_corrections.csv`, reason 'OCR missed'). Chapters 2, 3, 5 and 6 now have no gaps in their numbering; chapter 4 skips 4-34 to 4-38, which do not exist in the printed guide (the PDF holds only invisible leftover text "4-34 4-35 4-36 4-37 4-38" on batch 20 page 24). Notes: 4-163 is printed "p_s = A / (bd)" with a missing subscript (probably A_s); 4-186 has an editorial note box beside it in the PDF.
 
 ## 3b. Tables (`reference/tables/`, tables `guide_tables`, `guide_table_cells`)
 All 85 numbered tables are exported, one CSV each (84 from the index plus Table 4-15a, which the index misses). `tables_index.csv` says for each how it was read and checked. Every number was read twice, by two independent methods, and compared:
