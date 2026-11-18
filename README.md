@@ -7,4 +7,4 @@ Blast load and structural response analysis tool based on U.S. DoD UFC 3-340-02 
 - `ocr/`: per-page OCR output (layout JSON and cropped images)
 - `graphs/UFC_Plots_data/`: plot curve data (.grf files)
 - `reference/`: index, database, plot-to-guide map, and `HANDOFF.md` (read first)
-- `scripts/`: rebuild the database and the plot map
+- `scripts/`: rebuild the database, plot map, equation check and missing-data list

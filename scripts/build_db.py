@@ -8,6 +8,10 @@ Usage:
 import argparse, glob, json, os, re, sqlite3
 import openpyxl
 
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from grf import parse_grf  # noqa: E402
+
 CHAPTERS = [  # chapter, first batch, last batch, title (from chapter file headers)
     (1, 1, 1, 'Introduction'),
     (2, 2, 10, 'Blast, Fragment, and Shock Loads'),
@@ -17,8 +21,9 @@ CHAPTERS = [  # chapter, first batch, last batch, title (from chapter file heade
     (6, 31, 35, 'Special Considerations in Explosive Facility Design'),
 ]
 NUM_RE = re.compile(r'^\s*-?[\d.]+(?:[eE][-+]?\d+)?\s*,\s*-?[\d.]+(?:[eE][-+]?\d+)?\s*$')
-FIG_RE = re.compile(r'^\s*(?i:figure)\s+(\d+[A-Z]?-\d+[a-z]?)(?![a-z])')
-TAB_RE = re.compile(r'^\s*(?i:table)\s+(\d+[A-Z]?-\d+[a-z]?)(?![a-z])')
+FIG_RE = re.compile(r'^\s*(?i:figure)\s+(\d+[A-Z]?-\d+)(?:([a-z])(?![a-z])|\s*\(([a-z])\))?')
+TAB_RE = re.compile(r'^\s*(?i:table)\s+(\d+[A-Z]?-\d+)(?:([a-z])(?![a-z])|\s*\(([a-z])\))?')
+REF_RE = re.compile(r'^\s*(?i:figure|table)\s+\d+[A-Z]?-\d+[a-z]?\s*\(\s*[+±]')
 IMG_RE = re.compile(r'img_in_(\w+?)_box_(\d+)_(\d+)_(\d+)_(\d+)\.jpg$', re.I)
 
 
@@ -53,12 +58,14 @@ def main():
     ap.add_argument('--grf-root', required=True)
     ap.add_argument('--index', required=True)
     ap.add_argument('--out', required=True)
+    ap.add_argument('--pdf-root', help="folder with 'batch N.pdf' files; adds exact PDF text (needs pdftotext)")
     a = ap.parse_args()
 
     if os.path.exists(a.out):
         os.remove(a.out)
     db = sqlite3.connect(a.out)
     db.executescript('''
+    CREATE TABLE pdf_pages(batch INT, page INT, text TEXT, PRIMARY KEY(batch, page));
     CREATE TABLE chapters(chapter INT PRIMARY KEY, batch_from INT, batch_to INT, title TEXT);
     CREATE TABLE pages(batch INT, page INT, chapter INT, width INT, height INT,
                        block_count INT, text TEXT, PRIMARY KEY(batch, page));
@@ -72,8 +79,11 @@ def main():
                          nearest_image TEXT, plot_files TEXT);
     CREATE TABLE index_entries(type TEXT, number TEXT, title TEXT, batch_file TEXT,
                                pdf_page_in_batch INT, ufc_page TEXT, chapter INT);
-    CREATE TABLE plot_files(file TEXT PRIMARY KEY, folder TEXT, captions TEXT, point_count INT);
-    CREATE TABLE plot_points(file TEXT, seq INT, x REAL, y REAL);
+    CREATE TABLE plot_files(file TEXT PRIMARY KEY, folder TEXT, layout TEXT, captions TEXT,
+                            curve_count INT, point_count INT);
+    CREATE TABLE plot_curves(file TEXT, curve_no INT, label TEXT, point_count INT,
+                             x_min REAL, x_max REAL, y_min REAL, y_max REAL, PRIMARY KEY(file, curve_no));
+    CREATE TABLE plot_points(file TEXT, curve_no INT, seq INT, x REAL, y REAL);
     CREATE TABLE plot_labels(file TEXT, line_no INT, text TEXT);
     ''')
     db.executemany('INSERT INTO chapters VALUES (?,?,?,?)', CHAPTERS)
@@ -112,17 +122,19 @@ def main():
                             blk.get('block_label'), content, x1, y1, x2, y2))
                 for line in content.split('\n'):
                     first = line.strip()
+                    if REF_RE.match(first):
+                        continue  # "Figure 2-184 (+) ..." is a reference in the text, not a caption
                     fm = FIG_RE.match(first)
                     tm = TAB_RE.match(first)
                     if fm:
-                        all_caps.append(('figure', fm.group(1), first, b, pg, bid, (x1, y1, x2, y2)))
+                        all_caps.append(('figure', (fm.group(1) + (fm.group(2) or fm.group(3) or '')), first, b, pg, bid, (x1, y1, x2, y2)))
                         db.execute('INSERT OR IGNORE INTO captions VALUES (?,?,?,?,?,?)',
-                                   ('figure', fm.group(1), first, b, pg,
+                                   ('figure', (fm.group(1) + (fm.group(2) or fm.group(3) or '')), first, b, pg,
                                     int(bid) if str(bid).isdigit() else None))
                     if tm:
-                        all_caps.append(('table', tm.group(1), first, b, pg, bid, (x1, y1, x2, y2)))
+                        all_caps.append(('table', (tm.group(1) + (tm.group(2) or tm.group(3) or '')), first, b, pg, bid, (x1, y1, x2, y2)))
                         db.execute('INSERT OR IGNORE INTO captions VALUES (?,?,?,?,?,?)',
-                                   ('table', tm.group(1), first, b, pg,
+                                   ('table', (tm.group(1) + (tm.group(2) or tm.group(3) or '')), first, b, pg,
                                     int(bid) if str(bid).isdigit() else None))
     db.commit()
 
@@ -149,6 +161,18 @@ def main():
                        (name, b, pg, kind, *c, 1 if len(pages) > 1 else 0))
     db.commit()
 
+    # ---- exact text layer of the source PDFs (more accurate than OCR text)
+    if a.pdf_root:
+        import subprocess
+        for f in sorted(glob.glob(os.path.join(a.pdf_root, 'batch *.pdf'))):
+            b = int(re.search(r'batch (\d+)\.pdf$', f).group(1))
+            out = subprocess.run(['pdftotext', '-layout', f, '-'], capture_output=True, text=True).stdout
+            for pg, t in enumerate(out.split('\f'), 1):
+                if t.strip():
+                    db.execute('INSERT OR REPLACE INTO pdf_pages VALUES (?,?,?)', (b, pg, t))
+        db.commit()
+        print('pdf pages:', db.execute('SELECT COUNT(*) FROM pdf_pages').fetchone()[0])
+
     # ---- index spreadsheet
     ws = openpyxl.load_workbook(a.index).active
     n_idx = 0
@@ -166,24 +190,24 @@ def main():
     fig_to_plots = {}
     for f in sorted(set(grf_files)):
         raw = open(f, 'rb').read().decode('latin-1')
-        lines = raw.replace('\r', '').split('\n')
         name = os.path.basename(f)
         folder = os.path.relpath(os.path.dirname(f), a.grf_root)
-        caps = sorted(set(re.findall(r'Figure\s+(\d+-\d+[A-Za-z]?)', raw)))
-        pts = 0
-        seq = 0
-        for i, line in enumerate(lines):
-            s = line.strip()
-            if not s:
-                continue
-            if NUM_RE.match(s):
-                x, y = s.split(',')
-                db.execute('INSERT INTO plot_points VALUES (?,?,?,?)', (name, seq, float(x), float(y)))
-                seq += 1
-                pts += 1
-            else:
-                db.execute('INSERT INTO plot_labels VALUES (?,?,?)', (name, i + 1, s))
-        db.execute('INSERT INTO plot_files VALUES (?,?,?,?)', (name, folder, ', '.join(caps), pts))
+        caps = sorted(set(re.findall(r'Figure\s+(\d+[A-Za-z]?-\d+[A-Za-z]?)', raw)))
+        g = parse_grf(raw)
+        total = 0
+        for cn, curve in enumerate(g['curves'], 1):
+            pts = curve['points']
+            xs = [p[0] for p in pts] or [None]
+            ys = [p[1] for p in pts] or [None]
+            db.execute('INSERT INTO plot_curves VALUES (?,?,?,?,?,?,?,?)',
+                       (name, cn, curve['label'], len(pts), min(xs), max(xs), min(ys), max(ys)))
+            db.executemany('INSERT INTO plot_points VALUES (?,?,?,?,?)',
+                           [(name, cn, k, x, y) for k, (x, y) in enumerate(pts)])
+            total += len(pts)
+        for ln, t in enumerate(g['text'], 1):
+            db.execute('INSERT INTO plot_labels VALUES (?,?,?)', (name, ln, t))
+        db.execute('INSERT INTO plot_files VALUES (?,?,?,?,?,?)',
+                   (name, folder, g['layout'], ', '.join(caps), len(g['curves']), total))
         for c in caps:
             fig_to_plots.setdefault(c, []).append(name)
     db.commit()
@@ -205,8 +229,8 @@ def main():
     db.commit()
 
     # ---- summary
-    for t in ['chapters', 'pages', 'blocks', 'images', 'captions', 'figures',
-              'index_entries', 'plot_files', 'plot_points', 'plot_labels']:
+    for t in ['chapters', 'pages', 'pdf_pages', 'blocks', 'images', 'captions', 'figures',
+              'index_entries', 'plot_files', 'plot_curves', 'plot_points', 'plot_labels']:
         print(f'{t:14s}', db.execute(f'SELECT COUNT(*) FROM {t}').fetchone()[0])
     db.execute('VACUUM')
     db.close()
