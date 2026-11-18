@@ -9,7 +9,7 @@ equation,batch,page,checked_in,finding,ocr_text,correct_text_from_pdf,note
 2-62,7,55,16 differ,OCR ERROR,...=58.400[R_e/R],"i/(β Reff) [Re/Rt]^0.158 = 58,400 [Re/R]",Thousands comma read as decimal point.
 2-67,7,57,16 differ,PDF text split (OCR correct),... [2Lf/bf]^{0.3} >= 0.602,(i bf / (A (ρf T)^1/2)) (2Lf/bf)^0.3 >= 0.602,"PDF text layer splits 0.602 into ""0 602""."
 4-5,19,44,16 differ,pairing (OCR correct),n=E\sqrt{E_0} (paired by mistake),Es = 29 x 10^6 psi,"Real OCR block ""E_s=29\times10^{6} psi"" matches."
-4-71,20,44,16 differ,pairing (OCR correct),M_OL = wH(L-c)^2/8 (paired by mistake),m18+ = 0.60 (0.35) MOL/(H/2),Real OCR block line for m18+ matches.
+4-71,20,44,name/prime check,minor (OCR usable),,m_{18}^{+}=0.60\left(0.35\right)M_{OL}/\left(H/2\right),stray accent
 4-140a,22,20,same block as a 16-differ equation,OCR ERROR,v_c=2f_{dc}^{\prime\prime}\eta^{1/2},vc = 2 f'dc^1/2,Spurious η in OCR.
 4-140b,22,20,16 differ,OCR ERROR,v_c=|1.9f'_{dc}|^{1/2}+2.500p\leq3.5f'_{dc}'',"vc = [1.9 f'dc^1/2 + 2,500 p] <= 3.5 f'dc^1/2","Exponent 1/2 applies to f'dc, not the bracket; 2,500 read as 2.500."
 4-173,22,42,16 differ,PDF text split (OCR correct),EI=E_cI_a/1.5,EI = Ec Ia / 1.5,"PDF text layer splits 1.5 into ""1 .5""."
@@ -116,3 +116,36 @@ equation,batch,page,checked_in,finding,ocr_text,correct_text_from_pdf,note
 3-53,13,7,letter check,minor (OCR usable),K_LM=10ad-mass factor=K_M/K_L,K_LM = load-mass factor = K_M/K_L,"""load"" read as ""10ad""."
 4-91,20,53,letter check,minor (OCR usable),\mathcal{O}_m=tan^{-1}(...),θ_m = tan^-1((X_m - X_DL)/L_s),θ read as a script O.
 4-181a,23,5,letter check,minor (OCR usable),W_adi,W_adj = B_f C_f W,j read as i.
+2-40,7,46,name/prime check,OCR ERROR,,W_{f}^{\prime}=16W_{c}/N_{T}=2M_{A}^{2},prime lost on W'_f
+3-41,13,3,name/prime check,OCR ERROR,,K_{L}=F_{E}/F,F_E read as F_F
+3-90,13,30,name/prime check,OCR ERROR,,X_{1}=\frac{i_{b}t_{1}}{m_{u}}-\frac{r_{u}t_{1}^{2}}{2m_{u}},i_b read as I_b
+3-95,13,32,name/prime check,OCR ERROR,,t_{m}=\frac{i_{b}}{r_{u}}+\left[\frac{m_{up}}{m_{u}r_{up}}-\frac{1}{r_{u}}\right]\left[i_{b}^{2}-2m_{u}r_{u}X_{1}\right]^{1/2},bracket closes in the wrong place; stray accent
+4-26,20,7,name/prime check,OCR ERROR,,A_{v}=\left[\left(v_{u}-v_{c}\right)b_{s}s_{s}\right]/\phi f_{ds},bracket read as J; stray rho
+4-27,20,7,name/prime check,OCR ERROR,,A_{v}=\frac{\left(v_{u}-v_{c}\right)b_{l}s_{l}}{\phi f_{ds}\left(\sin\alpha+\cos\alpha\right)},b_l s_l read as b_I s_I
+4-49,20,42,name/prime check,OCR ERROR,,\alpha_{ec}=\frac{\left(4E_{c}I_{w}\right)/H_{w}}{\left(4E_{c}I_{s}\right)/l_{s}},l_s (length) read as I_s
+4-63,20,44,name/prime check,OCR ERROR,,m_{10}^{-}=0.65\alpha_{ecL}^{\prime}M_{OL}/H,minus sign read as an accent
+4-64,20,44,name/prime check,minor (OCR usable),,m_{11}^{+}=0.40\left(0.63-0.28\alpha_{ecL}^{\prime}\right)M_{OL}/\left(H/2\right),stray accent
+4-65,20,44,name/prime check,minor (OCR usable),,m_{12}^{-}=0.25\left(0.75-0.10\alpha_{ecL}^{\prime}\right)M_{OL}/\left(H/2\right),stray accent
+4-66,20,44,name/prime check,minor (OCR usable),,m_{13}^{-}=0.25\left(0.65\right)M_{OL}/\left(H/2\right),stray accent
+4-67,20,44,name/prime check,minor (OCR usable),,m_{14}^{+}=0.40\left(0.35\right)M_{OL}/\left(H/2\right),stray accent
+4-68,20,44,name/prime check,minor (OCR usable),,m_{15}^{+}=0.60\left(0.63-0.28\alpha_{ecL}^{\prime}\right)M_{OL}/\left(H/2\right),stray accent
+4-69,20,44,name/prime check,minor (OCR usable),,m_{16}^{-}=0.75\left(0.75-0.10\alpha_{ecL}^{\prime}\right)M_{OL}/\left(H/2\right),stray accent
+4-70,20,44,name/prime check,minor (OCR usable),,m_{17}^{-}=0.75\left(0.65\right)M_{OL}/\left(H/2\right),stray accent
+4-90,20,53,name/prime check,minor (OCR usable),,r_{avail}=r_{u}-r_{DL}\frac{f_{ds}}{f_{y}},stray accent
+4-98a,21,15,name/prime check,OCR ERROR,,i_{b}^{2}=2\left(225d_{c}\right)\left(K_{LM}\right)_{u}\left[\frac{10p_{V}d_{c}^{2}f_{ds}}{y^{2}}\right]L\tan12^{\circ}+\frac{\left(K_{LM}\right)_{u}}{0.66}\left[\frac{2p_{V}d_{c}^{2}f_{ds}}{H^{2}}\right]\left[Y\tan12^{\circ}+\left(H-y\right)\tan\gamma-L\tan12^{\circ}\right],p_V read as p_v; table held only the second line
+4-98b,21,15,name/prime check,OCR ERROR,,i_{b}^{2}=2\left(225d_{c}\right)p_{V}d_{c}^{2}f_{ds}\tan12^{\circ}\left[\frac{10\left(K_{LM}\right)_{u}L}{y^{2}}+\frac{3\left(K_{LM}\right)_{u}^{2}}{H^{2}}\left(y-L+\frac{\left(H-y\right)\tan\gamma}{\tan12^{\circ}}\right)\right],p_V read as p_v
+4-105,21,17,name/prime check,OCR ERROR,,p_{H}d_{c}^{3}=\frac{i_{b}^{2}H}{C_{u}f_{ds}},i_b read as I_b; stray accents
+4-109,21,20,name/prime check,OCR ERROR,,C_{u}^{\prime}=C_{1}+\frac{X_{m}-X_{1}}{X_{u}-X_{1}}\left(C_{u}-C_{1}\right),prime lost on C'_u
+4-113,21,21,name/prime check,OCR ERROR,,p_{H}T_{c}d_{c}^{2}=\frac{i_{b}^{2}H}{C_{u}f_{ds}},i_b read as r_b
+4-134,22,18,name/prime check,OCR ERROR,,a=\frac{\left(A_{s}-A_{s}^{\prime}\right)f_{ds}}{0.85bf_{dc}^{\prime}},"primes lost (A'_s, f'dc)"
+4-135,22,18,name/prime check,OCR ERROR,,p^{\prime}=\frac{A_{s}^{\prime}}{bd},primes lost
+4-149,22,25,name/prime check,OCR ERROR,,A_{(t)H}=\frac{\left(v_{(tu)H}-v_{tc}\right)bh^{2}s}{3\phi\alpha_{t}b_{t}h_{t}f_{dy}},f_dy read as f_dv
+5-9,27,37,name/prime check,OCR ERROR,,R_{u}=r_{u}bL=12M_{p}/L,spurious exponent 3
+5-38,28,13,name/prime check,OCR ERROR,,Q_{u}=1.5f_{ds}t^{2}\left[4.44+0.558\left(N/t\right)^{1/2}\right],brackets read as / and J
+5-39,28,13,name/prime check,OCR ERROR,,Q_{u}=1.5f_{ds}t^{2}\left[6.66+1.446\left(N/t\right)^{1/2}\right],brackets read as / and J
+6-16,32,4,name/prime check,OCR ERROR,,f_{ps}=f_{pu}\left\{1-\frac{\gamma_{p}}{\beta_{1}}\left[p_{p}\frac{f_{pu}}{f_{dc}^{\prime}}+\frac{df_{dy}}{d_{p}f_{dc}^{\prime}}\left(p-p^{\prime}\right)\right]\right\},p read as rho
+6-19,32,4,name/prime check,OCR ERROR,,p^{\prime}=A_{s}^{\prime}/bd,primes lost
+6-21,32,5,name/prime check,OCR ERROR,,f_{ps}=f_{pu}\left[1-\frac{\gamma_{p}}{\beta_{1}}p_{p}\frac{f_{pu}}{f_{dc}^{\prime}}\right],p_p read as rho_p; prime lost
+6-28,32,8,name/prime check,OCR ERROR,,M_{u}^{-}=A_{s}^{-}f_{dy}\left(d^{-}-a^{-}/2\right),minus superscripts lost; f_dy read as f_dv
+6-29,32,8,name/prime check,OCR ERROR,,0.85f_{dc}^{\prime}-0.45f_{c}^{\prime}=0.85f_{dc}^{\prime}-0.45f_{dc}^{\prime}/DIF=0.47f_{dc}^{\prime},primes lost
+6-30,32,9,name/prime check,minor (OCR usable),,A_{s}^{-}\leq\left[\frac{\left(0.85f_{dc}^{\prime}-d_{1}\right)\beta}{f_{dy}}\right]\left[\frac{\left(87000-nf\right)bd^{-}}{87000-nf+f_{dy}}\right],prime shown as *

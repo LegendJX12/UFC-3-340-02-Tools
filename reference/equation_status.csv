@@ -35,7 +35,7 @@ number,batch,page,verdict,correct_text_from_pdf
 2-37,7,45,ok (automatic),
 2-38,7,45,ok (automatic),
 2-39,7,45,ok (automatic),
-2-40,7,46,ok (automatic),
+2-40,7,46,error,W_{f}^{\prime}=16W_{c}/N_{T}=2M_{A}^{2}
 2-41,7,46,ok (minor slip),
 2-42,7,46,ok (automatic),
 2-43,7,46,ok (minor slip),
@@ -123,7 +123,7 @@ number,batch,page,verdict,correct_text_from_pdf
 3-38,11,44,ok (automatic),
 3-39,11,44,ok (automatic),
 3-40,11,44,ok (automatic),
-3-41,13,3,ok (automatic),
+3-41,13,3,error,K_{L}=F_{E}/F
 3-42a,13,3,ok (automatic),
 3-42b,13,3,ok (automatic),
 3-43,13,3,ok (automatic),
@@ -184,12 +184,12 @@ number,batch,page,verdict,correct_text_from_pdf
 3-86b,13,28,error,Y = 10^(log Y)
 3-88,13,30,ok (automatic),
 3-89,13,30,ok (automatic),
-3-90,13,30,ok (automatic),
+3-90,13,30,error,X_{1}=\frac{i_{b}t_{1}}{m_{u}}-\frac{r_{u}t_{1}^{2}}{2m_{u}}
 3-91,13,31,ok (automatic),
 3-92,13,31,ok (automatic),
 3-93,13,31,ok (automatic),
 3-94,13,32,ok (automatic),
-3-95,13,32,ok (automatic),
+3-95,13,32,error,t_{m}=\frac{i_{b}}{r_{u}}+\left[\frac{m_{up}}{m_{u}r_{up}}-\frac{1}{r_{u}}\right]\left[i_{b}^{2}-2m_{u}r_{u}X_{1}\right]^{1/2}
 3-96,13,32,ok (automatic),
 3-97,13,32,ok (automatic),
 4-1,19,34,ok (automatic),
@@ -215,8 +215,8 @@ number,batch,page,verdict,correct_text_from_pdf
 4-23b,20,6,ok (automatic),
 4-24,20,6,error,v_c = 2(1 + N_u/500A_g)(f'dc)^1/2 >= 0
 4-25,20,6,error,v_c = 2(1 + N_u/2000A_g)(f'dc)^1/2
-4-26,20,7,ok (automatic),
-4-27,20,7,ok (automatic),
+4-26,20,7,error,A_{v}=\left[\left(v_{u}-v_{c}\right)b_{s}s_{s}\right]/\phi f_{ds}
+4-27,20,7,error,A_{v}=\frac{\left(v_{u}-v_{c}\right)b_{l}s_{l}}{\phi f_{ds}\left(\sin\alpha+\cos\alpha\right)}
 4-28,20,7,error,cos α = [-2B(1-B) ± ([2B(1-B)]^2 - 4[(1-B)^2 + A^2][B^2 - A^2])^1/2] / (2[(1-B)^2 + A^2])
 4-29a,20,7,error,A = s_l/d_l
 4-29b,20,8,error,B = (2R_l + d_b)/d_l
@@ -233,7 +233,7 @@ number,batch,page,verdict,correct_text_from_pdf
 4-47a,20,32,ok (checked by eye),
 4-47b,20,32,ok (checked by eye),
 4-48,20,32,ok (checked by eye),
-4-49,20,42,ok (automatic),
+4-49,20,42,error,\alpha_{ec}=\frac{\left(4E_{c}I_{w}\right)/H_{w}}{\left(4E_{c}I_{s}\right)/l_{s}}
 4-50,20,42,ok (automatic),
 4-51,20,42,ok (automatic),
 4-52,20,43,ok (automatic),
@@ -247,15 +247,15 @@ number,batch,page,verdict,correct_text_from_pdf
 4-60,20,43,ok (automatic),
 4-61,20,43,ok (automatic),
 4-62,20,43,ok (automatic),
-4-63,20,44,ok (automatic),
-4-64,20,44,ok (automatic),
-4-65,20,44,ok (automatic),
-4-66,20,44,ok (automatic),
-4-67,20,44,ok (automatic),
-4-68,20,44,ok (automatic),
-4-69,20,44,ok (automatic),
-4-70,20,44,ok (automatic),
-4-71,20,44,ok (checked by eye),
+4-63,20,44,error,m_{10}^{-}=0.65\alpha_{ecL}^{\prime}M_{OL}/H
+4-64,20,44,ok (minor slip),
+4-65,20,44,ok (minor slip),
+4-66,20,44,ok (minor slip),
+4-67,20,44,ok (minor slip),
+4-68,20,44,ok (minor slip),
+4-69,20,44,ok (minor slip),
+4-70,20,44,ok (minor slip),
+4-71,20,44,ok (minor slip),
 4-72,20,44,ok (automatic),
 4-73,20,44,ok (automatic),
 4-75,20,48,ok (automatic),
@@ -272,27 +272,27 @@ number,batch,page,verdict,correct_text_from_pdf
 4-87,20,52,ok (automatic),
 4-88,20,52,ok (automatic),
 4-89,20,52,ok (automatic),
-4-90,20,53,ok (automatic),
+4-90,20,53,ok (minor slip),
 4-91,20,53,ok (minor slip),
 4-95,21,12,error,i_b^2/(2m_u) = r_u X_1 + (m_u/m_up) r_up (X_m - X_1)
 4-97,21,13,ok (checked by eye),
-4-98a,21,15,ok (automatic),
-4-98b,21,15,ok (checked by eye),
+4-98a,21,15,error,i_{b}^{2}=2\left(225d_{c}\right)\left(K_{LM}\right)_{u}\left[\frac{10p_{V}d_{c}^{2}f_{ds}}{y^{2}}\right]L\tan12^{\circ}+\frac{\left(K_{LM}\right)_{u}}{0.66}\left[\frac{2p_{V}d_{c}^{2}f_{ds}}{H^{2}}\right]\left[Y\tan12^{\circ}+\left(H-y\right)\tan\gamma-L\tan12^{\circ}\right]
+4-98b,21,15,error,i_{b}^{2}=2\left(225d_{c}\right)p_{V}d_{c}^{2}f_{ds}\tan12^{\circ}\left[\frac{10\left(K_{LM}\right)_{u}L}{y^{2}}+\frac{3\left(K_{LM}\right)_{u}^{2}}{H^{2}}\left(y-L+\frac{\left(H-y\right)\tan\gamma}{\tan12^{\circ}}\right)\right]
 4-98c,21,15,error,i_b^2 H/(p_H d_c^3 f_ds) = 450 (p_V/p_H) tan12° [10(K_LM)_u (L/H)/(y/H)^2 + 3(K_LM)_u^2 [Y/H - L/H + (1 - Y/H) tanγ/tan12°]]
 4-99,21,15,error,i_b^2 H/(p_H d_c^3 f_ds) = 287 (p_V/p_H) [3.33 (K_LM)_u (L/H)/(y/H)^2 + 4.70 (K_LM)_u [Y/H - L/H + 4.70 (1 - Y/H) tanγ]]
 4-100,21,16,ok (automatic),
 4-101,21,16,ok (checked by eye),
 4-102,21,16,ok (automatic),
 4-103,21,16,ok (checked by eye),
-4-105,21,17,ok (automatic),
+4-105,21,17,error,p_{H}d_{c}^{3}=\frac{i_{b}^{2}H}{C_{u}f_{ds}}
 4-106,21,19,ok (automatic),
 4-107,21,19,ok (automatic),
 4-108,21,20,ok (minor slip),
-4-109,21,20,ok (automatic),
+4-109,21,20,error,C_{u}^{\prime}=C_{1}+\frac{X_{m}-X_{1}}{X_{u}-X_{1}}\left(C_{u}-C_{1}\right)
 4-110,21,20,ok (minor slip),
 4-111,21,21,error,C'_1 = (X_m/X_1) C_1
 4-112,21,21,ok (checked by eye),
-4-113,21,21,ok (automatic),
+4-113,21,21,error,p_{H}T_{c}d_{c}^{2}=\frac{i_{b}^{2}H}{C_{u}f_{ds}}
 4-115,21,23,ok (automatic),
 4-116,21,23,ok (automatic),
 4-117,21,23,ok (automatic),
@@ -310,8 +310,8 @@ number,batch,page,verdict,correct_text_from_pdf
 4-131,22,17,ok (automatic),
 4-132,22,17,error,"p_b = [0.85 K_1 f'dc / f_ds][87,000/(87,000 + f_ds)]"
 4-133,22,18,ok (automatic),
-4-134,22,18,ok (automatic),
-4-135,22,18,ok (automatic),
+4-134,22,18,error,a=\frac{\left(A_{s}-A_{s}^{\prime}\right)f_{ds}}{0.85bf_{dc}^{\prime}}
+4-135,22,18,error,p^{\prime}=\frac{A_{s}^{\prime}}{bd}
 4-136,22,18,error,"p - p' <= 0.85 K_1 [f'dc d'/(f_ds d)][87,000/(87,000 - f_ds)]"
 4-139,22,20,ok (automatic),
 4-139a,22,20,ok (automatic),
@@ -322,7 +322,7 @@ number,batch,page,verdict,correct_text_from_pdf
 4-146,22,24,ok (minor slip),
 4-147,22,24,ok (automatic),
 4-148,22,25,ok (automatic),
-4-149,22,25,ok (automatic),
+4-149,22,25,error,A_{(t)H}=\frac{\left(v_{(tu)H}-v_{tc}\right)bh^{2}s}{3\phi\alpha_{t}b_{t}h_{t}f_{dy}}
 4-150a,22,25,ok (automatic),
 4-150b,22,25,ok (automatic),
 4-151a,22,26,ok (automatic),
@@ -390,14 +390,14 @@ number,batch,page,verdict,correct_text_from_pdf
 5-12,27,37,ok (automatic),
 5-13,27,37,error,R_u = r_u b L = 16.0 M_p/L
 5-14,27,37,ok (automatic),
-5-9,27,37,ok (automatic),
+5-9,27,37,error,R_{u}=r_{u}bL=12M_{p}/L
 5-15,27,38,ok (automatic),
 5-16,27,39,ok (automatic),
 5-17,27,40,ok (checked by eye),
 5-18,27,40,ok (automatic),
 5-19,27,42,ok (automatic),
 5-20,27,42,ok (automatic),
-5-21,27,42,error,l_cr/r_y = 1375/f_ds  when -0.5 >= M/M_p >= -1.0
+5-21,27,42,error,β l_cr/r_y = 1375/f_ds  when -0.5 >= M/M_p >= -1.0
 5-22,27,43,ok (automatic),
 5-23,28,2,ok (automatic),
 5-24,28,4,error,tan α = (I_x/I_y) tan φ
@@ -414,8 +414,8 @@ number,batch,page,verdict,correct_text_from_pdf
 5-35,28,11,ok (automatic),
 5-36,28,11,ok (automatic),
 5-37,28,11,error,"f_cr = 640,000/(h/t)^2 <= f_y"
-5-38,28,13,ok (automatic),
-5-39,28,13,ok (automatic),
+5-38,28,13,error,Q_{u}=1.5f_{ds}t^{2}\left[4.44+0.558\left(N/t\right)^{1/2}\right]
+5-39,28,13,error,Q_{u}=1.5f_{ds}t^{2}\left[6.66+1.446\left(N/t\right)^{1/2}\right]
 5-40,28,28,ok (automatic),
 5-41,28,34,ok (automatic),
 5-42,28,34,ok (automatic),
@@ -456,12 +456,12 @@ number,batch,page,verdict,correct_text_from_pdf
 6-13,31,36,ok (automatic),
 6-14,32,3,error,M_u = A_ps f_ps (d_p - a/2) + A_s f_dy (d - a/2)
 6-15,32,3,ok (automatic),
-6-16,32,4,ok (automatic),
+6-16,32,4,error,f_{ps}=f_{pu}\left\{1-\frac{\gamma_{p}}{\beta_{1}}\left[p_{p}\frac{f_{pu}}{f_{dc}^{\prime}}+\frac{df_{dy}}{d_{p}f_{dc}^{\prime}}\left(p-p^{\prime}\right)\right]\right\}
 6-17,32,4,ok (automatic),
 6-18,32,4,ok (automatic),
-6-19,32,4,ok (automatic),
+6-19,32,4,error,p^{\prime}=A_{s}^{\prime}/bd
 6-20,32,5,error,p_p f_pu/f'dc + d f_dy/(d_p f'dc) (p - p') >= 0.17
-6-21,32,5,ok (automatic),
+6-21,32,5,error,f_{ps}=f_{pu}\left[1-\frac{\gamma_{p}}{\beta_{1}}p_{p}\frac{f_{pu}}{f_{dc}^{\prime}}\right]
 6-22a,32,5,error,"f_ps = f_se + 10,000 + f'dc/(100 p_p) <= f_py"
 6-22b,32,5,error,"fps <= fse + 60,000"
 6-23a,32,5,error,"f_ps = f_se + 10,000 + f'dc/(300 p_p) <= f_py"
@@ -470,9 +470,9 @@ number,batch,page,verdict,correct_text_from_pdf
 6-25,32,6,error,p_pw f_ps/f'dc + d f_dy/(d_p f'dc) (p_w - p'_w) <= 0.36 β_1
 6-26,32,7,ok (automatic),
 6-27,32,7,ok (automatic),
-6-28,32,8,ok (automatic),
-6-29,32,8,ok (automatic),
-6-30,32,9,ok (automatic),
+6-28,32,8,error,M_{u}^{-}=A_{s}^{-}f_{dy}\left(d^{-}-a^{-}/2\right)
+6-29,32,8,error,0.85f_{dc}^{\prime}-0.45f_{c}^{\prime}=0.85f_{dc}^{\prime}-0.45f_{dc}^{\prime}/DIF=0.47f_{dc}^{\prime}
+6-30,32,9,ok (minor slip),
 6-31,32,9,error,"A_s <= (0.47 f'dc β_1/f_dy) [(87,000 - 0.37 n f'dc) b d] / [87,000 - 0.37 n f'dc + f_dy]"
 6-32,32,37,ok (automatic),
 6-33,32,37,ok (automatic),

@@ -1,208 +1,465 @@
-batch,page,block_id,ocr,fixed,pdf_line
-7,55,10,47.690,"47,690","R e / Rt   47,690 R e / R   2-60"
-7,55,14,58.400,"58,400","Re / Rt   58,400 R e / R   2-62"
-9,5,10,4.500,"4,500","Step 2.   W = 1.20 (3,750) = 4,500 lbs"
-9,13,5,1.000,"1,000","W = 833.3 x 1.20 = 1,000 lbs"
-9,13,7,1.000,"1,000","W = 833.3 x 1.20 = 1,000 lbs"
-9,13,11,2.650,"2,650","Pg = 2,650 psi"
-9,13,26,2.650,"2,650","Pg = 2,650 psi"
-9,14,5,1.000,"1,000","W = 833.3 x 1.2 = 1,000 lbs"
-9,14,7,1.000,"1,000","W = 833.3 x 1.2 = 1,000 lbs"
-9,19,22,3.980,"3,980","d.   V = 17.5 x 17.5 x 13 = 3,980 ft3"
-9,28,3,6.000,"6,000","ir = 14.6 x (6,000)1/3 = 265.3 psi-ms"
-9,32,3,6.000,"6,000","tof- = 11.7 x (6,000)1/3 = 212.6 ms"
-9,32,18,6.000,"6,000","tof- = 11.7 x (6,000)1/3 = 212.6 ms"
-9,32,18,6.000,"6,000","tof- = 11.7 x (6,000)1/3 = 212.6 ms"
-10,15,5,18.450,"18,450","M   18,450"
-10,21,10,12.000,"12,000","T = 12,000 in-lb/in3   (Table 2-9 (+))"
-10,26,9,6.000,"6,000","Step 2.   W = 1.2 (5,000) = 6,000 lbs"
-10,26,20,70.000,"70,000","1.65 10 4 70,000"
-10,26,23,1.000,"1,000","1,000 C p"
-10,26,23,70.000,"70,000","1.65 10 4 70,000"
-10,27,18,6.000,"6,000","b. tA = 3.35 x W1/3 = 3.35 (6,000)1/3"
-18,10,10,4.800,"4,800","4,800ru 252 y"
-18,21,2,9.627,"9,627","c.   MP (Point 1) = (0.077)(4.43)(168)2 = 9,627 in-lbs/in"
-18,21,6,5.621,"5,621","Mn (Point 3) = 5,621 in-lbs/in = ß2 rH2"
-18,21,6,5.621,"5,621","Mn (Point 3) = 5,621 in-lbs/in = ß2 rH2"
-18,21,6,0.000,"0,000","r1 = 20,000/[(0.077)(168)2] = 9.20 psi"
-18,25,3,153.600,"153,600","153,600 lb"
-18,25,5,153.600,"153,600","153,600 lb"
-18,25,5,2.000,"2,000","FE   p( x ) ( x )dx   2,000 lb / in   L x   2Lx 3   x 4 dx"
-18,28,3,120.000,"120,000","120,000 lb"
-18,35,8,8.784,"8,784","Sector I.   8,784in 2"
-18,35,10,6.646,"6,646","Sector II.   6,646 in 2"
-18,35,15,8.256,"8,256","8,256 2 6,646"
-18,35,15,6.646,"6,646","Sector II.   6,646 in 2"
-18,35,15,40.320,"40,320","A = LH = 240 (168) = 40,320 in2"
-19,32,4,90.000,"90,000","fu = 90,000 psi"
-22,17,14,87.000,"87,000","0.85K1f 'dc   87,000"
-22,17,14,87.000,"87,000","0.85K1f 'dc   87,000"
-22,20,14,2.500,"2,500","vc   1.9f 'dc   2,500 p   3.5f 'dc   4-140b"
-24,31,15,4.000,"4,000","1.875 f ' c   1.875 4,000"
-24,31,15,66.000,"66,000","fy   66,000"
-24,31,22,4.000,"4,000","1.875 f ' c   1.875 4,000"
-24,31,22,66.000,"66,000","fy   66,000"
-24,35,12,5.070,"5,070","c.   M1H = (0.023)(10.63)(144)2 = 5,070 in-lbs/in"
-24,35,12,8.235,"8,235","a.   M1H = MHP - M1H (at re) = 13,305 - 5,070 = 8,235 in-lbs/in"
-24,35,12,16.689,"16,689","MVp = 16,689 in-lbs/in MVN = 15,531 in-lbs/in"
-24,35,12,6.833,"6,833","M1V = (0.031)(10.63)(144)2 = 6,833 in-lbs/in"
-24,35,12,9.856,"9,856","M1V = MVP - M1V (at re) = 16,689 - 6,833 = 9,856 in-lbs/in"
-24,35,12,15.531,"15,531","MVp = 16,689 in-lbs/in MVN = 15,531 in-lbs/in"
-24,35,12,14.989,"14,989","M3 = (0.068)(10.63)(144)2 = 14,989 in-lbs/in"
-24,36,3,8.235,"8,235","8,235"
-24,36,3,9.856,"9,856","9,856"
-24,36,11,5.070,"5,070","e.   M1H = (0.020)(0.34)(144)2 + 5,070 = 5,211 in-lbs/in"
-24,36,11,5.211,"5,211","e.   M1H = (0.020)(0.34)(144)2 + 5,070 = 5,211 in-lbs/in"
-24,36,12,6.833,"6,833","M1V = (0.039)(0.34)(144)2 + 6,833 = 7,108 in-lbs/in"
-24,36,12,7.108,"7,108","M1V = (0.039)(0.34)(144)2 + 6,833 = 7,108 in-lbs/in"
-24,38,9,2.700,"2,700","me = KLMm = 0.60 (2,700) = 1,620 psi-ms2/in"
-24,38,11,2.700,"2,700","me = KLMm = 0.60 (2,700) = 1,620 psi-ms2/in"
-24,38,11,1.620,"1,620","me = KLMm = 0.60 (2,700) = 1,620 psi-ms2/in"
-24,38,14,1.620,"1,620","me = KLMm = 0.60 (2,700) = 1,620 psi-ms2/in"
-24,39,10,2.500,"2,500","vc = [1.9 (f'dc)1/2 + 2,500 p]   3.50 (f'c)1/2 = 221.4 psi"
-24,39,12,2.500,"2,500","vc = [1.9 (f'dc)1/2 + 2,500 p]   3.50 (f'c)1/2 = 221.4 psi"
-24,53,14,85.860,"85,860","85,860"
-24,53,14,66.000,"66,000","66,000"
-24,53,16,13.437,"13,437","Required MoH   13,437,115 in lbs"
-24,55,6,3.363,"3,363","1.5 14.05 3,363 / 200 2"
-24,55,6,3.363,"3,363","1.5 14.05 3,363 / 200 2"
-24,55,6,3.363,"3,363","1.5 14.05 3,363 / 200 2"
-24,55,6,3.363,"3,363","1.5 14.05 3,363 / 200 2"
-24,56,3,451.443,"451,443","1352.3   10.25   451,443 lbs"
-24,56,5,451.443,"451,443","1352.3   10.25   451,443 lbs"
-24,57,2,57.095,"57,095","57,095 in"
-24,57,2,57.095,"57,095","57,095 in"
-24,57,2,56.541,"56,541","Area( revised )   116   56,541 in2"
-24,57,2,56.541,"56,541","Area( revised )   116   56,541 in2"
-24,57,5,54.097,"54,097","Area   X   lp   116   73.75 2 54,097 in2"
-24,57,5,54.097,"54,097","Area   X   lp   116   73.75 2 54,097 in2"
-24,58,3,22.496,"22,496","244 240 116   11.80   22,496.8 in2"
-24,58,3,22.496,"22,496","244 240 116   11.80   22,496.8 in2"
-25,5,2,81.180,"81,180","fdy   fdu   81,180 94,500"
-25,5,2,94.500,"94,500","fdy   fdu   81,180 94,500"
-25,5,2,87.840,"87,840","fds   87,840 psi"
-25,12,1,87.840,"87,840","0.00343 20.87 87,840 461.0"
-25,12,9,87.840,"87,840","0.00343 20.87 87,840 461.0"
-25,13,10,131.380,"131,380","131,380 in lbs/in"
-25,14,5,87.840,"87,840","4.40 1.20 20.87 87,840"
-25,14,8,87.840,"87,840","4.40 1.20 20.87 87,840"
-25,14,8,6.090,"6,090","6,090 lbs/in"
-25,14,13,6.720,"6,720","VsV b   6,720 10"
-25,14,13,81.300,"81,300","fds sin   81,300 0.707"
-25,15,3,6.090,"6,090","VsH b   6,090 11"
-25,15,3,81.300,"81,300","fds sin   81,300 0.707"
-25,20,10,4.000,"4,000","AsV   0.60   1.875 f ' c   1.875 4,000"
-25,20,10,66.000,"66,000","bd cV   8 18.125   fy   66,000"
-25,21,18,4.072,"4,072","m   4,072 psi ms 2 /in"
-25,23,9,72.600,"72,600","0.85 72,600"
-25,23,9,72.600,"72,600","0.85 72,600"
-25,23,14,3.070,"3,070","3,070 8"
-25,23,14,72.600,"72,600","0.85 72,600"
-25,23,14,3.542,"3,542","3,542 8"
-25,23,14,72.600,"72,600","0.85 72,600"
-25,33,11,87.000,"87,000","0.85K1f ' dc   87,000"
-25,33,11,87.000,"87,000","0.85K1f ' dc   87,000"
-25,33,13,4.000,"4,000","0.05 f ' dc 4,000"
-25,33,13,1.000,"1,000","1,000"
-25,33,13,77.220,"77,220","77,220   87,000 77,220"
-25,33,13,87.000,"87,000","0.85K1f ' dc   87,000"
-25,33,13,87.000,"87,000","0.85K1f ' dc   87,000"
-25,33,13,77.220,"77,220","77,220   87,000 77,220"
-25,34,5,4.760,"4,760","0.85 18 4,760"
-25,34,7,4.409.934,"4,409,934","= 4,409,934 in-lbs"
-25,34,11,4.409,"4,409","= 4,409,934 in-lbs"
-25,35,11,40.500,"40,500","Ig   40,500 in 4"
-25,35,11,8.585,"8,585","Ic = (8,442 + 8,728)/2 = 8,585 in4"
-25,35,11,24.542,"24,542","24,542.5 in 4"
-25,35,13,24.542,"24,542","24,542.5 in 4"
-25,35,13,8.629,"8,629","8,629.70 lbs/in/in"
-25,36,3,1.236,"1,236","ru   1,236.79"
-25,36,3,8.629,"8,629","KE   8,629.70"
-25,37,6,4.400,"4,400","Vd = 0.18 x 4,400 x 18 x 27.125"
-25,37,6,386.694,"386,694","= 386,694 lbs > Vs = 148,415 O.K."
-25,37,6,148.415,"148,415","148,415 lbs"
-25,37,10,114.867,"114,867","27.125 1236.79 114,867 lbs"
-25,37,10,114.867,"114,867","27.125 1236.79 114,867 lbs"
-25,37,10,4.000,"4,000","10 f ' dc   10 4,000"
-25,38,2,2.500,"2,500","vc   1.9 f ' dc   2,500 p"
-25,38,2,4.000,"4,000","vc   1.9 4,000   2,500 0.0045"
-25,38,2,2.500,"2,500","vc   1.9 f ' dc   2,500 p"
-25,38,2,4.000,"4,000","vc   1.9 4,000   2,500 0.0045"
-25,39,5,3.388,"3,388","M-N at support   = 3,388,275 in-lbs"
-25,39,5,3.324,"3,324","M-p at mid-span = 3,324,954 in-lbs"
-25,43,3,4.000,"4,000","12 4,0001/ 2"
-25,43,7,4.000,"4,000","12 4,0001/ 2"
-25,43,10,4.000,"4,000","12 4,0001/ 2"
-25,45,7,66.000,"66,000","fdy   66,000"
-25,45,7,66.000,"66,000","fdy   66,000"
-25,50,15,2.946,"2,946","Moment about x-axis, 2,946,000 in-lbs"
-25,50,15,3.535,"3,535","Mx = 2,946,000 x 1.2 = 3,535,200 in-lbs"
-25,52,1,4.480,"4,480","m = fdy/(0.85 f'dc) = 72,600/(0.85 x 4,480) = 19.06"
-25,52,1,4.480,"4,480","m = fdy/(0.85 f'dc) = 72,600/(0.85 x 4,480) = 19.06"
-25,52,7,4.480,"4,480","m = fdy/(0.85 f'dc) = 72,600/(0.85 x 4,480) = 19.06"
-26,3,20,81.180,"81,180","fdy = DIF fy = 1.23 x 66,000 = 81,180 psi"
-26,3,20,94.500,"94,500","fdu = DIF fu = 1.05 x 90,000 = 94,500 psi"
-26,3,20,87.840,"87,840","fds   87,840 psi"
-26,6,4,87.840,"87,840","2   0.00407 21.48 3 87,840   2"
-26,6,4,87.840,"87,840","2   0.00407 21.48 3 87,840   2"
-26,6,6,26.725,"26,725","L   MVP   360  26,725"
-26,6,6,165.095,"165,095","H MHN1 MHP   120 2 165,095"
-26,6,6,265.725,"265,725","265,725 in lbs/in"
-26,6,6,265.725,"265,725","265,725 in lbs/in"
-26,7,4,4.800,"4,800","4,800   3190   1   1/ 2"
-26,7,4,2.692,"2,692","2,692   2692 20.4   99.4"
-26,18,2,2.562,"2,562","vr (donor) = 0.61 (4,200) = 2,562 fps"
-29,31,10,25.130,"25,130","M   25,130 (k ms 2 )/ft"
-29,40,1,1.393,"1,393","M un   2M up   1,393 2 1,459"
-29,40,1,1.459,"1,459","M un   2M up   1,393 2 1,459"
-29,41,5,2.922,"2,922","Vu = 0.270   10.84 = 2.92 k = 2,922 lb"
-29,41,8,1.896,"1,896","Vmax = 0.55 ruL = 0.55   766   4.5 = 1,896 lb"
-29,41,11,22.000,"22,000","Vu = 0.270   22,000 = 5,940"
-29,41,11,5.940,"5,940","Vu = 0.270   22,000 = 5,940"
-29,41,14,1.551,"1,551","= 1,551 lb < 5,940 lb   O.K."
-29,41,14,5.940,"5,940","Vu = 0.270   22,000 = 5,940"
-29,41,17,1.200,"1,200","Qu = 1,200   4 = 4,800 lb > 1,551 O.K.   (Figure 5-15 (+))"
-29,41,17,4.800,"4,800","Qu = 1,200   4 = 4,800 lb > 1,551 O.K.   (Figure 5-15 (+))"
-29,41,17,1.551,"1,551","= 1,551 lb < 5,940 lb   O.K."
-29,45,9,3.160,"3,160","3,160"
-29,45,10,3.160,"3,160","3,160"
-29,45,12,29.000,"29,000","12 2 E   12 2 29,000"
-29,45,13,2.992,"2,992","Pex   2,992 kips   (Section 5-37.3)"
-29,48,17,2.116,"2,116","Pex   2,116 kips"
-29,49,1,6.823,"6,823","Pey   6,823 kips   (Section 5-37.3)"
-30,2,6,1.250,"1,250","w1 = 0.62   2.0   144   7.0 = 1,250 lb/ft"
-30,2,8,1.250,"1,250","w1 = 0.62   2.0   144   7.0 = 1,250 lb/ft"
-30,3,11,14.260,"14,260","Step 4.   KE   14,260 lb/in   (Table 3-8 (+))"
-30,4,13,1.215,"1,215","ru   1,215"
-30,5,1,1.105,"1,105","ru L2   1,105 50 2 12"
-30,5,1,4.144,"4,144","M   4,144 in kips"
-30,5,6,4.144,"4,144","M   4,144 in kips"
-30,5,18,29.000,"29,000","12 2 E   12 2 29,000"
-30,6,11,1.105,"1,105","r   ru   1,105 lb/ft"
-30,9,10,1.080,"1,080","w1 = 1.25   1.0   144   6 = 1,080 lb/ft"
-30,9,12,1.080,"1,080","w1 = 1.25   1.0   144   6 = 1,080 lb/ft"
-30,10,5,15.580,"15,580","Step 4.   KE   15,580 lb/in   (Table 3-8 (+))"
-30,10,16,1.035,"1,035","ru = 2.23   465 = 1,035 lb/ft"
-30,19,1,20.548,"20,548","+ 1/3 (15.167) [(3   61) + (2   74)] = 20,548 lb"
-30,19,1,20.548,"20,548","+ 1/3 (15.167) [(3   61) + (2   74)] = 20,548 lb"
-30,30,14,8.500,"8,500","8,500 psi"
-30,30,16,13.860,"13,860",")   = 103   (10.5.2 + 8.5.2 )1/2 = 13,860 psi < 39.600 psi   O.K."
-30,33,24,26.400,"26,400","V = DLF   P   L/2 = 1.0   1100   48/2 = 26,400 lb/in"
-30,34,24,1.728,"1,728","g   1,728 32 .2 12   in"
-30,34,24,1.468,"1,468","m   1,468"
-30,35,2,1.468,"1,468","me   K LM   m   0.72 1,468   1,057"
-30,35,2,1.057,"1,057","me   K LM   m   0.72 1,468   1,057"
-30,38,20,1.000,"1,000","w = 1.25   4.5   4.5   144/1,000 = 3.65 k/ft"
-30,41,4,2.080,"2,080","= 51.1   40.7 = 2,080 in-kips"
-30,42,2,1.000,"1,000","w   2.94 1,000 1"
-32,5,7,60.000,"60,000","fps   fse + 60,000   6-22b"
-32,5,13,30.000,"30,000","fps   fse + 30,000   6-23b"
-35,15,9,1.547,"1,547","Compression (f‘dm)   - 1.19 (1,300) = 1,547 psi"
-35,16,1,1.468,"1,468","7.34 200 0   1,468lb in / in"
-35,27,23,20.985,"20,985","I = 20,985 in2   w = 418 lb/ft"
-35,36,11,29.160,"29,160","= 29,160 lbs"
-35,46,13,12.118,"12,118","= (374   16.12)/8 = 12,118 lb-ft"
-35,50,4,484.540,"484,540","484,540 39.3WBX   20.9 23,751.4 WBX"
-35,50,4,23.751,"23,751","484,540 39.3WBX   20.9 23,751.4 WBX"
-35,50,4,11.864,"11,864","WBX   11,864 / 18.4   644.8 lbs"
-35,54,3,47.878,"47,878","47,878 .9"
+batch,page,block_id,type,ocr,fixed,evidence
+6,34,2,checked by eye,z=\frac{R}{w^{1/3}},Z=\frac{R}{W^{1/3}},figure label; PDF Z = R/W^1/3
+6,34,4,checked by eye,z=\frac{d_{1}+d_{2}+h+d_{3}}{u^{1/3}},Z=\frac{d_{1}+d_{2}+h+d_{3}}{W^{1/3}},figure label
+7,46,6,prime,Wf,Wf',
+7,49,6,letter,Vs,vs,
+7,55,10,thousands,47.690,"47,690","R e / Rt   47,690 R e / R   2-60"
+7,55,14,thousands,58.400,"58,400","Re / Rt   58,400 R e / R   2-62"
+9,3,4,checked by eye,i_{t},i_{r},PDF ir
+9,5,10,thousands,4.500,"4,500","Step 2.   W = 1.20 (3,750) = 4,500 lbs"
+9,6,3,checked by eye,i_{t},i_{r},PDF ir
+9,8,5,letter,jr,ir,
+9,8,5,checked by eye,ps-ms,psi\text{-}ms,unit psi
+9,8,7,letter,jr,ir,
+9,8,7,checked by eye,ps-ms,psi\text{-}ms,unit psi
+9,8,9,checked by eye,\vec{\alpha}_{r},i_{r},PDF ir
+9,8,9,checked by eye,ps-ms,psi\text{-}ms,unit psi
+9,9,2,letter,jr,ir,
+9,11,5,checked by eye,ps i,psi,unit psi
+9,11,6,letter,jr,ir,
+9,11,7,letter,jr,ir,
+9,11,7,checked by eye,ps-ms,psi\text{-}ms,unit psi
+9,13,5,thousands,1.000,"1,000","W = 833.3 x 1.20 = 1,000 lbs"
+9,13,7,thousands,1.000,"1,000","W = 833.3 x 1.20 = 1,000 lbs"
+9,13,11,thousands,2.650,"2,650","Pg = 2,650 psi"
+9,13,18,checked by eye,W_{E},W_{F},PDF WF
+9,13,20,checked by eye,i_{t},i_{r},PDF ir
+9,13,22,letter,jr,ir,
+9,13,24,letter,jg,ig,
+9,13,24,checked by eye,ps-ms,\ psi\text{-}ms,unit psi
+9,13,26,thousands,2.650,"2,650","Pg = 2,650 psi"
+9,13,26,checked by eye,2I_{g},2i_{g},PDF ig
+9,14,5,thousands,1.000,"1,000","W = 833.3 x 1.2 = 1,000 lbs"
+9,14,7,thousands,1.000,"1,000","W = 833.3 x 1.2 = 1,000 lbs"
+9,14,18,letter,jr,ir,
+9,14,21,checked by eye,ps i-ms,\ psi\text{-}ms,unit psi
+9,14,23,checked by eye,2I_{g},2i_{g},PDF ig
+9,16,10,letter,Ibs,lbs,
+9,16,21,letter,js,is,
+9,17,6,letter,tO,to,
+9,17,6,letter,tO,to,
+9,17,6,checked by eye,fprot,front,PDF Pso (front)
+9,17,6,checked by eye,siee,side,PDF Pso (side)
+9,17,6,checked by eye,f/ms,ft/ms,unit ft/ms
+9,17,6,checked by eye,f/ms,ft/ms,unit ft/ms
+9,17,6,checked by eye,f/ms,ft/ms,unit ft/ms
+9,17,6,checked by eye,\bigcup=,U=,PDF U
+9,19,22,thousands,3.980,"3,980","d.   V = 17.5 x 17.5 x 13 = 3,980 ft3"
+9,28,3,thousands,6.000,"6,000","ir = 14.6 x (6,000)1/3 = 265.3 psi-ms"
+9,28,3,checked by eye,\mathrm{~ps}\mathrm{i}-\mathrm{ms},\mathrm{~psi\text{-}ms},unit psi
+9,30,12,checked by eye,t_{0}+0.25\ t_{0f},t_{o}+0.25\ t_{of},"letter o, not zero"
+9,30,19,checked by eye,L_{wd},L_{wf},PDF Lwf
+9,32,3,thousands,6.000,"6,000","tof- = 11.7 x (6,000)1/3 = 212.6 ms"
+9,32,18,thousands,6.000,"6,000","tof- = 11.7 x (6,000)1/3 = 212.6 ms"
+9,32,18,thousands,6.000,"6,000","tof- = 11.7 x (6,000)1/3 = 212.6 ms"
+9,34,5,checked by eye,t_{0}+0.25\ t_{0f},t_{o}+0.25\ t_{of},"letter o, not zero"
+9,41,12,checked by eye,\mathrm{ps}i\mathrm{-ms},\mathrm{psi\text{-}ms},unit psi
+10,5,16,letter,WC,Wc,
+10,8,3,checked by eye,N_{t}=,N_{f}=,PDF Nf (Equation 2-36)
+10,9,15,letter,Vs,vs,
+10,11,4,letter,Wt,Wf,
+10,11,4,letter,Rt,Rf,
+10,15,5,thousands,18.450,"18,450","M   18,450"
+10,21,10,thousands,12.000,"12,000","T = 12,000 in-lb/in3   (Table 2-9 (+))"
+10,23,13,letter,Vv,VV,
+10,23,18,letter,Dv,DV,
+10,23,18,checked by eye,\dot{D}_{V}=\frac{\dot{I}_{s}},D_{V}=\frac{i_{s}},"PDF DV = is/(1,000 rho Cp)"
+10,23,20,letter,Av,AV,
+10,24,22,checked by eye,saturated solid,saturated soil,PDF soil
+10,25,18,letter,CD,Cp,
+10,26,9,thousands,6.000,"6,000","Step 2.   W = 1.2 (5,000) = 6,000 lbs"
+10,26,14,letter,js,is,
+10,26,14,checked by eye,163.54\times\mathrm{ps},163.54\ \mathrm{psi\text{-}ms},PDF 163.54 psi-ms
+10,26,19,letter,Vv,VV,
+10,26,20,thousands,70.000,"70,000","1.65 10 4 70,000"
+10,26,20,letter,Vv,VV,
+10,26,22,letter,Dv,DV,
+10,26,22,checked by eye,\pmb{D}_{V}=\frac{\dot{I}_{s}},D_{V}=\frac{i_{s}},PDF is
+10,26,23,thousands,1.000,"1,000","1,000 C p"
+10,26,23,thousands,70.000,"70,000","1.65 10 4 70,000"
+10,26,23,letter,Dv,DV,
+10,27,2,letter,Av,AV,
+10,27,3,letter,Av,AV,
+10,27,18,thousands,6.000,"6,000","b. tA = 3.35 x W1/3 = 3.35 (6,000)1/3"
+10,31,4,letter,Ibs,lbs,
+18,10,10,thousands,4.800,"4,800","4,800ru 252 y"
+18,12,13,letter,MvN,MVN,
+18,21,2,thousands,9.627,"9,627","c.   MP (Point 1) = (0.077)(4.43)(168)2 = 9,627 in-lbs/in"
+18,21,6,thousands,5.621,"5,621","Mn (Point 3) = 5,621 in-lbs/in = ß2 rH2"
+18,21,6,thousands,5.621,"5,621","Mn (Point 3) = 5,621 in-lbs/in = ß2 rH2"
+18,21,6,thousands,0.000,"0,000","r1 = 20,000/[(0.077)(168)2] = 9.20 psi"
+18,25,3,thousands,153.600,"153,600","153,600 lb"
+18,25,5,thousands,153.600,"153,600","153,600 lb"
+18,25,5,thousands,2.000,"2,000","FE   p( x ) ( x )dx   2,000 lb / in   L x   2Lx 3   x 4 dx"
+18,28,3,thousands,120.000,"120,000","120,000 lb"
+18,29,17,checked by eye,\frac{P_{X}}{48EI},\frac{Px}{48EI},P times x
+18,35,8,thousands,8.784,"8,784","Sector I.   8,784in 2"
+18,35,10,thousands,6.646,"6,646","Sector II.   6,646 in 2"
+18,35,15,thousands,8.256,"8,256","8,256 2 6,646"
+18,35,15,thousands,6.646,"6,646","Sector II.   6,646 in 2"
+18,35,15,thousands,40.320,"40,320","A = LH = 240 (168) = 40,320 in2"
+18,40,14,checked by eye,T_{p}=,T_{n}=,PDF Tn
+19,32,3,letter,fv,fy,
+19,32,4,thousands,90.000,"90,000","fu = 90,000 psi"
+19,32,6,letter,fv,fy,
+20,4,1,checked by eye,"p-p^{\prime}\geq0.85K_{1}(f_{d c}d^{\prime}f_{d s}d)/87,000/(87,000-f_{d s})J","p-p^{\prime}\geq0.85K_{1}\left(f_{dc}^{\prime}d^{\prime}/f_{ds}d\right)\left[87{,}000/\left(87{,}000-f_{ds}\right)\right]","Equation 4-18: prime, ""/"" and bracket lost"
+21,13,10,letter,MvP,MVP,
+21,13,10,letter,MvN,MVN,
+21,14,5,checked by eye,M_{v N}+M_{v P},M_{VN}+M_{VP},"PDF MVN, MVP"
+21,16,12,checked by eye,p_{_{H}}d_{_{C}}^{3}=\frac{{{{\dot{I}}_{b}}^{2}}H}{C_{1}{{{\dot{f}}}_{d s}}},p_{H}d_{c}^{3}=\frac{i_{b}^{2}H}{C_{1}f_{ds}},stray accents; ib
+22,17,14,thousands,87.000,"87,000","0.85K1f 'dc   87,000"
+22,17,14,thousands,87.000,"87,000","0.85K1f 'dc   87,000"
+22,20,14,thousands,2.500,"2,500","vc   1.9f 'dc   2,500 p   3.5f 'dc   4-140b"
+22,35,8,letter,fdv,fdy,
+23,9,8,letter,dso,dsp,
+23,33,11,letter,Tso,Tsp,
+24,10,4,checked by eye,\mathrm{f}},\mathrm{l}},"script-l subscripts (s_l, d_l, R_l, L_l) read as f; Figure 4-94"
+24,10,4,checked by eye,\mathrm{f}},\mathrm{l}},"script-l subscripts (s_l, d_l, R_l, L_l) read as f; Figure 4-94"
+24,10,4,checked by eye,\mathrm{f}},\mathrm{l}},"script-l subscripts (s_l, d_l, R_l, L_l) read as f; Figure 4-94"
+24,10,4,checked by eye,\mathrm{f}},\mathrm{l}},"script-l subscripts (s_l, d_l, R_l, L_l) read as f; Figure 4-94"
+24,10,4,checked by eye,\mathrm{f}},\mathrm{l}},"script-l subscripts (s_l, d_l, R_l, L_l) read as f; Figure 4-94"
+24,10,4,checked by eye,\mathrm{f}},\mathrm{l}},"script-l subscripts (s_l, d_l, R_l, L_l) read as f; Figure 4-94"
+24,10,4,checked by eye,\mathrm{f}},\mathrm{l}},"script-l subscripts (s_l, d_l, R_l, L_l) read as f; Figure 4-94"
+24,10,4,checked by eye,\mathrm{f}},\mathrm{l}},"script-l subscripts (s_l, d_l, R_l, L_l) read as f; Figure 4-94"
+24,29,14,letter,fv,fy,
+24,31,5,letter,MvN,MVN,
+24,31,15,thousands,4.000,"4,000","1.875 f ' c   1.875 4,000"
+24,31,15,thousands,66.000,"66,000","fy   66,000"
+24,31,15,letter,fv,fy,
+24,31,22,thousands,4.000,"4,000","1.875 f ' c   1.875 4,000"
+24,31,22,thousands,66.000,"66,000","fy   66,000"
+24,31,22,letter,fv,fy,
+24,32,5,checked by eye,=15531\ln-,=15531\ \mathrm{in\text{-}lb/in},PDF 15531 in-lb/in
+24,32,5,checked by eye,M_{vN},M_{VN},PDF MVN
+24,32,7,checked by eye,M_{DN}+M_{VP}}{M_{HIN}+M_{HP}},M_{VN}+M_{VP}}{M_{HN}+M_{HP}},"PDF MVN, MHN"
+24,35,12,thousands,5.070,"5,070","c.   M1H = (0.023)(10.63)(144)2 = 5,070 in-lbs/in"
+24,35,12,thousands,8.235,"8,235","a.   M1H = MHP - M1H (at re) = 13,305 - 5,070 = 8,235 in-lbs/in"
+24,35,12,thousands,16.689,"16,689","MVp = 16,689 in-lbs/in MVN = 15,531 in-lbs/in"
+24,35,12,thousands,6.833,"6,833","M1V = (0.031)(10.63)(144)2 = 6,833 in-lbs/in"
+24,35,12,thousands,9.856,"9,856","M1V = MVP - M1V (at re) = 16,689 - 6,833 = 9,856 in-lbs/in"
+24,35,12,thousands,15.531,"15,531","MVp = 16,689 in-lbs/in MVN = 15,531 in-lbs/in"
+24,35,12,thousands,14.989,"14,989","M3 = (0.068)(10.63)(144)2 = 14,989 in-lbs/in"
+24,36,3,thousands,8.235,"8,235","8,235"
+24,36,3,thousands,9.856,"9,856","9,856"
+24,36,11,thousands,5.070,"5,070","e.   M1H = (0.020)(0.34)(144)2 + 5,070 = 5,211 in-lbs/in"
+24,36,11,thousands,5.211,"5,211","e.   M1H = (0.020)(0.34)(144)2 + 5,070 = 5,211 in-lbs/in"
+24,36,12,thousands,6.833,"6,833","M1V = (0.039)(0.34)(144)2 + 6,833 = 7,108 in-lbs/in"
+24,36,12,thousands,7.108,"7,108","M1V = (0.039)(0.34)(144)2 + 6,833 = 7,108 in-lbs/in"
+24,38,9,thousands,2.700,"2,700","me = KLMm = 0.60 (2,700) = 1,620 psi-ms2/in"
+24,38,11,thousands,2.700,"2,700","me = KLMm = 0.60 (2,700) = 1,620 psi-ms2/in"
+24,38,11,thousands,1.620,"1,620","me = KLMm = 0.60 (2,700) = 1,620 psi-ms2/in"
+24,38,14,thousands,1.620,"1,620","me = KLMm = 0.60 (2,700) = 1,620 psi-ms2/in"
+24,39,8,letter,Vuv,VuV,
+24,39,8,letter,dv,dV,
+24,39,8,letter,Vuv,VuV,
+24,39,10,thousands,2.500,"2,500","vc = [1.9 (f'dc)1/2 + 2,500 p]   3.50 (f'c)1/2 = 221.4 psi"
+24,39,10,prime,fc,fc',
+24,39,10,prime,fdc,fdc',
+24,39,12,thousands,2.500,"2,500","vc = [1.9 (f'dc)1/2 + 2,500 p]   3.50 (f'c)1/2 = 221.4 psi"
+24,48,4,letter,Wv,WV,
+24,52,2,letter,Av,AV,
+24,53,6,letter,jb,ib,
+24,53,9,checked by eye,r_{avair},r_{avail},PDF ravail
+24,53,14,thousands,85.860,"85,860","85,860"
+24,53,14,thousands,66.000,"66,000","66,000"
+24,53,16,thousands,13.437,"13,437","Required MoH   13,437,115 in lbs"
+24,53,16,letter,MOH,MoH,
+24,53,16,letter,MOH,MoH,
+24,53,16,checked by eye,\mathrm{Ibs},\mathrm{lbs},unit lbs
+24,54,2,letter,MOH,MoH,
+24,55,2,checked by eye,M_{OH},M_{oH},PDF MoH
+24,55,2,checked by eye,M_{OH},M_{oH},PDF MoH
+24,55,2,checked by eye,\ln^{2},\mathrm{in}^{2},unit in^2
+24,55,6,thousands,3.363,"3,363","1.5 14.05 3,363 / 200 2"
+24,55,6,thousands,3.363,"3,363","1.5 14.05 3,363 / 200 2"
+24,55,6,thousands,3.363,"3,363","1.5 14.05 3,363 / 200 2"
+24,55,6,thousands,3.363,"3,363","1.5 14.05 3,363 / 200 2"
+24,56,3,thousands,451.443,"451,443","1352.3   10.25   451,443 lbs"
+24,56,5,thousands,451.443,"451,443","1352.3   10.25   451,443 lbs"
+24,56,7,checked by eye,M_{OH},M_{oH},PDF MoH
+24,56,7,checked by eye,M_{OH},M_{oH},PDF MoH
+24,57,2,thousands,57.095,"57,095","57,095 in"
+24,57,2,thousands,57.095,"57,095","57,095 in"
+24,57,2,thousands,56.541,"56,541","Area( revised )   116   56,541 in2"
+24,57,2,thousands,56.541,"56,541","Area( revised )   116   56,541 in2"
+24,57,5,thousands,54.097,"54,097","Area   X   lp   116   73.75 2 54,097 in2"
+24,57,5,thousands,54.097,"54,097","Area   X   lp   116   73.75 2 54,097 in2"
+24,58,3,thousands,22.496,"22,496","244 240 116   11.80   22,496.8 in2"
+24,58,3,thousands,22.496,"22,496","244 240 116   11.80   22,496.8 in2"
+25,5,2,thousands,81.180,"81,180","fdy   fdu   81,180 94,500"
+25,5,2,thousands,94.500,"94,500","fdy   fdu   81,180 94,500"
+25,5,2,thousands,87.840,"87,840","fds   87,840 psi"
+25,7,11,letter,Cv,CV,
+25,7,14,checked by eye,p_{v}=,p_{V}=,PDF pV
+25,8,12,letter,rc,fc,
+25,8,12,prime,fc,fc',
+25,8,14,letter,rc,fc,
+25,8,14,prime,fc,fc',
+25,10,2,checked by eye,b_{i}s_{i},b_{l}s_{l},PDF bl sl
+25,10,2,checked by eye,b_{i}s_{i},b_{l}s_{l},PDF bl sl
+25,11,4,letter,bI,bl,
+25,11,4,letter,bI,bl,
+25,11,14,letter,pv,pV,
+25,12,1,thousands,87.840,"87,840","0.00343 20.87 87,840 461.0"
+25,12,4,checked by eye,\frac{p_{v}},\frac{p_{V}},PDF pV
+25,12,9,thousands,87.840,"87,840","0.00343 20.87 87,840 461.0"
+25,13,6,checked by eye,\frac{\dot{I}_{b}},\frac{i_{b}},PDF ib
+25,13,10,thousands,131.380,"131,380","131,380 in lbs/in"
+25,13,10,checked by eye,A_{_{sh}},A_{sH},PDF AsH
+25,14,5,thousands,87.840,"87,840","4.40 1.20 20.87 87,840"
+25,14,8,thousands,87.840,"87,840","4.40 1.20 20.87 87,840"
+25,14,8,thousands,6.090,"6,090","6,090 lbs/in"
+25,14,13,thousands,6.720,"6,720","VsV b   6,720 10"
+25,14,13,thousands,81.300,"81,300","fds sin   81,300 0.707"
+25,15,3,thousands,6.090,"6,090","VsH b   6,090 11"
+25,15,3,thousands,81.300,"81,300","fds sin   81,300 0.707"
+25,20,10,thousands,4.000,"4,000","AsV   0.60   1.875 f ' c   1.875 4,000"
+25,20,10,thousands,66.000,"66,000","bd cV   8 18.125   fy   66,000"
+25,20,10,letter,fv,fy,
+25,20,10,letter,pv,pV,
+25,21,18,thousands,4.072,"4,072","m   4,072 psi ms 2 /in"
+25,21,18,checked by eye,\mathrm{ps}i-\mathrm{ms},\mathrm{psi\text{-}ms},unit psi
+25,21,22,checked by eye,\;\mathrm{~\mu~{~}~}\;\mathrm{~\mu~{~}~}\;,\quad,OCR junk removed
+25,23,5,checked by eye,ps i,psi,unit psi
+25,23,9,thousands,72.600,"72,600","0.85 72,600"
+25,23,9,thousands,72.600,"72,600","0.85 72,600"
+25,23,14,thousands,3.070,"3,070","3,070 8"
+25,23,14,thousands,72.600,"72,600","0.85 72,600"
+25,23,14,thousands,3.542,"3,542","3,542 8"
+25,23,14,thousands,72.600,"72,600","0.85 72,600"
+25,25,3,checked by eye,\bar{\dot{I}},\bar{i},PDF i-bar
+25,25,3,checked by eye,\bar{\dot{I}},\bar{i},PDF i-bar
+25,25,3,checked by eye,\bar{\dot{I}},\bar{i},PDF i-bar
+25,27,2,checked by eye,\overline{I},\bar{i},PDF i-bar
+25,27,2,checked by eye,\overline{I},\bar{i},PDF i-bar
+25,27,2,checked by eye,\overline{I},\bar{i},PDF i-bar
+25,27,6,checked by eye,\bar{I},\bar{i},PDF i-bar
+25,27,6,checked by eye,\bar{I},\bar{i},PDF i-bar
+25,27,6,checked by eye,\bar{I},\bar{i},PDF i-bar
+25,30,19,letter,fdv,fdy,
+25,33,11,thousands,87.000,"87,000","0.85K1f ' dc   87,000"
+25,33,11,thousands,87.000,"87,000","0.85K1f ' dc   87,000"
+25,33,13,thousands,4.000,"4,000","0.05 f ' dc 4,000"
+25,33,13,thousands,1.000,"1,000","1,000"
+25,33,13,thousands,77.220,"77,220","77,220   87,000 77,220"
+25,33,13,thousands,87.000,"87,000","0.85K1f ' dc   87,000"
+25,33,13,thousands,87.000,"87,000","0.85K1f ' dc   87,000"
+25,33,13,thousands,77.220,"77,220","77,220   87,000 77,220"
+25,33,16,checked by eye,}{f_v},}{f_y},PDF fy
+25,34,5,thousands,4.760,"4,760","0.85 18 4,760"
+25,34,7,thousands,4.409.934,"4,409,934","= 4,409,934 in-lbs"
+25,34,11,thousands,4.409,"4,409","= 4,409,934 in-lbs"
+25,35,11,thousands,40.500,"40,500","Ig   40,500 in 4"
+25,35,11,thousands,8.585,"8,585","Ic = (8,442 + 8,728)/2 = 8,585 in4"
+25,35,11,thousands,24.542,"24,542","24,542.5 in 4"
+25,35,13,thousands,24.542,"24,542","24,542.5 in 4"
+25,35,13,thousands,8.629,"8,629","8,629.70 lbs/in/in"
+25,36,3,thousands,1.236,"1,236","ru   1,236.79"
+25,36,3,thousands,8.629,"8,629","KE   8,629.70"
+25,36,15,letter,Ibs,lbs,
+25,37,6,thousands,4.400,"4,400","Vd = 0.18 x 4,400 x 18 x 27.125"
+25,37,6,thousands,386.694,"386,694","= 386,694 lbs > Vs = 148,415 O.K."
+25,37,6,thousands,148.415,"148,415","148,415 lbs"
+25,37,6,prime,fdc,fdc',
+25,37,10,thousands,114.867,"114,867","27.125 1236.79 114,867 lbs"
+25,37,10,thousands,114.867,"114,867","27.125 1236.79 114,867 lbs"
+25,37,10,thousands,4.000,"4,000","10 f ' dc   10 4,000"
+25,38,2,thousands,2.500,"2,500","vc   1.9 f ' dc   2,500 p"
+25,38,2,thousands,4.000,"4,000","vc   1.9 4,000   2,500 0.0045"
+25,38,2,thousands,2.500,"2,500","vc   1.9 f ' dc   2,500 p"
+25,38,2,thousands,4.000,"4,000","vc   1.9 4,000   2,500 0.0045"
+25,38,12,checked by eye,\mathrm{ln}>9\mathrm{in}\Omega\Omega\Omega\Omega\Omega\Omega,\mathrm{in}>9\mathrm{in}\ \mathrm{O.K.},PDF 13.56 in > 9 in O.K.
+25,38,12,checked by eye,\mathrm{ps}i,\mathrm{psi},unit psi
+25,38,12,checked by eye,\mathrm{ps}i,\mathrm{psi},unit psi
+25,38,12,checked by eye,\mathrm{ps}i,\mathrm{psi},unit psi
+25,39,5,thousands,3.388,"3,388","M-N at support   = 3,388,275 in-lbs"
+25,39,5,thousands,3.324,"3,324","M-p at mid-span = 3,324,954 in-lbs"
+25,42,17,checked by eye,\mathrm{psh},\mathrm{psi},unit psi
+25,43,3,thousands,4.000,"4,000","12 4,0001/ 2"
+25,43,7,thousands,4.000,"4,000","12 4,0001/ 2"
+25,43,10,thousands,4.000,"4,000","12 4,0001/ 2"
+25,43,12,letter,fdv,fdy,
+25,45,7,thousands,66.000,"66,000","fdy   66,000"
+25,45,7,thousands,66.000,"66,000","fdy   66,000"
+25,50,15,thousands,2.946,"2,946","Moment about x-axis, 2,946,000 in-lbs"
+25,50,15,thousands,3.535,"3,535","Mx = 2,946,000 x 1.2 = 3,535,200 in-lbs"
+25,50,17,letter,Mv,My,
+25,51,4,letter,rv,ry,
+25,51,6,letter,kI,kl,
+25,52,1,thousands,4.480,"4,480","m = fdy/(0.85 f'dc) = 72,600/(0.85 x 4,480) = 19.06"
+25,52,1,thousands,4.480,"4,480","m = fdy/(0.85 f'dc) = 72,600/(0.85 x 4,480) = 19.06"
+25,52,1,prime,fdc,fdc',
+25,52,1,prime,fdc,fdc',
+25,52,7,thousands,4.480,"4,480","m = fdy/(0.85 f'dc) = 72,600/(0.85 x 4,480) = 19.06"
+26,3,20,thousands,81.180,"81,180","fdy = DIF fy = 1.23 x 66,000 = 81,180 psi"
+26,3,20,thousands,94.500,"94,500","fdu = DIF fu = 1.05 x 90,000 = 94,500 psi"
+26,3,20,thousands,87.840,"87,840","fds   87,840 psi"
+26,4,2,checked by eye,{{I_{b}}^{2}},{{i_{b}}^{2}},PDF ib
+26,4,13,letter,Asv,AsV,
+26,5,9,letter,Cr,Cf,
+26,6,2,letter,Cr,Cf,
+26,6,4,thousands,87.840,"87,840","2   0.00407 21.48 3 87,840   2"
+26,6,4,thousands,87.840,"87,840","2   0.00407 21.48 3 87,840   2"
+26,6,4,letter,Asv,AsV,
+26,6,5,checked by eye,symmetric-field lines,symmetrical\ yield\ lines,PDF symmetrical yield lines
+26,6,6,thousands,26.725,"26,725","L   MVP   360  26,725"
+26,6,6,thousands,165.095,"165,095","H MHN1 MHP   120 2 165,095"
+26,6,6,thousands,265.725,"265,725","265,725 in lbs/in"
+26,6,6,thousands,265.725,"265,725","265,725 in lbs/in"
+26,7,4,thousands,4.800,"4,800","4,800   3190   1   1/ 2"
+26,7,4,thousands,2.692,"2,692","2,692   2692 20.4   99.4"
+26,7,4,checked by eye,\right]V_{t},\right]v_{f},PDF vf
+26,8,11,prime,fc,fc',
+26,13,2,checked by eye,v_{P}/v_{s},v_{r}/v_{s},PDF vr/vs
+26,13,5,checked by eye,v_{d}/v_{s},v_{r}/v_{s},PDF vr/vs
+26,14,7,letter,Tso,Tsp,
+26,18,2,thousands,2.562,"2,562","vr (donor) = 0.61 (4,200) = 2,562 fps"
+26,18,2,checked by eye,\mathrm{~fs},\mathrm{~fps},unit fps
+26,18,12,letter,Vs,vs,
+27,20,7,letter,fv,fy,
+27,44,2,checked by eye,(\frac{s+2}{2}),\frac{S+Z}{2},Figure 5-10: Mp = M1 = fds (S + Z)/2
+28,1,12,letter,Mo,Mp,
+28,1,12,letter,Mho,Mhp,
+28,1,12,letter,Mvo,Mvp,
+28,35,4,letter,Jb,lb,
+28,44,13,checked by eye,2\pi\mathrm{J m}_{e}/(K K_{L}+K_{b})\mathrm{J}^{1/2},2\pi\left[m_{e}/\left(KK_{L}+K_{b}\right)\right]^{1/2},brackets read as J
+28,48,3,checked by eye,\vee\mathsf{,\mathsf{V}\mathsf{,"V1, V2 read as logic symbol"
+28,48,3,checked by eye,\vee\mathsf{,\mathsf{V}\mathsf{,"V1, V2 read as logic symbol"
+28,48,3,checked by eye,\vee\mathsf{,\mathsf{V}\mathsf{,"V1, V2 read as logic symbol"
+28,48,3,checked by eye,\vee\mathsf{,\mathsf{V}\mathsf{,"V1, V2 read as logic symbol"
+28,48,3,checked by eye,\vee\mathsf{,\mathsf{V}\mathsf{,"V1, V2 read as logic symbol"
+29,29,2,letter,KF,KE,
+29,29,2,letter,XF,XE,
+29,31,2,letter,fv,fy,
+29,31,10,thousands,25.130,"25,130","M   25,130 (k ms 2 )/ft"
+29,32,8,letter,tF,tE,
+29,32,10,checked by eye,\left/\left(E_{s}t_{E}\right)\right/\left(E_{s}t_{E}\right),/\left(E_{s}t_{E}\right),doubled term
+29,32,10,checked by eye,\times0096,\times.0096,PDF .0096
+29,32,10,checked by eye,\ln/\ln/\sec,\ \mathrm{in/in/sec},unit in/in/sec
+29,35,11,letter,rv,ry,
+29,38,11,letter,fv,fy,
+29,40,1,thousands,1.393,"1,393","M un   2M up   1,393 2 1,459"
+29,40,1,thousands,1.459,"1,459","M un   2M up   1,393 2 1,459"
+29,40,11,letter,XF,XE,
+29,41,5,thousands,2.922,"2,922","Vu = 0.270   10.84 = 2.92 k = 2,922 lb"
+29,41,8,thousands,1.896,"1,896","Vmax = 0.55 ruL = 0.55   766   4.5 = 1,896 lb"
+29,41,11,thousands,22.000,"22,000","Vu = 0.270   22,000 = 5,940"
+29,41,11,thousands,5.940,"5,940","Vu = 0.270   22,000 = 5,940"
+29,41,14,thousands,1.551,"1,551","= 1,551 lb < 5,940 lb   O.K."
+29,41,14,thousands,5.940,"5,940","Vu = 0.270   22,000 = 5,940"
+29,41,17,thousands,1.200,"1,200","Qu = 1,200   4 = 4,800 lb > 1,551 O.K.   (Figure 5-15 (+))"
+29,41,17,thousands,4.800,"4,800","Qu = 1,200   4 = 4,800 lb > 1,551 O.K.   (Figure 5-15 (+))"
+29,41,17,thousands,1.551,"1,551","= 1,551 lb < 5,940 lb   O.K."
+29,42,19,checked by eye,M_{0}=f_{d s}Z r,M_{p}=f_{ds}Z,PDF Mp = fdsZ
+29,44,6,letter,Ix,lx,
+29,44,7,letter,Iy,ly,
+29,44,7,letter,Ix,lx,
+29,44,11,letter,fv,fy,
+29,45,9,thousands,3.160,"3,160","3,160"
+29,45,10,thousands,3.160,"3,160","3,160"
+29,45,12,thousands,29.000,"29,000","12 2 E   12 2 29,000"
+29,45,13,thousands,2.992,"2,992","Pex   2,992 kips   (Section 5-37.3)"
+29,47,10,letter,fv,fy,
+29,48,9,letter,KI,Kl,
+29,48,10,checked by eye,K I_{x},Kl_{x},PDF Klx
+29,48,17,thousands,2.116,"2,116","Pex   2,116 kips"
+29,49,1,thousands,6.823,"6,823","Pey   6,823 kips   (Section 5-37.3)"
+29,49,1,checked by eye,P_{_{P}},P_{p},PDF Pp
+29,49,1,checked by eye,\textcircled{e}&\textcircled{e},,OCR junk removed
+30,1,13,letter,fv,fy,
+30,2,6,thousands,1.250,"1,250","w1 = 0.62   2.0   144   7.0 = 1,250 lb/ft"
+30,2,8,thousands,1.250,"1,250","w1 = 0.62   2.0   144   7.0 = 1,250 lb/ft"
+30,3,11,thousands,14.260,"14,260","Step 4.   KE   14,260 lb/in   (Table 3-8 (+))"
+30,3,11,checked by eye,lb/ln,lb/in,unit lb/in
+30,4,13,thousands,1.215,"1,215","ru   1,215"
+30,4,22,letter,tF,tE,
+30,4,22,letter,tF,tE,
+30,5,1,thousands,1.105,"1,105","ru L2   1,105 50 2 12"
+30,5,1,thousands,4.144,"4,144","M   4,144 in kips"
+30,5,6,thousands,4.144,"4,144","M   4,144 in kips"
+30,5,10,letter,fv,fy,
+30,5,18,thousands,29.000,"29,000","12 2 E   12 2 29,000"
+30,5,18,checked by eye,\mathrm{ksh},\mathrm{ksi},unit ksi
+30,6,11,thousands,1.105,"1,105","r   ru   1,105 lb/ft"
+30,7,6,letter,fv,fy,
+30,7,6,checked by eye,AlSC\_specification,AISC\ Specification,AISC
+30,7,14,letter,rv,ry,
+30,7,20,letter,Jb,lb,
+30,9,10,thousands,1.080,"1,080","w1 = 1.25   1.0   144   6 = 1,080 lb/ft"
+30,9,12,thousands,1.080,"1,080","w1 = 1.25   1.0   144   6 = 1,080 lb/ft"
+30,10,5,thousands,15.580,"15,580","Step 4.   KE   15,580 lb/in   (Table 3-8 (+))"
+30,10,16,thousands,1.035,"1,035","ru = 2.23   465 = 1,035 lb/ft"
+30,19,1,thousands,20.548,"20,548","+ 1/3 (15.167) [(3   61) + (2   74)] = 20,548 lb"
+30,19,1,thousands,20.548,"20,548","+ 1/3 (15.167) [(3   61) + (2   74)] = 20,548 lb"
+30,19,14,letter,mF,mE,
+30,20,1,checked by eye,307\ E/I/L^{3},307\ EI/L^{3},PDF 307 EI/L^3
+30,20,1,checked by eye,30\times10^{8},30\times10^{6},PDF 30 x 10^6
+30,20,1,checked by eye,lb/ln,lb/in,unit lb/in
+30,20,1,checked by eye,126\ kN,126\ kips,PDF 126 kips
+30,20,1,checked by eye,101\ kPa,101\ kips,PDF 101 kips
+30,20,1,checked by eye,P/R_{u}=10/126,P/R_{u}=101/126,PDF 101/126
+30,20,1,checked by eye,(\pm),(+),link mark (+)
+30,20,1,checked by eye,(\pm),(+),link mark (+)
+30,20,1,checked by eye,(\pm),(+),link mark (+)
+30,20,1,checked by eye,(\pm),(+),link mark (+)
+30,20,1,checked by eye,(\pm),(+),link mark (+)
+30,21,6,letter,XF,XE,
+30,26,4,letter,KF,KE,
+30,26,4,letter,XF,XE,
+30,26,8,checked by eye,\mathrm{~ps}i-\mathrm{ms},\mathrm{~psi\text{-}ms},unit psi
+30,26,21,letter,XF,XE,
+30,29,10,letter,KF,KE,
+30,29,10,letter,XF,XE,
+30,30,14,thousands,8.500,"8,500","8,500 psi"
+30,30,16,thousands,13.860,"13,860",")   = 103   (10.5.2 + 8.5.2 )1/2 = 13,860 psi < 39.600 psi   O.K."
+30,33,24,thousands,26.400,"26,400","V = DLF   P   L/2 = 1.0   1100   48/2 = 26,400 lb/in"
+30,34,24,thousands,1.728,"1,728","g   1,728 32 .2 12   in"
+30,34,24,thousands,1.468,"1,468","m   1,468"
+30,35,2,thousands,1.468,"1,468","me   K LM   m   0.72 1,468   1,057"
+30,35,2,thousands,1.057,"1,057","me   K LM   m   0.72 1,468   1,057"
+30,38,20,thousands,1.000,"1,000","w = 1.25   4.5   4.5   144/1,000 = 3.65 k/ft"
+30,41,4,thousands,2.080,"2,080","= 51.1   40.7 = 2,080 in-kips"
+30,41,8,checked by eye,\mathrm{e}_{\mathrm{equiv}}\mathrm{int}_{\mathrm{int}}\mathrm{static}\mathrm{load}+\mathrm{head}\mathrm{load},\text{equivalent static load + dead load},PDF text
+30,42,2,thousands,1.000,"1,000","w   2.94 1,000 1"
+32,5,7,thousands,60.000,"60,000","fps   fse + 60,000   6-22b"
+32,5,13,thousands,30.000,"30,000","fps   fse + 30,000   6-23b"
+32,37,4,letter,jr,ir,
+35,6,2,prime,fdc,fdc',
+35,8,6,letter,KF,KE,
+35,8,6,letter,XF,XE,
+35,8,15,letter,Ars,Afs,
+35,8,15,letter,Ars,Afs,
+35,10,5,letter,Ars,Afs,
+35,10,5,letter,Ars,Afs,
+35,12,2,prime,fm,fm',
+35,15,9,thousands,1.547,"1,547","Compression (f‘dm)   - 1.19 (1,300) = 1,547 psi"
+35,16,1,thousands,1.468,"1,468","7.34 200 0   1,468lb in / in"
+35,16,11,letter,KF,KE,
+35,16,11,letter,XF,XE,
+35,17,3,letter,psj,psi,
+35,21,8,letter,Ib,lb,
+35,21,10,letter,Lv,LV,
+35,27,11,letter,fpv,fpy,
+35,27,13,letter,fv,fy,
+35,27,15,letter,fv,fy,
+35,27,23,thousands,20.985,"20,985","I = 20,985 in2   w = 418 lb/ft"
+35,29,5,prime,fdc,fdc',
+35,29,9,letter,fdv,fdy,
+35,29,11,letter,fdv,fdy,
+35,29,14,letter,fdv,fdy,
+35,29,16,letter,fdv,fdy,
+35,32,18,checked by eye,r_{avall},r_{avail},PDF ravail
+35,34,5,checked by eye,r_{\mathrm{r e g}}^{-}=17.7\mathrm{I b/i n},r_{req}=17.7\ \mathrm{lb/in},PDF rreq = 17.7 lb/in
+35,34,12,prime,fdc,fdc',
+35,35,9,letter,rc,fc,
+35,35,9,prime,fc,fc',
+35,36,7,checked by eye,&if.\quad,&f.\quad,PDF f.
+35,36,11,thousands,29.160,"29,160","= 29,160 lbs"
+35,46,13,thousands,12.118,"12,118","= (374   16.12)/8 = 12,118 lb-ft"
+35,50,4,thousands,484.540,"484,540","484,540 39.3WBX   20.9 23,751.4 WBX"
+35,50,4,thousands,23.751,"23,751","484,540 39.3WBX   20.9 23,751.4 WBX"
+35,50,4,thousands,11.864,"11,864","WBX   11,864 / 18.4   644.8 lbs"
+35,50,7,letter,Ibs,lbs,
+35,52,2,letter,rt,ft,
+35,52,2,checked by eye,\mathrm{lb/ln},\mathrm{lb/in},unit lb/in
+35,54,3,thousands,47.878,"47,878","47,878 .9"

@@ -26,7 +26,7 @@ python3 scripts/build_db.py --ocr-root ocr --grf-root graphs --index reference/U
 python3 scripts/map_grf.py --db reference/ufc_340_02.db --grf-root graphs --csv reference/grf_to_guide.csv
 python3 scripts/check_equations.py --db reference/ufc_340_02.db --csv reference/equation_check.csv --issues reference/formula_issues.csv --review reference/equation_review.csv
 python3 scripts/check_equation_lines.py --db reference/ufc_340_02.db --csv reference/equation_lines.csv --review reference/equation_review.csv --status reference/equation_status.csv
-python3 scripts/fix_formulas.py --db reference/ufc_340_02.db --csv reference/formula_fixes.csv
+python3 scripts/fix_formulas.py --db reference/ufc_340_02.db --csv reference/formula_fixes.csv --review reference/formula_review.csv --manual reference/formula_manual_fixes.csv
 python3 scripts/build_equations.py --db reference/ufc_340_02.db --corrections reference/equation_corrections.csv --csv reference/equations.csv --katex scripts/katex_check.js
 python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/missing_data.csv
 ```
@@ -38,7 +38,7 @@ python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/mi
 | `map_grf.py` | `grf_to_guide.csv` and table `grf_guide_links`: every plot file to its guide figure |
 | `check_equations.py` | `equation_check.csv` / table `equation_check` (OCR vs PDF text), `formula_issues.csv` / table `formula_issues` (OCR error patterns), and loads the hand-checked `equation_review.csv` |
 | `check_equation_lines.py` | `equation_lines.csv` (line-level check) and `equation_status.csv` / table `equation_status`: one verdict per equation |
-| `fix_formulas.py` | Table `formulas` and `formula_fixes.csv`: every OCR formula block with thousands separators fixed |
+| `fix_formulas.py` | Table `formulas` and `formula_fixes.csv`: every OCR formula block with thousands separators, letters and primes fixed (uses `latex_names.py`; hand rules in `formula_manual_fixes.csv`) |
 | `build_equations.py` | Table `equations` and `equations.csv`: one checked LaTeX form per numbered equation (corrections from `equation_corrections.csv`) |
 | `audit_missing.py` | `missing_data.csv` and table `data_status`: every figure and table with its data status |
 | `sdof_bilinear.py` | Calculator: maximum response of an elasto-plastic SDOF system to a bilinear-triangular pulse |
@@ -69,8 +69,8 @@ Earlier builds read the `.grf` files wrongly: all curves of a file were merged i
 
 ## 3. Equations (table `equations`, file `equations.csv`)
 **Use table `equations` for any equation.** It has one LaTeX form per numbered equation (501):
-- **114 corrected from the PDF** (`source` = 'corrected from PDF'), written from the rendered PDF page and listed in `equation_corrections.csv` with a `reason`: 88 OCR errors, 3 equations the OCR missed (4-45b, 4-196, 4-199), 16 minor OCR slips, 5 OCR lines paired with the wrong equation number, and 2-24 / 2-25 stored as printed (operator still to confirm).
-- **387 from OCR** (`source` = 'OCR'), where the checks below found no problem; layout leftovers (`&`, `\begin{aligned}`, stray characters) removed.
+- **148 corrected from the PDF** (`source` = 'corrected from PDF'), written from the rendered PDF page and listed in `equation_corrections.csv` with a `reason`: 112 OCR errors, 3 equations the OCR missed (4-45b, 4-196, 4-199), 26 minor OCR slips, OCR lines paired with the wrong equation number, and 2-24 / 2-25 stored as printed (operator still to confirm). 34 of these (reason contains 'name/prime check') were found by the letter and prime check of section 3a.
+- **353 from OCR** (`source` = 'OCR'), where the checks below found no problem; layout leftovers (`&`, `\begin{aligned}`, stray characters) removed.
 - All 501 parse in KaTeX (`latex_ok` = 1). The original OCR text is kept in column `ocr_latex`; table `blocks` is unchanged.
 - Each correction was checked against the PDF text layer: numbers and variable names agree, except where the text layer itself splits or drops them (exponents on other lines, "87 ,000", "R eff").
 
@@ -82,10 +82,10 @@ How equations were checked (`equation_status.csv`): the PDF text layer (table `p
 
 | Verdict | Count | Meaning |
 |---|---|---|
-| ok (automatic) | 344 | Numbers and variable names agree with the PDF text |
-| ok (checked by eye) | 48 | Flagged, but correct on the rendered page (text-layer artefacts) |
-| ok (minor slip) | 16 | Small slip; now corrected in `equations` |
-| **error** | **88** | OCR was wrong; now corrected in `equations` |
+| ok (automatic) | 312 | Numbers and variable names agree with the PDF text |
+| ok (checked by eye) | 46 | Flagged, but correct on the rendered page (text-layer artefacts) |
+| ok (minor slip) | 26 | Small slip; now corrected in `equations` |
+| **error** | **112** | OCR was wrong; now corrected in `equations` |
 | **missed** | **3** | OCR had no formula (4-45b, 4-196, 4-199); now in `equations` |
 | check operator | 2 | 2-24, 2-25: OCR divides, PDF prints multiplication; `equations` follows the PDF |
 
@@ -96,9 +96,19 @@ Most common OCR faults (see `equation_review.csv` for each equation):
 - **Thousands comma read as decimal point** (87,000 as 87.000; fixed in tables `equations` and `formulas`) and **lost minus signs** in powers of ten.
 - **Brackets and fraction bars** misplaced (4-28, 4-166, 4-192, 6-31).
 
-**Limits:** the 344 "ok (automatic)" equations (taken from OCR in `equations`) were not each read by eye; the automatic checks cannot see Greek letters or primes, which are images or tiny marks in the PDF. A lost prime in an equation whose numbers and other names match would pass. For any equation used in a calculation, read it from the rendered PDF page.
+**Limits:** the 312 "ok (automatic)" equations (taken from OCR in `equations`) were not each read by eye; the automatic checks cannot see Greek letters or primes, which are images or tiny marks in the PDF. A lost prime in an equation whose numbers and other names match would pass. For any equation used in a calculation, read it from the rendered PDF page.
 
-**Thousands commas in OCR formulas (worked examples included): fixed.** The OCR read 207 thousands commas as decimal points (87,000 as 87.000; 4,409,934 as 4.409.934), on 82 pages. Table `formulas` holds every OCR formula block (1,876) with these fixed (column `latex`; original in `ocr_latex`); `formula_fixes.csv` lists each fix with the PDF line that shows the comma form. A number is changed only where the PDF page prints the comma form and not the dotted one; 0 remain. 164 fixes were confirmed by neighbouring numbers on the same PDF line, 39 by reading them (values printed alone, such as "fy 66,000", "FE 153,600 lb"), and 4 have no other number nearby and rest on the page rule alone. `formula_issues.csv` keeps the list as found in the raw OCR. Other OCR mistakes in worked-example formulas (letters, primes) were not reviewed; use the PDF page for those.
+**Thousands commas in OCR formulas (worked examples included): fixed.** The OCR read 207 thousands commas as decimal points (87,000 as 87.000; 4,409,934 as 4.409.934), on 82 pages. Table `formulas` holds every OCR formula block (1,876) with these fixed (column `latex`; original in `ocr_latex`); `formula_fixes.csv` lists each fix with the PDF line that shows the comma form. A number is changed only where the PDF page prints the comma form and not the dotted one; 0 remain. 164 fixes were confirmed by neighbouring numbers on the same PDF line, 39 by reading them (values printed alone, such as "fy 66,000", "FE 153,600 lb"), and 4 have no other number nearby and rest on the page rule alone. `formula_issues.csv` keeps the list as found in the raw OCR. Letters and primes: see section 3a.
+
+## 3a. Letters and primes in all OCR formulas (worked examples included)
+`fix_formulas.py` compares each variable name in every OCR formula line (3,320 lines) with the matched PDF text line, using `latex_names.py` to read names, subscripts and primes from LaTeX.
+- **Letter fixes (124)**: only known OCR swaps (y/v, E/F, l/I, i/j, p/o, p/D, f/t, g/q, ...). A letter is changed only if the corrected name is on the matched PDF line and the OCR name appears nowhere on that page.
+- **Prime fixes (14)**: only names of 2+ characters that are primed on the matched PDF line and never unprimed nearby.
+- **Checked by eye (119 replacements, 91 rules in `formula_manual_fixes.csv`)**: units (psi, in, ft), names such as i_t → i_r, T_p → T_n, L_wd → L_wf, junk text, and wrong values on batch 30 page 20.
+- Every fix is listed in `formula_fixes.csv` (type, OCR text, fixed text, PDF evidence). 142 doubtful lines in `formula_review.csv` were read; two remain open: V_sv and V_st on batch 25 pages 14–15.
+- The same check found 34 errors in numbered equations that the number check had passed (lost primes, I_b for i_b, p_v for p_V, brackets read as J). These are now corrected in `equations`.
+
+**Coverage gap (open):** about 41 numbered equations printed in the PDF are not in table `equations`, because the OCR never captured their equation numbers (for example 2-2, 2-4, 2-7, 2-56, 3-37, 3-55, 4-11, 4-18, 4-19, 4-31 to 4-33, 4-92 to 4-94, 4-138a/b, 4-154, 4-155, 4-182 to 4-186, 5-59, 5-63, 6-50). Equations printed only as pictures may add more. These need adding from the rendered PDF pages.
 
 ## 4. Missing data (`missing_data.csv`, table `data_status`)
 840 figures and 84 tables, each with a status.
