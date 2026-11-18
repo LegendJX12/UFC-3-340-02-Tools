@@ -1,0 +1,21 @@
+page,col1,col2,col3,col4,col5,col6
+20/38,Edge,Yield Line Location,Limits,Ultimate Horizontal Shear Stress,Limits,Ultimate Vertical Shear
+20/38,Conditions,Yield Line Location,Limits,v_{uH},Limits,Stress v_{uV}
+20/38,,,0 < d_{e}/x,,0 < d_{e}/H,
+20/38,,,< ½,,< ½,
+20/38,,,½ < d_{e}/x,,½ <,
+20/38,,,< 1,,d_{e}/H < 1,
+20/38,Two adjacent,,,,,
+20/38,edges fixed,,,,,
+20/38,and two,,,,,
+20/38,edges free,,0 < d_{e}/L,,0 < d_{e}/y,
+20/38,,,< ½,,< ½,
+20/38,,,½ < d_{e}/L,,½ < d_{e}/y,
+20/38,,,< 1,,< 1,
+20/38,Three edges fixed and one edge free,VuH Vuv,0 < d_{e}/x < ½ ½ < d_{e}/x < 1,,0 < d_{e}/H < ½ ½ < d_{e}/H < 1,
+20/38,Three edges fixed and one edge free,VuH Vuv,0 < d_{e}/L < ¼,,0 < d_{e}/y < ½,
+20/39,Edge,Yield Line Location,Limits,Ultimate Horizontal Shear Stress,Limits,Ultimate Vertical Shear
+20/39,Conditions,Yield Line Location,Limits,v_{uH},Limits,Stress v_{uV}
+20/39,,,¼ < d_{e}/L < ½,,½ < d_{e}/y < 1,
+20/39,Four edges fixed,,0 < d_{e}/x < ½ ½ < d_{e}/x < 1,When y = H/2,0 < d_{e}/H < ¼ ¼ < d_{e}/H < ½,
+20/39,Four edges fixed,,0 < d_{e}/L < ¼ ¼ < d_{e}/L < ½,,0 < d_{e}/y < ½ ½ < d_{e}/y < 1,When x = L/2

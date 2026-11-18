@@ -47,7 +47,7 @@ FIX = {  # corrected title and page where the index entry is wrong
 OCR_NOISE = {'2A-1640'}  # misread duplicate of 2A-16
 TABLE_NOTES = {
     '5-4': ('cells from PDF text', '', 'Table is not drawn on the page (renders blank, OCR found nothing) but its '
-                                      'values are in the PDF text layer: reference/tables/table_5-4.csv.'),
+                                      'values are in the PDF text layer: reference/tables/table_5-4.csv (typed in: reference/manual/tables/table_5-4.csv).'),
     '4-1': (None, None, 'Index page (batch 19 p34) only mentions the table; cells are on batch 19 page 42.'),
 }
 

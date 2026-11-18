@@ -15,7 +15,7 @@ See `reference/README.md` for a full "where is what" map. In short:
 | `reference/ufc_340_02.db` | **The database.** Everything below is also loaded into it |
 | `reference/manual/` | **Hand-checked inputs. Never overwritten by scripts; edit by hand only** |
 | `reference/equations/`, `formulas/`, `plots/` | Script outputs (CSV), rebuilt every run |
-| `reference/tables/` | Tables typed in by hand (Table 5-4); list in `tables_index.csv`; loaded into table `extra_tables` |
+| `reference/tables/` | Every numbered table as CSV (85), with `tables_index.csv` and `table_checks.csv`; see section 3b |
 | `reference/index/` | Index spreadsheet |
 | `scripts/` | Build and check scripts (see below) |
 
@@ -32,7 +32,8 @@ Add `--plots` to also recompute the generated and digitized plot files. For the 
 |---|---|
 | `build_db.py` | `reference/ufc_340_02.db` (uses `grf.py` to read plot files) |
 | `grf.py` | Reader for DPLOT `.grf` files (both `data` and `dx` layouts, curves kept separate with labels) |
-| `load_tables.py` | Table `extra_tables` from `reference/tables/` |
+| `export_tables.py` | `reference/tables/`, tables `guide_tables`, `guide_table_cells`, `table_checks`: every numbered table, checked against a second reading |
+| `read_scanned_table.py`, `check_table_6_7.py` | Tesseract reading of the scanned Table 6-7 (second reading) |
 | `rebuild_all.sh` | Runs every step below in order |
 | `map_grf.py` | `grf_to_guide.csv` and table `grf_guide_links`: every plot file to its guide figure |
 | `check_equations.py` | `equation_check.csv` / table `equation_check` (OCR vs PDF text), `formula_issues.csv` / table `formula_issues` (OCR error patterns), and loads the hand-checked `equation_review.csv` |
@@ -108,6 +109,23 @@ Most common OCR faults (see `equation_review.csv` for each equation):
 - The same check found 34 errors in numbered equations that the number check had passed (lost primes, I_b for i_b, p_v for p_V, brackets read as J). These are now corrected in `equations`.
 
 **Coverage gap (open):** about 41 numbered equations printed in the PDF are not in table `equations`, because the OCR never captured their equation numbers (for example 2-2, 2-4, 2-7, 2-56, 3-37, 3-55, 4-11, 4-18, 4-19, 4-31 to 4-33, 4-92 to 4-94, 4-138a/b, 4-154, 4-155, 4-182 to 4-186, 5-59, 5-63, 6-50). Equations printed only as pictures may add more. These need adding from the rendered PDF pages.
+
+## 3b. Tables (`reference/tables/`, tables `guide_tables`, `guide_table_cells`)
+All 85 numbered tables are exported, one CSV each (84 from the index plus Table 4-15a, which the index misses). `tables_index.csv` says for each how it was read and checked. Every number was read twice, by two independent methods, and compared:
+
+| Table kind | First reading | Second reading | Differences |
+|---|---|---|---|
+| Data tables with a PDF text layer (most) | The PDF's own table grid lines, filled with the exact PDF words (superscripts kept as `^{}`, subscripts as `_{}`) | PaddleOCR | PDF text kept (it is exact); rows also compared one by one |
+| Scanned image (Table 6-7, 7 pages) | PaddleOCR | Tesseract, 3 settings, row by row | 1,102 of 1,176 agree; the other 74 read by eye on 4x zoomed scans |
+| No usable grid (3-15, 4-8) or blank (5-4) | Typed or built from exact PDF word positions | Read by eye on the rendered page | |
+
+**Data tables (44, 9,261 values): checked.** 22 agree fully in both readings; in 18 the readings differ only where the OCR dropped or misread values (811 such values; the exact PDF text is kept, see `table_checks.csv`); 4 were done by hand (`reference/manual/tables/README.md`). Rows that differ from the OCR were compared with the rendered page by eye (Tables 1-2, 1-6, 2-1, 2-2, 2-3, 2A-3, 3-15, 4-15a, 5-8, 5-12, 6-5, 6-6, 6-13, 6-14). Tables 6-7, 6-12 and 6-13 also pass trend checks (values rise or fall steadily along rows and columns), except 7 places in 6-13 where the printed values break the trend; these were read on the page and are exported as printed.
+
+What the OCR got wrong in tables (now avoided): dropped rows (Table 1-6 lost 5 rows and scrambled its end), merged rows (6-7), shifted columns, and values such as 2000 read as 200 (6-5).
+
+**Values printed oddly in the PDF (exported as printed):** Table 4-8 Cc = 0.0301 (L/H 1.25, c/L 0.1; probably 0.00301); Table 6-13 values that break the trend (e.g. 23.0 after 43.9 at 26x26, 5/8 in; 14.23 at 23x34.5); Table 6-7 39x39 3/4 in, printed 20.5 as a correction pasted over the scanned 10.5.
+
+**Formula tables (41): numbers checked, formulas not yet checked by eye.** These hold formulas and drawings (e.g. Tables 3-1 to 3-13, 4-3 to 4-15, 5-5 to 5-16). Each has two files: `table_N-M.csv` (exact PDF text, but Greek letters and some symbols are missing because they are images in the PDF) and `table_N-M_ocr_latex.csv` (OCR LaTeX, Greek kept, but may contain OCR errors). 249 numbers in 13 of them still differ between the readings (`table_checks.csv`, verdict TO CHECK); several are drawn entirely as pictures (2-6, 4-5, 4-10 page 22/2, 4-11, 4-14, 5-10, 5-11). Before using a formula from these tables, read it on the PDF page.
 
 ## 4. Missing data (`missing_data.csv`, table `data_status`)
 840 figures and 84 tables, each with a status.

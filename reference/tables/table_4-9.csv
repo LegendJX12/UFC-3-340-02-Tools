@@ -1,0 +1,44 @@
+page,col1,col2,col3,col4
+22/1,Edge Conditions,Yield Line Locations,Limits,"Impulse Coefficient, C_{1}"
+22/1,Two adjacent edges supported and two edges free,,0 < x/H < 1 H < x < L 0 < y/L < 1 L < y < H,K LM u 957 x / H K LM u 957 2 x / H K p / p LM u V H 957 y / H K p / p L / H LM u V H 957 2 y / H
+22/1,Three edges,,,
+22/1,,,,K
+22/1,,,,LM u
+22/1,supported,,0 < x/H < 1,957
+22/1,,,,x / H
+22/1,and one edge,,,
+22/1,free,,,
+22/1,,,,K
+22/1,,,,LM u
+22/1,,,H < x < L/2,957
+22/1,,,,2
+22/1,,,,x / H
+22/1,,,,K p / p
+22/1,,,,LM u V H
+22/1,,,0 < y/L < ½,957
+22/1,,,,y / H
+22/1,,,,K p / p L / H
+22/1,,,,LM u V H
+22/1,,,L/2 < y < H,478
+22/1,,,,2
+22/1,,,,y / H
+22/1,Four edges,,,
+22/1,,,,K
+22/1,,,,LM u
+22/1,supported,,0 < x/H < ½,957
+22/1,,,,x / H
+22/1,,,,K
+22/1,,,,LM u
+22/1,,,H/2 < x < L/2,478
+22/1,,,,2
+22/1,,,,x / H
+22/1,,,,K p / p
+22/1,,,,LM u V H
+22/1,,,0 < y/L < ½,957
+22/1,,,,2
+22/1,,,,y / H
+22/1,,,,K p / p L / H
+22/1,,,,LM u V H
+22/1,,,L/2 < y < H/2,478
+22/1,,,,2
+22/1,,,,y / H

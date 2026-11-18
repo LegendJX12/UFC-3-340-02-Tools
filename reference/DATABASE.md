@@ -32,7 +32,9 @@ See `reference/README.md` for where each file is, and `reference/HANDOFF.md` for
 | equation_status | One verdict per numbered equation: ok (automatic / checked by eye / minor slip), error, missed, check operator |
 | formula_issues | OCR formula error patterns as found in the raw OCR: thousands comma read as decimal point, lost minus in powers of ten |
 | formulas | Every OCR formula block (1,876) with thousands separators, letters and primes fixed (`latex`), original in `ocr_latex`, list of fixes in `fixes` |
-| extra_tables | Tables typed in by hand from `reference/tables/` (Table 5-4): one row per table row, values as JSON in `data` |
+| guide_tables | One row per numbered table (85): title, data or formula, pages, file, numbers checked, how checked, status |
+| guide_table_cells | Every cell of every table: table number, row, column, page, value |
+| table_checks | Every number where the two readings of a table differed, with the verdict |
 | data_status | Every figure and table with its data status (has plot data, MISSING DATA, ...) |
 
 ## Counts (this build)
@@ -41,7 +43,7 @@ See `reference/README.md` for where each file is, and `reference/HANDOFF.md` for
 - 1,371 original plot files (10,835 curves, 591,110 points) and 22 generated (214 curves: 19 computed files, 3 digitized); all linked to a guide figure
 - 501 numbered equations checked: 112 OCR errors, 26 minor slips and 3 missed equations, now corrected in table `equations` (148 rows corrected from the PDF in all). About 41 numbered equations are still missing from the table (OCR missed their numbers)
 - OCR formula fixes: 207 thousands commas, 124 letters, 14 primes, 119 checked by eye (`formula_fixes.csv`)
-- 840 figures and 84 tables with a data status
+- 85 numbered tables exported and checked (44 data tables, 9,261 values; 41 formula tables); 840 figures with a data status
 
 ## Known limits
 - OCR text and tables can contain errors; prefer `pdf_pages` for exact wording and numbers. In raw OCR formulas, a.bbb is often a thousands value; use table `formulas`, where these are fixed.
@@ -68,9 +70,13 @@ A checked equation, as LaTeX:
 ```sql
 SELECT number, latex, source FROM equations WHERE number = '2-23';
 ```
-Table 5-4 values:
+Table 5-4, as rows and columns:
 ```sql
-SELECT row_no, data FROM extra_tables WHERE number = '5-4' ORDER BY row_no;
+SELECT row_no, col_no, value FROM guide_table_cells WHERE number = '5-4' ORDER BY row_no, col_no;
+```
+All tables and how each was checked:
+```sql
+SELECT number, kind, title, status, how_checked FROM guide_tables;
 ```
 Everything still missing data:
 ```sql
