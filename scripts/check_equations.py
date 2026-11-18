@@ -14,8 +14,15 @@ Status:
   no-pdf-line - equation number not found as a line ending in the PDF text
   no-formula  - OCR found the number but no formula block near it
 
+Also:
+  - scans every OCR formula for two error patterns seen in the review: a thousands comma read
+    as a decimal point (OCR "47.690" where the PDF has "47,690"), and a lost minus sign in a
+    power of ten (OCR 10^9 where the PDF has 10-9). Output: table formula_issues and --issues CSV.
+  - loads the hand-checked review (reference/equation_review.csv) into table equation_review.
+
 Usage:
-  python3 scripts/check_equations.py --db reference/ufc_340_02.db --csv reference/equation_check.csv
+  python3 scripts/check_equations.py --db reference/ufc_340_02.db --csv reference/equation_check.csv \
+      --issues reference/formula_issues.csv --review reference/equation_review.csv
 """
 import argparse, collections, csv, re, sqlite3
 
@@ -37,6 +44,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--db', required=True)
     ap.add_argument('--csv', required=True)
+    ap.add_argument('--issues', help='CSV for OCR formula error patterns')
+    ap.add_argument('--review', help='hand-checked review CSV to load into the database')
     a = ap.parse_args()
     db = sqlite3.connect(a.db)
     db.execute('DROP TABLE IF EXISTS equation_check')
@@ -78,6 +87,36 @@ def main():
         w = csv.writer(fh)
         w.writerow(['number', 'batch', 'page', 'ocr_latex', 'pdf_text', 'status', 'ocr_numbers', 'pdf_numbers'])
         w.writerows(rows)
+    # ---- error patterns over all OCR formula blocks
+    db.execute('DROP TABLE IF EXISTS formula_issues')
+    db.execute('CREATE TABLE formula_issues(batch INT, page INT, issue TEXT, ocr TEXT, pdf TEXT)')
+    issues = []
+    pdf_text = dict(((b, p), t) for b, p, t in db.execute('SELECT batch, page, text FROM pdf_pages'))
+    for b, p, content in db.execute("SELECT batch, page, content FROM blocks WHERE label='formula'").fetchall():
+        t = pdf_text.get((b, p), '')
+        for m in re.finditer(r'(?<![\d.])(\d{1,3})\.(\d{3})(?!\d)', content):
+            comma = f'{m.group(1)},{m.group(2)}'
+            if comma in t and m.group(0) not in t:
+                issues.append((b, p, 'thousands comma read as decimal point', m.group(0), comma))
+        for m in re.finditer(r'10\^\{?(\d+)\}?', content):
+            e = m.group(1)
+            if re.search(r'10\s*-' + e + r'\b', t) and not re.search(r'10\s*' + e + r'\b', t):
+                issues.append((b, p, 'minus sign lost in power of ten', m.group(0), '10^-' + e))
+    db.executemany('INSERT INTO formula_issues VALUES (?,?,?,?,?)', issues)
+    if a.issues:
+        with open(a.issues, 'w', newline='', encoding='utf-8') as fh:
+            w = csv.writer(fh)
+            w.writerow(['batch', 'page', 'issue', 'ocr', 'pdf'])
+            w.writerows(sorted(issues))
+    print('formula issues:', dict(collections.Counter(i[2] for i in issues)))
+    if a.review:
+        db.execute('DROP TABLE IF EXISTS equation_review')
+        with open(a.review, encoding='utf-8') as fh:
+            rr = list(csv.reader(fh))
+        db.execute('CREATE TABLE equation_review(' + ', '.join(f'{h} TEXT' for h in rr[0]) + ')')
+        db.executemany('INSERT INTO equation_review VALUES (' + ','.join('?' * len(rr[0])) + ')', rr[1:])
+        print('equation review rows:', len(rr) - 1)
+    db.commit()
     c = collections.Counter(r[5] for r in rows)
     print('numbered equations:', len(rows))
     for k in ['match', 'close', 'differ', 'no-pdf-line', 'no-formula']:

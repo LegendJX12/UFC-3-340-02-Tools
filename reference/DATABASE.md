@@ -26,6 +26,8 @@ See `reference/HANDOFF.md` for rebuild commands and open items.
 | plot_labels | Title and axis text in each .grf file |
 | grf_guide_links | One row per plot file: plot number, guide figure, sub-curve, link level, page, caption, notes |
 | equation_check | Numbered OCR equations compared with the PDF text: status match / close / differ / no-pdf-line |
+| equation_review | Hand-checked review of the 16 'differ' equations and neighbours, with the correct text from the PDF |
+| formula_issues | OCR formula error patterns: thousands comma read as decimal point, lost minus in powers of ten |
 | data_status | Every figure and table with its data status (has plot data, MISSING DATA, ...) |
 
 ## Counts (this build)
@@ -36,7 +38,7 @@ See `reference/HANDOFF.md` for rebuild commands and open items.
 - 840 figures and 84 tables with a data status
 
 ## Known limits
-- OCR text and tables can contain errors; prefer `pdf_pages` for exact wording and numbers.
+- OCR text and tables can contain errors; prefer `pdf_pages` for exact wording and numbers. In OCR formulas, a.bbb is often a thousands value (see `formula_issues`).
 - Equation check compares numbers only; Greek letters are images in the PDF.
 - 134 images have no page.
 

@@ -24,7 +24,7 @@ python3 scripts/generate_missing.py --out graphs/generated
 python3 scripts/digitize_figures.py --pdf-root source/pdf --out graphs/generated --checks reference/digitized_checks
 python3 scripts/build_db.py --ocr-root ocr --grf-root graphs --index reference/UFC_3-340-02_index.xlsx --pdf-root source/pdf --out reference/ufc_340_02.db
 python3 scripts/map_grf.py --db reference/ufc_340_02.db --grf-root graphs --csv reference/grf_to_guide.csv
-python3 scripts/check_equations.py --db reference/ufc_340_02.db --csv reference/equation_check.csv
+python3 scripts/check_equations.py --db reference/ufc_340_02.db --csv reference/equation_check.csv --issues reference/formula_issues.csv --review reference/equation_review.csv
 python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/missing_data.csv
 ```
 
@@ -33,7 +33,7 @@ python3 scripts/audit_missing.py --db reference/ufc_340_02.db --csv reference/mi
 | `build_db.py` | `reference/ufc_340_02.db` (uses `grf.py` to read plot files) |
 | `grf.py` | Reader for DPLOT `.grf` files (both `data` and `dx` layouts, curves kept separate with labels) |
 | `map_grf.py` | `grf_to_guide.csv` and table `grf_guide_links`: every plot file to its guide figure |
-| `check_equations.py` | `equation_check.csv` and table `equation_check`: OCR equations vs PDF text |
+| `check_equations.py` | `equation_check.csv` / table `equation_check` (OCR vs PDF text), `formula_issues.csv` / table `formula_issues` (OCR error patterns), and loads the hand-checked `equation_review.csv` |
 | `audit_missing.py` | `missing_data.csv` and table `data_status`: every figure and table with its data status |
 | `sdof_bilinear.py` | Calculator: maximum response of an elasto-plastic SDOF system to a bilinear-triangular pulse |
 | `generate_missing.py` | Writes the computed plot files in `graphs/generated/` |
@@ -68,8 +68,27 @@ The PDFs have an exact text layer, now stored in table `pdf_pages`. Each OCR equ
 |---|---|---|
 | match | 254 | Same numbers in OCR and PDF |
 | close | 191 | One side contains the other (equation split over lines). Probably fine; check before use. |
-| differ | 16 | Check. Includes real OCR errors, e.g. Equation 2-23: OCR exponent 7.2944, PDF 1.2944. Some are pairing errors (the OCR formula next to the number is a different line). |
+| differ | 16 | Hand-checked against the rendered PDF: see below and `equation_review.csv`. |
 | no-pdf-line | 40 | The equation is an image in the PDF; check by eye. |
+
+How "differ" is decided: for each OCR equation number, the nearest OCR formula on the page is compared with the PDF text line ending in that number. Only the numbers in each are compared (constants, exponents, subscripts). "differ" means each side has numbers the other lacks.
+
+**Review of the 16 (`equation_review.csv`, table `equation_review`):**
+| Finding | Count | Equations |
+|---|---|---|
+| OCR error | 6 | 2-23 (exponent 7.2944 should be 1.2944), 2-60 and 2-62 (47,690 and 58,400 read as 47.690 and 58.400), 4-140b (bracket/exponent wrong, 2,500 read as 2.500), 6-22b and 6-23b (f_ps read as f_os, 60,000/30,000 read as 60.000/30.000) |
+| OCR missed the equation | 2 | 4-196, 4-199 (the "Xf > 2d" equations); correct text from the PDF in the review file |
+| Pairing mistake, OCR correct | 4 | 2-21, 4-5, 4-71, 4-181c |
+| PDF text splits a number, OCR correct | 4 | 2-67, 4-173, 5-17, 6-7 |
+
+Found in the same blocks while checking (not in the 16):
+- 2-28: exponent G read as O. 2-30: minus signs lost (10^-4, 10^-9 read as 10^4, 10^9). 4-140a: spurious symbol. 4-181b: Cf read as C_t, "/" lost in R/W^0.333.
+- **2-24, 2-25, 2-28: OCR has a division between brackets; the PDF prints multiplication** (a small dot in 2-24, brackets side by side in 2-25 and 2-28). The PDF form is used; confirm against another copy of the guide if one is available.
+
+**Error patterns across all OCR formulas (`formula_issues.csv`, table `formula_issues`):**
+- Thousands comma read as decimal point: **207** places on 82 pages, mostly in worked examples (e.g. 153,600 read as 153.600). Any number in OCR LaTeX of the form a.bbb may be a thousands value.
+- Minus lost in a power of ten: 1 more found by scan (Equation 2-30).
+- The "close" group (191) compares whole multi-line blocks, so errors inside a block can hide there (2-30 was found this way). Splitting blocks line by line would check them properly.
 
 Rule for the analysis tools: take equations from the PDF text (`pdf_pages`) or from a checked source, not from OCR LaTeX alone.
 
@@ -122,9 +141,10 @@ The WebPlotDigitizer website cannot be reached from the build machine, so its me
 
 ## Still open
 1. Compare the digitized 2-8 and 2-16 with any other copy of these charts if one becomes available.
-2. Check the 16 `differ` and 40 `no-pdf-line` equations against the PDF.
-3. Table cells are OCR; check values against the PDF text layer before use.
-4. 134 images have no page assigned (`images.page` empty).
+2. Check the 40 `no-pdf-line` equations by eye, and the 191 `close` blocks line by line.
+3. Confirm the operator in Equations 2-24, 2-25, 2-28 (multiply in the PDF, divide in OCR) against another copy of the guide.
+4. Table cells are OCR; check values against the PDF text layer before use.
+5. 134 images have no page assigned (`images.page` empty).
 
 ## Suggested next steps for analysis tools
 1. Pick a plot file for a figure with `grf_guide_links`, and read its curves from `plot_curves` / `plot_points` (curve `label` gives the parameter, e.g. overpressure).

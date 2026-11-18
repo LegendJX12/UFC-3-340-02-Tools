@@ -1,0 +1,23 @@
+equation,batch,page,in_16_differ_list,finding,ocr_text,correct_text_from_pdf,note
+2-21,2,59,yes,pairing (OCR correct),For W/H=3/4 (paired by mistake),E = 0.4221 + [1.241 (Ao/Aw)^0.367],Real OCR block for 2-17..2-21 matches the PDF.
+2-23,2,60,yes,OCR ERROR,A=[0.5422(L_w/L)^{7.2944}]-0.001829,A = [0.5422 (Lw/L)^1.2944] - 0.001829,Exponent 1.2944 misread as 7.2944.
+2-24,2,60,no (found in same block),CHECK: operator,B=[...]/[2.209(L/H)^{-0.3451}-0.739],B = [0.654 + 2.616 (Ao/Aw) - 4.928 (Ao/Aw)^2] · [2.209 (L/H)^-0.3451 - 0.739],PDF prints a small dot (multiply) between brackets; OCR has divide. Use PDF; confirm with another source.
+2-25,2,60,no (found in same block),CHECK: operator,C=...+[0.00124+0.00414(L_w/L)^{3.334}]/[L/H]^D,C = 0.829 + 0.104 (Lw/L)^1.6 + [0.00124 + 0.00414 (Lw/L)^3.334] [L/H]^D,PDF prints brackets side by side (multiply); OCR has divide. Use PDF; confirm with another source.
+2-28,2,60,no (found in same block),OCR ERROR + CHECK: operator,F=...+[1.8692-1.1735(A_o/A_w)^{-0.2226}]/[L_w/L]^O,F = 1.468 - 1.6627 (Ao/Aw)^0.7801 + [1.8692 - 1.1735 (Ao/Aw)^-0.2226] [Lw/L]^G,Exponent G misread as O. PDF prints multiply; OCR has divide.
+2-30,2,60,no (found in same block),OCR ERROR,H=(5.425\times10^4)+(1.001\times10^9)(L/H)^{9.965},H = (5.425 x 10^-4) + (1.001 x 10^-9) (L/H)^9.965,Minus signs of both powers of ten lost.
+2-60,7,55,yes,OCR ERROR,...=47.690[R_e/R]^{1.4},"i/(β Reff) [Re/Rt]^0.158 = 47,690 [Re/R]^1.4","Thousands comma read as decimal point (47,690 not 47.690)."
+2-62,7,55,yes,OCR ERROR,...=58.400[R_e/R],"i/(β Reff) [Re/Rt]^0.158 = 58,400 [Re/R]",Thousands comma read as decimal point.
+2-67,7,57,yes,PDF text split (OCR correct),... [2Lf/bf]^{0.3} >= 0.602,(i bf / (A (ρf T)^1/2)) (2Lf/bf)^0.3 >= 0.602,"PDF text layer splits 0.602 into ""0 602""."
+4-5,19,44,yes,pairing (OCR correct),n=E\sqrt{E_0} (paired by mistake),Es = 29 x 10^6 psi,"Real OCR block ""E_s=29\times10^{6} psi"" matches."
+4-71,20,44,yes,pairing (OCR correct),M_OL = wH(L-c)^2/8 (paired by mistake),m18+ = 0.60 (0.35) MOL/(H/2),Real OCR block line for m18+ matches.
+4-140a,22,20,no (found next to 4-140b),OCR ERROR,v_c=2f_{dc}^{\prime\prime}\eta^{1/2},vc = 2 f'dc^1/2,Spurious η in OCR.
+4-140b,22,20,yes,OCR ERROR,v_c=|1.9f'_{dc}|^{1/2}+2.500p\leq3.5f'_{dc}'',"vc = [1.9 f'dc^1/2 + 2,500 p] <= 3.5 f'dc^1/2","Exponent 1/2 applies to f'dc, not the bracket; 2,500 read as 2.500."
+4-173,22,42,yes,PDF text split (OCR correct),EI=E_cI_a/1.5,EI = Ec Ia / 1.5,"PDF text layer splits 1.5 into ""1 .5""."
+4-181b,23,6,no (found next to 4-181c),OCR ERROR,C_t=1+2(...)(1-R/(2W^{0.333})); L>D and RW^{0.333}<2.0,Cf = 1 + 2 (LD/(π(3LD^2/16)^0.667) - 1)(1 - R/(2W^0.333)); L > D and R/W^0.333 < 2.0,"Cf read as C_t; ""/"" lost in R/W^0.333."
+4-181c,23,6,yes,pairing (OCR correct),(4-181b formula paired by mistake),Cf = 1.0; all other cases,Real OCR block matches.
+4-196,23,30,yes,OCR MISSED,(no OCR formula; 4-195 paired),Xf = 4.0 x 10^-6 K N D d^1.2 vs^1.8 + d    for Xf > 2d,Equation not captured by OCR. (4-195 OCR is correct.)
+4-199,23,31,yes,OCR MISSED,(no OCR formula; 4-198 paired),Xf = 2.04 x 10^-6 d^1.2 vs^1.8 + d    for Xf > 2d,Equation not captured by OCR. (4-198 OCR is correct.)
+5-17,27,40,yes,PDF text split (OCR correct),d/t_w=412/f_y[1-1.4P/P_y] when P/P_y<=0.27,d/tw = (412/fy) [1 - 1.4 P/Py]  when P/Py <= 0.27,Checked on the rendered page: printed as 412/fy (no root sign).
+6-7,31,23,yes,PDF text split (OCR correct),(Vuo/(Vmo+Vso))^2+(Vui/(Vmi+Vsi))^2<=1.0,(Vuo/(Vmo+Vso))^2 + (Vui/(Vmi+Vsi))^2 <= 1.0,"PDF text layer splits 1.0 into ""1. 0""."
+6-22b,32,5,yes,OCR ERROR,f_os<=f_se+60.000,"fps <= fse + 60,000","f_ps read as f_os; 60,000 read as 60.000."
+6-23b,32,5,yes,OCR ERROR,f_os<=f_se+30.000,"fps <= fse + 30,000","f_ps read as f_os; 30,000 read as 30.000."
